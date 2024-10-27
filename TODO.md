@@ -2,7 +2,8 @@
 
 - [ ] Set the solar system
 - [ ] Educate oneself with the orbital mechanics equations and how to simulate them
-- [ ] Start using the physics engine and simple ballistics instead of proper orbit mechanics to demonstrate
+- [ ] Polish the physics engine area2d gravity-based approach
+- [ ] Check if there's a way to allow for overlapping area2ds and just apply one
 
 # Next
 
@@ -28,3 +29,7 @@
 - [ ] Add successful landing feedback
 
 # Done
+
+- [x] Start using the physics engine and simple ballistics instead of proper orbit mechanics to demonstrate
+- [x] CharacterBody2D cosmonaut
+- [x] RigidBody2D astronaut

@@ -1,9 +1,123 @@
-[gd_scene load_steps=5 format=3 uid="uid://bix0vgtkccr8k"]
+[gd_scene load_steps=32 format=3 uid="uid://bix0vgtkccr8k"]
 
 [ext_resource type="Texture2D" uid="uid://c1p64shib4lr1" path="res://assets/planets/Terran Wet - 218550788.png" id="1_h4dba"]
 [ext_resource type="Texture2D" uid="uid://bm1kn5gq2qxhn" path="res://assets/planets/Star.png" id="2_h5aj2"]
 [ext_resource type="Texture2D" uid="uid://dyd5vcbnlobcv" path="res://assets/planets/No atmosphere.png" id="3_ua3ul"]
-[ext_resource type="Script" path="res://components/elliptical_movement_component.gd" id="4_bpwfk"]
+[ext_resource type="Script" path="res://components/physics_gravity_component.gd" id="4_fgesw"]
+[ext_resource type="Texture2D" uid="uid://ke0p4ugaumu2" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_idle_1.png" id="5_s7vey"]
+[ext_resource type="Script" path="res://actors/cosmonaut.gd" id="5_v41lf"]
+[ext_resource type="Texture2D" uid="uid://bc18bmx2na4ox" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_idle_2.png" id="6_fr0vr"]
+[ext_resource type="Texture2D" uid="uid://c0313kqhsfjvv" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_idle_3.png" id="7_ednpg"]
+[ext_resource type="Texture2D" uid="uid://cplfttkets2pw" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_idle_4.png" id="8_bv1ti"]
+[ext_resource type="Texture2D" uid="uid://wgqlgd0hanbh" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_idle_5.png" id="9_xjdqs"]
+[ext_resource type="Texture2D" uid="uid://dt6450v25hi58" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_idle_6.png" id="10_d41dv"]
+[ext_resource type="Texture2D" uid="uid://c1vnkgnl2m2uy" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_walk_1.png" id="11_ldwow"]
+[ext_resource type="Texture2D" uid="uid://c4ykwpw2ubsxn" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_walk_2.png" id="12_lsbqh"]
+[ext_resource type="Texture2D" uid="uid://bjh4gmdb6tg8l" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_walk_3.png" id="13_1oevc"]
+[ext_resource type="Texture2D" uid="uid://bj654nglpuvk8" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_walk_4.png" id="14_hsv1k"]
+[ext_resource type="Texture2D" uid="uid://co2ttgrvexh4x" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_walk_5.png" id="15_rhp7v"]
+[ext_resource type="Texture2D" uid="uid://b5stajimb6ds0" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_walk_6.png" id="16_ou3s7"]
+[ext_resource type="Texture2D" uid="uid://yaquokwmwnef" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_walk_7.png" id="17_io2y4"]
+[ext_resource type="Texture2D" uid="uid://bdvgxj7eh0vw4" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_walk_8.png" id="18_jqeq2"]
+[ext_resource type="Script" path="res://actors/astronaut.gd" id="20_1bslv"]
+[ext_resource type="Texture2D" uid="uid://don4lic36wxmv" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_1.png" id="21_mcd5a"]
+[ext_resource type="Texture2D" uid="uid://cuel3odc8mrl2" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_2.png" id="22_nvew8"]
+[ext_resource type="Texture2D" uid="uid://dtpexkjdma6u3" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_3.png" id="23_8jec4"]
+[ext_resource type="Texture2D" uid="uid://1y3hqay6h3l4" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_4.png" id="24_l7km1"]
+[ext_resource type="Texture2D" uid="uid://bfvk4u4ykokwo" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_5.png" id="25_7pnxr"]
+[ext_resource type="Texture2D" uid="uid://bwocpuv7srru4" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_6.png" id="26_xeo4w"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_naws2"]
+radius = 249.201
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rt8ft"]
+radius = 3.0
+height = 10.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_toh8h"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_s7vey")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_fr0vr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ednpg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_bv1ti")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_xjdqs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_d41dv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_ldwow")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_lsbqh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_1oevc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_hsv1k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_rhp7v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_ou3s7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_io2y4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_jqeq2")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kwb5v"]
+radius = 3.0
+height = 10.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w2602"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_mcd5a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_nvew8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_8jec4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_l7km1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_7pnxr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_xeo4w")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="PlanetarySystem" type="Node2D"]
 
@@ -13,11 +127,27 @@
 position = Vector2(325, 297)
 texture = ExtResource("2_h5aj2")
 
+[node name="PhysicsGravitySourceComponent" type="Node" parent="Star" groups=["gravity_component"]]
+script = ExtResource("4_fgesw")
+gravity_at_center = 500.0
+ignore = true
+
 [node name="HomePlanet" type="Node2D" parent="Star"]
 position = Vector2(900, 301)
 
+[node name="Area2D" type="Area2D" parent="Star/HomePlanet"]
+gravity_space_override = 3
+gravity_point = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/Area2D"]
+shape = SubResource("CircleShape2D_naws2")
+
 [node name="Sprite2D" type="Sprite2D" parent="Star/HomePlanet"]
 texture = ExtResource("1_h4dba")
+
+[node name="PhysicsGravitySourceComponent" type="Node" parent="Star/HomePlanet" groups=["gravity_component"]]
+script = ExtResource("4_fgesw")
+gravity_at_center = 100.0
 
 [node name="Satellite" type="Node2D" parent="Star/HomePlanet"]
 position = Vector2(146, -3)
@@ -25,9 +155,36 @@ position = Vector2(146, -3)
 [node name="Sprite2D" type="Sprite2D" parent="Star/HomePlanet/Satellite"]
 texture = ExtResource("3_ua3ul")
 
-[node name="EllipticalMovementComponent" type="Node" parent="Star/HomePlanet/Satellite" node_paths=PackedStringArray("OrbitedBody")]
-script = ExtResource("4_bpwfk")
-OrbitedBody = NodePath("../..")
+[node name="PhysicsGravitySourceComponent" type="Node" parent="Star/HomePlanet/Satellite" groups=["gravity_component"]]
+script = ExtResource("4_fgesw")
+ignore = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(575, 325)
+
+[node name="Cosmonaut" type="CharacterBody2D" parent="."]
+position = Vector2(899, 113)
+script = ExtResource("5_v41lf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cosmonaut"]
+shape = SubResource("CapsuleShape2D_rt8ft")
+
+[node name="Sprite2D" type="Sprite2D" parent="Cosmonaut"]
+visible = false
+scale = Vector2(0.1, 0.1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Cosmonaut"]
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_toh8h")
+autoplay = "default"
+
+[node name="Astronaut" type="RigidBody2D" parent="."]
+position = Vector2(748, 91)
+script = ExtResource("20_1bslv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Astronaut"]
+shape = SubResource("CapsuleShape2D_kwb5v")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Astronaut"]
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_w2602")
