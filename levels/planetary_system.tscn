@@ -1,9 +1,10 @@
-[gd_scene load_steps=32 format=3 uid="uid://bix0vgtkccr8k"]
+[gd_scene load_steps=33 format=3 uid="uid://bix0vgtkccr8k"]
 
 [ext_resource type="Texture2D" uid="uid://c1p64shib4lr1" path="res://assets/planets/Terran Wet - 218550788.png" id="1_h4dba"]
 [ext_resource type="Texture2D" uid="uid://bm1kn5gq2qxhn" path="res://assets/planets/Star.png" id="2_h5aj2"]
 [ext_resource type="Texture2D" uid="uid://dyd5vcbnlobcv" path="res://assets/planets/No atmosphere.png" id="3_ua3ul"]
 [ext_resource type="Script" path="res://components/physics_gravity_component.gd" id="4_fgesw"]
+[ext_resource type="Script" path="res://scripts/zooming_camera_2d.gd" id="5_ait1n"]
 [ext_resource type="Texture2D" uid="uid://ke0p4ugaumu2" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_idle_1.png" id="5_s7vey"]
 [ext_resource type="Script" path="res://actors/cosmonaut.gd" id="5_v41lf"]
 [ext_resource type="Texture2D" uid="uid://bc18bmx2na4ox" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_idle_2.png" id="6_fr0vr"]
@@ -159,8 +160,17 @@ texture = ExtResource("3_ua3ul")
 script = ExtResource("4_fgesw")
 ignore = true
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="ZoomingCamera2D" type="Camera2D" parent="."]
 position = Vector2(575, 325)
+limit_left = 0
+limit_top = 0
+limit_right = 2000
+limit_bottom = 1000
+limit_smoothed = true
+position_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+script = ExtResource("5_ait1n")
 
 [node name="Cosmonaut" type="CharacterBody2D" parent="."]
 position = Vector2(899, 113)
