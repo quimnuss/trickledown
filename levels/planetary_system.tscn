@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bix0vgtkccr8k"]
+[gd_scene load_steps=5 format=3 uid="uid://bix0vgtkccr8k"]
 
 [ext_resource type="Texture2D" uid="uid://c1p64shib4lr1" path="res://assets/planets/Terran Wet - 218550788.png" id="1_h4dba"]
 [ext_resource type="Texture2D" uid="uid://bm1kn5gq2qxhn" path="res://assets/planets/Star.png" id="2_h5aj2"]
 [ext_resource type="Texture2D" uid="uid://dyd5vcbnlobcv" path="res://assets/planets/No atmosphere.png" id="3_ua3ul"]
+[ext_resource type="Script" path="res://components/elliptical_movement_component.gd" id="4_bpwfk"]
 
 [node name="PlanetarySystem" type="Node2D"]
 
@@ -23,6 +24,10 @@ position = Vector2(146, -3)
 
 [node name="Sprite2D" type="Sprite2D" parent="Star/HomePlanet/Satellite"]
 texture = ExtResource("3_ua3ul")
+
+[node name="EllipticalMovementComponent" type="Node" parent="Star/HomePlanet/Satellite" node_paths=PackedStringArray("OrbitedBody")]
+script = ExtResource("4_bpwfk")
+OrbitedBody = NodePath("../..")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(575, 325)
