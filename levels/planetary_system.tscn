@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://bix0vgtkccr8k"]
+[gd_scene load_steps=34 format=3 uid="uid://bix0vgtkccr8k"]
 
 [ext_resource type="Texture2D" uid="uid://c1p64shib4lr1" path="res://assets/planets/Terran Wet - 218550788.png" id="1_h4dba"]
 [ext_resource type="Texture2D" uid="uid://bm1kn5gq2qxhn" path="res://assets/planets/Star.png" id="2_h5aj2"]
@@ -29,7 +29,10 @@
 [ext_resource type="Texture2D" uid="uid://bwocpuv7srru4" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_6.png" id="26_xeo4w"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_naws2"]
-radius = 249.201
+radius = 738.082
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_12utq"]
+radius = 87.2066
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rt8ft"]
 radius = 3.0
@@ -137,8 +140,11 @@ ignore = true
 position = Vector2(900, 301)
 
 [node name="Area2D" type="Area2D" parent="Star/HomePlanet"]
-gravity_space_override = 3
+collision_priority = 10.0
+gravity_space_override = 2
 gravity_point = true
+gravity_point_unit_distance = 50.0
+gravity = 450.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/Area2D"]
 shape = SubResource("CircleShape2D_naws2")
@@ -159,6 +165,16 @@ texture = ExtResource("3_ua3ul")
 [node name="PhysicsGravitySourceComponent" type="Node" parent="Star/HomePlanet/Satellite" groups=["gravity_component"]]
 script = ExtResource("4_fgesw")
 ignore = true
+
+[node name="Area2D" type="Area2D" parent="Star/HomePlanet/Satellite"]
+collision_priority = 5.0
+gravity_space_override = 2
+gravity_point = true
+gravity_point_unit_distance = 50.0
+gravity = 100.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/Satellite/Area2D"]
+shape = SubResource("CircleShape2D_12utq")
 
 [node name="ZoomingCamera2D" type="Camera2D" parent="."]
 position = Vector2(575, 325)
@@ -189,7 +205,7 @@ sprite_frames = SubResource("SpriteFrames_toh8h")
 autoplay = "default"
 
 [node name="Astronaut" type="RigidBody2D" parent="."]
-position = Vector2(748, 91)
+position = Vector2(786, 34)
 script = ExtResource("20_1bslv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Astronaut"]
