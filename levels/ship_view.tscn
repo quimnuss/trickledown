@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3pj8s4gr5fj4"]
+
+[ext_resource type="PackedScene" uid="uid://bes1ltm14o6xt" path="res://actors/ship.tscn" id="1_kdovk"]
+
+[node name="ShipView" type="Node2D"]
+
+[node name="ShipCenter" parent="." instance=ExtResource("1_kdovk")]

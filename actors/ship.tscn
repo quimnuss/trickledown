@@ -1,0 +1,111 @@
+[gd_scene load_steps=11 format=3 uid="uid://bes1ltm14o6xt"]
+
+[ext_resource type="Script" path="res://actors/ship_visual.gd" id="1_ne50e"]
+[ext_resource type="Texture2D" uid="uid://oqfev0djlfgb" path="res://assets/rockets/exhaust_03/exhaust_03_spritesheet.png" id="1_wncpw"]
+[ext_resource type="Texture2D" uid="uid://btelxiu0mi3g" path="res://assets/spaceship_creation_kit/Frame/Black Frame/frameBlack24.png" id="2_xtpip"]
+[ext_resource type="Texture2D" uid="uid://dw07w1gacaurr" path="res://assets/spaceship_creation_kit/Frame/Black Frame/frameBlack15.png" id="3_jqx06"]
+[ext_resource type="Texture2D" uid="uid://dh258a64w6rvw" path="res://assets/spaceship_creation_kit/Frame/Misc/frameCap001.png" id="4_f3y0w"]
+
+[sub_resource type="Animation" id="Animation_fuoob"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Exhaust:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_eb7y4"]
+resource_name = "exhaust_1"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Exhaust:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [8, 12]
+}
+
+[sub_resource type="Animation" id="Animation_flgff"]
+resource_name = "exhaust_1_start"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Exhaust:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0, 4]
+}
+
+[sub_resource type="Animation" id="Animation_w88nv"]
+resource_name = "exhaust_1_stop"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Exhaust:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [4, 0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bswq5"]
+_data = {
+"RESET": SubResource("Animation_fuoob"),
+"exhaust_1_loop": SubResource("Animation_eb7y4"),
+"exhaust_1_start": SubResource("Animation_flgff"),
+"exhaust_1_stop": SubResource("Animation_w88nv")
+}
+
+[node name="ShipCenter" type="Node2D"]
+script = ExtResource("1_ne50e")
+
+[node name="Exhaust" type="Sprite2D" parent="."]
+position = Vector2(2, 327)
+texture = ExtResource("1_wncpw")
+hframes = 8
+vframes = 3
+
+[node name="FrameBlack24" type="Sprite2D" parent="."]
+position = Vector2(0, 192)
+texture = ExtResource("2_xtpip")
+
+[node name="FrameBlack15" type="Sprite2D" parent="."]
+position = Vector2(0, 64)
+texture = ExtResource("3_jqx06")
+
+[node name="FrameBlack16" type="Sprite2D" parent="."]
+position = Vector2(0, -64.5)
+texture = ExtResource("3_jqx06")
+
+[node name="FrameCap001" type="Sprite2D" parent="."]
+position = Vector2(0, -177)
+texture = ExtResource("4_f3y0w")
+flip_h = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_bswq5")
+}
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

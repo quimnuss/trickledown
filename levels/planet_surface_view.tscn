@@ -1,0 +1,80 @@
+[gd_scene load_steps=9 format=3 uid="uid://bau2oajpnx5u8"]
+
+[ext_resource type="Texture2D" uid="uid://bhno2l6syxd8" path="res://assets/ground/ground.png" id="1_5obci"]
+[ext_resource type="PackedScene" uid="uid://bes1ltm14o6xt" path="res://actors/ship.tscn" id="2_2e4wf"]
+[ext_resource type="Script" path="res://actors/ship_ground.gd" id="2_77ref"]
+[ext_resource type="Texture2D" uid="uid://dtt0hyxs8hnjp" path="res://assets/sky/clouds.png" id="2_rktc8"]
+[ext_resource type="Texture2D" uid="uid://j23dyy2elxe0" path="res://assets/sky/1.png" id="3_ucql3"]
+[ext_resource type="Script" path="res://scripts/zooming_camera_2d_centered.gd" id="5_na5we"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_d2myx"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_c3tgh"]
+radius = 65.0
+height = 482.0
+
+[node name="PlanetSurfaceView" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(546, 559)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("WorldBoundaryShape2D_d2myx")
+
+[node name="SkyParallax" type="Parallax2D" parent="."]
+scroll_scale = Vector2(0.1, 0.1)
+repeat_size = Vector2(500, 500)
+repeat_times = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="SkyParallax"]
+position = Vector2(493, 325)
+texture = ExtResource("3_ucql3")
+region_rect = Rect2(59, 216, 749, 200)
+
+[node name="GroundParallax" type="Parallax2D" parent="."]
+scroll_offset = Vector2(0, 1)
+repeat_size = Vector2(800, 0)
+repeat_times = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="GroundParallax"]
+position = Vector2(483, 650)
+texture = ExtResource("1_5obci")
+region_enabled = true
+region_rect = Rect2(59, 216, 749, 200)
+
+[node name="StarsParallax" type="Parallax2D" parent="."]
+scroll_offset = Vector2(0, 1)
+repeat_size = Vector2(800, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="StarsParallax"]
+position = Vector2(483, 650)
+texture = ExtResource("1_5obci")
+region_enabled = true
+region_rect = Rect2(59, 216, 749, 200)
+
+[node name="CloudsParallax" type="Parallax2D" parent="."]
+scroll_scale = Vector2(0.7, 0.7)
+scroll_offset = Vector2(0, 1)
+repeat_size = Vector2(800, 800)
+repeat_times = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="CloudsParallax"]
+position = Vector2(493, 325)
+texture = ExtResource("2_rktc8")
+region_rect = Rect2(59, 216, 749, 200)
+
+[node name="Ground" type="Node2D" parent="."]
+
+[node name="ShipGround" type="RigidBody2D" parent="."]
+position = Vector2(494, 305)
+script = ExtResource("2_77ref")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ShipGround"]
+position = Vector2(0, 16)
+shape = SubResource("CapsuleShape2D_c3tgh")
+
+[node name="ShipCenter" parent="ShipGround" instance=ExtResource("2_2e4wf")]
+
+[node name="ZoomingCamera2D" type="Camera2D" parent="ShipGround"]
+zoom = Vector2(0.5, 0.5)
+script = ExtResource("5_na5we")

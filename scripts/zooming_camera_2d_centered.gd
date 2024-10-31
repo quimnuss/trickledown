@@ -1,7 +1,7 @@
 extends Camera2D
 class_name ZoomingCamera2D
 
-@export var min_zoom := 0.7
+@export var min_zoom := 0.3
 @export var max_zoom := 3.0
 @export var zoom_factor := 0.07
 @export var zoom_duration := 0.2
@@ -22,7 +22,6 @@ func _follow_mouse() -> void:
 func _unhandled_input(event):
     if event.is_action_pressed("zoom_in"):
         _set_zoom_level(_zoom_level - zoom_factor)
-        _follow_mouse()
     if event.is_action_pressed("zoom_out"):
         _set_zoom_level(_zoom_level + zoom_factor)
 
