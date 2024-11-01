@@ -1,8 +1,11 @@
-[gd_scene load_steps=36 format=3 uid="uid://bix0vgtkccr8k"]
+[gd_scene load_steps=39 format=3 uid="uid://bix0vgtkccr8k"]
 
 [ext_resource type="Script" path="res://components/visual_orbit.gd" id="1_8xlk2"]
+[ext_resource type="Texture2D" uid="uid://dkclsuxbdnwtn" path="res://assets/sky/dynamic_space_background/Nebula Red.png" id="1_fngs5"]
 [ext_resource type="Texture2D" uid="uid://c1p64shib4lr1" path="res://assets/planets/Terran Wet - 218550788.png" id="1_h4dba"]
 [ext_resource type="Texture2D" uid="uid://bm1kn5gq2qxhn" path="res://assets/planets/Star.png" id="2_h5aj2"]
+[ext_resource type="Texture2D" uid="uid://dr3qb8prnyaxc" path="res://assets/sky/dynamic_space_background/Stars Small_1.png" id="2_tpl7i"]
+[ext_resource type="Texture2D" uid="uid://prwtbk4881hm" path="res://assets/sky/dynamic_space_background/Stars-Big_1_1_PC.png" id="3_6317u"]
 [ext_resource type="Script" path="res://components/orbit.gd" id="3_qk5fl"]
 [ext_resource type="Texture2D" uid="uid://dyd5vcbnlobcv" path="res://assets/planets/No atmosphere.png" id="3_ua3ul"]
 [ext_resource type="Script" path="res://components/physics_gravity_component.gd" id="4_fgesw"]
@@ -126,6 +129,28 @@ animations = [{
 }]
 
 [node name="PlanetarySystem" type="Node2D"]
+
+[node name="Nebula" type="Parallax2D" parent="."]
+scroll_scale = Vector2(0.1, 0.1)
+repeat_size = Vector2(4096, 4096)
+
+[node name="Sprite2D" type="Sprite2D" parent="Nebula"]
+texture_repeat = 3
+texture = ExtResource("1_fngs5")
+
+[node name="Stars" type="Parallax2D" parent="."]
+scroll_scale = Vector2(0.15, 0.15)
+repeat_size = Vector2(4096, 4096)
+
+[node name="Sprite2D" type="Sprite2D" parent="Stars"]
+texture = ExtResource("2_tpl7i")
+
+[node name="StarsFront" type="Parallax2D" parent="."]
+scroll_scale = Vector2(0.2, 0.2)
+repeat_size = Vector2(4096, 4096)
+
+[node name="Sprite2D" type="Sprite2D" parent="StarsFront"]
+texture = ExtResource("3_6317u")
 
 [node name="Star" type="Node2D" parent="."]
 position = Vector2(280, 324)
