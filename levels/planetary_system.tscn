@@ -1,7 +1,9 @@
-[gd_scene load_steps=34 format=3 uid="uid://bix0vgtkccr8k"]
+[gd_scene load_steps=36 format=3 uid="uid://bix0vgtkccr8k"]
 
+[ext_resource type="Script" path="res://components/visual_orbit.gd" id="1_8xlk2"]
 [ext_resource type="Texture2D" uid="uid://c1p64shib4lr1" path="res://assets/planets/Terran Wet - 218550788.png" id="1_h4dba"]
 [ext_resource type="Texture2D" uid="uid://bm1kn5gq2qxhn" path="res://assets/planets/Star.png" id="2_h5aj2"]
+[ext_resource type="Script" path="res://components/orbit.gd" id="3_qk5fl"]
 [ext_resource type="Texture2D" uid="uid://dyd5vcbnlobcv" path="res://assets/planets/No atmosphere.png" id="3_ua3ul"]
 [ext_resource type="Script" path="res://components/physics_gravity_component.gd" id="4_fgesw"]
 [ext_resource type="Script" path="res://scripts/zooming_camera_2d.gd" id="5_ait1n"]
@@ -126,9 +128,13 @@ animations = [{
 [node name="PlanetarySystem" type="Node2D"]
 
 [node name="Star" type="Node2D" parent="."]
+position = Vector2(280, 324)
+
+[node name="VisualOrbit" type="Node2D" parent="Star" node_paths=PackedStringArray("orbit")]
+script = ExtResource("1_8xlk2")
+orbit = NodePath("../HomePlanet/Orbit")
 
 [node name="Sprite2D" type="Sprite2D" parent="Star"]
-position = Vector2(325, 297)
 texture = ExtResource("2_h5aj2")
 
 [node name="PhysicsGravitySourceComponent" type="Node" parent="Star" groups=["gravity_component"]]
@@ -137,7 +143,14 @@ gravity_at_center = 500.0
 ignore = true
 
 [node name="HomePlanet" type="Node2D" parent="Star"]
-position = Vector2(900, 301)
+position = Vector2(470, 6)
+
+[node name="VisualOrbit" type="Node2D" parent="Star/HomePlanet" node_paths=PackedStringArray("orbit")]
+script = ExtResource("1_8xlk2")
+orbit = NodePath("../Satellite/Orbit")
+
+[node name="Orbit" type="Node2D" parent="Star/HomePlanet"]
+script = ExtResource("3_qk5fl")
 
 [node name="Area2D" type="Area2D" parent="Star/HomePlanet"]
 collision_priority = 10.0
@@ -159,6 +172,12 @@ gravity_at_center = 100.0
 [node name="Satellite" type="Node2D" parent="Star/HomePlanet"]
 position = Vector2(146, -3)
 
+[node name="Orbit" type="Node2D" parent="Star/HomePlanet/Satellite"]
+script = ExtResource("3_qk5fl")
+speed = 50
+a = 200
+b = 100
+
 [node name="Sprite2D" type="Sprite2D" parent="Star/HomePlanet/Satellite"]
 texture = ExtResource("3_ua3ul")
 
@@ -178,8 +197,8 @@ shape = SubResource("CircleShape2D_12utq")
 
 [node name="ZoomingCamera2D" type="Camera2D" parent="."]
 position = Vector2(575, 325)
-limit_left = 0
-limit_top = 0
+limit_left = -2000
+limit_top = -1000
 limit_right = 2000
 limit_bottom = 1000
 limit_smoothed = true

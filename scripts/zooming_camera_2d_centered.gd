@@ -1,5 +1,5 @@
 extends Camera2D
-class_name ZoomingCamera2D
+class_name ZoomingCamera2DCentered
 
 @export var min_zoom := 0.3
 @export var max_zoom := 3.0
