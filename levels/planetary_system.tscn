@@ -175,49 +175,44 @@ position = Vector2(0, -50)
 script = ExtResource("10_jcfrs")
 
 [node name="Cannon" type="Sprite2D" parent="Star/HomePlanet/Launchpad"]
+position = Vector2(-1.09998, -0.100006)
 scale = Vector2(0.01, 0.01)
 texture = ExtResource("10_0un0d")
 
 [node name="FireEffect" type="Node2D" parent="Star/HomePlanet/Launchpad/Cannon" node_paths=PackedStringArray("fire_sprites")]
+position = Vector2(109.998, 10.0006)
 script = ExtResource("12_hc8jd")
 fire_sprites = [NodePath("FireBall"), NodePath("FireBall2"), NodePath("FireBall3"), NodePath("FireBall4")]
 
 [node name="FireBall" type="Sprite2D" parent="Star/HomePlanet/Launchpad/Cannon/FireEffect"]
-position = Vector2(-500, -400)
-rotation = -1.09558
-scale = Vector2(20, 20)
+position = Vector2(40, -760)
+scale = Vector2(30, 30)
 texture = ExtResource("13_1f2mo")
 hframes = 4
-frame = 3
 
 [node name="FireBall2" type="Sprite2D" parent="Star/HomePlanet/Launchpad/Cannon/FireEffect"]
-visible = false
-position = Vector2(-684.522, -484.524)
-rotation = -1.09558
-scale = Vector2(20, 20)
+position = Vector2(40, -1060)
+scale = Vector2(30, 30)
 texture = ExtResource("13_1f2mo")
 hframes = 4
 frame = 3
 
 [node name="FireBall3" type="Sprite2D" parent="Star/HomePlanet/Launchpad/Cannon/FireEffect"]
-visible = false
-position = Vector2(-884.522, -584.524)
-rotation = -1.09558
-scale = Vector2(20, 20)
+position = Vector2(40, -1360)
+scale = Vector2(30, 30)
 texture = ExtResource("13_1f2mo")
 hframes = 4
 frame = 3
 
 [node name="FireBall4" type="Sprite2D" parent="Star/HomePlanet/Launchpad/Cannon/FireEffect"]
-visible = false
-position = Vector2(-1100, -700)
-rotation = -1.09558
-scale = Vector2(20, 20)
+position = Vector2(40, -1660)
+scale = Vector2(30, 30)
 texture = ExtResource("13_1f2mo")
 hframes = 4
 frame = 3
 
 [node name="CannonBase" type="Sprite2D" parent="Star/HomePlanet/Launchpad"]
+position = Vector2(-1.09998, -0.100006)
 scale = Vector2(0.01, 0.01)
 texture = ExtResource("11_1xq35")
 

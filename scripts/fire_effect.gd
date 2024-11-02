@@ -4,8 +4,10 @@ const POWER_STEP := 100
 const POWER_SUBSTEP := 25
 
 var current_level := 0
+var current_sublevel := 0
 
 @export var fire_sprites : Array[Sprite2D]
+
 
 func update_power(power : int):
     var level = power / POWER_STEP
@@ -20,4 +22,7 @@ func update_power(power : int):
             fire_sprites[i].visible = true
             fire_sprites[i].frame = 0
 
+    if sublevel != current_sublevel and level < 4:
+        fire_sprites[level].visible = true
+        current_sublevel = sublevel
         fire_sprites[level].frame = clamp(4 - sublevel,0,3)
