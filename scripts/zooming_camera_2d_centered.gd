@@ -2,7 +2,7 @@ extends Camera2D
 class_name ZoomingCamera2DCentered
 
 @export var min_zoom := 0.3
-@export var max_zoom := 3.0
+@export var max_zoom := 10.0
 @export var zoom_factor := 0.07
 @export var zoom_duration := 0.2
 

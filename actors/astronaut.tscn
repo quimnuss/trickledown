@@ -1,0 +1,50 @@
+[gd_scene load_steps=10 format=3 uid="uid://b3o4iph7vqse1"]
+
+[ext_resource type="Script" path="res://actors/astronaut.gd" id="1_bexqd"]
+[ext_resource type="Texture2D" uid="uid://don4lic36wxmv" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_1.png" id="2_koiem"]
+[ext_resource type="Texture2D" uid="uid://cuel3odc8mrl2" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_2.png" id="3_1xihc"]
+[ext_resource type="Texture2D" uid="uid://dtpexkjdma6u3" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_3.png" id="4_my882"]
+[ext_resource type="Texture2D" uid="uid://1y3hqay6h3l4" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_4.png" id="5_7atce"]
+[ext_resource type="Texture2D" uid="uid://bfvk4u4ykokwo" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_5.png" id="6_r78ps"]
+[ext_resource type="Texture2D" uid="uid://bwocpuv7srru4" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_6.png" id="7_nxtta"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kwb5v"]
+radius = 3.0
+height = 10.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w2602"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_koiem")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_1xihc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_my882")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_7atce")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_r78ps")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_nxtta")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Astronaut" type="RigidBody2D"]
+position = Vector2(786, 34)
+script = ExtResource("1_bexqd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_kwb5v")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_w2602")

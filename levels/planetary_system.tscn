@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=3 uid="uid://bix0vgtkccr8k"]
+[gd_scene load_steps=38 format=3 uid="uid://bix0vgtkccr8k"]
 
 [ext_resource type="Script" path="res://components/visual_orbit.gd" id="1_8xlk2"]
 [ext_resource type="Texture2D" uid="uid://dkclsuxbdnwtn" path="res://assets/sky/dynamic_space_background/Nebula Red.png" id="1_fngs5"]
@@ -31,13 +31,7 @@
 [ext_resource type="Texture2D" uid="uid://b5stajimb6ds0" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_walk_6.png" id="16_ou3s7"]
 [ext_resource type="Texture2D" uid="uid://yaquokwmwnef" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_walk_7.png" id="17_io2y4"]
 [ext_resource type="Texture2D" uid="uid://bdvgxj7eh0vw4" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_walk_8.png" id="18_jqeq2"]
-[ext_resource type="Script" path="res://actors/astronaut.gd" id="20_1bslv"]
-[ext_resource type="Texture2D" uid="uid://don4lic36wxmv" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_1.png" id="21_mcd5a"]
-[ext_resource type="Texture2D" uid="uid://cuel3odc8mrl2" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_2.png" id="22_nvew8"]
-[ext_resource type="Texture2D" uid="uid://dtpexkjdma6u3" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_3.png" id="23_8jec4"]
-[ext_resource type="Texture2D" uid="uid://1y3hqay6h3l4" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_4.png" id="24_l7km1"]
-[ext_resource type="Texture2D" uid="uid://bfvk4u4ykokwo" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_5.png" id="25_7pnxr"]
-[ext_resource type="Texture2D" uid="uid://bwocpuv7srru4" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_6.png" id="26_xeo4w"]
+[ext_resource type="PackedScene" uid="uid://b3o4iph7vqse1" path="res://actors/astronaut.tscn" id="32_im8k4"]
 [ext_resource type="Script" path="res://ui/ui.gd" id="34_1ax38"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_naws2"]
@@ -102,36 +96,6 @@ animations = [{
 }],
 "loop": true,
 "name": &"walk",
-"speed": 5.0
-}]
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kwb5v"]
-radius = 3.0
-height = 10.0
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_w2602"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("21_mcd5a")
-}, {
-"duration": 1.0,
-"texture": ExtResource("22_nvew8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("23_8jec4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("24_l7km1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("25_7pnxr")
-}, {
-"duration": 1.0,
-"texture": ExtResource("26_xeo4w")
-}],
-"loop": true,
-"name": &"default",
 "speed": 5.0
 }]
 
@@ -214,13 +178,44 @@ script = ExtResource("10_jcfrs")
 scale = Vector2(0.01, 0.01)
 texture = ExtResource("10_0un0d")
 
-[node name="FireEffect" type="Node2D" parent="Star/HomePlanet/Launchpad/Cannon"]
+[node name="FireEffect" type="Node2D" parent="Star/HomePlanet/Launchpad/Cannon" node_paths=PackedStringArray("fire_sprites")]
 script = ExtResource("12_hc8jd")
+fire_sprites = [NodePath("FireBall"), NodePath("FireBall2"), NodePath("FireBall3"), NodePath("FireBall4")]
 
 [node name="FireBall" type="Sprite2D" parent="Star/HomePlanet/Launchpad/Cannon/FireEffect"]
-position = Vector2(1600, -1300)
-scale = Vector2(100, 100)
+position = Vector2(-500, -400)
+rotation = -1.09558
+scale = Vector2(20, 20)
 texture = ExtResource("13_1f2mo")
+hframes = 4
+frame = 3
+
+[node name="FireBall2" type="Sprite2D" parent="Star/HomePlanet/Launchpad/Cannon/FireEffect"]
+visible = false
+position = Vector2(-684.522, -484.524)
+rotation = -1.09558
+scale = Vector2(20, 20)
+texture = ExtResource("13_1f2mo")
+hframes = 4
+frame = 3
+
+[node name="FireBall3" type="Sprite2D" parent="Star/HomePlanet/Launchpad/Cannon/FireEffect"]
+visible = false
+position = Vector2(-884.522, -584.524)
+rotation = -1.09558
+scale = Vector2(20, 20)
+texture = ExtResource("13_1f2mo")
+hframes = 4
+frame = 3
+
+[node name="FireBall4" type="Sprite2D" parent="Star/HomePlanet/Launchpad/Cannon/FireEffect"]
+visible = false
+position = Vector2(-1100, -700)
+rotation = -1.09558
+scale = Vector2(20, 20)
+texture = ExtResource("13_1f2mo")
+hframes = 4
+frame = 3
 
 [node name="CannonBase" type="Sprite2D" parent="Star/HomePlanet/Launchpad"]
 scale = Vector2(0.01, 0.01)
@@ -278,16 +273,7 @@ scale = Vector2(0.1, 0.1)
 sprite_frames = SubResource("SpriteFrames_toh8h")
 autoplay = "default"
 
-[node name="Astronaut" type="RigidBody2D" parent="."]
-position = Vector2(786, 34)
-script = ExtResource("20_1bslv")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Astronaut"]
-shape = SubResource("CapsuleShape2D_kwb5v")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Astronaut"]
-scale = Vector2(0.1, 0.1)
-sprite_frames = SubResource("SpriteFrames_w2602")
+[node name="Astronaut" parent="." instance=ExtResource("32_im8k4")]
 
 [node name="UI" type="CanvasLayer" parent="."]
 script = ExtResource("34_1ax38")
