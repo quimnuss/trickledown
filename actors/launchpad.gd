@@ -2,6 +2,7 @@ extends Node2D
 
 @onready var cannon: Sprite2D = $Cannon
 @onready var fire_effect: Node2D = $Cannon/FireEffect
+@onready var marker_2d: Marker2D = $Marker2D
 
 var ROTATION_SPEED := 0.1*PI
 var POWER_SPEED := 10
@@ -33,7 +34,7 @@ func _input(event: InputEvent) -> void:
 func spawn_rocket():
     var astronaut = preload("res://actors/astronaut.tscn").instantiate()
     get_parent().add_child(astronaut)
-    astronaut.global_position = self.global_position
+    astronaut.global_position = marker_2d.global_position
 
     var impulse := power*Vector2.ONE.rotated(cannon.rotation + CANNON_INITIAL_ROTATION)
     astronaut.apply_central_impulse(impulse)

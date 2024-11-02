@@ -8,7 +8,6 @@
 
 - [ ] Translate from ground flight view to system view trajectory
 - [ ] Polish the physics engine area2d gravity-based approach
-- [ ] Add crashes (no effects)
 - [ ] Proper parallax on ship view
 
 # Later
@@ -16,7 +15,6 @@
 - [ ] Consider orbit edge cases
 - [ ] Educate oneself with the orbital mechanics equations and how to simulate them
 - [ ] SOI change trajectory drawing
-- [ ] Add crashes effects
 - [ ] Add the in-flight burn mechanic
 - [ ] Switch to high definition planets instead of pixel art
 - [ ] Add the city view
@@ -36,6 +34,8 @@
 
 # Done
 
+- [x] Add crashes effects
+- [x] Add crashes (no effects)
 - [x] Add the launch craft mechanic
 - [x] Add the ground craft close up view
 - [x] Check if there's a way to allow for overlapping area2ds and just apply one

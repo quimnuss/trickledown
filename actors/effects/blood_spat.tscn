@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfsclrf2e4yau"]
+
+[ext_resource type="Texture2D" uid="uid://dfajebu3bse3g" path="res://assets/blood_spat.png" id="1_n1t0g"]
+[ext_resource type="Script" path="res://actors/effects/blood_spat.gd" id="2_q7esr"]
+
+[node name="BloodSplat" type="Node2D"]
+
+[node name="BloodSpat" type="Sprite2D" parent="."]
+rotation = -1.5708
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_n1t0g")
+hframes = 6
+script = ExtResource("2_q7esr")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://bix0vgtkccr8k"]
+[gd_scene load_steps=43 format=3 uid="uid://bix0vgtkccr8k"]
 
 [ext_resource type="Script" path="res://components/visual_orbit.gd" id="1_8xlk2"]
 [ext_resource type="Texture2D" uid="uid://dkclsuxbdnwtn" path="res://assets/sky/dynamic_space_background/Nebula Red.png" id="1_fngs5"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://bc18bmx2na4ox" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_idle_2.png" id="6_fr0vr"]
 [ext_resource type="Texture2D" uid="uid://c0313kqhsfjvv" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_idle_3.png" id="7_ednpg"]
 [ext_resource type="Texture2D" uid="uid://cplfttkets2pw" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_idle_4.png" id="8_bv1ti"]
+[ext_resource type="Script" path="res://components/planet_collision.gd" id="8_tjsb8"]
 [ext_resource type="Texture2D" uid="uid://wgqlgd0hanbh" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_idle_5.png" id="9_xjdqs"]
 [ext_resource type="Texture2D" uid="uid://c1avtceqxgww" path="res://assets/cannon/cannon.png" id="10_0un0d"]
 [ext_resource type="Texture2D" uid="uid://dt6450v25hi58" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_idle_6.png" id="10_d41dv"]
@@ -34,8 +35,20 @@
 [ext_resource type="PackedScene" uid="uid://b3o4iph7vqse1" path="res://actors/astronaut.tscn" id="32_im8k4"]
 [ext_resource type="Script" path="res://ui/ui.gd" id="34_1ax38"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_naws2"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_ajx6o"]
+radius = 151.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_k8aj6"]
+radius = 1329.54
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_thum1"]
+radius = 50.04
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wsejb"]
 radius = 738.082
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0a3tx"]
+radius = 24.5153
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_12utq"]
 radius = 87.2066
@@ -131,6 +144,22 @@ texture = ExtResource("3_6317u")
 [node name="Star" type="Node2D" parent="."]
 position = Vector2(280, 324)
 
+[node name="PlanetCollision" type="Area2D" parent="Star"]
+script = ExtResource("8_tjsb8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Star/PlanetCollision"]
+shape = SubResource("CircleShape2D_ajx6o")
+
+[node name="GravityArea" type="Area2D" parent="Star"]
+collision_priority = 10.0
+gravity_space_override = 2
+gravity_point = true
+gravity_point_unit_distance = 50.0
+gravity = 800.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Star/GravityArea"]
+shape = SubResource("CircleShape2D_k8aj6")
+
 [node name="VisualOrbit" type="Node2D" parent="Star" node_paths=PackedStringArray("orbit")]
 script = ExtResource("1_8xlk2")
 orbit = NodePath("../HomePlanet/Orbit")
@@ -146,6 +175,12 @@ ignore = true
 [node name="HomePlanet" type="Node2D" parent="Star"]
 position = Vector2(470, 6)
 
+[node name="PlanetCollision" type="Area2D" parent="Star/HomePlanet"]
+script = ExtResource("8_tjsb8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/PlanetCollision"]
+shape = SubResource("CircleShape2D_thum1")
+
 [node name="VisualOrbit" type="Node2D" parent="Star/HomePlanet" node_paths=PackedStringArray("orbit")]
 script = ExtResource("1_8xlk2")
 orbit = NodePath("../Satellite/Orbit")
@@ -153,15 +188,15 @@ orbit = NodePath("../Satellite/Orbit")
 [node name="Orbit" type="Node2D" parent="Star/HomePlanet"]
 script = ExtResource("3_qk5fl")
 
-[node name="Area2D" type="Area2D" parent="Star/HomePlanet"]
+[node name="GravityArea" type="Area2D" parent="Star/HomePlanet"]
 collision_priority = 10.0
 gravity_space_override = 2
 gravity_point = true
 gravity_point_unit_distance = 50.0
-gravity = 450.0
+gravity = 600.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/Area2D"]
-shape = SubResource("CircleShape2D_naws2")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/GravityArea"]
+shape = SubResource("CircleShape2D_wsejb")
 
 [node name="Sprite2D" type="Sprite2D" parent="Star/HomePlanet"]
 texture = ExtResource("1_h4dba")
@@ -216,8 +251,17 @@ position = Vector2(-1.09998, -0.100006)
 scale = Vector2(0.01, 0.01)
 texture = ExtResource("11_1xq35")
 
+[node name="Marker2D" type="Marker2D" parent="Star/HomePlanet/Launchpad"]
+position = Vector2(0, -9)
+
 [node name="Satellite" type="Node2D" parent="Star/HomePlanet"]
 position = Vector2(146, -3)
+
+[node name="PlanetCollision" type="Area2D" parent="Star/HomePlanet/Satellite"]
+script = ExtResource("8_tjsb8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/Satellite/PlanetCollision"]
+shape = SubResource("CircleShape2D_0a3tx")
 
 [node name="Orbit" type="Node2D" parent="Star/HomePlanet/Satellite"]
 script = ExtResource("3_qk5fl")
@@ -232,14 +276,14 @@ texture = ExtResource("3_ua3ul")
 script = ExtResource("4_fgesw")
 ignore = true
 
-[node name="Area2D" type="Area2D" parent="Star/HomePlanet/Satellite"]
+[node name="GravityArea" type="Area2D" parent="Star/HomePlanet/Satellite"]
 collision_priority = 5.0
 gravity_space_override = 2
 gravity_point = true
 gravity_point_unit_distance = 50.0
-gravity = 100.0
+gravity = 200.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/Satellite/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/Satellite/GravityArea"]
 shape = SubResource("CircleShape2D_12utq")
 
 [node name="ZoomingCamera2D" type="Camera2D" parent="."]
@@ -287,3 +331,6 @@ theme_override_font_sizes/font_size = 30
 text = "Sol"
 
 [connection signal="celestial_focus_changed" from="SystemInteraction" to="UI" method="_on_system_interaction_celestial_focus_changed"]
+[connection signal="body_entered" from="Star/PlanetCollision" to="Star/PlanetCollision" method="_on_body_entered"]
+[connection signal="body_entered" from="Star/HomePlanet/PlanetCollision" to="Star/HomePlanet/PlanetCollision" method="_on_body_entered"]
+[connection signal="body_entered" from="Star/HomePlanet/Satellite/PlanetCollision" to="Star/HomePlanet/Satellite/PlanetCollision" method="_on_body_entered"]
