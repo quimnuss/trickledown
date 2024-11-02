@@ -41,17 +41,17 @@ radius = 151.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_k8aj6"]
 radius = 1329.54
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_thum1"]
-radius = 50.04
-
 [sub_resource type="CircleShape2D" id="CircleShape2D_wsejb"]
 radius = 738.082
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_thum1"]
+radius = 50.04
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_0a3tx"]
-radius = 24.5153
+radius = 5.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_12utq"]
-radius = 87.2066
+radius = 43.0116
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rt8ft"]
 radius = 3.0
@@ -175,12 +175,6 @@ ignore = true
 [node name="HomePlanet" type="Node2D" parent="Star"]
 position = Vector2(470, 6)
 
-[node name="PlanetCollision" type="Area2D" parent="Star/HomePlanet"]
-script = ExtResource("8_tjsb8")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/PlanetCollision"]
-shape = SubResource("CircleShape2D_thum1")
-
 [node name="VisualOrbit" type="Node2D" parent="Star/HomePlanet" node_paths=PackedStringArray("orbit")]
 script = ExtResource("1_8xlk2")
 orbit = NodePath("../Satellite/Orbit")
@@ -200,6 +194,12 @@ shape = SubResource("CircleShape2D_wsejb")
 
 [node name="Sprite2D" type="Sprite2D" parent="Star/HomePlanet"]
 texture = ExtResource("1_h4dba")
+
+[node name="PlanetCollision" type="Area2D" parent="Star/HomePlanet/Sprite2D"]
+script = ExtResource("8_tjsb8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/Sprite2D/PlanetCollision"]
+shape = SubResource("CircleShape2D_thum1")
 
 [node name="PhysicsGravitySourceComponent" type="Node" parent="Star/HomePlanet" groups=["gravity_component"]]
 script = ExtResource("4_fgesw")
@@ -257,12 +257,6 @@ position = Vector2(0, -9)
 [node name="Satellite" type="Node2D" parent="Star/HomePlanet"]
 position = Vector2(146, -3)
 
-[node name="PlanetCollision" type="Area2D" parent="Star/HomePlanet/Satellite"]
-script = ExtResource("8_tjsb8")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/Satellite/PlanetCollision"]
-shape = SubResource("CircleShape2D_0a3tx")
-
 [node name="Orbit" type="Node2D" parent="Star/HomePlanet/Satellite"]
 script = ExtResource("3_qk5fl")
 speed = 50
@@ -270,7 +264,15 @@ a = 200
 b = 100
 
 [node name="Sprite2D" type="Sprite2D" parent="Star/HomePlanet/Satellite"]
+scale = Vector2(0.2, 0.2)
 texture = ExtResource("3_ua3ul")
+
+[node name="PlanetCollision" type="Area2D" parent="Star/HomePlanet/Satellite/Sprite2D"]
+scale = Vector2(5, 5)
+script = ExtResource("8_tjsb8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/Satellite/Sprite2D/PlanetCollision"]
+shape = SubResource("CircleShape2D_0a3tx")
 
 [node name="PhysicsGravitySourceComponent" type="Node" parent="Star/HomePlanet/Satellite" groups=["gravity_component"]]
 script = ExtResource("4_fgesw")
@@ -332,5 +334,5 @@ text = "Sol"
 
 [connection signal="celestial_focus_changed" from="SystemInteraction" to="UI" method="_on_system_interaction_celestial_focus_changed"]
 [connection signal="body_entered" from="Star/PlanetCollision" to="Star/PlanetCollision" method="_on_body_entered"]
-[connection signal="body_entered" from="Star/HomePlanet/PlanetCollision" to="Star/HomePlanet/PlanetCollision" method="_on_body_entered"]
-[connection signal="body_entered" from="Star/HomePlanet/Satellite/PlanetCollision" to="Star/HomePlanet/Satellite/PlanetCollision" method="_on_body_entered"]
+[connection signal="body_entered" from="Star/HomePlanet/Sprite2D/PlanetCollision" to="Star/HomePlanet/Sprite2D/PlanetCollision" method="_on_body_entered"]
+[connection signal="body_entered" from="Star/HomePlanet/Satellite/Sprite2D/PlanetCollision" to="Star/HomePlanet/Satellite/Sprite2D/PlanetCollision" method="_on_body_entered"]

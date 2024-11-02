@@ -6,27 +6,27 @@
 
 # Next
 
-- [ ] Translate from ground flight view to system view trajectory
 - [ ] Polish the physics engine area2d gravity-based approach
-- [ ] Proper parallax on ship view
+- [ ] Add the city view
+- [ ] Add the Working mechanic
+- [ ] Improve the launch craft mechanic to have a TRICKLEDOWN button at set thrust
+- [ ] Add the resources logic
 
 # Later
 
+- [ ] Translate from ground flight view to system view trajectory
+- [ ] Proper parallax on ship view
 - [ ] Consider orbit edge cases
 - [ ] Educate oneself with the orbital mechanics equations and how to simulate them
 - [ ] SOI change trajectory drawing
 - [ ] Add the in-flight burn mechanic
 - [ ] Switch to high definition planets instead of pixel art
-- [ ] Add the city view
-- [ ] Add the resources logic
-- [ ] Add the Working mechanic
 - [ ] Camera controls
 - [ ] Game achievements and/or contracts
 - [ ] Add rich man life highlights
 - [ ] Add rich man side-effects
 - [ ] Add successful landing feedback
 - [ ] Add the in-flight craft close up view
-- [ ] Improve the launch craft mechanic to have a TRICKLEDOWN button at set thrust
 
 # Way later
 
@@ -34,6 +34,7 @@
 
 # Done
 
+- [x] Add cannon thrust mechanic
 - [x] Add crashes effects
 - [x] Add crashes (no effects)
 - [x] Add the launch craft mechanic
