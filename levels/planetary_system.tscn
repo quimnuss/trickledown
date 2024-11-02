@@ -1,24 +1,30 @@
-[gd_scene load_steps=39 format=3 uid="uid://bix0vgtkccr8k"]
+[gd_scene load_steps=46 format=3 uid="uid://bix0vgtkccr8k"]
 
 [ext_resource type="Script" path="res://components/visual_orbit.gd" id="1_8xlk2"]
 [ext_resource type="Texture2D" uid="uid://dkclsuxbdnwtn" path="res://assets/sky/dynamic_space_background/Nebula Red.png" id="1_fngs5"]
 [ext_resource type="Texture2D" uid="uid://c1p64shib4lr1" path="res://assets/planets/Terran Wet - 218550788.png" id="1_h4dba"]
+[ext_resource type="Script" path="res://scripts/system_interaction.gd" id="1_l75ko"]
 [ext_resource type="Texture2D" uid="uid://bm1kn5gq2qxhn" path="res://assets/planets/Star.png" id="2_h5aj2"]
 [ext_resource type="Texture2D" uid="uid://dr3qb8prnyaxc" path="res://assets/sky/dynamic_space_background/Stars Small_1.png" id="2_tpl7i"]
 [ext_resource type="Texture2D" uid="uid://prwtbk4881hm" path="res://assets/sky/dynamic_space_background/Stars-Big_1_1_PC.png" id="3_6317u"]
 [ext_resource type="Script" path="res://components/orbit.gd" id="3_qk5fl"]
 [ext_resource type="Texture2D" uid="uid://dyd5vcbnlobcv" path="res://assets/planets/No atmosphere.png" id="3_ua3ul"]
 [ext_resource type="Script" path="res://components/physics_gravity_component.gd" id="4_fgesw"]
-[ext_resource type="Script" path="res://scripts/zooming_camera_2d.gd" id="5_ait1n"]
 [ext_resource type="Texture2D" uid="uid://ke0p4ugaumu2" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_idle_1.png" id="5_s7vey"]
 [ext_resource type="Script" path="res://actors/cosmonaut.gd" id="5_v41lf"]
 [ext_resource type="Texture2D" uid="uid://bc18bmx2na4ox" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_idle_2.png" id="6_fr0vr"]
 [ext_resource type="Texture2D" uid="uid://c0313kqhsfjvv" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_idle_3.png" id="7_ednpg"]
 [ext_resource type="Texture2D" uid="uid://cplfttkets2pw" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_idle_4.png" id="8_bv1ti"]
 [ext_resource type="Texture2D" uid="uid://wgqlgd0hanbh" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_idle_5.png" id="9_xjdqs"]
+[ext_resource type="Texture2D" uid="uid://c1avtceqxgww" path="res://assets/cannon/cannon.png" id="10_0un0d"]
 [ext_resource type="Texture2D" uid="uid://dt6450v25hi58" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_idle_6.png" id="10_d41dv"]
+[ext_resource type="Script" path="res://actors/launchpad.gd" id="10_jcfrs"]
+[ext_resource type="Texture2D" uid="uid://cnllos4hqa5xw" path="res://assets/cannon/cannon_base.png" id="11_1xq35"]
 [ext_resource type="Texture2D" uid="uid://c1vnkgnl2m2uy" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_walk_1.png" id="11_ldwow"]
+[ext_resource type="Script" path="res://scripts/zooming_camera_2d_centered.gd" id="11_xul2k"]
+[ext_resource type="Script" path="res://scripts/fire_effect.gd" id="12_hc8jd"]
 [ext_resource type="Texture2D" uid="uid://c4ykwpw2ubsxn" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_walk_2.png" id="12_lsbqh"]
+[ext_resource type="Texture2D" uid="uid://q6px2c0t84ov" path="res://assets/cannon/fire_effect.png" id="13_1f2mo"]
 [ext_resource type="Texture2D" uid="uid://bjh4gmdb6tg8l" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_walk_3.png" id="13_1oevc"]
 [ext_resource type="Texture2D" uid="uid://bj654nglpuvk8" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_walk_4.png" id="14_hsv1k"]
 [ext_resource type="Texture2D" uid="uid://co2ttgrvexh4x" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_walk_5.png" id="15_rhp7v"]
@@ -32,6 +38,7 @@
 [ext_resource type="Texture2D" uid="uid://1y3hqay6h3l4" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_4.png" id="24_l7km1"]
 [ext_resource type="Texture2D" uid="uid://bfvk4u4ykokwo" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_5.png" id="25_7pnxr"]
 [ext_resource type="Texture2D" uid="uid://bwocpuv7srru4" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_6.png" id="26_xeo4w"]
+[ext_resource type="Script" path="res://ui/ui.gd" id="34_1ax38"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_naws2"]
 radius = 738.082
@@ -130,9 +137,14 @@ animations = [{
 
 [node name="PlanetarySystem" type="Node2D"]
 
+[node name="SystemInteraction" type="Node" parent="." node_paths=PackedStringArray("celestials")]
+script = ExtResource("1_l75ko")
+celestials = [NodePath("../Star"), NodePath("../Star/HomePlanet"), NodePath("../Star/HomePlanet/Satellite")]
+
 [node name="Nebula" type="Parallax2D" parent="."]
 scroll_scale = Vector2(0.1, 0.1)
 repeat_size = Vector2(4096, 4096)
+repeat_times = 3
 
 [node name="Sprite2D" type="Sprite2D" parent="Nebula"]
 texture_repeat = 3
@@ -194,6 +206,26 @@ texture = ExtResource("1_h4dba")
 script = ExtResource("4_fgesw")
 gravity_at_center = 100.0
 
+[node name="Launchpad" type="Node2D" parent="Star/HomePlanet"]
+position = Vector2(0, -50)
+script = ExtResource("10_jcfrs")
+
+[node name="Cannon" type="Sprite2D" parent="Star/HomePlanet/Launchpad"]
+scale = Vector2(0.01, 0.01)
+texture = ExtResource("10_0un0d")
+
+[node name="FireEffect" type="Node2D" parent="Star/HomePlanet/Launchpad/Cannon"]
+script = ExtResource("12_hc8jd")
+
+[node name="FireBall" type="Sprite2D" parent="Star/HomePlanet/Launchpad/Cannon/FireEffect"]
+position = Vector2(1600, -1300)
+scale = Vector2(100, 100)
+texture = ExtResource("13_1f2mo")
+
+[node name="CannonBase" type="Sprite2D" parent="Star/HomePlanet/Launchpad"]
+scale = Vector2(0.01, 0.01)
+texture = ExtResource("11_1xq35")
+
 [node name="Satellite" type="Node2D" parent="Star/HomePlanet"]
 position = Vector2(146, -3)
 
@@ -221,16 +253,14 @@ gravity = 100.0
 shape = SubResource("CircleShape2D_12utq")
 
 [node name="ZoomingCamera2D" type="Camera2D" parent="."]
-position = Vector2(575, 325)
-limit_left = -2000
-limit_top = -1000
-limit_right = 2000
-limit_bottom = 1000
+position = Vector2(281, 323)
+limit_left = -4000
+limit_top = -4000
+limit_right = 4000
+limit_bottom = 4000
 limit_smoothed = true
 position_smoothing_enabled = true
-drag_horizontal_enabled = true
-drag_vertical_enabled = true
-script = ExtResource("5_ait1n")
+script = ExtResource("11_xul2k")
 
 [node name="Cosmonaut" type="CharacterBody2D" parent="."]
 position = Vector2(899, 113)
@@ -258,3 +288,21 @@ shape = SubResource("CapsuleShape2D_kwb5v")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Astronaut"]
 scale = Vector2(0.1, 0.1)
 sprite_frames = SubResource("SpriteFrames_w2602")
+
+[node name="UI" type="CanvasLayer" parent="."]
+script = ExtResource("34_1ax38")
+
+[node name="CelestialName" type="Label" parent="UI"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+text = "Sol"
+
+[connection signal="celestial_focus_changed" from="SystemInteraction" to="UI" method="_on_system_interaction_celestial_focus_changed"]
