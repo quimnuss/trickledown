@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://bix0vgtkccr8k"]
+[gd_scene load_steps=45 format=3 uid="uid://bix0vgtkccr8k"]
 
 [ext_resource type="Script" path="res://components/visual_orbit.gd" id="1_8xlk2"]
 [ext_resource type="Texture2D" uid="uid://dkclsuxbdnwtn" path="res://assets/sky/dynamic_space_background/Nebula Red.png" id="1_fngs5"]
@@ -16,10 +16,12 @@
 [ext_resource type="Texture2D" uid="uid://c0313kqhsfjvv" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_idle_3.png" id="7_ednpg"]
 [ext_resource type="Texture2D" uid="uid://cplfttkets2pw" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_idle_4.png" id="8_bv1ti"]
 [ext_resource type="Script" path="res://components/planet_collision.gd" id="8_tjsb8"]
+[ext_resource type="Script" path="res://components/visual_orbit_circular.gd" id="9_6o1fs"]
 [ext_resource type="Texture2D" uid="uid://wgqlgd0hanbh" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_idle_5.png" id="9_xjdqs"]
 [ext_resource type="Texture2D" uid="uid://c1avtceqxgww" path="res://assets/cannon/cannon.png" id="10_0un0d"]
 [ext_resource type="Texture2D" uid="uid://dt6450v25hi58" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_idle_6.png" id="10_d41dv"]
 [ext_resource type="Script" path="res://actors/launchpad.gd" id="10_jcfrs"]
+[ext_resource type="Script" path="res://components/orbit_circular.gd" id="10_xiq20"]
 [ext_resource type="Texture2D" uid="uid://cnllos4hqa5xw" path="res://assets/cannon/cannon_base.png" id="11_1xq35"]
 [ext_resource type="Texture2D" uid="uid://c1vnkgnl2m2uy" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_walk_1.png" id="11_ldwow"]
 [ext_resource type="Script" path="res://scripts/zooming_camera_2d_centered.gd" id="11_xul2k"]
@@ -152,15 +154,16 @@ shape = SubResource("CircleShape2D_ajx6o")
 
 [node name="GravityArea" type="Area2D" parent="Star"]
 collision_priority = 10.0
+gravity_space_override = 3
 gravity_point = true
-gravity_point_unit_distance = 50.0
+gravity_point_unit_distance = 150.0
 gravity = 800.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Star/GravityArea"]
 shape = SubResource("CircleShape2D_k8aj6")
 
 [node name="VisualOrbit" type="Node2D" parent="Star" node_paths=PackedStringArray("orbit")]
-script = ExtResource("1_8xlk2")
+script = ExtResource("9_6o1fs")
 orbit = NodePath("../HomePlanet/Orbit")
 
 [node name="Sprite2D" type="Sprite2D" parent="Star"]
@@ -179,14 +182,15 @@ script = ExtResource("1_8xlk2")
 orbit = NodePath("../Satellite/Orbit")
 
 [node name="Orbit" type="Node2D" parent="Star/HomePlanet"]
-script = ExtResource("3_qk5fl")
+script = ExtResource("10_xiq20")
 
 [node name="GravityArea" type="Area2D" parent="Star/HomePlanet"]
 collision_priority = 10.0
+priority = 5
 gravity_space_override = 2
 gravity_point = true
 gravity_point_unit_distance = 50.0
-gravity = 600.0
+gravity = 2000.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/GravityArea"]
 shape = SubResource("CircleShape2D_wsejb")
@@ -195,6 +199,7 @@ shape = SubResource("CircleShape2D_wsejb")
 texture = ExtResource("1_h4dba")
 
 [node name="PlanetCollision" type="Area2D" parent="Star/HomePlanet/Sprite2D"]
+gravity_space_override = 3
 script = ExtResource("8_tjsb8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/Sprite2D/PlanetCollision"]
@@ -258,9 +263,8 @@ position = Vector2(146, -3)
 
 [node name="Orbit" type="Node2D" parent="Star/HomePlanet/Satellite"]
 script = ExtResource("3_qk5fl")
-speed = 50
 a = 200
-b = 100
+b = 150
 
 [node name="Sprite2D" type="Sprite2D" parent="Star/HomePlanet/Satellite"]
 scale = Vector2(0.2, 0.2)
@@ -279,10 +283,13 @@ ignore = true
 
 [node name="GravityArea" type="Area2D" parent="Star/HomePlanet/Satellite"]
 collision_priority = 5.0
-gravity_space_override = 2
+priority = 10
+gravity_space_override = 3
 gravity_point = true
-gravity_point_unit_distance = 50.0
-gravity = 200.0
+gravity_point_unit_distance = 5.0
+gravity_point_center = Vector2(0, 0)
+gravity_direction = Vector2(0, 0)
+gravity = 1000.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/Satellite/GravityArea"]
 shape = SubResource("CircleShape2D_12utq")

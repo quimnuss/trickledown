@@ -3,5 +3,5 @@ extends Node2D
 @export var orbit : Node
 
 func _draw():
-    if orbit:
-        draw_polyline(orbit.curve.get_baked_points(), Color.RED, 2.0)
+    draw_set_transform(Vector2.ZERO, 0, Vector2(1, 150.0/200.0))
+    draw_circle(orbit.offset, orbit.a, Color.GREEN, false, 1.0)
