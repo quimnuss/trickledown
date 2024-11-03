@@ -10,7 +10,9 @@ var current_sublevel := 0
 
 
 func update_power(power : int):
+    @warning_ignore("integer_division")
     var level = power / POWER_STEP
+    @warning_ignore("integer_division")
     var sublevel = (power % POWER_STEP) / POWER_SUBSTEP
     if level != current_level and level < 4:
         current_level = level

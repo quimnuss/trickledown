@@ -14,4 +14,7 @@ func _ready():
 
 func _physics_process(delta):
     theta += delta * speed
+
+
+
     get_parent().position = offset + Vector2(a * cos(theta), b * sin(theta))

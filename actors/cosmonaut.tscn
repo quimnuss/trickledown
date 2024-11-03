@@ -1,0 +1,92 @@
+[gd_scene load_steps=18 format=3 uid="uid://62tcd3pu1cqv"]
+
+[ext_resource type="Script" path="res://actors/cosmonaut.gd" id="1_lak8s"]
+[ext_resource type="Texture2D" uid="uid://ke0p4ugaumu2" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_idle_1.png" id="2_mgudt"]
+[ext_resource type="Texture2D" uid="uid://bc18bmx2na4ox" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_idle_2.png" id="3_e3atk"]
+[ext_resource type="Texture2D" uid="uid://c0313kqhsfjvv" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_idle_3.png" id="4_u518v"]
+[ext_resource type="Texture2D" uid="uid://cplfttkets2pw" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_idle_4.png" id="5_4kdn4"]
+[ext_resource type="Texture2D" uid="uid://wgqlgd0hanbh" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_idle_5.png" id="6_xlwps"]
+[ext_resource type="Texture2D" uid="uid://dt6450v25hi58" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_idle_6.png" id="7_ke7k5"]
+[ext_resource type="Texture2D" uid="uid://c1vnkgnl2m2uy" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_walk_1.png" id="8_ieivv"]
+[ext_resource type="Texture2D" uid="uid://c4ykwpw2ubsxn" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_walk_2.png" id="9_oa3ro"]
+[ext_resource type="Texture2D" uid="uid://bjh4gmdb6tg8l" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_walk_3.png" id="10_slh1i"]
+[ext_resource type="Texture2D" uid="uid://bj654nglpuvk8" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_walk_4.png" id="11_cn7v5"]
+[ext_resource type="Texture2D" uid="uid://co2ttgrvexh4x" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_walk_5.png" id="12_dqnph"]
+[ext_resource type="Texture2D" uid="uid://b5stajimb6ds0" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_walk_6.png" id="13_yp5me"]
+[ext_resource type="Texture2D" uid="uid://yaquokwmwnef" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_walk_7.png" id="14_ok5vu"]
+[ext_resource type="Texture2D" uid="uid://bdvgxj7eh0vw4" path="res://assets/spaceship_creation_kit/Crew/Blue Crew/crewBlueA_walk_8.png" id="15_ht3nh"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rt8ft"]
+radius = 3.0
+height = 10.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_toh8h"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_mgudt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_e3atk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_u518v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_4kdn4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_xlwps")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ke7k5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_ieivv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_oa3ro")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_slh1i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_cn7v5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_dqnph")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_yp5me")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_ok5vu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_ht3nh")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[node name="Cosmonaut" type="CharacterBody2D"]
+position = Vector2(899, 113)
+script = ExtResource("1_lak8s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_rt8ft")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+scale = Vector2(0.1, 0.1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_toh8h")
+autoplay = "default"

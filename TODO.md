@@ -1,14 +1,15 @@
 # Now
 
 - [ ] Set the solar system
-- [ ] Get the Orbital component working and a planet orbiting (no edge cases)
-- [ ] Get the Orbital component working for a ship orbiting
+- [ ] Add the city view
+- [ ] Add the Working mechanic
+- [ ] Add the in-flight burn mechanic
 
 # Next
 
+- [ ] Get the Orbital component working and a planet orbiting (no edge cases)
+- [ ] Get the Orbital component working for a ship orbiting
 - [ ] Polish the physics engine area2d gravity-based approach
-- [ ] Add the city view
-- [ ] Add the Working mechanic
 - [ ] Improve the launch craft mechanic to have a TRICKLEDOWN button at set thrust
 - [ ] Add the resources logic
 
@@ -19,7 +20,6 @@
 - [ ] Consider orbit edge cases
 - [ ] Educate oneself with the orbital mechanics equations and how to simulate them
 - [ ] SOI change trajectory drawing
-- [ ] Add the in-flight burn mechanic
 - [ ] Switch to high definition planets instead of pixel art
 - [ ] Camera controls
 - [ ] Game achievements and/or contracts

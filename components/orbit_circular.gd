@@ -5,6 +5,8 @@ extends Node2D
 
 var theta : float = 0
 
+var r_p = 100
+var r_apoapsis = 200
 
 func _physics_process(delta : float):
     theta += delta * speed
