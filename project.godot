@@ -20,6 +20,10 @@ config/icon="res://icon.svg"
 
 gravity_component="Components that cause gravity"
 
+[gui]
+
+theme/custom_font="res://assets/fonts/glacial_indifference/GlacialIndifference-Bold.otf"
+
 [input]
 
 left={
