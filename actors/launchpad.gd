@@ -11,6 +11,8 @@ var power := 100
 
 const CANNON_INITIAL_ROTATION := PI/2 + PI/2 + PI/4
 
+
+
 func _process(delta: float) -> void:
     if Input.is_action_pressed('right'):
         cannon.rotation += ROTATION_SPEED*delta
