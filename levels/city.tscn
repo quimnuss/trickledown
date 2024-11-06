@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://b778f20b5udf0"]
+[gd_scene load_steps=9 format=3 uid="uid://b778f20b5udf0"]
 
 [ext_resource type="VideoStream" path="res://assets/city/city_monster.ogv" id="2_1k4qg"]
 [ext_resource type="StyleBox" uid="uid://cstqf7ew55mxr" path="res://ui/styles/margin_style_box_flat.tres" id="3_0fecl"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bx1aaae4xtjhw" path="res://assets/smiley.png" id="4_m7ejn"]
 [ext_resource type="Texture2D" uid="uid://dmnpegqpxmdu2" path="res://assets/smiley_sad.png" id="5_6vgla"]
 [ext_resource type="Script" path="res://scripts/stonks_label.gd" id="7_p8vxs"]
+[ext_resource type="Script" path="res://components/save_resource.gd" id="8_xgvy1"]
 
 [node name="City" type="Node2D"]
 
@@ -144,6 +145,9 @@ grow_horizontal = 0
 grow_vertical = 0
 theme_override_constants/separation = 20
 script = ExtResource("7_p8vxs")
+
+[node name="SaveManager" type="Node" parent="WorkCanvasLayer/Score"]
+script = ExtResource("8_xgvy1")
 
 [node name="StonksValue" type="Label" parent="WorkCanvasLayer/Score"]
 layout_mode = 2
