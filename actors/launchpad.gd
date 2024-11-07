@@ -12,7 +12,7 @@ var power := 100
 
 const CANNON_INITIAL_ROTATION := PI/2 + PI/2 + PI/4
 
-signal rocket_spawned
+signal rocket_spawned(richmen_id : int)
 
 func _process(delta: float) -> void:
     if Input.is_action_pressed('right'):
@@ -36,12 +36,15 @@ func _input(event: InputEvent) -> void:
 
 func spawn_rocket():
     var astronaut = preload("res://actors/astronaut.tscn").instantiate()
+    astronaut.id = save_manager.current_save.richmen_launchpad
+    astronaut.death.connect(save_manager.current_save.death)
     get_parent().add_child(astronaut)
     astronaut.global_position = marker_2d.global_position
 
     var impulse := power*Vector2.ONE.rotated(cannon.rotation + CANNON_INITIAL_ROTATION)
     astronaut.apply_central_impulse(impulse)
-    rocket_spawned.emit()
+    rocket_spawned.emit(save_manager.current_save.richmen_launchpad)
+    save_manager.current_save.rotate_richmen()
     save_manager.current_save.num_richmen -= 1
     save_manager.save()
     save_manager.current_save.emit_changed()

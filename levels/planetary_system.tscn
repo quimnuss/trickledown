@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://bix0vgtkccr8k"]
+[gd_scene load_steps=36 format=3 uid="uid://bix0vgtkccr8k"]
 
 [ext_resource type="Script" path="res://components/visual_orbit.gd" id="1_8xlk2"]
 [ext_resource type="Texture2D" uid="uid://dkclsuxbdnwtn" path="res://assets/sky/dynamic_space_background/Nebula Red.png" id="1_fngs5"]
@@ -21,6 +21,12 @@
 [ext_resource type="Texture2D" uid="uid://q6px2c0t84ov" path="res://assets/cannon/fire_effect.png" id="13_1f2mo"]
 [ext_resource type="Script" path="res://components/save_resource.gd" id="22_hrhws"]
 [ext_resource type="Texture2D" uid="uid://eqtrg7dru72y" path="res://assets/richmen/richmen.png" id="23_8w78c"]
+[ext_resource type="Script" path="res://ui/orbit_container.gd" id="23_l8vuo"]
+[ext_resource type="Texture2D" uid="uid://dwpcq4sh3v1hn" path="res://assets/richmen/richmen_0.png" id="24_svqlb"]
+[ext_resource type="Texture2D" uid="uid://d01vqa72ep42c" path="res://assets/richmen/richmen_1.png" id="25_h34xa"]
+[ext_resource type="Texture2D" uid="uid://yl1uruis6m7o" path="res://assets/richmen/richmen_2.png" id="26_bcpub"]
+[ext_resource type="Texture2D" uid="uid://chd07578rfhdd" path="res://assets/richmen/richmen_3.png" id="27_eymce"]
+[ext_resource type="Texture2D" uid="uid://cjums1lp8d8g" path="res://assets/richmen/richmen_4.png" id="28_yx18f"]
 [ext_resource type="PackedScene" uid="uid://b3o4iph7vqse1" path="res://actors/astronaut.tscn" id="32_im8k4"]
 [ext_resource type="Script" path="res://ui/ui.gd" id="34_1ax38"]
 
@@ -257,7 +263,7 @@ theme_override_constants/outline_size = 5
 theme_override_font_sizes/font_size = 30
 text = "Sol"
 
-[node name="HBoxOrbitContainer" type="HBoxContainer" parent="UI"]
+[node name="OrbitContainer" type="HBoxContainer" parent="UI"]
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
@@ -265,20 +271,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 0
 alignment = 1
-
-[node name="RichmenPortraitOrbit" type="Sprite2D" parent="UI/HBoxOrbitContainer"]
-position = Vector2(0, -20)
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("23_8w78c")
-centered = false
-hframes = 5
-
-[node name="RichmenPortraitOrbit2" type="Sprite2D" parent="UI/HBoxOrbitContainer"]
-position = Vector2(0, -20)
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("23_8w78c")
-centered = false
-hframes = 5
+script = ExtResource("23_l8vuo")
+portraits = Array[Texture]([ExtResource("24_svqlb"), ExtResource("25_h34xa"), ExtResource("26_bcpub"), ExtResource("27_eymce"), ExtResource("28_yx18f")])
 
 [node name="VBoxContainer" type="VBoxContainer" parent="UI"]
 anchors_preset = 3

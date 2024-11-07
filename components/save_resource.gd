@@ -8,8 +8,11 @@ var save_path : String = "user://player_data.tres"
 signal changed
 
 func _ready() -> void:
-    if ResourceLoader.exists(save_path):
+    if ResourceLoader.exists(save_path) and not OS.is_debug_build():
         current_save = load(save_path)
+    elif OS.is_debug_build():
+        current_save = load(save_path)
+        current_save.reset()
     else:
         save()
     current_save.changed.connect(_rethrow_changed)
