@@ -16,6 +16,10 @@ run/main_scene="res://levels/planetary_system.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Singleton="*res://scripts/singleton.gd"
+
 [global_group]
 
 gravity_component="Components that cause gravity"

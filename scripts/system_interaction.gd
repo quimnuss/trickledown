@@ -1,6 +1,6 @@
 extends Node
 
-@onready var camera: ZoomingCamera2DCentered = $"../ZoomingCamera2D"
+@onready var camera: ZoomingCamera2DCentered = %ZoomingCamera2D
 
 @export var celestials : Array[Node2D]
 

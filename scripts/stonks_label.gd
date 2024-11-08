@@ -20,4 +20,4 @@ func _on_classify_pressed() -> void:
 
 func _on_stonks_changed():
     stonks_value.text = str(save_manager.current_save.stonks)
-    richmen.text = "%d richment" % save_manager.current_save.num_richmen
+    richmen.text = "%d richmen" % save_manager.current_save.num_richmen

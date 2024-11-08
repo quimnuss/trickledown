@@ -32,7 +32,9 @@ func _process(delta: float) -> void:
 
 func _input(event: InputEvent) -> void:
     if event.is_action_pressed("launch"):
-        spawn_rocket()
+        if save_manager.current_save.num_richmen > 0:
+            spawn_rocket()
+
 
 func spawn_rocket():
     var astronaut = preload("res://actors/astronaut.tscn").instantiate()

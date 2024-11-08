@@ -27,3 +27,8 @@ func kill_richmen(richmen_id):
             if child.texture == portraits[richmen_id % len(portraits)]:
                 child.queue_free()
                 break
+    var video := VideoStreamPlayer.new()
+    video.autoplay = true
+    video.stream = preload("res://assets/astronaut_death.ogv")
+    add_child(video)
+    video.finished.connect(video.queue_free)

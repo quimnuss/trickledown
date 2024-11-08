@@ -5,6 +5,7 @@ var current_save : SaveResource = SaveResource.new()
 # TODO add savegame filepath to config
 var save_path : String = "user://player_data.tres"
 
+
 signal changed
 
 func _ready() -> void:
@@ -12,7 +13,9 @@ func _ready() -> void:
         current_save = load(save_path)
     elif OS.is_debug_build():
         current_save = load(save_path)
-        current_save.reset()
+        if Singleton.do_reset:
+            Singleton.do_reset = false
+            current_save.reset()
     else:
         save()
     current_save.changed.connect(_rethrow_changed)

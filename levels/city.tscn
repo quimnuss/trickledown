@@ -1,15 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://b778f20b5udf0"]
+[gd_scene load_steps=4 format=3 uid="uid://b778f20b5udf0"]
 
+[ext_resource type="Script" path="res://levels/city.gd" id="1_hmln8"]
 [ext_resource type="VideoStream" path="res://assets/city/city_monster.ogv" id="2_1k4qg"]
 [ext_resource type="StyleBox" uid="uid://cstqf7ew55mxr" path="res://ui/styles/margin_style_box_flat.tres" id="3_0fecl"]
-[ext_resource type="Texture2D" uid="uid://disk2funmk7lp" path="res://assets/ui_assets/nine_patch.png" id="3_t6aii"]
-[ext_resource type="Script" path="res://scripts/joke_text.gd" id="4_blgnf"]
-[ext_resource type="Texture2D" uid="uid://bx1aaae4xtjhw" path="res://assets/smiley.png" id="4_m7ejn"]
-[ext_resource type="Texture2D" uid="uid://dmnpegqpxmdu2" path="res://assets/smiley_sad.png" id="5_6vgla"]
-[ext_resource type="Script" path="res://scripts/stonks_label.gd" id="7_p8vxs"]
-[ext_resource type="Script" path="res://components/save_resource.gd" id="8_xgvy1"]
 
 [node name="City" type="Node2D"]
+script = ExtResource("1_hmln8")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -38,144 +34,34 @@ stream = ExtResource("2_1k4qg")
 autoplay = true
 loop = true
 
-[node name="Button" type="Button" parent="CanvasLayer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
 anchors_preset = 3
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -338.0
-offset_top = -134.0
-offset_right = -87.0
-offset_bottom = -22.0
+offset_left = -251.0
+offset_top = -228.0
 grow_horizontal = 0
 grow_vertical = 0
+
+[node name="ToWorkButton" type="Button" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 5
-theme_override_font_sizes/font_size = 60
+theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = ExtResource("3_0fecl")
 text = "WORK"
 
-[node name="WorkCanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="ColorRect" type="ColorRect" parent="WorkCanvasLayer"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-color = Color(0.649363, 0.689725, 0.723878, 1)
-
-[node name="MarginContainer" type="MarginContainer" parent="WorkCanvasLayer"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 50
-theme_override_constants/margin_top = 50
-theme_override_constants/margin_right = 50
-theme_override_constants/margin_bottom = 50
-
-[node name="VBoxContainer" type="VBoxContainer" parent="WorkCanvasLayer/MarginContainer"]
+[node name="ToSystemButton" type="Button" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
-theme_override_constants/separation = 20
-
-[node name="NinePatchRect" type="NinePatchRect" parent="WorkCanvasLayer/MarginContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-texture = ExtResource("3_t6aii")
-region_rect = Rect2(136, 0, 128, 136)
-patch_margin_left = 50
-patch_margin_top = 50
-patch_margin_right = 50
-patch_margin_bottom = 50
-
-[node name="JokeText" type="Label" parent="WorkCanvasLayer/MarginContainer/VBoxContainer/NinePatchRect"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/outline_size = 5
-theme_override_font_sizes/font_size = 40
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 2
-script = ExtResource("4_blgnf")
-
-[node name="Label" type="Label" parent="WorkCanvasLayer/MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_constants/outline_size = 8
-theme_override_font_sizes/font_size = 60
-text = "Is it funny?"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="HBoxContainer" type="HBoxContainer" parent="WorkCanvasLayer/MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_constants/separation = 50
-alignment = 1
-
-[node name="Happy" type="Button" parent="WorkCanvasLayer/MarginContainer/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-icon = ExtResource("4_m7ejn")
-flat = true
-
-[node name="Sad" type="Button" parent="WorkCanvasLayer/MarginContainer/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-icon = ExtResource("5_6vgla")
-flat = true
-
-[node name="Score" type="VBoxContainer" parent="WorkCanvasLayer"]
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -243.0
-offset_top = -265.0
-offset_right = -105.0
-offset_bottom = -92.0
-grow_horizontal = 0
-grow_vertical = 0
-theme_override_constants/separation = 20
-script = ExtResource("7_p8vxs")
-
-[node name="SaveManager" type="Node" parent="WorkCanvasLayer/Score"]
-script = ExtResource("8_xgvy1")
-
-[node name="StonksValue" type="Label" parent="WorkCanvasLayer/Score"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 0.921569, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 5
 theme_override_font_sizes/font_size = 40
-text = "0"
-horizontal_alignment = 1
-vertical_alignment = 1
+theme_override_styles/normal = ExtResource("3_0fecl")
+text = "System"
 
-[node name="StonksLabel" type="Label" parent="WorkCanvasLayer/Score"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 0.921569, 0.415686, 1)
-theme_override_constants/outline_size = 8
-theme_override_font_sizes/font_size = 40
-text = "Stonks"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Richmen" type="Label" parent="WorkCanvasLayer/Score"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 0.811765, 0.803922, 1)
-theme_override_constants/outline_size = 5
-theme_override_font_sizes/font_size = 30
-text = "0 richmen"
-
-[connection signal="pressed" from="WorkCanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/Happy" to="WorkCanvasLayer/MarginContainer/VBoxContainer/NinePatchRect/JokeText" method="_on_classify_pressed"]
-[connection signal="pressed" from="WorkCanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/Happy" to="WorkCanvasLayer/Score" method="_on_classify_pressed"]
-[connection signal="pressed" from="WorkCanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/Sad" to="WorkCanvasLayer/MarginContainer/VBoxContainer/NinePatchRect/JokeText" method="_on_classify_pressed"]
-[connection signal="pressed" from="WorkCanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/Sad" to="WorkCanvasLayer/Score" method="_on_classify_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/ToWorkButton" to="." method="_on_to_work_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/ToSystemButton" to="." method="_on_to_system_button_pressed"]

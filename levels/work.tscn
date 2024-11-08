@@ -1,0 +1,147 @@
+[gd_scene load_steps=8 format=3 uid="uid://ilnin5uc5xwa"]
+
+[ext_resource type="Script" path="res://levels/work.gd" id="1_l5xem"]
+[ext_resource type="Texture2D" uid="uid://disk2funmk7lp" path="res://assets/ui_assets/nine_patch.png" id="1_ulvov"]
+[ext_resource type="Script" path="res://scripts/joke_text.gd" id="2_dfcvy"]
+[ext_resource type="Texture2D" uid="uid://bx1aaae4xtjhw" path="res://assets/smiley.png" id="3_3oloo"]
+[ext_resource type="Texture2D" uid="uid://dmnpegqpxmdu2" path="res://assets/smiley_sad.png" id="4_6tu7q"]
+[ext_resource type="Script" path="res://scripts/stonks_label.gd" id="5_4kf1n"]
+[ext_resource type="Script" path="res://components/save_resource.gd" id="6_j81lu"]
+
+[node name="WorkCanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_l5xem")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.649363, 0.689725, 0.723878, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="NinePatchRect" type="NinePatchRect" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource("1_ulvov")
+region_rect = Rect2(136, 0, 128, 136)
+patch_margin_left = 50
+patch_margin_top = 50
+patch_margin_right = 50
+patch_margin_bottom = 50
+
+[node name="JokeText" type="Label" parent="MarginContainer/VBoxContainer/NinePatchRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+script = ExtResource("2_dfcvy")
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 60
+text = "Is it funny?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 50
+alignment = 1
+
+[node name="Happy" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+icon = ExtResource("3_3oloo")
+flat = true
+
+[node name="Sad" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+icon = ExtResource("4_6tu7q")
+flat = true
+
+[node name="Score" type="VBoxContainer" parent="."]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -208.0
+offset_top = -310.0
+offset_right = -70.0
+offset_bottom = -41.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_constants/separation = 20
+script = ExtResource("5_4kf1n")
+
+[node name="SaveManager" type="Node" parent="Score"]
+script = ExtResource("6_j81lu")
+
+[node name="StonksValue" type="Label" parent="Score"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.921569, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 40
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StonksLabel" type="Label" parent="Score"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.921569, 0.415686, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 40
+text = "Stonks"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Richmen" type="Label" parent="Score"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.811765, 0.803922, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+text = "0 richmen"
+
+[node name="ToCity" type="Button" parent="Score"]
+layout_mode = 2
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+text = "City"
+
+[node name="ToSystem" type="Button" parent="Score"]
+layout_mode = 2
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+text = "System"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Happy" to="MarginContainer/VBoxContainer/NinePatchRect/JokeText" method="_on_classify_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Happy" to="Score" method="_on_classify_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Sad" to="MarginContainer/VBoxContainer/NinePatchRect/JokeText" method="_on_classify_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Sad" to="Score" method="_on_classify_pressed"]
+[connection signal="pressed" from="Score/ToCity" to="." method="_on_to_city_pressed"]
+[connection signal="pressed" from="Score/ToSystem" to="." method="_on_to_system_pressed"]
