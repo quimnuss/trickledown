@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cuua7j11qkp8m"]
+
+[ext_resource type="Texture2D" uid="uid://k1oorjtpwxcy" path="res://assets/richmen/richmen_5.png" id="1_qt2d1"]
+
+[node name="OrbitPortrait" type="Button"]
+custom_minimum_size = Vector2(60, 70)
+offset_right = 60.0
+offset_bottom = 60.0
+icon = ExtResource("1_qt2d1")
+flat = true
+expand_icon = true

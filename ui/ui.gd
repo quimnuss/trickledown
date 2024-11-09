@@ -9,9 +9,10 @@ extends CanvasLayer
 func _ready():
     save_manager.changed.connect(_on_save_changed)
     _on_save_changed()
+    Singleton.focused_body_changed.connect(_on_system_interaction_celestial_focus_changed)
 
-func _on_system_interaction_celestial_focus_changed(celestial: Node2D) -> void:
-    celestial_name.text = celestial.name
+func _on_system_interaction_celestial_focus_changed() -> void:
+    celestial_name.text = Singleton.focused_body.name
 
 func _on_save_changed():
     richmen_count.text = '%d richmen' % save_manager.current_save.num_richmen

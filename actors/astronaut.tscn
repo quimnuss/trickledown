@@ -1,17 +1,24 @@
-[gd_scene load_steps=11 format=3 uid="uid://b3o4iph7vqse1"]
+[gd_scene load_steps=17 format=3 uid="uid://b3o4iph7vqse1"]
 
 [ext_resource type="Script" path="res://actors/astronaut.gd" id="1_bexqd"]
 [ext_resource type="Texture2D" uid="uid://don4lic36wxmv" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_1.png" id="2_koiem"]
+[ext_resource type="Script" path="res://components/focus.gd" id="2_oi52y"]
 [ext_resource type="Texture2D" uid="uid://cuel3odc8mrl2" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_2.png" id="3_1xihc"]
+[ext_resource type="Texture2D" uid="uid://oqfev0djlfgb" path="res://assets/rockets/exhaust_03/exhaust_03_spritesheet.png" id="3_6vyxb"]
 [ext_resource type="Texture2D" uid="uid://dtpexkjdma6u3" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_3.png" id="4_my882"]
+[ext_resource type="Script" path="res://components/engine_plume.gd" id="4_q2hbb"]
 [ext_resource type="Texture2D" uid="uid://1y3hqay6h3l4" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_4.png" id="5_7atce"]
 [ext_resource type="Texture2D" uid="uid://bfvk4u4ykokwo" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_5.png" id="6_r78ps"]
 [ext_resource type="Texture2D" uid="uid://bwocpuv7srru4" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_6.png" id="7_nxtta"]
 [ext_resource type="Texture2D" uid="uid://dctbtvb20hxm8" path="res://assets/dollar_bill.png" id="8_3yit0"]
+[ext_resource type="Script" path="res://components/astronaut_controller.gd" id="9_kmisj"]
+[ext_resource type="Script" path="res://components/velocity_vector.gd" id="11_4s410"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kwb5v"]
 radius = 3.0
 height = 10.0
+
+[sub_resource type="Gradient" id="Gradient_6y4pp"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_w2602"]
 animations = [{
@@ -46,19 +53,47 @@ script = ExtResource("1_bexqd")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_kwb5v")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="Focus" type="Node" parent="."]
+script = ExtResource("2_oi52y")
+
+[node name="AstronautController" type="Node" parent="."]
+script = ExtResource("9_kmisj")
+
+[node name="VelocityVector" type="Line2D" parent="."]
+width = 2.0
+default_color = Color(0.905882, 0.666667, 0.737255, 1)
+gradient = SubResource("Gradient_6y4pp")
+script = ExtResource("11_4s410")
+
+[node name="EnginePlume" type="Sprite2D" parent="."]
+visible = false
+rotation = 1.5708
 scale = Vector2(0.1, 0.1)
-sprite_frames = SubResource("SpriteFrames_w2602")
+texture = ExtResource("3_6vyxb")
+hframes = 8
+vframes = 4
+frame = 12
+script = ExtResource("4_q2hbb")
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="."]
 randomness = 0.8
 texture = ExtResource("8_3yit0")
+emission_shape = 1
+emission_sphere_radius = 1.0
 particle_flag_align_y = true
 direction = Vector2(0, 0)
 gravity = Vector2(0, 0)
 initial_velocity_min = 1.0
 initial_velocity_max = 1.0
+angular_velocity_min = 2.0
+angular_velocity_max = 10.0
 angle_min = -30.0
 angle_max = 30.0
 scale_amount_min = 0.1
 scale_amount_max = 0.1
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_w2602")
+
+[connection signal="burning" from="AstronautController" to="EnginePlume" method="_on_astronaut_controller_burning"]

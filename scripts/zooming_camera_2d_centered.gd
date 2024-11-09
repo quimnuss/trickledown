@@ -6,6 +6,8 @@ class_name ZoomingCamera2DCentered
 @export var zoom_factor := 0.07
 @export var zoom_duration := 0.2
 
+@onready var home_planet: Node2D = %HomePlanet
+
 var _zoom_level := 1.0
 
 func _set_zoom_level(value: float) -> void:
@@ -24,6 +26,18 @@ func _unhandled_input(event):
         _set_zoom_level(_zoom_level - zoom_factor)
     if event.is_action_pressed("zoom_out"):
         _set_zoom_level(_zoom_level + zoom_factor)
+
+func detach():
+    Singleton.focused_body = home_planet
+
+    # TODO use the singleton signal to reparent etc.
+
+    self.position_smoothing_enabled = false
+    reparent(home_planet)
+    await get_tree().create_timer(3).timeout
+    self.position = Vector2.ZERO
+    await get_tree().create_timer(0.5).timeout
+    self.position_smoothing_enabled = true
 
 #func _process(_delta):
     #self.global_position = self.get_global_mouse_position()

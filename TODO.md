@@ -1,36 +1,51 @@
+
 # Now
 
 - [ ] Set the solar system
-- [ ] Add the in-flight burn mechanic
+- [ ] Slowdown time significantly
+- [ ] Add retrograde thrust
+
+## Deute tècnic
+
+- [ ] Remove the SaveManager and use the resource directly
+- [ ] Use singleton focused body and nothing else to reparent the camera (occhio with the astronaut death)
 
 # Next
 
+- [ ] Set the scale of the world to the astronaut instead of the planets (man as a mesure of all things)
 - [ ] Get the Orbital component working and a planet orbiting (no edge cases)
 - [ ] Get the Orbital component working for a ship orbiting
 - [ ] Polish the physics engine area2d gravity-based approach
-- [ ] Improve the launch craft mechanic to have a TRICKLEDOWN button at set thrust
+- [ ] Improve the launch mechanic to have a TRICKLEDOWN button at set thrust
+- [ ] Add SAS for prograde
 
 # Later
 
-- [ ] Translate from ground flight view to system view trajectory
-- [ ] Proper parallax on ship view
 - [ ] Consider orbit edge cases
 - [ ] Educate oneself with the orbital mechanics equations and how to simulate them
 - [ ] SOI change trajectory drawing
 - [ ] Switch to high definition planets instead of pixel art
-- [ ] Camera controls
 - [ ] Game achievements and/or contracts
 - [ ] Add rich man life highlights
 - [ ] Add rich man side-effects
 - [ ] Add successful landing feedback
-- [ ] Add the in-flight craft close up view
 
 # Way later
 
+- [ ] Add the in-flight craft close up view
 - [ ] Ship constructor
+
+If ground flight is implemented:
+
+- [ ] Proper parallax on ship view
+- [ ] Translate from ground flight view to system view trajectory
 
 # Done
 
+- [x] Camera controls
+- [x] Add the in-flight burn mechanic
+- [x] portraits center camera to astronaut
+- [x] Switch to a scene manager
 - [x] Add the resources logic
 - [x] Add the Working mechanic
 - [x] Add the city view
