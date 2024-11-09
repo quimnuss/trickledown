@@ -4,12 +4,11 @@
 [ext_resource type="VideoStream" path="res://assets/city/city_monster.ogv" id="2_1k4qg"]
 [ext_resource type="StyleBox" uid="uid://cstqf7ew55mxr" path="res://ui/styles/margin_style_box_flat.tres" id="3_0fecl"]
 
-[node name="City" type="Node2D"]
+[node name="CanvasLayer" type="CanvasLayer"]
+layer = 2
 script = ExtResource("1_hmln8")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+[node name="ColorRect" type="ColorRect" parent="."]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -19,14 +18,14 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 color = Color(0.882353, 0.886275, 0.996078, 1)
 
-[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer"]
+[node name="CenterContainer" type="CenterContainer" parent="."]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="CanvasLayer/CenterContainer"]
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="CenterContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -34,7 +33,7 @@ stream = ExtResource("2_1k4qg")
 autoplay = true
 loop = true
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
 anchors_preset = 3
 anchor_left = 1.0
 anchor_top = 1.0
@@ -45,7 +44,7 @@ offset_top = -228.0
 grow_horizontal = 0
 grow_vertical = 0
 
-[node name="ToWorkButton" type="Button" parent="CanvasLayer/VBoxContainer"]
+[node name="ToWorkButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -54,7 +53,7 @@ theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = ExtResource("3_0fecl")
 text = "WORK"
 
-[node name="ToSystemButton" type="Button" parent="CanvasLayer/VBoxContainer"]
+[node name="ToSystemButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -63,5 +62,5 @@ theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = ExtResource("3_0fecl")
 text = "System"
 
-[connection signal="pressed" from="CanvasLayer/VBoxContainer/ToWorkButton" to="." method="_on_to_work_button_pressed"]
-[connection signal="pressed" from="CanvasLayer/VBoxContainer/ToSystemButton" to="." method="_on_to_system_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ToWorkButton" to="." method="_on_to_work_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ToSystemButton" to="." method="_on_to_system_button_pressed"]

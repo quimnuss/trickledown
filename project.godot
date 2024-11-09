@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Trickle Down"
 config/description="A game about sending rich people to orbit (so they leave us in peace)"
-run/main_scene="res://levels/planetary_system.tscn"
+run/main_scene="res://levels/universe.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 

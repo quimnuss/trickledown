@@ -50,3 +50,9 @@ func spawn_rocket():
     save_manager.current_save.num_richmen -= 1
     save_manager.save()
     save_manager.current_save.emit_changed()
+
+
+func _on_visibility_changed() -> void:
+    var scene_visible : bool = is_visible_in_tree()
+    set_process(scene_visible)
+    set_process_input(scene_visible)

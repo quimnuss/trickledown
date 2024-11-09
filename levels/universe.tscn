@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://c7rtffa8hddkr"]
+
+[ext_resource type="Script" path="res://levels/universe.gd" id="1_sysfn"]
+[ext_resource type="PackedScene" uid="uid://ilnin5uc5xwa" path="res://levels/work.tscn" id="2_ochjt"]
+[ext_resource type="PackedScene" uid="uid://bix0vgtkccr8k" path="res://levels/planetary_system.tscn" id="3_wa5gh"]
+[ext_resource type="PackedScene" uid="uid://b778f20b5udf0" path="res://levels/city.tscn" id="4_eh1rh"]
+
+[node name="Universe" type="Node2D"]
+script = ExtResource("1_sysfn")
+
+[node name="PlanetaryCanvasLayer" type="CanvasLayer" parent="."]
+follow_viewport_enabled = true
+
+[node name="PlanetarySystem" parent="PlanetaryCanvasLayer" instance=ExtResource("3_wa5gh")]
+
+[node name="City" parent="." instance=ExtResource("4_eh1rh")]
+visible = false
+
+[node name="WorkCanvasLayer" parent="." instance=ExtResource("2_ochjt")]
+layer = 3
+visible = false
+
+[connection signal="change_scene" from="PlanetaryCanvasLayer/PlanetarySystem" to="." method="_on_change_scene"]
+[connection signal="change_scene" from="PlanetaryCanvasLayer/PlanetarySystem" to="." method="_on_planetary_system_change_scene"]
+[connection signal="change_scene" from="City" to="." method="_on_change_scene"]
+[connection signal="change_scene" from="WorkCanvasLayer" to="." method="_on_change_scene"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://b3o4iph7vqse1"]
+[gd_scene load_steps=11 format=3 uid="uid://b3o4iph7vqse1"]
 
 [ext_resource type="Script" path="res://actors/astronaut.gd" id="1_bexqd"]
 [ext_resource type="Texture2D" uid="uid://don4lic36wxmv" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_1.png" id="2_koiem"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://1y3hqay6h3l4" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_4.png" id="5_7atce"]
 [ext_resource type="Texture2D" uid="uid://bfvk4u4ykokwo" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_5.png" id="6_r78ps"]
 [ext_resource type="Texture2D" uid="uid://bwocpuv7srru4" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_6.png" id="7_nxtta"]
+[ext_resource type="Texture2D" uid="uid://dctbtvb20hxm8" path="res://assets/dollar_bill.png" id="8_3yit0"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kwb5v"]
 radius = 3.0
@@ -39,7 +40,7 @@ animations = [{
 }]
 
 [node name="Astronaut" type="RigidBody2D"]
-position = Vector2(786, 34)
+position = Vector2(522, 106)
 script = ExtResource("1_bexqd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -48,3 +49,16 @@ shape = SubResource("CapsuleShape2D_kwb5v")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.1, 0.1)
 sprite_frames = SubResource("SpriteFrames_w2602")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+randomness = 0.8
+texture = ExtResource("8_3yit0")
+particle_flag_align_y = true
+direction = Vector2(0, 0)
+gravity = Vector2(0, 0)
+initial_velocity_min = 1.0
+initial_velocity_max = 1.0
+angle_min = -30.0
+angle_max = 30.0
+scale_amount_min = 0.1
+scale_amount_max = 0.1

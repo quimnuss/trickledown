@@ -1,9 +1,10 @@
-[gd_scene load_steps=36 format=3 uid="uid://bix0vgtkccr8k"]
+[gd_scene load_steps=37 format=3 uid="uid://bix0vgtkccr8k"]
 
 [ext_resource type="Script" path="res://components/visual_orbit.gd" id="1_8xlk2"]
 [ext_resource type="Texture2D" uid="uid://dkclsuxbdnwtn" path="res://assets/sky/dynamic_space_background/Nebula Red.png" id="1_fngs5"]
 [ext_resource type="Texture2D" uid="uid://c1p64shib4lr1" path="res://assets/planets/Terran Wet - 218550788.png" id="1_h4dba"]
 [ext_resource type="Script" path="res://scripts/system_interaction.gd" id="1_l75ko"]
+[ext_resource type="Script" path="res://levels/planetary_system.gd" id="1_srn0n"]
 [ext_resource type="Texture2D" uid="uid://bm1kn5gq2qxhn" path="res://assets/planets/Star.png" id="2_h5aj2"]
 [ext_resource type="Texture2D" uid="uid://dr3qb8prnyaxc" path="res://assets/sky/dynamic_space_background/Stars Small_1.png" id="2_tpl7i"]
 [ext_resource type="Texture2D" uid="uid://prwtbk4881hm" path="res://assets/sky/dynamic_space_background/Stars-Big_1_1_PC.png" id="3_6317u"]
@@ -49,6 +50,7 @@ radius = 5.0
 radius = 43.0116
 
 [node name="PlanetarySystem" type="Node2D"]
+script = ExtResource("1_srn0n")
 
 [node name="SystemInteraction" type="Node" parent="." node_paths=PackedStringArray("celestials")]
 script = ExtResource("1_l75ko")
@@ -320,6 +322,7 @@ hframes = 5
 [connection signal="celestial_focus_changed" from="SystemInteraction" to="UI" method="_on_system_interaction_celestial_focus_changed"]
 [connection signal="body_entered" from="Star/PlanetCollision" to="Star/PlanetCollision" method="_on_body_entered"]
 [connection signal="body_entered" from="Star/HomePlanet/Sprite2D/PlanetCollision" to="Star/HomePlanet/Sprite2D/PlanetCollision" method="_on_body_entered"]
+[connection signal="visibility_changed" from="Star/HomePlanet/Launchpad" to="Star/HomePlanet/Launchpad" method="_on_visibility_changed"]
 [connection signal="body_entered" from="Star/HomePlanet/Satellite/Sprite2D/PlanetCollision" to="Star/HomePlanet/Satellite/Sprite2D/PlanetCollision" method="_on_body_entered"]
-[connection signal="pressed" from="UI/VBoxContainer/ToCityButton" to="UI" method="_on_to_city_button_pressed"]
-[connection signal="pressed" from="UI/VBoxContainer/ToWorkButton" to="UI" method="_on_to_work_button_pressed"]
+[connection signal="pressed" from="UI/VBoxContainer/ToCityButton" to="." method="_on_to_city_button_pressed"]
+[connection signal="pressed" from="UI/VBoxContainer/ToWorkButton" to="." method="_on_to_work_button_pressed"]
