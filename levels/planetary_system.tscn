@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://bix0vgtkccr8k"]
+[gd_scene load_steps=44 format=3 uid="uid://bix0vgtkccr8k"]
 
 [ext_resource type="Script" path="res://components/visual_orbit.gd" id="1_8xlk2"]
 [ext_resource type="Texture2D" uid="uid://dkclsuxbdnwtn" path="res://assets/sky/dynamic_space_background/Nebula Red.png" id="1_fngs5"]
@@ -29,7 +29,14 @@
 [ext_resource type="Texture2D" uid="uid://yl1uruis6m7o" path="res://assets/richmen/richmen_2.png" id="26_bcpub"]
 [ext_resource type="Texture2D" uid="uid://chd07578rfhdd" path="res://assets/richmen/richmen_3.png" id="27_eymce"]
 [ext_resource type="Texture2D" uid="uid://cjums1lp8d8g" path="res://assets/richmen/richmen_4.png" id="28_yx18f"]
+[ext_resource type="Texture2D" uid="uid://b1g0p2hpuj3yd" path="res://assets/ui_assets/time_warp/speed_3.png" id="31_ex666"]
+[ext_resource type="Script" path="res://ui/speed_button.gd" id="32_5hu43"]
+[ext_resource type="Texture2D" uid="uid://c4epnsyupihu2" path="res://assets/ui_assets/time_warp/speed_0.png" id="33_a1v1w"]
 [ext_resource type="Script" path="res://ui/ui.gd" id="34_1ax38"]
+[ext_resource type="Texture2D" uid="uid://cwkwckh8h6uuo" path="res://assets/ui_assets/time_warp/speed_1.png" id="34_klinw"]
+[ext_resource type="Texture2D" uid="uid://6uot5vtch8je" path="res://assets/ui_assets/time_warp/speed_2.png" id="35_xyw7w"]
+[ext_resource type="Texture2D" uid="uid://twhx5e18ag3r" path="res://assets/ui_assets/time_warp/speed_4.png" id="36_xs0uj"]
+[ext_resource type="Texture2D" uid="uid://crkuacs0sxgda" path="res://assets/ui_assets/time_warp/speed_5.png" id="37_wcqr2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ajx6o"]
 radius = 151.0
@@ -321,6 +328,24 @@ scale = Vector2(0.4, 0.4)
 texture = ExtResource("23_8w78c")
 centered = false
 hframes = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -40.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="SpeedButton" type="Button" parent="UI/HBoxContainer"]
+layout_mode = 2
+icon = ExtResource("31_ex666")
+flat = true
+script = ExtResource("32_5hu43")
+time_warp_icons = Array[Texture2D]([ExtResource("33_a1v1w"), ExtResource("34_klinw"), ExtResource("35_xyw7w"), ExtResource("31_ex666"), ExtResource("36_xs0uj"), ExtResource("37_wcqr2")])
 
 [connection signal="body_entered" from="Star/PlanetCollision" to="Star/PlanetCollision" method="_on_body_entered"]
 [connection signal="body_entered" from="Star/HomePlanet/Sprite2D/PlanetCollision" to="Star/HomePlanet/Sprite2D/PlanetCollision" method="_on_body_entered"]

@@ -2,11 +2,11 @@
 # Now
 
 - [ ] Set the solar system
-- [ ] Slowdown time significantly
 - [ ] Add retrograde thrust
 
 ## Deute tècnic
-
+- [ ] find a way to have the slow timescale as Engine.time_scale = 1
+- [ ] Find a way to timescale only the physics and not the animations and cannon control
 - [ ] Remove the SaveManager and use the resource directly
 - [ ] Use singleton focused body and nothing else to reparent the camera (occhio with the astronaut death)
 
@@ -42,6 +42,8 @@ If ground flight is implemented:
 
 # Done
 
+- [x] Add time scale control
+- [x] Slowdown time significantly
 - [x] Camera controls
 - [x] Add the in-flight burn mechanic
 - [x] portraits center camera to astronaut
