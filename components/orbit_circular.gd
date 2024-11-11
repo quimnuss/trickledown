@@ -1,7 +1,7 @@
 extends Node2D
 
 @export var speed = 0.01
-@export var a = 500
+@export var a = 800
 
 var theta : float = 0
 

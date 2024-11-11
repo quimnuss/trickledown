@@ -119,7 +119,7 @@ ignore = true
 
 [node name="HomePlanet" type="Node2D" parent="Star"]
 unique_name_in_owner = true
-position = Vector2(470, 6)
+position = Vector2(700, 0)
 
 [node name="ZoomingCamera2D" type="Camera2D" parent="Star/HomePlanet"]
 unique_name_in_owner = true
@@ -141,10 +141,12 @@ script = ExtResource("10_xiq20")
 [node name="GravityArea" type="Area2D" parent="Star/HomePlanet"]
 collision_priority = 10.0
 priority = 5
-gravity_space_override = 2
+gravity_space_override = 3
 gravity_point = true
 gravity_point_unit_distance = 50.0
-gravity = 2000.0
+gravity = 300.0
+linear_damp_space_override = 3
+linear_damp = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/GravityArea"]
 shape = SubResource("CircleShape2D_wsejb")
@@ -227,8 +229,8 @@ position = Vector2(146, -3)
 
 [node name="Orbit" type="Node2D" parent="Star/HomePlanet/Satellite"]
 script = ExtResource("3_qk5fl")
-a = 200
-b = 150
+a = 400
+b = 300
 
 [node name="Sprite2D" type="Sprite2D" parent="Star/HomePlanet/Satellite"]
 scale = Vector2(0.2, 0.2)
@@ -345,7 +347,7 @@ layout_mode = 2
 icon = ExtResource("31_ex666")
 flat = true
 script = ExtResource("32_5hu43")
-time_warp_icons = Array[Texture2D]([ExtResource("33_a1v1w"), ExtResource("34_klinw"), ExtResource("35_xyw7w"), ExtResource("31_ex666"), ExtResource("36_xs0uj"), ExtResource("37_wcqr2")])
+time_warp_icons = Array[CompressedTexture2D]([ExtResource("33_a1v1w"), ExtResource("34_klinw"), ExtResource("35_xyw7w"), ExtResource("31_ex666"), ExtResource("36_xs0uj"), ExtResource("37_wcqr2")])
 
 [connection signal="body_entered" from="Star/PlanetCollision" to="Star/PlanetCollision" method="_on_body_entered"]
 [connection signal="body_entered" from="Star/HomePlanet/Sprite2D/PlanetCollision" to="Star/HomePlanet/Sprite2D/PlanetCollision" method="_on_body_entered"]

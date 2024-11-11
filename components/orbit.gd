@@ -12,13 +12,6 @@ var offset : Vector2 = Vector2(-50, 0)
 
 var previous_position : Vector2 = Vector2(-a, 0)
 
-func _ready():
-    pass
-
-#func _draw():
-  #draw_polyline(Transform2D(0, Vector2(-r, -r)) * curve.get_baked_points(), Color.RED, 2.0)
-
-
 
 func _physics_process(delta):
 
