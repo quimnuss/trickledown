@@ -5,6 +5,13 @@ extends Node2D
 
 @onready var planetary_system_ui: CanvasLayer = $PlanetaryCanvasLayer/PlanetarySystem/UI
 
+func _ready():
+    if not Config.skip_tutorial:
+        var tutorial_canvas := CanvasLayer.new()
+        tutorial_canvas.layer = 20
+        var tutorial := preload("res://levels/tutorial.tscn").instantiate()
+        tutorial_canvas.add_child(tutorial)
+        self.add_child(tutorial_canvas)
 
 func _on_change_scene(scene: Singleton.Scene) -> void:
     #var scene_enum : Singleton.Scene = scene as Singleton.Scene

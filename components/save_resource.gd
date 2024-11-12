@@ -9,11 +9,9 @@ var save_path : String = "user://player_data.tres"
 signal changed
 
 func _ready() -> void:
-    if ResourceLoader.exists(save_path) and not OS.is_debug_build():
+    if ResourceLoader.exists(save_path):
         current_save = load(save_path)
-    elif OS.is_debug_build():
-        current_save = load(save_path)
-        if Singleton.do_reset:
+        if OS.is_debug_build() and Singleton.do_reset:
             Singleton.do_reset = false
             current_save.reset()
     else:
