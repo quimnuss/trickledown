@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://xkfhvqxww6ys"]
+[gd_scene load_steps=36 format=3 uid="uid://xkfhvqxww6ys"]
 
 [ext_resource type="Script" path="res://levels/tutorial.gd" id="1_gonbu"]
 [ext_resource type="VideoStream" path="res://assets/tutorial/trickledown_tutorial.ogv" id="1_lmwiy"]
@@ -8,6 +8,9 @@
 [ext_resource type="Texture2D" uid="uid://cysowr7v3jhxc" path="res://assets/tutorial/W.png" id="4_rukgu"]
 [ext_resource type="Texture2D" uid="uid://b5ndrtxu4s004" path="res://assets/tutorial/S.png" id="5_8lynr"]
 [ext_resource type="Texture2D" uid="uid://bfuagkx4rqh74" path="res://assets/tutorial/SPACE.png" id="7_l4qe6"]
+[ext_resource type="Texture2D" uid="uid://qpkkstx0ratr" path="res://assets/tutorial/TAB.png" id="9_ljl85"]
+[ext_resource type="Script" path="res://scripts/tutorial_button_press_animation.gd" id="10_np5dh"]
+[ext_resource type="Texture2D" uid="uid://el2bhuyokcgm" path="res://assets/tutorial/richmen_ui.png" id="11_vdrhg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kxp4p"]
 atlas = ExtResource("2_7g75a")
@@ -351,6 +354,14 @@ corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_38cok"]
+atlas = ExtResource("9_ljl85")
+region = Rect2(0, 0, 30, 0)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_irg00"]
+atlas = ExtResource("9_ljl85")
+region = Rect2(30, 0, 30, 0)
+
 [node name="TutorialCanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_gonbu")
 
@@ -377,7 +388,7 @@ grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(20, 20)
 
-[node name="TextureRect" type="NinePatchRect" parent="Tutorial/TutorialAnchor"]
+[node name="PanelRect" type="NinePatchRect" parent="Tutorial/TutorialAnchor"]
 custom_minimum_size = Vector2(300, 400)
 layout_mode = 1
 anchors_preset = 8
@@ -525,5 +536,106 @@ theme_override_font_sizes/font_size = 30
 theme_override_styles/hover = SubResource("StyleBoxFlat_cwmyc")
 theme_override_styles/normal = SubResource("StyleBoxFlat_8s1g1")
 text = "Skip Tutorial"
+
+[node name="NavigationTutorial" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -20.0
+offset_bottom = 20.0
+grow_horizontal = 0
+grow_vertical = 2
+size_flags_horizontal = 8
+
+[node name="TutorialAnchor" type="Control" parent="NavigationTutorial"]
+anchors_preset = 0
+offset_left = -219.0
+offset_top = -61.0
+offset_right = -179.0
+offset_bottom = -21.0
+
+[node name="PanelRect" type="NinePatchRect" parent="NavigationTutorial/TutorialAnchor"]
+custom_minimum_size = Vector2(300, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -207.0
+offset_top = -200.0
+offset_right = 207.0
+offset_bottom = 273.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_kxp4p")
+patch_margin_left = 50
+patch_margin_top = 50
+patch_margin_right = 50
+patch_margin_bottom = 50
+
+[node name="MarginContainer" type="MarginContainer" parent="NavigationTutorial/TutorialAnchor/PanelRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NavigationTutorial/TutorialAnchor/PanelRect/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="NavigationTutorial/TutorialAnchor/PanelRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="NavigationTutorial/TutorialAnchor/PanelRect/MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(30, 10)
+layout_mode = 2
+toggle_mode = true
+texture_normal = SubResource("AtlasTexture_38cok")
+texture_pressed = SubResource("AtlasTexture_irg00")
+stretch_mode = 3
+script = ExtResource("10_np5dh")
+
+[node name="Label" type="Label" parent="NavigationTutorial/TutorialAnchor/PanelRect/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/outline_size = 5
+text = "Body Navigation"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="NavigationTutorial/TutorialAnchor/PanelRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="TextureRect" type="TextureRect" parent="NavigationTutorial/TutorialAnchor/PanelRect/MarginContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(100, 200)
+layout_mode = 2
+texture = ExtResource("11_vdrhg")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="NavigationTutorial/TutorialAnchor/PanelRect/MarginContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/outline_size = 5
+text = "When richmen run out,
+you have to work to create more!
+
+Working will have consequences to your town."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
 
 [connection signal="pressed" from="Tutorial/TutorialAnchor/SkipButton" to="." method="_on_skip_button_pressed"]

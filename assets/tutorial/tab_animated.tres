@@ -1,0 +1,18 @@
+[gd_resource type="AnimatedTexture" load_steps=4 format=3 uid="uid://b4dfcce02ijuq"]
+
+[ext_resource type="Texture2D" uid="uid://qpkkstx0ratr" path="res://assets/tutorial/TAB.png" id="1_g76yi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xu0h0"]
+atlas = ExtResource("1_g76yi")
+region = Rect2(0, 0, 30, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jnvwh"]
+atlas = ExtResource("1_g76yi")
+region = Rect2(30, 0, 30, 0)
+
+[resource]
+frames = 2
+frame_0/texture = SubResource("AtlasTexture_xu0h0")
+frame_0/duration = 0.3
+frame_1/texture = SubResource("AtlasTexture_jnvwh")
+frame_1/duration = 0.2
