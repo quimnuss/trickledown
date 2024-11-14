@@ -4,7 +4,7 @@ extends Node
 
 @export var celestials : Array[Node2D]
 
-var celestial_focus_index := 0
+var celestial_focus_index := 1
 
 func _input(event: InputEvent) -> void:
     if event.is_action_pressed('ui_focus_next'):

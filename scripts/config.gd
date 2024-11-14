@@ -23,6 +23,7 @@ func load_config():
     skip_tutorial = config.get_value("preferences", "skip_tutorial", skip_tutorial)
 
 func save():
+    config.set_value("preferences", "skip_tutorial", skip_tutorial)
     config.save(SAVEFILE)
 
 func show_config():

@@ -363,6 +363,7 @@ atlas = ExtResource("9_ljl85")
 region = Rect2(30, 0, 30, 0)
 
 [node name="TutorialCanvasLayer" type="CanvasLayer"]
+layer = 20
 script = ExtResource("1_gonbu")
 
 [node name="Tutorial" type="Control" parent="."]
@@ -380,10 +381,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -326.0
-offset_top = -124.0
-offset_right = -286.0
-offset_bottom = -84.0
+offset_left = -330.0
+offset_top = -84.0
+offset_right = -290.0
+offset_bottom = -44.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(20, 20)
@@ -614,6 +615,25 @@ layout_mode = 2
 theme_override_constants/outline_size = 5
 text = "Body Navigation"
 
+[node name="HBoxContainer3" type="HBoxContainer" parent="NavigationTutorial/TutorialAnchor/PanelRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="NavigationTutorial/TutorialAnchor/PanelRect/MarginContainer/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(30, 10)
+layout_mode = 2
+toggle_mode = true
+texture_normal = SubResource("AtlasTexture_38cok")
+texture_pressed = SubResource("AtlasTexture_irg00")
+stretch_mode = 3
+script = ExtResource("10_np5dh")
+
+[node name="Label" type="Label" parent="NavigationTutorial/TutorialAnchor/PanelRect/MarginContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+theme_override_constants/outline_size = 5
+text = "Zoom"
+
 [node name="HBoxContainer2" type="HBoxContainer" parent="NavigationTutorial/TutorialAnchor/PanelRect/MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_constants/separation = 20
@@ -633,9 +653,31 @@ theme_override_constants/outline_size = 5
 text = "When richmen run out,
 you have to work to create more!
 
-Working will have consequences to your town."
+Working to make
+the rich richer
+will have consequences to your town."
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
+[node name="SkipButton" type="Button" parent="NavigationTutorial/TutorialAnchor"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = 189.0
+offset_right = 100.0
+offset_bottom = 239.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(100, 25)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxFlat_cwmyc")
+theme_override_styles/normal = SubResource("StyleBoxFlat_8s1g1")
+text = "Skip Tutorial"
+
 [connection signal="pressed" from="Tutorial/TutorialAnchor/SkipButton" to="." method="_on_skip_button_pressed"]
+[connection signal="pressed" from="NavigationTutorial/TutorialAnchor/SkipButton" to="." method="_on_skip_button_pressed"]
