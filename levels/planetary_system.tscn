@@ -266,6 +266,17 @@ script = ExtResource("34_1ax38")
 [node name="SaveManager" type="Node" parent="UI"]
 script = ExtResource("22_hrhws")
 
+[node name="HBoxContainer2" type="HBoxContainer" parent="UI"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+grow_horizontal = 0
+
+[node name="QuitButton" type="Button" parent="UI/HBoxContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = " x "
+
 [node name="CelestialName" type="Label" parent="UI"]
 offset_left = 551.5
 offset_top = 1.0
@@ -353,5 +364,6 @@ time_warp_icons = Array[CompressedTexture2D]([ExtResource("33_a1v1w"), ExtResour
 [connection signal="body_entered" from="Star/HomePlanet/Sprite2D/PlanetCollision" to="Star/HomePlanet/Sprite2D/PlanetCollision" method="_on_body_entered"]
 [connection signal="visibility_changed" from="Star/HomePlanet/Launchpad" to="Star/HomePlanet/Launchpad" method="_on_visibility_changed"]
 [connection signal="body_entered" from="Star/HomePlanet/Satellite/Sprite2D/PlanetCollision" to="Star/HomePlanet/Satellite/Sprite2D/PlanetCollision" method="_on_body_entered"]
+[connection signal="pressed" from="UI/HBoxContainer2/QuitButton" to="UI" method="_on_quit_button_pressed"]
 [connection signal="pressed" from="UI/VBoxContainer/ToCityButton" to="." method="_on_to_city_button_pressed"]
 [connection signal="pressed" from="UI/VBoxContainer/ToWorkButton" to="." method="_on_to_work_button_pressed"]

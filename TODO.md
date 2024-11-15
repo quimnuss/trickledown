@@ -5,6 +5,7 @@
 - [ ] Add retrograde thrust
 
 ## Deute tècnic
+
 - [ ] find a way to have the slow timescale as Engine.time_scale = 1
 - [ ] Find a way to timescale only the physics and not the animations and cannon control
 - [ ] Remove the SaveManager and use the resource directly
@@ -42,6 +43,8 @@ If ground flight is implemented:
 
 # Done
 
+- [x] Add welcome level
+- [x] Add tutorial
 - [x] Add time scale control
 - [x] Slowdown time significantly
 - [x] Camera controls

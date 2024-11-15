@@ -19,3 +19,7 @@ func _on_save_changed():
     richmen_portrait.frame = save_manager.current_save.richmen_launchpad % (richmen_portrait.hframes*richmen_portrait.vframes)
     richmen_portrait.visible = save_manager.current_save.num_richmen > 0
     orbit_container.update_orbit_portraits(save_manager.current_save.richmen_orbit)
+
+
+func _on_quit_button_pressed():
+    get_tree().quit()
