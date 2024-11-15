@@ -3,6 +3,7 @@ class_name Astronaut
 
 var id : int
 
+@warning_ignore("unused_signal")
 signal death(id : int)
 
 @onready var astronaut_controller: AstronautController = $AstronautController

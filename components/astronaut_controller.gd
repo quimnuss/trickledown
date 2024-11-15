@@ -9,7 +9,7 @@ var DELTA_ROTATE : float = 0.1
 
 signal burning(thrust_percent : float)
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
     if Input.is_action_just_pressed("up"):
         impulse = Vector2.RIGHT*FULL_POWER
         burning.emit(1.0)
@@ -18,7 +18,7 @@ func _process(delta: float) -> void:
         burning.emit(0.0)
 
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
     var astronaut : Astronaut = get_parent()
     if impulse != Vector2.ZERO:
         astronaut.apply_central_impulse(impulse.rotated(astronaut.rotation))

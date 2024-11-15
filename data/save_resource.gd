@@ -17,7 +17,7 @@ var richmen_value : Dictionary = {
     'ElonTusk' : 151,
     'BillGotes' : 124
 }
-
+@warning_ignore("unused_signal")
 signal richman_death(id : int)
 
 func rotate_richmen():
