@@ -1,10 +1,11 @@
-[gd_scene load_steps=18 format=3 uid="uid://c75vmbnxjighe"]
+[gd_scene load_steps=20 format=3 uid="uid://c75vmbnxjighe"]
 
 [ext_resource type="Texture2D" uid="uid://d38ua4nm6k705" path="res://assets/planets/Terran Wet - 305441705.png" id="1_2e2xp"]
 [ext_resource type="Script" path="res://levels/welcome.gd" id="1_fg01x"]
 [ext_resource type="Texture2D" uid="uid://dkclsuxbdnwtn" path="res://assets/sky/dynamic_space_background/Nebula Red.png" id="1_sekn6"]
 [ext_resource type="Texture2D" uid="uid://dr3qb8prnyaxc" path="res://assets/sky/dynamic_space_background/Stars Small_1.png" id="2_axj16"]
 [ext_resource type="Texture2D" uid="uid://prwtbk4881hm" path="res://assets/sky/dynamic_space_background/Stars-Big_1_1_PC.png" id="3_b1110"]
+[ext_resource type="Texture2D" uid="uid://b0y6s0ypljmjl" path="res://assets/planets/3x Terran Wet - 305441705.png" id="5_3gect"]
 [ext_resource type="Texture2D" uid="uid://dctbtvb20hxm8" path="res://assets/dollar_bill.png" id="8_nc60d"]
 [ext_resource type="Texture2D" uid="uid://don4lic36wxmv" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_1.png" id="9_71p17"]
 [ext_resource type="Texture2D" uid="uid://cuel3odc8mrl2" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_2.png" id="10_qb8q4"]
@@ -12,13 +13,6 @@
 [ext_resource type="Texture2D" uid="uid://1y3hqay6h3l4" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_4.png" id="12_m4bq8"]
 [ext_resource type="Texture2D" uid="uid://bfvk4u4ykokwo" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_5.png" id="13_yol1d"]
 [ext_resource type="Texture2D" uid="uid://bwocpuv7srru4" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_6.png" id="14_gkw03"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4yp6q"]
-content_margin_left = 20.0
-content_margin_top = 10.0
-content_margin_right = 20.0
-content_margin_bottom = 10.0
-shadow_size = 10
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_w2602"]
 animations = [{
@@ -46,29 +40,22 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="Animation" id="Animation_ey5ha"]
-resource_name = "orbit"
-length = 4.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Astronaut:position")
-tracks/0/interp = 2
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1, 2.03333, 2.96667),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(580, 340), Vector2(750, 320), Vector2(580, 340), Vector2(400, 340)]
-}
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b0asl"]
+bg_color = Color(0.968627, 0.709804, 0.443137, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4yp6q"]
+content_margin_left = 20.0
+content_margin_top = 10.0
+content_margin_right = 20.0
+content_margin_bottom = 10.0
+shadow_size = 10
 
 [sub_resource type="Animation" id="Animation_3mags"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Astronaut:position")
+tracks/0/path = NodePath("PlanetClip/Astronaut:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -76,6 +63,47 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector2(580, 340)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PlanetClip/Astronaut:show_behind_parent")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_ey5ha"]
+resource_name = "orbit"
+length = 4.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlanetClip/Astronaut:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2.03333, 2.96667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 18), Vector2(170, 20), Vector2(0, 40), Vector2(-180, 40)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PlanetClip/Astronaut:show_behind_parent")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 2.96667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_jkbvo"]
@@ -119,6 +147,39 @@ autoscroll = Vector2(20, 20)
 [node name="Sprite2D" type="Sprite2D" parent="StarsFront"]
 texture = ExtResource("3_b1110")
 
+[node name="HomePlanet" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(580, 327)
+texture = ExtResource("5_3gect")
+
+[node name="PlanetClip" type="Sprite2D" parent="."]
+position = Vector2(580, 327)
+texture = ExtResource("5_3gect")
+
+[node name="Astronaut" type="Node2D" parent="PlanetClip"]
+position = Vector2(580, 340)
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="PlanetClip/Astronaut"]
+randomness = 0.8
+texture = ExtResource("8_nc60d")
+emission_shape = 1
+emission_sphere_radius = 1.0
+particle_flag_align_y = true
+direction = Vector2(0, 0)
+gravity = Vector2(0, 0)
+initial_velocity_min = 1.0
+initial_velocity_max = 1.0
+angular_velocity_min = 2.0
+angular_velocity_max = 10.0
+angle_min = -30.0
+angle_max = 30.0
+scale_amount_min = 0.5
+scale_amount_max = 0.5
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="PlanetClip/Astronaut"]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_w2602")
+
 [node name="Control" type="Control" parent="."]
 layout_mode = 1
 anchors_preset = 15
@@ -140,6 +201,7 @@ theme_override_constants/margin_right = 175
 theme_override_constants/margin_bottom = 175
 
 [node name="Planet" type="TextureRect" parent="Control/MarginContainer"]
+visible = false
 layout_mode = 2
 texture = ExtResource("1_2e2xp")
 stretch_mode = 5
@@ -188,34 +250,13 @@ size_flags_vertical = 3
 [node name="StartButton" type="Button" parent="Control/MarginContainer2/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
+theme_override_colors/font_hover_color = Color(1, 0.32549, 0, 1)
+theme_override_colors/font_color = Color(1, 0.796078, 0, 1)
 theme_override_constants/outline_size = 8
 theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxFlat_b0asl")
 theme_override_styles/normal = SubResource("StyleBoxFlat_4yp6q")
-text = "TRICKLEDOWN"
-
-[node name="Astronaut" type="Node2D" parent="."]
-position = Vector2(580, 340)
-
-[node name="CPUParticles2D" type="CPUParticles2D" parent="Astronaut"]
-randomness = 0.8
-texture = ExtResource("8_nc60d")
-emission_shape = 1
-emission_sphere_radius = 1.0
-particle_flag_align_y = true
-direction = Vector2(0, 0)
-gravity = Vector2(0, 0)
-initial_velocity_min = 1.0
-initial_velocity_max = 1.0
-angular_velocity_min = 2.0
-angular_velocity_max = 10.0
-angle_min = -30.0
-angle_max = 30.0
-scale_amount_min = 0.5
-scale_amount_max = 0.5
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Astronaut"]
-scale = Vector2(0.5, 0.5)
-sprite_frames = SubResource("SpriteFrames_w2602")
+text = "TRICKLEDOWN !"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
