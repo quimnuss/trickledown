@@ -12,7 +12,7 @@ func _ready():
     Singleton.focused_body_changed.connect(_on_system_interaction_celestial_focus_changed)
 
 func _on_system_interaction_celestial_focus_changed() -> void:
-    celestial_name.text = Singleton.focused_body.name
+    celestial_name.text = tr(Singleton.focused_body.name)
 
 func _on_save_changed():
     richmen_count.text = tr('richmen').format({'num_richmen':save_manager.current_save.num_richmen})

@@ -19,7 +19,7 @@ func load_jokes():
     random_jump()
     self.text = next_joke()
 
-func _on_language_changed(new_language : String):
+func _on_language_changed():
     jokes_path = "res://data/jokes_%s.txt" % Config.lang
     load_jokes()
 

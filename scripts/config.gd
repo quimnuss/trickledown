@@ -10,7 +10,7 @@ var langs : Array[String] = ['en', 'ca']
 
 var config = ConfigFile.new()
 
-signal language_changed(language_name : String)
+signal language_changed
 
 func _ready():
     var err = config.load(SAVEFILE)
