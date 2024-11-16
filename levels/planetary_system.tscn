@@ -318,19 +318,20 @@ alignment = 1
 layout_mode = 2
 theme_override_constants/outline_size = 8
 theme_override_font_sizes/font_size = 20
-text = "To City"
+text = "City"
 
 [node name="ToWorkButton" type="Button" parent="UI/VBoxContainer"]
 layout_mode = 2
 theme_override_constants/outline_size = 8
 theme_override_font_sizes/font_size = 20
-text = "To WORK"
+text = "WORK"
 
 [node name="RichmenCount" type="Label" parent="UI/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
-text = "0 Richmen"
+text = "richmen"
+horizontal_alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="UI/VBoxContainer"]
 layout_mode = 2

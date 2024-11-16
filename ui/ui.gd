@@ -15,7 +15,7 @@ func _on_system_interaction_celestial_focus_changed() -> void:
     celestial_name.text = Singleton.focused_body.name
 
 func _on_save_changed():
-    richmen_count.text = '%d richmen' % save_manager.current_save.num_richmen
+    richmen_count.text = tr('richmen').format({'num_richmen':save_manager.current_save.num_richmen})
     richmen_portrait.frame = save_manager.current_save.richmen_launchpad % (richmen_portrait.hframes*richmen_portrait.vframes)
     richmen_portrait.visible = save_manager.current_save.num_richmen > 0
     orbit_container.update_orbit_portraits(save_manager.current_save.richmen_orbit)

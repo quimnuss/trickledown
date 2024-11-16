@@ -1,16 +1,27 @@
 extends Label
 
-var jokes_path : String = "res://data/one_liner_jokes.txt"
+var jokes_path : String = "res://data/jokes_en.txt"
 
 var file : FileAccess
 
 const FILECURSORMARGIN : int = 1000
 
 func _ready():
+
+    jokes_path = "res://data/jokes_%s.txt" % Config.lang
+    Config.language_changed.connect(_on_language_changed)
+
+    load_jokes()
+
+func load_jokes():
     file = FileAccess.open(jokes_path, FileAccess.READ)
     randomize()
     random_jump()
     self.text = next_joke()
+
+func _on_language_changed(new_language : String):
+    jokes_path = "res://data/jokes_%s.txt" % Config.lang
+    load_jokes()
 
 func random_jump():
     var rand_byte_cursor := randi() % (file.get_length() - FILECURSORMARGIN)

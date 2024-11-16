@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://ilnin5uc5xwa"]
+[gd_scene load_steps=9 format=3 uid="uid://ilnin5uc5xwa"]
 
 [ext_resource type="Script" path="res://levels/work.gd" id="1_l5xem"]
 [ext_resource type="Texture2D" uid="uid://disk2funmk7lp" path="res://assets/ui_assets/nine_patch.png" id="1_ulvov"]
@@ -7,6 +7,13 @@
 [ext_resource type="Texture2D" uid="uid://dmnpegqpxmdu2" path="res://assets/smiley_sad.png" id="4_6tu7q"]
 [ext_resource type="Script" path="res://scripts/stonks_label.gd" id="5_4kf1n"]
 [ext_resource type="Script" path="res://components/save_resource.gd" id="6_j81lu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5qgum"]
+content_margin_left = 20.0
+content_margin_top = 20.0
+content_margin_right = 20.0
+content_margin_bottom = 20.0
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [node name="WorkCanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_l5xem")
@@ -55,6 +62,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/outline_size = 5
 theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_5qgum")
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
@@ -102,6 +110,7 @@ script = ExtResource("5_4kf1n")
 script = ExtResource("6_j81lu")
 
 [node name="StonksValue" type="Label" parent="Score"]
+visible = false
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0.921569, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -126,6 +135,7 @@ theme_override_colors/font_color = Color(0, 0.811765, 0.803922, 1)
 theme_override_constants/outline_size = 5
 theme_override_font_sizes/font_size = 30
 text = "0 richmen"
+horizontal_alignment = 1
 
 [node name="ToCity" type="Button" parent="Score"]
 layout_mode = 2

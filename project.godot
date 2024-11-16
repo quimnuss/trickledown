@@ -76,6 +76,10 @@ launch={
 ]
 }
 
+[internationalization]
+
+locale/translations=PackedStringArray("res://data/trickledown_translation.ca.translation", "res://data/trickledown_translation.en.translation")
+
 [physics]
 
 2d/default_gravity=0.0

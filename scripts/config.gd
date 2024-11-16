@@ -10,6 +10,7 @@ var langs : Array[String] = ['en', 'ca']
 
 var config = ConfigFile.new()
 
+signal language_changed(language_name : String)
 
 func _ready():
     var err = config.load(SAVEFILE)
@@ -28,6 +29,7 @@ func config_init():
 func load_config():
     skip_tutorial = config.get_value("preferences", "skip_tutorial", skip_tutorial)
     lang = config.get_value("preferences", "language", lang)
+    TranslationServer.set_locale(lang)
 
 
 func save():
@@ -38,3 +40,11 @@ func save():
 
 func show_config():
     prints('config', SAVEFILE, ':\nskip_tutorial', skip_tutorial, 'language:', lang)
+
+
+func change_language(new_language_id : int):
+    lang = langs[new_language_id % len(langs)]
+    prints('Change language to', lang)
+    TranslationServer.set_locale(lang)
+    save()
+    language_changed.emit(lang)

@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://nwcfix0wdyv8"
+
+[deps]
+
+files=["res://data/trickledown_translation.en.translation", "res://data/trickledown_translation.ca.translation"]
+
+source_file="res://data/trickledown_translation.csv"
+dest_files=["res://data/trickledown_translation.en.translation", "res://data/trickledown_translation.ca.translation"]
+
+[params]
+
+compress=true
+delimiter=0
