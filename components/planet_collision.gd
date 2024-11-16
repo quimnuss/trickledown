@@ -4,11 +4,7 @@ extends Area2D
 func _on_body_entered(body: Node2D) -> void:
     if body is Astronaut:
         var astronaut : Astronaut = body as Astronaut
-        var camera : ZoomingCamera2DCentered = get_viewport().get_camera_2d()
-        if camera.get_parent() == astronaut:
-            camera.detach()
-        astronaut.death.emit(astronaut.id)
-        astronaut.queue_free()
+        astronaut.kill()
         var blood_spat = preload("res://actors/effects/blood_spat.tscn").instantiate()
         add_child(blood_spat)
         blood_spat.global_position = body.global_position

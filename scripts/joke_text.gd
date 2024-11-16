@@ -13,22 +13,24 @@ func _ready():
 
     load_jokes()
 
+
 func load_jokes():
     file = FileAccess.open(jokes_path, FileAccess.READ)
     randomize()
     random_jump()
     self.text = next_joke()
 
+
 func _on_language_changed():
     jokes_path = "res://data/jokes_%s.txt" % Config.lang
     load_jokes()
 
+
 func random_jump():
     var rand_byte_cursor := randi() % (file.get_length() - FILECURSORMARGIN)
-    print("jump to %d" % rand_byte_cursor)
     file.seek(rand_byte_cursor)
-    var tmp := file.get_line() # clear incomplete line
-    print(tmp, file.get_position())
+    file.get_line() # clear incomplete line
+
 
 func next_joke():
     if file.get_position() >= file.get_length():
@@ -36,7 +38,6 @@ func next_joke():
         file.seek(0)
     var joke : String = file.get_line()
     return joke
-
 
 
 func _on_classify_pressed() -> void:

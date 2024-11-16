@@ -28,3 +28,10 @@ func dispossess():
 
 func possess():
     astronaut_controller.possess()
+
+func kill():
+    var camera : ZoomingCamera2DCentered = get_viewport().get_camera_2d()
+    if camera.get_parent() == self:
+        camera.detach()
+    death.emit(self.id)
+    queue_free()

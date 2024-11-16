@@ -39,5 +39,17 @@ func detach():
     await get_tree().create_timer(0.5).timeout
     self.position_smoothing_enabled = true
 
+func detach_quickly():
+    Singleton.focused_body = home_planet
+
+    # TODO use the singleton signal to reparent etc.
+
+    self.position_smoothing_enabled = false
+    reparent(home_planet)
+    self.position = Vector2.ZERO
+    await get_tree().create_timer(0.3).timeout
+    self.position_smoothing_enabled = true
+
+
 #func _process(_delta):
     #self.global_position = self.get_global_mouse_position()

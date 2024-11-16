@@ -3,6 +3,10 @@
 
 - [ ] Set the solar system
 - [ ] Add retrograde thrust
+- [ ] Add the milestone feed
+    - killzone kill, planet kill, star kill... orbits, launches...
+    - rich contracts
+- [ ] Add the richmen feats
 
 ## Deute tècnic
 
@@ -43,6 +47,8 @@ If ground flight is implemented:
 
 # Done
 
+- [x] Add out of universe death
+- [x] internationalization en,ca
 - [x] Add welcome level
 - [x] Add tutorial
 - [x] Add time scale control
