@@ -10,3 +10,16 @@ stonks,{stonks}\nstonks,{stonks}\nstoncs
 Star,Star,Estrella
 HomePlanet,Home Planet,Planeta Origen
 Satellite,Satellite,Satèl·lit
+LAUNCH,launch a richmen to space,llança un ric a l'espai
+CRASH_HOME,crash with your home planet,esclafa't contra el teu planeta d'origen
+LAUNCH_ATMOSPHERE,launch a richmen over the atmosphere,llança un ric fora de l'atmòsfera
+ORBIT_ONE,orbit one time around your home planet,orbita una vegada al voltant del teu planeta d'origen
+CRASH_STAR,crash with the system's Star,esclafa't contra l'estrella del sistema
+ORBIT_STABLE,have an stable orbit around your home planet (10 rotations),estableix una òrbita estable al voltant del planeta d'origen (10 voltes)
+CRASH_SATELLITE,crash with a satellite,esclafa't contra un satèl·lit
+ORBIT_STAR,orbit around the system's Star,orbita al voltant de l'estrella del sistema
+ORBIT_SATELLITE,orbit around the satellite,orbita al voltant del satèl·lit
+ESCAPE_VELOCITY,reach the system escape velocity,assoleix velocitat d'escapament
+VISIT_3,visit the three celestial bodies in one trip,visita els tres cossos celestials en un viatge
+CRASH_ASTRONAUT,crash against another astronaut,xoca amb un altre astronauta
+GO_BEYOND,do whatever you like with them! The rich do not suffer,fes el què vulguis amb ells! Els rics no pateixen

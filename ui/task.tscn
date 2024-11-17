@@ -1,0 +1,112 @@
+[gd_scene load_steps=9 format=3 uid="uid://djsseo0f6th6i"]
+
+[ext_resource type="Texture2D" uid="uid://cqvnf30quipg3" path="res://assets/ui_assets/target_icon.png" id="1_hlfdb"]
+[ext_resource type="Script" path="res://ui/tasklist.gd" id="1_xmvte"]
+[ext_resource type="Script" path="res://ui/milestones.gd" id="2_vfgwe"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_157qd"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_27xg6"]
+bg_color = Color(0.905882, 0.34902, 0.737255, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_blend = true
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ki0nu"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0.905882, 0.34902, 0.737255, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_blend = true
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c86bn"]
+bg_color = Color(1, 0.6, 0.6, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_blend = true
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8848w"]
+bg_color = Color(1, 0.6, 0.6, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_blend = true
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+
+[node name="Tasklist" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_xmvte")
+
+[node name="TasklistContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -204.0
+offset_right = 60.0
+offset_bottom = 64.0
+grow_horizontal = 0
+
+[node name="PanelContainer" type="PanelContainer" parent="TasklistContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TasklistContainer/PanelContainer"]
+layout_mode = 2
+
+[node name="TextureButton" type="Label" parent="TasklistContainer/PanelContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 2
+theme_override_constants/outline_size = 5
+text = "Milestones"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Milestones" type="VBoxContainer" parent="TasklistContainer/PanelContainer/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(400, 60)
+layout_mode = 2
+script = ExtResource("2_vfgwe")
+
+[node name="CheckBox" type="CheckBox" parent="TasklistContainer/PanelContainer/VBoxContainer/Milestones"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+button_mask = 0
+text = "GO_BEYOND"
+autowrap_mode = 2
+
+[node name="ShowTasklistButton" type="Button" parent="TasklistContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_157qd")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_27xg6")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ki0nu")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_c86bn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_8848w")
+toggle_mode = true
+icon = ExtResource("1_hlfdb")
+vertical_icon_alignment = 0
+expand_icon = true
+
+[connection signal="pressed" from="TasklistContainer/ShowTasklistButton" to="." method="_on_show_tasklist_button_pressed"]

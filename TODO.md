@@ -4,8 +4,7 @@
 - [ ] Set the solar system
 - [ ] Add retrograde thrust
 - [ ] Add the milestone feed
-    - killzone kill, planet kill, star kill... orbits, launches...
-    - rich contracts
+    - orbits, launches...
 - [ ] Add the richmen feats
 
 ## Deute tècnic
@@ -17,6 +16,7 @@
 
 # Next
 
+- [ ] Stats on milestones:  I crashed # times on the home planet
 - [ ] Set the scale of the world to the astronaut instead of the planets (man as a mesure of all things)
 - [ ] Get the Orbital component working and a planet orbiting (no edge cases)
 - [ ] Get the Orbital component working for a ship orbiting
@@ -47,6 +47,7 @@ If ground flight is implemented:
 
 # Done
 
+- [x] Add the milestone feed: killzone kill, planet kill, star kill...
 - [x] Add out of universe death
 - [x] internationalization en,ca
 - [x] Add welcome level

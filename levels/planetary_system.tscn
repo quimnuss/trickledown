@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=3 uid="uid://bix0vgtkccr8k"]
+[gd_scene load_steps=48 format=3 uid="uid://bix0vgtkccr8k"]
 
 [ext_resource type="Script" path="res://components/visual_orbit.gd" id="1_8xlk2"]
 [ext_resource type="Texture2D" uid="uid://dkclsuxbdnwtn" path="res://assets/sky/dynamic_space_background/Nebula Red.png" id="1_fngs5"]
@@ -28,6 +28,7 @@
 [ext_resource type="Texture2D" uid="uid://dwpcq4sh3v1hn" path="res://assets/richmen/richmen_0.png" id="24_svqlb"]
 [ext_resource type="Texture2D" uid="uid://d01vqa72ep42c" path="res://assets/richmen/richmen_1.png" id="25_h34xa"]
 [ext_resource type="Texture2D" uid="uid://yl1uruis6m7o" path="res://assets/richmen/richmen_2.png" id="26_bcpub"]
+[ext_resource type="Script" path="res://ui/milestone_toast.gd" id="26_cu03p"]
 [ext_resource type="Texture2D" uid="uid://chd07578rfhdd" path="res://assets/richmen/richmen_3.png" id="27_eymce"]
 [ext_resource type="Texture2D" uid="uid://cjums1lp8d8g" path="res://assets/richmen/richmen_4.png" id="28_yx18f"]
 [ext_resource type="Texture2D" uid="uid://b1g0p2hpuj3yd" path="res://assets/ui_assets/time_warp/speed_3.png" id="31_ex666"]
@@ -38,6 +39,7 @@
 [ext_resource type="Texture2D" uid="uid://6uot5vtch8je" path="res://assets/ui_assets/time_warp/speed_2.png" id="35_xyw7w"]
 [ext_resource type="Texture2D" uid="uid://twhx5e18ag3r" path="res://assets/ui_assets/time_warp/speed_4.png" id="36_xs0uj"]
 [ext_resource type="Texture2D" uid="uid://crkuacs0sxgda" path="res://assets/ui_assets/time_warp/speed_5.png" id="37_wcqr2"]
+[ext_resource type="PackedScene" uid="uid://djsseo0f6th6i" path="res://ui/task.tscn" id="39_x47u0"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_yx0y8"]
 
@@ -117,6 +119,7 @@ shape = SubResource("WorldBoundaryShape2D_yx0y8")
 
 [node name="PlanetCollision" type="Area2D" parent="Star"]
 script = ExtResource("8_tjsb8")
+milestone = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Star/PlanetCollision"]
 shape = SubResource("CircleShape2D_ajx6o")
@@ -183,6 +186,7 @@ texture = ExtResource("1_h4dba")
 [node name="PlanetCollision" type="Area2D" parent="Star/HomePlanet/Sprite2D"]
 gravity_space_override = 3
 script = ExtResource("8_tjsb8")
+milestone = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/Sprite2D/PlanetCollision"]
 shape = SubResource("CircleShape2D_thum1")
@@ -265,6 +269,7 @@ texture = ExtResource("3_ua3ul")
 [node name="PlanetCollision" type="Area2D" parent="Star/HomePlanet/Satellite/Sprite2D"]
 scale = Vector2(5, 5)
 script = ExtResource("8_tjsb8")
+milestone = 6
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/Satellite/Sprite2D/PlanetCollision"]
 shape = SubResource("CircleShape2D_0a3tx")
@@ -292,6 +297,13 @@ script = ExtResource("34_1ax38")
 [node name="SaveManager" type="Node" parent="UI"]
 script = ExtResource("22_hrhws")
 
+[node name="Tasklist" parent="UI" instance=ExtResource("39_x47u0")]
+unique_name_in_owner = true
+offset_left = 1.0
+offset_top = 37.0
+offset_right = 1.0
+offset_bottom = 37.0
+
 [node name="HBoxContainer2" type="HBoxContainer" parent="UI"]
 anchors_preset = 1
 anchor_left = 1.0
@@ -313,6 +325,21 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 5
 theme_override_font_sizes/font_size = 30
 text = "HomePlanet"
+
+[node name="MilestoneToast" type="RichTextLabel" parent="UI"]
+custom_minimum_size = Vector2(200, 60)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -21.0
+offset_top = 56.0
+offset_right = 19.0
+offset_bottom = 96.0
+grow_horizontal = 2
+theme_override_constants/outline_size = 5
+bbcode_enabled = true
+text = "[rainbow freq=0.5 sat=0.5][center][wave]{milestone_text}[/wave][/center][/rainbow]"
+script = ExtResource("26_cu03p")
 
 [node name="OrbitContainer" type="HBoxContainer" parent="UI"]
 anchors_preset = 12
