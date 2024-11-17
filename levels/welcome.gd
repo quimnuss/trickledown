@@ -13,8 +13,7 @@ func _on_start_button_pressed():
 
 func _on_new_game_button_pressed() -> void:
     if ResourceLoader.exists(Config.save_path):
-        var current_save : SaveResource = SaveResource.new()
-        current_save = load(Config.save_path)
+        var current_save : SaveResource = load(Config.save_path)
         current_save.reset()
         current_save.save()
         _on_start_button_pressed()

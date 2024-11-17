@@ -14,6 +14,10 @@ const CANNON_INITIAL_ROTATION := PI/2 + PI/2 + PI/4
 
 signal rocket_spawned(richmen_id : int)
 
+signal milestone_completed(milestone_enum : Singleton.Milestone)
+
+func _ready() -> void:
+    add_to_group('milestoners')
 
 func _process(delta: float) -> void:
     if Input.is_action_pressed('right'):
@@ -56,6 +60,8 @@ func spawn_rocket():
     save_manager.current_save.num_richmen -= 1
     save_manager.save()
     save_manager.current_save.emit_changed()
+
+    milestone_completed.emit(Singleton.Milestone.LAUNCH)
 
 
 func _on_visibility_changed() -> void:

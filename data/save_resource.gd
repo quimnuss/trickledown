@@ -10,15 +10,20 @@ class_name SaveResource
 @export var richmen_deaths : Array[int] = []
 
 var richmen_value : Dictionary = {
-    'XefBexos' : 177,
-    'Warren Buffett': 96,
-    'Bernard Arnault': 150,
+    'Xef Bexos' : 177,
+    'Warren Vuffett': 96,
+    'Bernard Ernault': 150,
     'Larry Ellison': 93,
-    'ElonTusk' : 151,
-    'BillGotes' : 124
+    'Elon Tusk' : 151,
+    'Bill Potes' : 124
 }
 @warning_ignore("unused_signal")
 signal richman_death(id : int)
+
+@export var milestones : Array[Singleton.Milestone] = []
+
+@export var milestones_stats : Dictionary = {}
+
 
 func rotate_richmen():
     self.richmen_orbit.append(self.richmen_launchpad)
@@ -31,6 +36,8 @@ func reset():
     richmen_launchpad = default_resource.richmen_launchpad
     richmen_orbit = default_resource.richmen_orbit
     richmen_deaths = default_resource.richmen_deaths
+    milestones = default_resource.milestones
+    milestones_stats = default_resource.milestones_stats
 
 func death(id : int):
     prints(id,'died')
