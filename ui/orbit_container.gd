@@ -37,6 +37,7 @@ func send_richmen_to_orbit(richmen_id : int):
 func kill_richmen(richmen_id):
     var video := VideoStreamPlayer.new()
     video.autoplay = true
+    # TODO switch to signals for killing portraits and specify reason
     video.stream = preload("res://assets/astronaut_death.ogv")
     #add_child(video) # using replace by instead
     video.finished.connect(video.queue_free)

@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bfsclrf2e4yau"]
+[gd_scene load_steps=4 format=3 uid="uid://bfsclrf2e4yau"]
 
 [ext_resource type="Texture2D" uid="uid://dfajebu3bse3g" path="res://assets/blood_spat.png" id="1_n1t0g"]
 [ext_resource type="Script" path="res://actors/effects/blood_spat.gd" id="2_q7esr"]
+[ext_resource type="AudioStream" uid="uid://pi3j07owyug4" path="res://assets/audio_effects/thud.ogg" id="3_vxxtm"]
 
 [node name="BloodSplat" type="Node2D"]
 
@@ -11,3 +12,8 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_n1t0g")
 hframes = 6
 script = ExtResource("2_q7esr")
+
+[node name="ThudSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_vxxtm")
+volume_db = -6.0
+autoplay = true

@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://c7rtffa8hddkr"]
+[gd_scene load_steps=7 format=3 uid="uid://c7rtffa8hddkr"]
 
 [ext_resource type="Script" path="res://levels/universe.gd" id="1_sysfn"]
 [ext_resource type="PackedScene" uid="uid://ilnin5uc5xwa" path="res://levels/work.tscn" id="2_ochjt"]
 [ext_resource type="PackedScene" uid="uid://bix0vgtkccr8k" path="res://levels/planetary_system.tscn" id="3_wa5gh"]
 [ext_resource type="PackedScene" uid="uid://b778f20b5udf0" path="res://levels/city.tscn" id="4_eh1rh"]
+[ext_resource type="AudioStream" uid="uid://b0yimdynpqaus" path="res://assets/audio/spacemusic1.ogg" id="5_1oduc"]
+[ext_resource type="Script" path="res://scripts/audio_player.gd" id="5_q1bxc"]
 
 [node name="Universe" type="Node2D"]
 script = ExtResource("1_sysfn")
@@ -19,6 +21,21 @@ visible = false
 [node name="WorkCanvasLayer" parent="." instance=ExtResource("2_ochjt")]
 layer = 3
 visible = false
+
+[node name="AudioManager" type="Node" parent="."]
+script = ExtResource("5_q1bxc")
+
+[node name="Track1" type="AudioStreamPlayer" parent="AudioManager"]
+stream = ExtResource("5_1oduc")
+volume_db = -10.0
+autoplay = true
+parameters/looping = false
+
+[node name="Track2" type="AudioStreamPlayer" parent="AudioManager"]
+stream = ExtResource("5_1oduc")
+volume_db = -10.0
+autoplay = true
+parameters/looping = false
 
 [connection signal="change_scene" from="PlanetaryCanvasLayer/PlanetarySystem" to="." method="_on_change_scene"]
 [connection signal="change_scene" from="PlanetaryCanvasLayer/PlanetarySystem" to="." method="_on_planetary_system_change_scene"]
