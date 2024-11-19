@@ -13,10 +13,12 @@ func _process(_delta: float) -> void:
     if Input.is_action_just_pressed("up"):
         impulse = Vector2.RIGHT*FULL_POWER
         burning.emit(1.0)
-    elif Input.is_action_just_released("up"):
+    elif Input.is_action_just_pressed("down"):
+        impulse = Vector2.LEFT*FULL_POWER
+        burning.emit(-1.0)
+    elif Input.is_action_just_released("up") or Input.is_action_just_released("down"):
         impulse = Vector2.ZERO
         burning.emit(0.0)
-
 
 func _physics_process(_delta: float) -> void:
     var astronaut : Astronaut = get_parent()

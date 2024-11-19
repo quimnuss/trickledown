@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=3 uid="uid://bix0vgtkccr8k"]
+[gd_scene load_steps=49 format=3 uid="uid://bix0vgtkccr8k"]
 
 [ext_resource type="Script" path="res://components/visual_orbit.gd" id="1_8xlk2"]
 [ext_resource type="Texture2D" uid="uid://dkclsuxbdnwtn" path="res://assets/sky/dynamic_space_background/Nebula Red.png" id="1_fngs5"]
@@ -23,6 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://q6px2c0t84ov" path="res://assets/cannon/fire_effect.png" id="13_1f2mo"]
 [ext_resource type="Script" path="res://components/focus.gd" id="15_5iuv1"]
 [ext_resource type="Script" path="res://components/save_resource.gd" id="22_hrhws"]
+[ext_resource type="AudioStream" uid="uid://bja7vokgvfatm" path="res://assets/audio_effects/rocket_launch.ogg" id="22_kt3lc"]
 [ext_resource type="Texture2D" uid="uid://eqtrg7dru72y" path="res://assets/richmen/richmen.png" id="23_8w78c"]
 [ext_resource type="Script" path="res://ui/orbit_container.gd" id="23_l8vuo"]
 [ext_resource type="Texture2D" uid="uid://dwpcq4sh3v1hn" path="res://assets/richmen/richmen_0.png" id="24_svqlb"]
@@ -253,6 +254,10 @@ texture = ExtResource("11_1xq35")
 
 [node name="Marker2D" type="Marker2D" parent="Star/HomePlanet/Launchpad"]
 position = Vector2(0, -9)
+
+[node name="RocketLaunchSound" type="AudioStreamPlayer2D" parent="Star/HomePlanet/Launchpad"]
+stream = ExtResource("22_kt3lc")
+volume_db = -6.0
 
 [node name="Satellite" type="Node2D" parent="Star/HomePlanet"]
 position = Vector2(146, -3)

@@ -4,6 +4,7 @@ extends Node2D
 @onready var fire_effect: Node2D = $Cannon/FireEffect
 @onready var marker_2d: Marker2D = $Marker2D
 @onready var save_manager: SaveManager = $SaveManager
+@onready var rocket_launch_sound: AudioStreamPlayer2D = $RocketLaunchSound
 
 var ROTATION_SPEED := 0.1*PI
 var POWER_SPEED := 10
@@ -62,6 +63,8 @@ func spawn_rocket():
     save_manager.current_save.emit_changed()
 
     milestone_completed.emit(Singleton.Milestone.LAUNCH)
+    rocket_launch_sound.play()
+    
 
 
 func _on_visibility_changed() -> void:

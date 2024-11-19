@@ -1,4 +1,5 @@
 extends Node
+class_name AudioManager
 
 const background_music = preload("res://assets/audio/spacemusic1.ogg")
 @onready var track_1 : AudioStreamPlayer = $Track1

@@ -2,6 +2,7 @@ extends Node2D
 @onready var work_canvas_layer: CanvasLayer = $WorkCanvasLayer
 @onready var planetary_canvas_layer: CanvasLayer = $PlanetaryCanvasLayer
 @onready var city_canvas_layer: CanvasLayer = $City
+@onready var audio_manager: AudioManager = $AudioManager
 
 @onready var planetary_system_ui: CanvasLayer = $PlanetaryCanvasLayer/PlanetarySystem/UI
 
@@ -20,11 +21,13 @@ func _on_change_scene(scene: Singleton.Scene) -> void:
     match scene:
         Singleton.Scene.CITY:
             city_canvas_layer.visible = true
+            audio_manager.crossfade(preload("res://assets/audio/city_ambience.ogg"))
         Singleton.Scene.WORK:
             work_canvas_layer.visible = true
         Singleton.Scene.SYSTEM:
             planetary_canvas_layer.visible = true
             planetary_system_ui.visible = true
+            audio_manager.crossfade(preload("res://assets/audio/spacemusic1.ogg"))
         _:
             planetary_canvas_layer.visible = true
             planetary_system_ui.visible = true

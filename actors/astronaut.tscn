@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://b3o4iph7vqse1"]
+[gd_scene load_steps=19 format=3 uid="uid://b3o4iph7vqse1"]
 
 [ext_resource type="Script" path="res://actors/astronaut.gd" id="1_bexqd"]
 [ext_resource type="Texture2D" uid="uid://don4lic36wxmv" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_1.png" id="2_koiem"]
@@ -13,6 +13,8 @@
 [ext_resource type="Texture2D" uid="uid://dctbtvb20hxm8" path="res://assets/dollar_bill.png" id="8_3yit0"]
 [ext_resource type="Script" path="res://components/astronaut_controller.gd" id="9_kmisj"]
 [ext_resource type="Script" path="res://components/velocity_vector.gd" id="11_4s410"]
+[ext_resource type="AudioStream" uid="uid://cddastfnjlloe" path="res://assets/audio_effects/thrust.ogg" id="14_2xvy1"]
+[ext_resource type="Script" path="res://components/thrust_sound.gd" id="15_8eao7"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kwb5v"]
 radius = 3.0
@@ -75,6 +77,17 @@ vframes = 4
 frame = 12
 script = ExtResource("4_q2hbb")
 
+[node name="BackEnginePlume" type="Sprite2D" parent="."]
+visible = false
+rotation = -1.5708
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_6vyxb")
+hframes = 8
+vframes = 4
+frame = 12
+script = ExtResource("4_q2hbb")
+forward = false
+
 [node name="CPUParticles2D" type="CPUParticles2D" parent="."]
 randomness = 0.8
 texture = ExtResource("8_3yit0")
@@ -96,4 +109,12 @@ scale_amount_max = 0.1
 scale = Vector2(0.1, 0.1)
 sprite_frames = SubResource("SpriteFrames_w2602")
 
+[node name="ThrustSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("14_2xvy1")
+volume_db = -6.0
+parameters/looping = true
+script = ExtResource("15_8eao7")
+
 [connection signal="burning" from="AstronautController" to="EnginePlume" method="_on_astronaut_controller_burning"]
+[connection signal="burning" from="AstronautController" to="ThrustSound" method="_on_astronaut_controller_burning"]
+[connection signal="burning" from="AstronautController" to="BackEnginePlume" method="_on_astronaut_controller_burning"]
