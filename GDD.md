@@ -1,1 +1,1 @@
-# Game Design Document : Trickle down
+# Game Design Document : Trickle Down

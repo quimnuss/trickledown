@@ -116,5 +116,5 @@ parameters/looping = true
 script = ExtResource("15_8eao7")
 
 [connection signal="burning" from="AstronautController" to="EnginePlume" method="_on_astronaut_controller_burning"]
-[connection signal="burning" from="AstronautController" to="ThrustSound" method="_on_astronaut_controller_burning"]
 [connection signal="burning" from="AstronautController" to="BackEnginePlume" method="_on_astronaut_controller_burning"]
+[connection signal="burning" from="AstronautController" to="ThrustSound" method="_on_astronaut_controller_burning"]

@@ -7,9 +7,9 @@ extends Node2D
 @onready var rocket_launch_sound: AudioStreamPlayer2D = $RocketLaunchSound
 
 var ROTATION_SPEED := 0.1*PI
-var POWER_SPEED := 10
+var POWER_SPEED := 5
 
-var power := 100
+var power := 50
 
 const CANNON_INITIAL_ROTATION := PI/2 + PI/2 + PI/4
 

@@ -10,7 +10,6 @@ signal death(id : int)
 
 func _ready() -> void:
     add_to_group('richmen')
-    apply_central_impulse(Vector2(0,100))
 
 
 func _on_portrait_gui_input(event : InputEvent):

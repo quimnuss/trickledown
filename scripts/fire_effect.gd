@@ -1,7 +1,7 @@
 extends Node2D
 
-const POWER_STEP := 100
-const POWER_SUBSTEP := 25
+const POWER_STEP := 50
+const POWER_SUBSTEP := 50/4
 
 var current_level := 0
 var current_sublevel := 0
