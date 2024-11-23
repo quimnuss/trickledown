@@ -39,6 +39,7 @@
 
 - [ ] Add the in-flight craft close up view
 - [ ] Ship constructor
+- [ ] Check https://jokeapi.dev/
 
 If ground flight is implemented:
 

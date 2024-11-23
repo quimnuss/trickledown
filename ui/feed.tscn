@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://d10uodl4gtsu6"]
+
+[ext_resource type="Script" path="res://ui/feed.gd" id="1_s1lck"]
+[ext_resource type="PackedScene" uid="uid://buig2f02sf26i" path="res://ui/feed_box.tscn" id="2_sf6op"]
+
+[node name="Feed" type="VBoxContainer"]
+script = ExtResource("1_s1lck")
+
+[node name="FeedBox" parent="." instance=ExtResource("2_sf6op")]
+layout_mode = 2
+
+[node name="FeedTimer" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true

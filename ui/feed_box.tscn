@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://buig2f02sf26i"]
+
+[ext_resource type="Script" path="res://ui/feed_box.gd" id="1_2icw3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5fuqb"]
+content_margin_left = 10.0
+content_margin_top = 5.0
+content_margin_right = 10.0
+content_margin_bottom = 5.0
+bg_color = Color(0.414933, 0.594518, 0.928189, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_blend = true
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_size = 5
+
+[node name="FeedBox" type="Label"]
+custom_minimum_size = Vector2(200, 0)
+offset_right = 200.0
+offset_bottom = 30.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_5fuqb")
+text = "The train is halted"
+autowrap_mode = 2
+script = ExtResource("1_2icw3")
