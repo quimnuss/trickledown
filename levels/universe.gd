@@ -21,13 +21,14 @@ func _on_change_scene(scene: Singleton.Scene) -> void:
     match scene:
         Singleton.Scene.CITY:
             city_canvas_layer.visible = true
-            audio_manager.crossfade(preload("res://assets/audio/city_ambience.ogg"))
+            audio_manager.crossfade(preload("res://assets/audio/city_ambience.ogg"), -20)
         Singleton.Scene.WORK:
             work_canvas_layer.visible = true
+            audio_manager.crossfade(preload("res://assets/audio/office.ogg"), -20)
         Singleton.Scene.SYSTEM:
             planetary_canvas_layer.visible = true
             planetary_system_ui.visible = true
-            audio_manager.crossfade(preload("res://assets/audio/spacemusic1.ogg"))
+            audio_manager.crossfade(preload("res://assets/audio/spacemusic1.ogg"), -20)
         _:
             planetary_canvas_layer.visible = true
             planetary_system_ui.visible = true

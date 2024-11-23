@@ -1,26 +1,242 @@
 [
   {
+    "guid": "cbeca868-9af3-4225-be08-92ba3e2232c1",
     "content": "Wi-Fi prices rise",
+    "content_ca": "Els preus del Wi-Fi augmenten",
     "karma": 2,
     "richmen": "elonmusk",
     "title": ""
   },
   {
+    "guid": "6210a0df-8b0f-4b9e-a288-eb3742247f83",
     "content": "Train construction is halted in favor of hyperloop research",
+    "content_ca": "La construcció de trens s'atura a favor de la investigació hyperloop",
     "karma": 2,
     "richmen": "elonmusk",
     "title": ""
   },
   {
+    "guid": "74455192-031b-4fc5-80b9-1c68075b3f4d",
     "content": "Housing is no longer free",
+    "content_ca": "L'habitatge ja no és gratuït",
     "karma": 2,
     "richmen": "",
     "title": ""
   },
   {
-    "content": "Expats cause the rise of life",
+    "guid": "991234bf-f839-4793-88e2-ead5a4badb21",
+    "content": "Expats working in Tech rise the cost of life",
+    "content_ca": "Els expatriats que treballen en tecnologia augmenten el cost de la vida",
+    "karma": 2,
+    "richmen": "jeffbezos",
+    "title": ""
+  },
+  {
+    "guid": "fb79e643-2d66-449c-a199-52cc8542da9d",
+    "content": "The Newspapers start praising the richmen",
+    "content_ca": "Els diaris comencen a lloar els rics",
+    "karma": 2,
+    "richmen": "warrenbuffet",
+    "title": ""
+  },
+  {
+    "guid": "68f021f4-23b2-454b-8e0a-c3d65382ae68",
+    "content": "Monopoly laws are relaxed, some small business go bust",
+    "content_ca": "Les lleis de monopoli es relaxen, algunes petites empreses fracassen",
+    "karma": 2,
+    "richmen": "warrenbuffet",
+    "title": ""
+  },
+  {
+    "guid": "9172eeee-410a-4b84-b374-09ee5c10f374",
+    "content": "Charities budget is increased",
+    "content_ca": "S'augmenta el pressupost de les organitzacions benèfiques",
+    "karma": 0,
+    "richmen": "",
+    "title": ""
+  },
+  {
+    "guid": "253ff3e6-8196-491a-9792-3c7a3e679c6b",
+    "content": "Unions start forming",
+    "content_ca": "Es comencen a formar sindicats",
+    "karma": 0,
+    "richmen": "",
+    "title": ""
+  },
+  {
+    "guid": "5864c0a9-cc61-4b15-9be9-7a4e82f37b3a",
+    "content": "Schools accept a deal to use Tech Software",
+    "content_ca": "Les escoles accepten un acord per utilitzar el programari tecnològic",
+    "karma": 2,
+    "richmen": "billgates",
+    "title": ""
+  },
+  {
+    "guid": "31d575a3-2059-485b-9961-e7fdfc23fe82",
+    "content": "Tech starts tracking consumers",
+    "content_ca": "La tecnologia comença a fer un seguiment dels consumidors",
     "karma": 2,
     "richmen": "",
+    "title": ""
+  },
+  {
+    "guid": "8647f1da-2b56-4903-97e7-ba15e03d45dc",
+    "content": "Political Parties appear",
+    "content_ca": "Apareixen els partits polítics",
+    "karma": 1,
+    "richmen": "",
+    "title": ""
+  },
+  {
+    "guid": "b03e1a5e-0c53-41cc-8664-a2a777fb092b",
+    "content": "Local assemblies allowed to small towns only",
+    "content_ca": "Les assemblees locals només es permeten a les ciutats petites",
+    "karma": 2,
+    "richmen": "",
+    "title": ""
+  },
+  {
+    "guid": "1feb5dc1-da8d-403b-aeb3-e128c4c241fc",
+    "content": "Citizens become Producer-Consumers",
+    "content_ca": "Els ciutadans esdevenen productors-consumidors",
+    "karma": 1,
+    "richmen": "",
+    "title": ""
+  },
+  {
+    "guid": "8946f98e-6924-4de5-b72b-13b5f4ced1b7",
+    "content": "Speculation crashes the housing market",
+    "content_ca": "L'especulació fa caure el mercat de l'habitatge",
+    "karma": 2,
+    "richmen": "",
+    "title": ""
+  },
+  {
+    "guid": "0d03a4cd-6d29-47de-a7c8-0d92d5f9a1b6",
+    "content": "Overstock is burned",
+    "content_ca": "Es crema l'excés d'existències",
+    "karma": 2,
+    "richmen": "bernardarnault",
+    "title": ""
+  },
+  {
+    "guid": "68b501f4-ed2b-48e8-afcd-d82da4cbe55b",
+    "content": "Wealth inheritance is established",
+    "content_ca": "S'estableix l'herència de la riquesa",
+    "karma": 2,
+    "richmen": "",
+    "title": ""
+  },
+  {
+    "guid": "8f1a371a-72c7-4960-b8ba-3802a01c8966",
+    "content": "Assemblies establish a free, open communication network",
+    "content_ca": "Les assemblees estableixen una xarxa de comunicació lliure i oberta",
+    "karma": 0,
+    "richmen": "",
+    "title": ""
+  },
+  {
+    "guid": "518532ca-4374-4c07-8cda-b255b4d82d11",
+    "content": "Opensource becomes the standard",
+    "content_ca": "El codi obert es converteix en l'estàndard",
+    "karma": 0,
+    "richmen": "",
+    "title": ""
+  },
+  {
+    "guid": "7135f20d-c1f3-43c5-8096-b12884f80f2a",
+    "content": "Tax Havens are created",
+    "content_ca": "Es creen Paradisos Fiscals",
+    "karma": 2,
+    "richmen": "",
+    "title": ""
+  },
+  {
+    "guid": "8b18bd69-85b6-4d47-a833-5d7201cbd9a9",
+    "content": "Bombing kills 11 engineers after an arms deal",
+    "content_ca": "Un bombardeig mata 11 enginyers després d'un tracte d'armes",
+    "karma": 2,
+    "richmen": "bernardarnault",
+    "title": ""
+  },
+  {
+    "guid": "ad8b6084-39af-4547-b76b-d5b53f29b3c9",
+    "content": "Conflict increases",
+    "content_ca": "El conflicte augmenta",
+    "karma": 2,
+    "richmen": "",
+    "title": ""
+  },
+  {
+    "guid": "8eda988b-8c78-4643-89e1-236f20af70e8",
+    "content": "A newspaper is shut down after publishing a cartoon moking the richmen",
+    "content_ca": "Tanca un diari després de publicar una caricatura que burla els rics",
+    "karma": 2,
+    "richmen": "",
+    "title": ""
+  },
+  {
+    "guid": "0008edfe-cfd7-4b70-8e49-add3da7b5654",
+    "content": "Local factories are moved to another country after privatization",
+    "content_ca": "Les fàbriques locals es traslladen a un altre país després de la privatització",
+    "karma": 2,
+    "richmen": "bernardarnault",
+    "title": ""
+  },
+  {
+    "guid": "8107da7c-2563-407e-8234-cc382c978ee2",
+    "content": "Knowing the origin and life cycle of goods becomes harder to understand",
+    "content_ca": "Conèixer l'origen i el cicle de vida dels béns es fa més difícil d'entendre",
+    "karma": 2,
+    "richmen": "",
+    "title": ""
+  },
+  {
+    "guid": "3e5a673a-9351-480a-b02f-ac560d533860",
+    "content": "A bank offers a billion line of credit to a selected few",
+    "content_ca": "Un banc ofereix mil milions de línia de crèdit a uns quants seleccionats",
+    "karma": 1,
+    "richmen": "",
+    "title": ""
+  },
+  {
+    "guid": "ad99905f-6509-4fa0-89b1-e0e6a872b8bc",
+    "content": "A few houses around a richmen house are bought and torn down",
+    "content_ca": "Es compren i es derroquen unes quantes cases al voltant d'una casa d'homes rics",
+    "karma": 2,
+    "richmen": "larryellison",
+    "title": ""
+  },
+  {
+    "guid": "b34f7791-e005-45ec-a215-37ea939123df",
+    "content": "Discarded documentation of a popular assembly-managed company stolen from the trash",
+    "content_ca": "Documentació descartada d'una empresa popular gestionada per assemblea robada a les escombraries",
+    "karma": 2,
+    "richmen": "larryellison",
+    "title": ""
+  },
+  {
+    "guid": "0c2683a2-013a-44ba-9307-c319f5595d56",
+    "content": "Local sports team has been bought",
+    "content_ca": "S'ha comprat l'equip esportiu local",
+    "karma": 1,
+    "richmen": "larryellison",
+    "title": ""
+  },
+  {
+    "guid": "47881456-3cd9-4323-9e09-c8ef06294fdb",
+    "content": "Popular software compny found to have stolen it's core code from an informal meeting",
+    "content_ca": "S'ha trobat una empresa de programari popular que ha robat el seu codi bàsic d'una reunió informal",
+    "karma": 2,
+    "richmen": "billgates",
+    "title": ""
+  },
+  {
+    "guid": "bc70cdc7-e5d7-4457-a7ca-deb33b501d0d",
+    "content": "Vaccine technologies are patented and no longer available for production worldwide",
+    "content_ca": "Les tecnologies de vacunació estan patentades i ja no estan disponibles per a la producció a tot el món",
+    "karma": 2,
+    "richmen": "billgates",
     "title": ""
   }
 ]

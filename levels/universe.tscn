@@ -1,10 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://c7rtffa8hddkr"]
+[gd_scene load_steps=7 format=3 uid="uid://c7rtffa8hddkr"]
 
 [ext_resource type="Script" path="res://levels/universe.gd" id="1_sysfn"]
 [ext_resource type="PackedScene" uid="uid://ilnin5uc5xwa" path="res://levels/work.tscn" id="2_ochjt"]
 [ext_resource type="PackedScene" uid="uid://bix0vgtkccr8k" path="res://levels/planetary_system.tscn" id="3_wa5gh"]
 [ext_resource type="PackedScene" uid="uid://b778f20b5udf0" path="res://levels/city.tscn" id="4_eh1rh"]
-[ext_resource type="AudioStream" uid="uid://b0yimdynpqaus" path="res://assets/audio/spacemusic1.ogg" id="5_1oduc"]
 [ext_resource type="Script" path="res://scripts/audio_player.gd" id="5_q1bxc"]
 [ext_resource type="AudioStream" uid="uid://bx8jtafwus55f" path="res://assets/audio/city_ambience.ogg" id="7_mynyy"]
 
@@ -27,17 +26,15 @@ visible = false
 script = ExtResource("5_q1bxc")
 
 [node name="Track1" type="AudioStreamPlayer" parent="AudioManager"]
-stream = ExtResource("5_1oduc")
 volume_db = -10.0
 autoplay = true
-parameters/looping = false
 
 [node name="Track2" type="AudioStreamPlayer" parent="AudioManager"]
 stream = ExtResource("7_mynyy")
 volume_db = -10.0
 parameters/looping = false
 
-[connection signal="change_scene" from="PlanetaryCanvasLayer/PlanetarySystem" to="." method="_on_change_scene"]
 [connection signal="change_scene" from="PlanetaryCanvasLayer/PlanetarySystem" to="." method="_on_planetary_system_change_scene"]
+[connection signal="change_scene" from="PlanetaryCanvasLayer/PlanetarySystem" to="." method="_on_change_scene"]
 [connection signal="change_scene" from="City" to="." method="_on_change_scene"]
 [connection signal="change_scene" from="WorkCanvasLayer" to="." method="_on_change_scene"]

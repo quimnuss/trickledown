@@ -1,21 +1,43 @@
 extends VBoxContainer
+class_name Feed
 
 @onready var feed_timer: Timer = $FeedTimer
 
-@export var foo : int = 10
+@export var events_file : String = "res://data/events.json"
 
 var events : Array[Dictionary] = []
 
 func _ready() -> void:
     feed_timer.timeout.connect(pop_news)
-    events = EventsReader.read_from_JSON("res://data/events.json")
+    events = EventsReader.read_from_JSON(events_file)
     
+
+func pop_event(event_data : Dictionary):
+    var richmen : String = event_data['richmen']
+    var content : String = event_data['content'] if Config.lang == 'en' else event_data['content_' + Config.lang]
+    var karma : int = event_data['karma']
+    var feed_box : FeedBox = FeedBox.Instantiate(content, karma, richmen)
+    add_child(feed_box)
+    events.erase(event_data)
+
 func pop_news():
     if not events.is_empty():
         var event_data : Dictionary = events.pick_random()
-        var richmen : String = event_data['richmen']
-        var content : String = event_data['content']
-        var karma : int = event_data['karma']
-        var feed_box : FeedBox = FeedBox.Instantiate(content, karma, richmen)
-        add_child(feed_box)
-        events.erase(event_data)
+        pop_event(event_data)
+
+func pop_random_filtered(events : Array[Dictionary], filter : Dictionary) -> Variant:
+    for event in events:
+        var event_karma : int = event['karma']
+        var filter_karma : Array = filter['karma']
+        if event_karma in filter_karma:
+            events.erase(event)
+            return event
+    return null
+
+func pop_filtered_news(filter : Dictionary):
+    if events.is_empty():
+        return
+
+    var event_data : Variant = pop_random_filtered(events, filter)
+    if event_data:
+        pop_event(event_data)

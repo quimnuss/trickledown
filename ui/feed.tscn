@@ -10,5 +10,5 @@ script = ExtResource("1_s1lck")
 layout_mode = 2
 
 [node name="FeedTimer" type="Timer" parent="."]
-wait_time = 10.0
+wait_time = 60.0
 autostart = true

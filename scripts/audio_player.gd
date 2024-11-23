@@ -11,7 +11,7 @@ var is_on_track_1 : bool = true
 
 func _ready():
     if !OS.is_debug_build() or is_demo:
-        play_music(background_music, -10.0)
+        play_music(background_music, -20.0)
 
 func play_music(music : AudioStream, volume = -6.0):
 
@@ -24,6 +24,8 @@ func play_music(music : AudioStream, volume = -6.0):
     track_1.volume_db = volume
     track_1.play()
 
+var tween : Tween
+
 func crossfade(music : AudioStream, volume : float = -6.0, duration : float = 6.0):
     var fade_out_track : AudioStreamPlayer = track_1 if is_on_track_1 else track_2
     var fade_in_track : AudioStreamPlayer = track_2 if is_on_track_1 else track_1
@@ -32,7 +34,9 @@ func crossfade(music : AudioStream, volume : float = -6.0, duration : float = 6.
     is_on_track_1 = not is_on_track_1
     fade_in_track.stream = music
     fade_in_track.volume_db = -90
-    var tween = create_tween()
+    if tween and tween.is_running():
+        tween.stop()
+    tween = create_tween()
     tween.tween_property(fade_out_track, 'volume_db', -90, duration).set_trans(Tween.TRANS_EXPO)
     tween.parallel().tween_property(fade_in_track, 'volume_db', volume, duration).set_trans(Tween.TRANS_EXPO).set_ease(Tween.EASE_OUT)
     tween.tween_callback(fade_out_track.stop)

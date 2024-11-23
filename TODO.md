@@ -2,10 +2,9 @@
 # Now
 
 - [ ] Set the solar system
-- [ ] Add retrograde thrust
-- [ ] Add the milestone feed
-    - orbits, launches...
-- [ ] Add the richmen feats
+- [ ] hard milestones: orbits
+- [ ] Interactable city: greybox
+- [ ] Add rich man side-effects in the city : fog, greyness, loss of animation
 
 ## Deute tècnic
 
@@ -16,23 +15,27 @@
 
 # Next
 
-- [ ] Stats on milestones:  I crashed # times on the home planet
+- [ ] Remove done goals (or move them down)
+- [ ] Interactable city: simple animations
+- [ ] make the milestones incremental (don't put the whole list)
 - [ ] Set the scale of the world to the astronaut instead of the planets (man as a mesure of all things)
-- [ ] Get the Orbital component working and a planet orbiting (no edge cases)
-- [ ] Get the Orbital component working for a ship orbiting
 - [ ] Polish the physics engine area2d gravity-based approach
 - [ ] Improve the launch mechanic to have a TRICKLEDOWN button at set thrust
-- [ ] Add SAS for prograde
+- [ ] news feed filter by richmen
 
 # Later
 
+- [ ] Interactable city: story animations
+- [ ] Stats on milestones:  I crashed # times on the home planet
+- [ ] Get the Orbital component working for a ship orbiting
+- [ ] Get the Orbital component working and a planet orbiting (no edge cases)
+- [ ] Add SAS for prograde
 - [ ] Consider orbit edge cases
 - [ ] Educate oneself with the orbital mechanics equations and how to simulate them
 - [ ] SOI change trajectory drawing
 - [ ] Switch to high definition planets instead of pixel art
 - [ ] Game achievements and/or contracts
 - [ ] Add rich man life highlights
-- [ ] Add rich man side-effects
 - [ ] Add successful landing feedback
 
 # Way later
@@ -48,6 +51,10 @@ If ground flight is implemented:
 
 # Done
 
+- [x] Add the richmen feats --> news feeds are enough
+- [x] Take karma into account on news feed (react to richmen deaths and births)
+- [x] Add richmen rellevant news on spawn
+- [x] Add retrograde thrust
 - [x] Add the milestone feed: killzone kill, planet kill, star kill...
 - [x] Add out of universe death
 - [x] internationalization en,ca
