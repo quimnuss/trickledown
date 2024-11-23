@@ -12,16 +12,11 @@ func _ready() -> void:
     tween.tween_property(self, 'modulate:a', 0, 2).set_delay(10)
     tween.tween_callback(queue_free)
 
-func from_event_data(event_data : Event):
-    match event_data.karma:
-        Event.Karma.GOOD:
-            pass
-    self.text = event_data.text
 
 static func Instantiate(content : String, karma : int, richmen : String = "", title : String = ""):
     var feed_box : FeedBox = preload("res://ui/feed_box.tscn").instantiate()
     match karma:
-        Event.Karma.GOOD:
+        EventsReader.Karma.GOOD:
             pass
     feed_box.text = content
     return feed_box
