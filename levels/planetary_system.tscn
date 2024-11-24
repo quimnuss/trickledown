@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=3 uid="uid://bix0vgtkccr8k"]
+[gd_scene load_steps=52 format=3 uid="uid://bix0vgtkccr8k"]
 
 [ext_resource type="Script" path="res://components/visual_orbit.gd" id="1_8xlk2"]
 [ext_resource type="Texture2D" uid="uid://dkclsuxbdnwtn" path="res://assets/sky/dynamic_space_background/Nebula Red.png" id="1_fngs5"]
@@ -10,7 +10,6 @@
 [ext_resource type="Texture2D" uid="uid://prwtbk4881hm" path="res://assets/sky/dynamic_space_background/Stars-Big_1_1_PC.png" id="3_6317u"]
 [ext_resource type="Script" path="res://components/orbit.gd" id="3_qk5fl"]
 [ext_resource type="Texture2D" uid="uid://dyd5vcbnlobcv" path="res://assets/planets/No atmosphere.png" id="3_ua3ul"]
-[ext_resource type="Script" path="res://components/physics_gravity_component.gd" id="4_fgesw"]
 [ext_resource type="Script" path="res://scripts/killzone.gd" id="6_k2kal"]
 [ext_resource type="Script" path="res://components/planet_collision.gd" id="8_tjsb8"]
 [ext_resource type="Script" path="res://components/visual_orbit_circular.gd" id="9_6o1fs"]
@@ -20,6 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://cnllos4hqa5xw" path="res://assets/cannon/cannon_base.png" id="11_1xq35"]
 [ext_resource type="Script" path="res://scripts/zooming_camera_2d_centered.gd" id="11_xul2k"]
 [ext_resource type="Script" path="res://scripts/fire_effect.gd" id="12_hc8jd"]
+[ext_resource type="Script" path="res://components/orbit_milestone_checker.gd" id="12_m5nv6"]
 [ext_resource type="Texture2D" uid="uid://q6px2c0t84ov" path="res://assets/cannon/fire_effect.png" id="13_1f2mo"]
 [ext_resource type="Script" path="res://components/focus.gd" id="15_5iuv1"]
 [ext_resource type="Script" path="res://components/save_resource.gd" id="22_hrhws"]
@@ -50,8 +50,14 @@ radius = 151.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_k8aj6"]
 radius = 1329.54
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_mfqtm"]
+radius = 482.017
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_wsejb"]
 radius = 738.082
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fufu0"]
+radius = 207.087
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_thum1"]
 radius = 50.04
@@ -60,7 +66,10 @@ radius = 50.04
 radius = 5.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_12utq"]
-radius = 43.0116
+radius = 99.0051
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1230r"]
+radius = 112.0
 
 [node name="PlanetarySystem" type="Node2D"]
 script = ExtResource("1_srn0n")
@@ -130,10 +139,19 @@ collision_priority = 10.0
 gravity_space_override = 3
 gravity_point = true
 gravity_point_unit_distance = 150.0
+gravity_point_center = Vector2(0, 0)
+gravity_direction = Vector2(0, 0)
 gravity = 800.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Star/GravityArea"]
 shape = SubResource("CircleShape2D_k8aj6")
+
+[node name="OrbitMilestoneChecker" type="Area2D" parent="Star"]
+script = ExtResource("12_m5nv6")
+milestone_type = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Star/OrbitMilestoneChecker"]
+shape = SubResource("CircleShape2D_mfqtm")
 
 [node name="VisualOrbit" type="Node2D" parent="Star" node_paths=PackedStringArray("orbit")]
 script = ExtResource("9_6o1fs")
@@ -142,14 +160,9 @@ orbit = NodePath("../HomePlanet/Orbit")
 [node name="Sprite2D" type="Sprite2D" parent="Star"]
 texture = ExtResource("2_h5aj2")
 
-[node name="PhysicsGravitySourceComponent" type="Node" parent="Star" groups=["gravity_component"]]
-script = ExtResource("4_fgesw")
-gravity_at_center = 500.0
-ignore = true
-
 [node name="HomePlanet" type="Node2D" parent="Star"]
 unique_name_in_owner = true
-position = Vector2(700, 0)
+position = Vector2(1400, 0)
 
 [node name="ZoomingCamera2D" type="Camera2D" parent="Star/HomePlanet"]
 unique_name_in_owner = true
@@ -161,9 +174,8 @@ limit_smoothed = true
 position_smoothing_enabled = true
 script = ExtResource("11_xul2k")
 
-[node name="VisualOrbit" type="Node2D" parent="Star/HomePlanet" node_paths=PackedStringArray("orbit")]
+[node name="VisualOrbit" type="Node2D" parent="Star/HomePlanet"]
 script = ExtResource("1_8xlk2")
-orbit = NodePath("../Satellite/Orbit")
 
 [node name="Orbit" type="Node2D" parent="Star/HomePlanet"]
 script = ExtResource("10_xiq20")
@@ -174,12 +186,20 @@ priority = 5
 gravity_space_override = 3
 gravity_point = true
 gravity_point_unit_distance = 50.0
-gravity = 300.0
+gravity_point_center = Vector2(0, 0)
+gravity_direction = Vector2(0, 0)
+gravity = 400.0
 linear_damp_space_override = 3
 linear_damp = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/GravityArea"]
 shape = SubResource("CircleShape2D_wsejb")
+
+[node name="OrbitMilestoneChecker" type="Area2D" parent="Star/HomePlanet"]
+script = ExtResource("12_m5nv6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/OrbitMilestoneChecker"]
+shape = SubResource("CircleShape2D_fufu0")
 
 [node name="Sprite2D" type="Sprite2D" parent="Star/HomePlanet"]
 texture = ExtResource("1_h4dba")
@@ -191,10 +211,6 @@ milestone = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/Sprite2D/PlanetCollision"]
 shape = SubResource("CircleShape2D_thum1")
-
-[node name="PhysicsGravitySourceComponent" type="Node" parent="Star/HomePlanet" groups=["gravity_component"]]
-script = ExtResource("4_fgesw")
-gravity_at_center = 100.0
 
 [node name="Launchpad" type="Node2D" parent="Star/HomePlanet"]
 position = Vector2(0, -50)
@@ -260,15 +276,15 @@ stream = ExtResource("22_kt3lc")
 volume_db = -6.0
 
 [node name="Satellite" type="Node2D" parent="Star/HomePlanet"]
-position = Vector2(146, -3)
+position = Vector2(400, 0)
 
 [node name="Orbit" type="Node2D" parent="Star/HomePlanet/Satellite"]
 script = ExtResource("3_qk5fl")
-a = 400
-b = 300
+speed = 0.05
+b = 400.0
 
 [node name="Sprite2D" type="Sprite2D" parent="Star/HomePlanet/Satellite"]
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.4, 0.4)
 texture = ExtResource("3_ua3ul")
 
 [node name="PlanetCollision" type="Area2D" parent="Star/HomePlanet/Satellite/Sprite2D"]
@@ -279,22 +295,25 @@ milestone = 6
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/Satellite/Sprite2D/PlanetCollision"]
 shape = SubResource("CircleShape2D_0a3tx")
 
-[node name="PhysicsGravitySourceComponent" type="Node" parent="Star/HomePlanet/Satellite" groups=["gravity_component"]]
-script = ExtResource("4_fgesw")
-ignore = true
-
 [node name="GravityArea" type="Area2D" parent="Star/HomePlanet/Satellite"]
 collision_priority = 5.0
 priority = 10
 gravity_space_override = 3
 gravity_point = true
-gravity_point_unit_distance = 5.0
+gravity_point_unit_distance = 10.0
 gravity_point_center = Vector2(0, 0)
 gravity_direction = Vector2(0, 0)
 gravity = 1000.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/Satellite/GravityArea"]
 shape = SubResource("CircleShape2D_12utq")
+
+[node name="OrbitMilestoneChecker" type="Area2D" parent="Star/HomePlanet/Satellite"]
+script = ExtResource("12_m5nv6")
+milestone_type = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/Satellite/OrbitMilestoneChecker"]
+shape = SubResource("CircleShape2D_1230r")
 
 [node name="UI" type="CanvasLayer" parent="."]
 script = ExtResource("34_1ax38")

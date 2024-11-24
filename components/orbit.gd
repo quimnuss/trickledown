@@ -1,8 +1,9 @@
 extends Node2D
+class_name EllipticalOrbit
 
-@export var speed = 0.1
-@export var a = 500
-@export var b = 500
+@export var speed : float = 0.1
+@export var a : float = 500.0
+@export var b : float = 500.0
 
 var G : float = 1
 var M : float = 1

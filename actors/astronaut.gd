@@ -11,7 +11,6 @@ signal death(id : int)
 func _ready() -> void:
     add_to_group('richmen')
 
-
 func _on_portrait_gui_input(event : InputEvent):
     if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
         focus()
