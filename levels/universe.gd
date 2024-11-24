@@ -12,6 +12,7 @@ func _ready():
         #tutorial_canvas.add_child(tutorial)
         self.add_child(tutorial)
 
+
 func _on_change_scene(scene: Singleton.Scene) -> void:
     #var scene_enum : Singleton.Scene = scene as Singleton.Scene
     work_canvas_layer.visible = false
