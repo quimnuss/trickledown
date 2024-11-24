@@ -26,8 +26,4 @@ enum Milestone {
     CRASH_ASTRONAUT,
 }
 
-var disabled_milestones : Array[String] = [
-    'LAUNCH_ATMOSPHERE',
-    'ORBIT_ONE',
-    'CRASH_ASTRONAUT',
-]
+var disabled_milestones : Array[String] = []

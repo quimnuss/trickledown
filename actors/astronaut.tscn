@@ -50,6 +50,8 @@ animations = [{
 
 [node name="Astronaut" type="RigidBody2D"]
 position = Vector2(522, 106)
+contact_monitor = true
+max_contacts_reported = 4
 script = ExtResource("1_bexqd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -115,6 +117,7 @@ volume_db = -6.0
 parameters/looping = true
 script = ExtResource("15_8eao7")
 
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="burning" from="AstronautController" to="EnginePlume" method="_on_astronaut_controller_burning"]
 [connection signal="burning" from="AstronautController" to="BackEnginePlume" method="_on_astronaut_controller_burning"]
 [connection signal="burning" from="AstronautController" to="ThrustSound" method="_on_astronaut_controller_burning"]

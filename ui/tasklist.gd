@@ -40,5 +40,8 @@ func _on_milestone_completed(milestone_enum : Singleton.Milestone):
     for child in milestones.get_children():
         var checkbox_child : CheckBox = child as CheckBox
         if checkbox_child.name == Singleton.Milestone.keys()[milestone_enum]:
-            checkbox_child.button_pressed = true
+            if not checkbox_child.button_pressed:
+                checkbox_child.button_pressed = true
+                checkbox_child.disabled = true
+                milestones.move_child(checkbox_child, -1)
             break

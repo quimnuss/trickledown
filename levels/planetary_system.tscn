@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=3 uid="uid://bix0vgtkccr8k"]
+[gd_scene load_steps=54 format=3 uid="uid://bix0vgtkccr8k"]
 
 [ext_resource type="Script" path="res://components/visual_orbit.gd" id="1_8xlk2"]
 [ext_resource type="Texture2D" uid="uid://dkclsuxbdnwtn" path="res://assets/sky/dynamic_space_background/Nebula Red.png" id="1_fngs5"]
@@ -28,6 +28,7 @@
 [ext_resource type="Script" path="res://ui/orbit_container.gd" id="23_l8vuo"]
 [ext_resource type="Texture2D" uid="uid://dwpcq4sh3v1hn" path="res://assets/richmen/richmen_0.png" id="24_svqlb"]
 [ext_resource type="Texture2D" uid="uid://d01vqa72ep42c" path="res://assets/richmen/richmen_1.png" id="25_h34xa"]
+[ext_resource type="Script" path="res://scripts/atmosphere.gd" id="25_j88wc"]
 [ext_resource type="Texture2D" uid="uid://yl1uruis6m7o" path="res://assets/richmen/richmen_2.png" id="26_bcpub"]
 [ext_resource type="Script" path="res://ui/milestone_toast.gd" id="26_cu03p"]
 [ext_resource type="Texture2D" uid="uid://chd07578rfhdd" path="res://assets/richmen/richmen_3.png" id="27_eymce"]
@@ -57,7 +58,7 @@ radius = 482.017
 radius = 738.082
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fufu0"]
-radius = 207.087
+radius = 369.005
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_thum1"]
 radius = 50.04
@@ -70,6 +71,9 @@ radius = 99.0051
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1230r"]
 radius = 112.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_btgjb"]
+radius = 93.4345
 
 [node name="PlanetarySystem" type="Node2D"]
 script = ExtResource("1_srn0n")
@@ -201,6 +205,13 @@ script = ExtResource("12_m5nv6")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/OrbitMilestoneChecker"]
 shape = SubResource("CircleShape2D_fufu0")
 
+[node name="OneOrbitMilestoneChecker" type="Area2D" parent="Star/HomePlanet"]
+script = ExtResource("12_m5nv6")
+milestone_type = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/OneOrbitMilestoneChecker"]
+shape = SubResource("CircleShape2D_fufu0")
+
 [node name="Sprite2D" type="Sprite2D" parent="Star/HomePlanet"]
 texture = ExtResource("1_h4dba")
 
@@ -315,6 +326,12 @@ milestone_type = 8
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/Satellite/OrbitMilestoneChecker"]
 shape = SubResource("CircleShape2D_1230r")
 
+[node name="AtmosphereMilestone" type="Area2D" parent="Star/HomePlanet"]
+script = ExtResource("25_j88wc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/AtmosphereMilestone"]
+shape = SubResource("CircleShape2D_btgjb")
+
 [node name="UI" type="CanvasLayer" parent="."]
 script = ExtResource("34_1ax38")
 
@@ -355,14 +372,15 @@ custom_minimum_size = Vector2(200, 60)
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -21.0
+offset_left = -128.0
 offset_top = 56.0
-offset_right = 19.0
-offset_bottom = 96.0
+offset_right = 126.0
+offset_bottom = 140.0
 grow_horizontal = 2
 theme_override_constants/outline_size = 5
 bbcode_enabled = true
 text = "[rainbow freq=0.5 sat=0.5][center][wave]{milestone_text}[/wave][/center][/rainbow]"
+scroll_active = false
 script = ExtResource("26_cu03p")
 
 [node name="OrbitContainer" type="HBoxContainer" parent="UI"]
@@ -433,6 +451,7 @@ grow_vertical = 0
 
 [node name="SpeedButton" type="Button" parent="UI/HBoxContainer"]
 layout_mode = 2
+focus_mode = 0
 icon = ExtResource("31_ex666")
 flat = true
 script = ExtResource("32_5hu43")
@@ -443,6 +462,7 @@ time_warp_icons = Array[CompressedTexture2D]([ExtResource("33_a1v1w"), ExtResour
 [connection signal="body_entered" from="Star/HomePlanet/Sprite2D/PlanetCollision" to="Star/HomePlanet/Sprite2D/PlanetCollision" method="_on_body_entered"]
 [connection signal="visibility_changed" from="Star/HomePlanet/Launchpad" to="Star/HomePlanet/Launchpad" method="_on_visibility_changed"]
 [connection signal="body_entered" from="Star/HomePlanet/Satellite/Sprite2D/PlanetCollision" to="Star/HomePlanet/Satellite/Sprite2D/PlanetCollision" method="_on_body_entered"]
+[connection signal="body_exited" from="Star/HomePlanet/AtmosphereMilestone" to="Star/HomePlanet/AtmosphereMilestone" method="_on_body_exited"]
 [connection signal="pressed" from="UI/HBoxContainer2/QuitButton" to="UI" method="_on_quit_button_pressed"]
 [connection signal="pressed" from="UI/VBoxContainer/ToCityButton" to="." method="_on_to_city_button_pressed"]
 [connection signal="pressed" from="UI/VBoxContainer/ToWorkButton" to="." method="_on_to_work_button_pressed"]

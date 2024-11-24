@@ -25,7 +25,7 @@ CRASH_HOME,crash with your home planet,esclafa't contra el teu planeta d'origen
 LAUNCH_ATMOSPHERE,launch a richmen over the atmosphere,llança un ric fora de l'atmòsfera
 ORBIT_ONE,orbit one time around your home planet,orbita una vegada al voltant del teu planeta d'origen
 CRASH_STAR,crash with the system's Star,esclafa't contra l'estrella del sistema
-ORBIT_STABLE,have an stable orbit around your home planet (no thrusting!),estableix una òrbita estable al voltant del planeta d'origen (sense modificar-la!)
+ORBIT_STABLE,stable orbit around your home planet (no thrusting!),òrbita estable en baixa òrbita del planeta d'origen (sense motor!)
 CRASH_SATELLITE,crash with a satellite,esclafa't contra un satèl·lit
 ORBIT_STAR,orbit around the system's Star,orbita al voltant de l'estrella del sistema
 ORBIT_SATELLITE,orbit around the satellite,orbita al voltant del satèl·lit

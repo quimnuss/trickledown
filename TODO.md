@@ -2,7 +2,6 @@
 # Now
 
 - [ ] Set the solar system
-- [ ] hard milestones: orbits
 - [ ] Interactable city: greybox
 - [ ] Add rich man side-effects in the city : fog, greyness, loss of animation
 
@@ -15,6 +14,7 @@
 
 # Next
 
+- [ ] display which SOI the astronaut is in (on_body_entered if gravity check priority and decide which SOI it is)
 - [ ] Remove done goals (or move them down)
 - [ ] Interactable city: simple animations
 - [ ] make the milestones incremental (don't put the whole list)
@@ -51,6 +51,8 @@ If ground flight is implemented:
 
 # Done
 
+- [x] fix time warping
+- [x] hard milestones: orbits
 - [x] fix tutorial of orbital rich
 - [x] Add the richmen feats --> news feeds are enough
 - [x] Take karma into account on news feed (react to richmen deaths and births)

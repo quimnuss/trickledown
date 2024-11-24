@@ -12,4 +12,4 @@ func _ready() -> void:
         milestone_ui.name = milestone_name
         #milestone_ui.clip_text = true
         milestone_ui.disabled = milestone_name in Singleton.disabled_milestones
-        add_child(milestone_ui)
+        add_child(milestone_ui)    

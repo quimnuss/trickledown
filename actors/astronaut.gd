@@ -8,8 +8,11 @@ signal death(id : int)
 
 @onready var astronaut_controller: AstronautController = $AstronautController
 
+signal milestone_completed(milestone_enum : Singleton.Milestone)
+
 func _ready() -> void:
     add_to_group('richmen')
+    add_to_group('milestoner')
 
 func _on_portrait_gui_input(event : InputEvent):
     if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
@@ -33,3 +36,11 @@ func kill():
         camera.detach()
     death.emit(self.id)
     queue_free()
+
+
+func _on_body_entered(body: Node) -> void:
+    for collider in get_colliding_bodies():
+        if collider is Astronaut:
+            milestone_completed.emit(Singleton.Milestone.CRASH_ASTRONAUT)
+            break
+            
