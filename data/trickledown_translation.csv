@@ -2,6 +2,16 @@ keys,en,ca
 SUBTITLE,"A game about sending rich people to space\n(without any plan of bringing them back)","Un joc sobre enviar rics a l'espai\n(sense cap pla de tornada)"
 New Game,New Game,Nova Partida
 City,Town,Poble
+Body Navigation,Celestial Body Navigation,Navegació entre cossos celestials
+Zoom,Zoom,Zoom
+tutorial_richmen_runout,"When richmen run out, you have to work to create more!\n\nWorking to make the rich richer will have consequences to your town.","Quan et quedis sense rics, hauràs de treballar per a crear-ne més!\n\nTreballar pels rics tindrà conseqüències al teu poble."
+tutorial_turn_cannon,A/D to\nturn the launch cannon,A/D per\norientar el canó
+tutorial_power,W/S\nto change power,W/S\nper canviar la força
+tutorial_aim,Aim and...,Apunta i...
+tutorial_trickledown,TRICKLEDOWN\nwhen ready,TRICKLEDOWN\nquan vulguis!
+tutorial_orbital_rotation,A/D to\nturn the orbital rich,A/D per\nrotar el ric orbital
+tutorial_orbital_thrust,W/D to\nthurst,W/D per\naccelerar
+Skip Tutorials,Skip Tutorials,Saltar Tutorials
 WORK,WORK,TREBALLAR
 System,System,Sistema
 Is it funny?,Is it funny?,Fa gràcia?

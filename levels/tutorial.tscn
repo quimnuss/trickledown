@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://xkfhvqxww6ys"]
+[gd_scene load_steps=39 format=3 uid="uid://xkfhvqxww6ys"]
 
 [ext_resource type="Script" path="res://levels/tutorial.gd" id="1_gonbu"]
 [ext_resource type="VideoStream" path="res://assets/tutorial/trickledown_tutorial.ogv" id="1_lmwiy"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://b5ndrtxu4s004" path="res://assets/tutorial/S.png" id="5_8lynr"]
 [ext_resource type="Texture2D" uid="uid://bfuagkx4rqh74" path="res://assets/tutorial/SPACE.png" id="7_l4qe6"]
 [ext_resource type="Texture2D" uid="uid://qpkkstx0ratr" path="res://assets/tutorial/TAB.png" id="9_ljl85"]
+[ext_resource type="Texture2D" uid="uid://6yklc2mwwiq4" path="res://assets/tutorial/scroll_spritesheet.png" id="10_mr028"]
 [ext_resource type="Script" path="res://scripts/tutorial_button_press_animation.gd" id="10_np5dh"]
 [ext_resource type="Texture2D" uid="uid://el2bhuyokcgm" path="res://assets/tutorial/richmen_ui.png" id="11_vdrhg"]
 
@@ -267,7 +268,7 @@ tracks/2/keys = {
 resource_name = "tutorial"
 length = 22.0
 loop_mode = 1
-step = 0.5
+step = 0.1
 tracks/0/type = "method"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -302,12 +303,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0, 3.8, 8.5, 11.1, 16.0334, 19.9667),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": ["A/D to
-turn the launch cannon", "W/S
-to change power", "Aim and...", "TRICKLEDOWN
-when ready", "A/D to
-turn the orbital rich", "W/D to
-thrust"]
+"values": ["tutorial_turn_cannon", "tutorial_power", "tutorial_aim", "tutorial_trickledown", "tutorial_orbital_rotation", "tutorial_orbital_thrust"]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -361,6 +357,14 @@ region = Rect2(0, 0, 30, 0)
 [sub_resource type="AtlasTexture" id="AtlasTexture_irg00"]
 atlas = ExtResource("9_ljl85")
 region = Rect2(30, 0, 30, 0)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i7uxo"]
+atlas = ExtResource("10_mr028")
+region = Rect2(0, 0, 25, 0)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4i40s"]
+atlas = ExtResource("10_mr028")
+region = Rect2(25, 0, 25, 0)
 
 [node name="TutorialCanvasLayer" type="CanvasLayer"]
 layer = 20
@@ -536,7 +540,7 @@ pivot_offset = Vector2(100, 25)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/hover = SubResource("StyleBoxFlat_cwmyc")
 theme_override_styles/normal = SubResource("StyleBoxFlat_8s1g1")
-text = "Skip Tutorial"
+text = "Skip Tutorials"
 
 [node name="NavigationTutorial" type="Control" parent="."]
 layout_mode = 3
@@ -624,8 +628,8 @@ alignment = 1
 custom_minimum_size = Vector2(30, 10)
 layout_mode = 2
 toggle_mode = true
-texture_normal = SubResource("AtlasTexture_38cok")
-texture_pressed = SubResource("AtlasTexture_irg00")
+texture_normal = SubResource("AtlasTexture_i7uxo")
+texture_pressed = SubResource("AtlasTexture_4i40s")
 stretch_mode = 3
 script = ExtResource("10_np5dh")
 
@@ -650,12 +654,7 @@ custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/outline_size = 5
-text = "When richmen run out,
-you have to work to create more!
-
-Working to make
-the rich richer
-will have consequences to your town."
+text = "tutorial_richmen_runout"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
@@ -677,7 +676,7 @@ pivot_offset = Vector2(100, 25)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/hover = SubResource("StyleBoxFlat_cwmyc")
 theme_override_styles/normal = SubResource("StyleBoxFlat_8s1g1")
-text = "Skip Tutorial"
+text = "Skip Tutorials"
 
 [connection signal="pressed" from="Tutorial/TutorialAnchor/SkipButton" to="." method="_on_skip_button_pressed"]
 [connection signal="pressed" from="NavigationTutorial/TutorialAnchor/SkipButton" to="." method="_on_skip_button_pressed"]

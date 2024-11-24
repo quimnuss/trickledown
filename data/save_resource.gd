@@ -24,6 +24,9 @@ signal richman_death(id : int)
 
 @export var milestones_stats : Dictionary = {}
 
+const LATEST_SAVE_VERSION : int = 1
+
+var save_version : int = 1
 
 func rotate_richmen():
     self.richmen_orbit.append(self.richmen_launchpad)
