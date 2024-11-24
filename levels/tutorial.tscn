@@ -112,7 +112,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_3a0j1"]
 resource_name = "cannon_right"
-length = 3.0
+length = 3.5
 step = 0.1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -121,7 +121,7 @@ tracks/0/path = NodePath("TutorialAnchor/RightTextureButton:button_pressed")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.3, 3),
+"times": PackedFloat32Array(0, 0.2, 3.5),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [false, true, false]
@@ -229,7 +229,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("TutorialAnchor/VideoStreamPlayer/Label:text")
+tracks/0/path = NodePath("TutorialAnchor/Label:text")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -263,16 +263,28 @@ tracks/2/keys = {
 "update": 1,
 "values": [true]
 }
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("TutorialAnchor/VideoCrop/VideoStreamPlayer:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
 
 [sub_resource type="Animation" id="Animation_tn11f"]
 resource_name = "tutorial"
 length = 22.0
 loop_mode = 1
-step = 0.1
+step = 0.05
 tracks/0/type = "method"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("TutorialAnchor/VideoStreamPlayer")
+tracks/0/path = NodePath("TutorialAnchor/VideoCrop/VideoStreamPlayer")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -290,17 +302,17 @@ tracks/1/path = NodePath("TutorialAnchor/SubAnimationPlayer")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"clips": PackedStringArray("cannon_angle", "cannon_thurst", "RESET", "RESET", "cannon_right", "RESET", "launch", "[stop]", "cannon_angle", "cannon_thurst"),
-"times": PackedFloat32Array(0, 3.8, 8.1, 8.1001, 8.5, 10.9, 11.0667, 12.8667, 16, 19.9667)
+"clips": PackedStringArray("cannon_angle", "[stop]", "RESET", "cannon_thurst", "[stop]", "RESET", "cannon_right", "RESET", "launch", "[stop]", "cannon_angle", "cannon_thurst"),
+"times": PackedFloat32Array(0, 3.55, 3.6, 4.35, 6.5, 6.6, 7.15, 10.9, 11.0667, 12.8667, 14.9, 18.7)
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("TutorialAnchor/VideoStreamPlayer/Label:text")
+tracks/2/path = NodePath("TutorialAnchor/Label:text")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 3.8, 8.5, 11.1, 16.0334, 19.9667),
+"times": PackedFloat32Array(0, 4.35, 7.05, 11.1, 14.9, 18.7167),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 1,
 "values": ["tutorial_turn_cannon", "tutorial_power", "tutorial_aim", "tutorial_trickledown", "tutorial_orbital_rotation", "tutorial_orbital_thrust"]
@@ -312,7 +324,7 @@ tracks/3/path = NodePath("TutorialAnchor/Keys:visible")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 11, 16),
+"times": PackedFloat32Array(0, 11.1, 14.9),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [true, false, true]
@@ -328,6 +340,38 @@ tracks/4/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [true, false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("TutorialAnchor/VideoCrop/VideoStreamPlayer:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = false
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 12.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Vector2(0, 0), Vector2(-20, -70)]
+}
+tracks/6/type = "method"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("TutorialAnchor/SubAnimationPlayer")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(3.65, 6.75, 18.45),
+"transitions": PackedFloat32Array(1, 1, 1),
+"values": [{
+"args": [&"RESET", -1, 1.0, false],
+"method": &"play"
+}, {
+"args": [&"RESET", -1, 1.0, false],
+"method": &"play"
+}, {
+"args": [&"RESET", -1, 1.0, false],
+"method": &"play"
+}]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4bwu8"]
@@ -413,34 +457,47 @@ patch_margin_top = 50
 patch_margin_right = 50
 patch_margin_bottom = 50
 
-[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="Tutorial/TutorialAnchor"]
-modulate = Color(0.632309, 0.88688, 0.735244, 1)
-layout_mode = 0
-offset_left = -141.0
-offset_top = -52.0
-offset_right = 531.0
-offset_bottom = 508.0
-scale = Vector2(0.5, 0.5)
-stream = ExtResource("1_lmwiy")
-autoplay = true
-loop = true
-
-[node name="Label" type="Label" parent="Tutorial/TutorialAnchor/VideoStreamPlayer"]
+[node name="Label" type="Label" parent="Tutorial/TutorialAnchor"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -220.0
-offset_top = -174.0
-offset_right = 203.0
-offset_bottom = -75.0
+offset_left = -190.0
+offset_top = -163.0
+offset_right = 191.0
+offset_bottom = -77.0
 grow_horizontal = 2
 theme_override_constants/outline_size = 5
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 26
 text = "A/D to
 turn the launch cannon"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="VideoCrop" type="ColorRect" parent="Tutorial/TutorialAnchor"]
+clip_children = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -122.0
+offset_top = -67.0
+offset_right = 121.0
+offset_bottom = 155.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="Tutorial/TutorialAnchor/VideoCrop"]
+modulate = Color(0.632309, 0.88688, 0.735244, 1)
+layout_mode = 1
+offset_right = 576.0
+offset_bottom = 576.0
+scale = Vector2(0.5, 0.5)
+stream = ExtResource("1_lmwiy")
+autoplay = true
+loop = true
 
 [node name="SubAnimationPlayer" type="AnimationPlayer" parent="Tutorial/TutorialAnchor"]
 root_node = NodePath("../..")
