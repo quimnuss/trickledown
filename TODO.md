@@ -51,6 +51,7 @@ If ground flight is implemented:
 
 # Done
 
+- [x] fix tutorial of orbital rich
 - [x] Add the richmen feats --> news feeds are enough
 - [x] Take karma into account on news feed (react to richmen deaths and births)
 - [x] Add richmen rellevant news on spawn
