@@ -1,7 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://c7rtffa8hddkr"]
+[gd_scene load_steps=7 format=3 uid="uid://c6c6tv7jbuyxu"]
 
 [ext_resource type="Script" path="res://levels/universe.gd" id="1_sysfn"]
-[ext_resource type="PackedScene" uid="uid://ilnin5uc5xwa" path="res://levels/work.tscn" id="2_ochjt"]
+[ext_resource type="PackedScene" uid="uid://dn162xreoi5rh" path="res://levels/work.tscn" id="2_ochjt"]
 [ext_resource type="PackedScene" uid="uid://bix0vgtkccr8k" path="res://levels/planetary_system.tscn" id="3_wa5gh"]
 [ext_resource type="PackedScene" uid="uid://b778f20b5udf0" path="res://levels/city.tscn" id="4_eh1rh"]
 [ext_resource type="Script" path="res://scripts/audio_player.gd" id="5_q1bxc"]

@@ -1,6 +1,7 @@
 extends Node2D
 
 const POWER_STEP := 50
+@warning_ignore("integer_division")
 const POWER_SUBSTEP := 50/4
 
 var current_level := 0

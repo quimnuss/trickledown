@@ -29,9 +29,5 @@ enum Milestone {
 var disabled_milestones : Array[String] = [
     'LAUNCH_ATMOSPHERE',
     'ORBIT_ONE',
-    'ORBIT_STABLE',
-    'ORBIT_STAR',
-    'ORBIT_SATELLITE',
-    'ESCAPE_VELOCITY',
     'CRASH_ASTRONAUT',
 ]

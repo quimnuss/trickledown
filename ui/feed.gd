@@ -25,7 +25,7 @@ func pop_news():
         var event_data : Dictionary = events.pick_random()
         pop_event(event_data)
 
-func pop_random_filtered(events : Array[Dictionary], filter : Dictionary) -> Variant:
+static func _pop_random_filtered(events : Array[Dictionary], filter : Dictionary) -> Variant:
     for event in events:
         var event_karma : int = event['karma']
         var filter_karma : Array = filter['karma']
@@ -38,6 +38,6 @@ func pop_filtered_news(filter : Dictionary):
     if events.is_empty():
         return
 
-    var event_data : Variant = pop_random_filtered(events, filter)
+    var event_data : Variant = _pop_random_filtered(events, filter)
     if event_data:
         pop_event(event_data)

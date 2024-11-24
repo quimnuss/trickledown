@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://ilnin5uc5xwa"]
+[gd_scene load_steps=11 format=3 uid="uid://dn162xreoi5rh"]
 
 [ext_resource type="Script" path="res://levels/work.gd" id="1_l5xem"]
 [ext_resource type="Texture2D" uid="uid://disk2funmk7lp" path="res://assets/ui_assets/nine_patch.png" id="1_ulvov"]
