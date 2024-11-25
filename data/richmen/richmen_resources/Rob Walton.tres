@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://u1uacj0hk1yn"]
+
+[ext_resource type="Texture2D" uid="uid://kp7ceurkmlbk" path="res://data/richmen/img/Rob Walton.png" id="1_re2fm"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_ruvrd"]
+
+[resource]
+script = ExtResource("2_ruvrd")
+uid = "Rob Walton"
+name = "Rob Walton"
+worth = 74
+img = ExtResource("1_re2fm")
+bio = "S.
+ Robson Walton, better known as Rob Walton, is an American businessman 
+who has a net worth of $74 billion. Rob Walton is the eldest son of the 
+founder of Walmart, Sam Walton."

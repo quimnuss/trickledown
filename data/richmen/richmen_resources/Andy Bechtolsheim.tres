@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://dsy712oysnuhl"]
+
+[ext_resource type="Texture2D" uid="uid://duclndesfoh3a" path="res://data/richmen/img/Andy Bechtolsheim.png" id="1_3gnfh"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_f78f0"]
+
+[resource]
+script = ExtResource("2_f78f0")
+uid = "Andy Bechtolsheim"
+name = "Andy Bechtolsheim"
+worth = 20
+img = ExtResource("1_3gnfh")
+bio = "Andy
+ Bechtolsheim is a German billionaire tech entrepreneur, electrical 
+engineer and investor who has a net worth $20 billion. Andy earned his 
+first fortune as the founder of Sun Microsystems"

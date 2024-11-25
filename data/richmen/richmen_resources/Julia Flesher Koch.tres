@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://byaxykskt60ej"]
+
+[ext_resource type="Texture2D" uid="uid://dol3g6tsyk24p" path="res://data/richmen/img/Julia Flesher Koch.png" id="1_pph4x"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_ie6lu"]
+
+[resource]
+script = ExtResource("2_ie6lu")
+uid = "Julia Flesher Koch"
+name = "Julia Flesher Koch"
+worth = 63
+img = ExtResource("1_pph4x")
+bio = "Julia
+ Flesher Koch net worth: Julia Flesher Koch is an American businesswoman
+ and philanthropist who has a net worth of $63 billion. Julia Flesher 
+Koch inherited her fortune as the widow of billionaire tycoon David 
+Koch."

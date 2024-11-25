@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://xdccb4yu6aar"]
+
+[ext_resource type="Texture2D" uid="uid://b15rly1426bdp" path="res://data/richmen/img/Steve Ballmer.png" id="1_md746"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_2qult"]
+
+[resource]
+script = ExtResource("2_2qult")
+uid = "Steve Ballmer"
+name = "Steve Ballmer"
+worth = 145
+img = ExtResource("1_md746")
+bio = "Steve
+ Ballmer is an American businessman and sports team owner who has a net 
+worth of $145 billion. The vast majority of Steve Ballmer's net worth is
+ derived from his 333.3 million shares of Microsoft stock. That is 
+roughly 4% of the total outstanding shares. Steve is actually the 
+company's largest individual shareholder."

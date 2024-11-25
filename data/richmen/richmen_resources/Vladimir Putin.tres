@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://8afms10j5i16"]
+
+[ext_resource type="Texture2D" uid="uid://ce7adhepjbw05" path="res://data/richmen/img/Vladimir Putin.png" id="1_kr0rc"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_uyjp8"]
+
+[resource]
+script = ExtResource("2_uyjp8")
+uid = "Vladimir Putin"
+name = "Vladimir Putin"
+worth = 70
+img = ExtResource("1_kr0rc")
+bio = "Vladimir
+ Putin net worth: Vladimir Putin is a Russian politician who was born in
+ the Soviet Union and has a net worth of $70 billion dollars. Vladimir 
+Putin is currently serving"

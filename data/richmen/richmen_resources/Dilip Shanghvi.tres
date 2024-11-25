@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://0laje54iem3y"]
+
+[ext_resource type="Texture2D" uid="uid://cgjq5615ig0ut" path="res://data/richmen/img/Dilip Shanghvi.png" id="1_3b8n8"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_pve1t"]
+
+[resource]
+script = ExtResource("2_pve1t")
+uid = "Dilip Shanghvi"
+name = "Dilip Shanghvi"
+worth = 20
+img = ExtResource("1_3b8n8")
+bio = "Dilip
+ Shanghvi net worth: Dilip Shanghvi is an Indian pharmaceutical 
+entrepreneur who has a net worth of $20 billion. Dilip Shanghvi is the 
+founder and managing director"

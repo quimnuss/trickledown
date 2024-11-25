@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://b5ghdfosqjehy"]
+
+[ext_resource type="Texture2D" uid="uid://dnaoe0irbnygl" path="res://data/richmen/img/Mark Zuckerberg.png" id="1_ecvda"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_2g5tx"]
+
+[resource]
+script = ExtResource("2_2g5tx")
+uid = "Mark Zuckerberg"
+name = "Mark Zuckerberg"
+worth = 200
+img = ExtResource("1_ecvda")
+bio = "Mark
+ Zuckerberg is an American technology entrepreneur and philanthropist 
+who has a net worth of $200 billion. Mark Zuckerberg has spent much of 
+the last decade as one of the richest people in the world. Out of the 
+top 100 richest people in the world, Mark is the youngest."

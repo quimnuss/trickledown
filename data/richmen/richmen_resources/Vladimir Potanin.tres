@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://bsrgnsa3t0582"]
+
+[ext_resource type="Texture2D" uid="uid://721ctjcfqn62" path="res://data/richmen/img/Vladimir Potanin.png" id="1_qjeoe"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_ibt7k"]
+
+[resource]
+script = ExtResource("2_ibt7k")
+uid = "Vladimir Potanin"
+name = "Vladimir Potanin"
+worth = 35
+img = ExtResource("1_qjeoe")
+bio = "Vladimir
+ Potanin net worth: Vladimir Potanin is a Russian billionaire oligarch 
+who has a net worth of $35 billion. That makes Vladimir one of the 
+richest people in Russia."

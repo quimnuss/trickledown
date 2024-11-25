@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://co13yhdhhk72h"]
+
+[ext_resource type="Texture2D" uid="uid://dkxra8l64jbwh" path="res://data/richmen/img/Mark Mateschitz.png" id="1_s845h"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_oatem"]
+
+[resource]
+script = ExtResource("2_oatem")
+uid = "Mark Mateschitz"
+name = "Mark Mateschitz"
+worth = 30
+img = ExtResource("1_s845h")
+bio = "Mark
+ Mateschitz is an Austrian billionaire who has a net worth of $30 
+billion. Mark Mateschitz earned his fortune as a part-owner of the 
+energy drink company Red Bull, which his father Dietrich Mateschitz 
+co-founded in 1984."

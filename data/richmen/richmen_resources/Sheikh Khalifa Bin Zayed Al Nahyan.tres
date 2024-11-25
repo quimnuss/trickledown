@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://batn5rwraopvj"]
+
+[ext_resource type="Texture2D" uid="uid://72y7c8s8lngb" path="res://data/richmen/img/Sheikh Khalifa Bin Zayed Al Nahyan.png" id="1_78dy8"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_gukfh"]
+
+[resource]
+script = ExtResource("2_gukfh")
+uid = "Sheikh Khalifa Bin Zayed Al Nahyan"
+name = "Sheikh Khalifa Bin Zayed Al Nahyan"
+worth = 18
+img = ExtResource("1_78dy8")
+bio = "Khalifa
+ bin Zayed bin Sultan Al Nahyan was the president of the United Arab 
+Emirates, the supreme commander of the United Arab Emirates Armed 
+Forces, and the Emir of Abu Dhabi. At the time of his death, Sheikh 
+Khalifa Bin Zayed Al Nahyan had a net worth of $18 billion dollars."

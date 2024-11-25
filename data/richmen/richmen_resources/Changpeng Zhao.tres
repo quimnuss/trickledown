@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://behabtvwritop"]
+
+[ext_resource type="Texture2D" uid="uid://bln3dcq4i8q02" path="res://data/richmen/img/Changpeng Zhao.png" id="1_f30n6"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_bx2bo"]
+
+[resource]
+script = ExtResource("2_bx2bo")
+uid = "Changpeng Zhao"
+name = "Changpeng Zhao"
+worth = 42
+img = ExtResource("1_f30n6")
+bio = "Changpeng
+ Zhao is a Chinese-Canadian business executive who has a net worth of 
+$42 billion Also known in the crypto world simply as \"CZ,\" Zhao is best 
+known for founding the world's largest cryptocurrency exchange, Binance.
+ Changpeng also serves as the CEO of this company."

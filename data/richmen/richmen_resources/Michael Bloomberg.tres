@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://buq4unt8d4ugx"]
+
+[ext_resource type="Texture2D" uid="uid://tyqc73svnygt" path="res://data/richmen/img/Michael Bloomberg.png" id="1_pe3a1"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_piojm"]
+
+[resource]
+script = ExtResource("2_piojm")
+uid = "Michael Bloomberg"
+name = "Michael Bloomberg"
+worth = 70
+img = ExtResource("1_pe3a1")
+bio = "Michael
+ Bloomberg is an American politician and entrepreneur who has a net 
+worth of $70 billion. Michael Bloomberg earned his fortune through his 
+financial news and information services media company Bloomberg LP."

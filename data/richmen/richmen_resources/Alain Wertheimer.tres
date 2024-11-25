@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://byflat7lydcdc"]
+
+[ext_resource type="Texture2D" uid="uid://bohoxyh0ww5m0" path="res://data/richmen/img/Alain Wertheimer.png" id="1_bopok"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_tu7yt"]
+
+[resource]
+script = ExtResource("2_tu7yt")
+uid = "Alain Wertheimer"
+name = "Alain Wertheimer"
+worth = 45
+img = ExtResource("1_bopok")
+bio = "Alain
+ Wertheimer net worth: Alain Wertheimer is a French businessman who has a
+ net worth of $45 billion. Alain Wertheimer was born"

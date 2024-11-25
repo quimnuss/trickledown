@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://v88fq184l3j8"]
+
+[ext_resource type="Texture2D" uid="uid://dh1kqqa2a3ew3" path="res://data/richmen/img/John Menard.png" id="1_alt5q"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_47ysj"]
+
+[resource]
+script = ExtResource("2_47ysj")
+uid = "John Menard"
+name = "John Menard"
+worth = 20
+img = ExtResource("1_alt5q")
+bio = "John
+ Menard, Jr. Net Worth: John R. Menard, Jr. is an American entrepreneur 
+and billionaire who a net worth of $20 billion. He is the founder and 
+owner"

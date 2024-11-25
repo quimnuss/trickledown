@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://mt4c8lyvb67y"]
+
+[ext_resource type="Texture2D" uid="uid://ln131c6h8jho" path="res://data/richmen/img/Tadashi Yanai.png" id="1_h74t1"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_ebs46"]
+
+[resource]
+script = ExtResource("2_ebs46")
+uid = "Tadashi Yanai"
+name = "Tadashi Yanai"
+worth = 35
+img = ExtResource("1_h74t1")
+bio = "Tadashi
+ Yanai Net Worth: Tadashi Yanai is a Japanese entrepreneur who has a net
+ worth of $35 billion. A businessman and CEO, Tadashi Yanai is the 
+President and founder of the Japanese company, Fast Retailing"

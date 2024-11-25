@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://0x2j3shnkhc8"]
+
+[ext_resource type="Texture2D" uid="uid://d3weg6e5m3bs5" path="res://data/richmen/img/James Dyson.png" id="1_mnlbu"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_y77hq"]
+
+[resource]
+script = ExtResource("2_y77hq")
+uid = "James Dyson"
+name = "James Dyson"
+worth = 22
+img = ExtResource("1_mnlbu")
+bio = "Sir
+ James Dyson is a British inventor, designer, farmer and entrepreneur 
+who has a net worth of $22 billion. He is best known for founding the 
+technology company Dyson"

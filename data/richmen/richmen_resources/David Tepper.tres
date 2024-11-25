@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://c5dv2yxx7qgh4"]
+
+[ext_resource type="Texture2D" uid="uid://bto62t4x1dq4b" path="res://data/richmen/img/David Tepper.png" id="1_8pn3e"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_64viy"]
+
+[resource]
+script = ExtResource("2_64viy")
+uid = "David Tepper"
+name = "David Tepper"
+worth = 21
+img = ExtResource("1_8pn3e")
+bio = "David
+ Tepper net worth and salary: David Tepper is an American businessman 
+and philanthropist who has net worth of $21 billion. For many years he 
+was one of the richest people in New Jersey."

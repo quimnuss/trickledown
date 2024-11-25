@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://cb07ulwyuxecr"]
+
+[ext_resource type="Texture2D" uid="uid://cqmh8w8mn5mjm" path="res://data/richmen/img/Klaus-Michael Kuhne.png" id="1_wem4l"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_22ric"]
+
+[resource]
+script = ExtResource("2_22ric")
+uid = "Klaus-Michael Kuhne"
+name = "Klaus-Michael Kuhne"
+worth = 40
+img = ExtResource("1_wem4l")
+bio = "Klaus-
+Michael Kuhne net worth: Klaus-Michael Kuhne has a net worth of $40 
+billion. In 2023 when his net worth surpassed the $30 billion net worth 
+of German supermarket"

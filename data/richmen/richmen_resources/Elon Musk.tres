@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://10s4i0tp0n7r"]
+
+[ext_resource type="Texture2D" uid="uid://dep71rail18qe" path="res://data/richmen/img/Elon Musk.png" id="1_5sdxl"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_8xsu1"]
+
+[resource]
+script = ExtResource("2_8xsu1")
+uid = "Elon Musk"
+name = "Elon Musk"
+worth = 333
+img = ExtResource("1_5sdxl")
+bio = "Elon
+ Musk is a South African-born Canadian-American businessman, inventor, 
+and investor who has a net worth of $333 billion. Elon Musk is currently
+ the richest person in the world. In November 2021, when his net worth 
+briefly topped $340 billion, Elon surpassed John D. Rockefeller to 
+become the richest person in modern history."

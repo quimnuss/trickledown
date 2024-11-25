@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://b1rn00cl1ckpg"]
+
+[ext_resource type="Texture2D" uid="uid://umftd7kwdb40" path="res://data/richmen/img/David & Simon Reuben.png" id="1_6lj37"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_ylykv"]
+
+[resource]
+script = ExtResource("2_ylykv")
+uid = "David & Simon Reuben"
+name = "David & Simon Reuben"
+worth = 18
+img = ExtResource("1_6lj37")
+bio = "David & Simon Reuben net worth: David & Simon Reuben are British businessmen and philanthropists who have a net worth of"

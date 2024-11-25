@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://jj27ad4rq3t0"]
+
+[ext_resource type="Texture2D" uid="uid://c8enomjlolsfr" path="res://data/richmen/img/Dieter Schwarz.png" id="1_3oyaa"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_bdnru"]
+
+[resource]
+script = ExtResource("2_bdnru")
+uid = "Dieter Schwarz"
+name = "Dieter Schwarz"
+worth = 30
+img = ExtResource("1_3oyaa")
+bio = "Dieter
+ Schwarz is a German entrepreneur who has a net worth of $30 billion. 
+Dieter Schwarz inherited the Schwarz-Gruppe (Schwarz Group) from his 
+father"

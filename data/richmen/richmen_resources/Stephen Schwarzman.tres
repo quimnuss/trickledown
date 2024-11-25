@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://12xcbbvh26l3"]
+
+[ext_resource type="Texture2D" uid="uid://b6jg4l67o0ca4" path="res://data/richmen/img/Stephen Schwarzman.png" id="1_c0h3c"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_ydavk"]
+
+[resource]
+script = ExtResource("2_ydavk")
+uid = "Stephen Schwarzman"
+name = "Stephen Schwarzman"
+worth = 42
+img = ExtResource("1_c0h3c")
+bio = "Stephen
+ Schwarzman is an American businessman who has a net worth of $42 
+billion. That net worth makes him one of the richest people in New York.
+ Stephen earned his fortune thanks to The Blackstone Group which he 
+co-founded."

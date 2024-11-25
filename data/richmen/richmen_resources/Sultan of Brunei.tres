@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://ct6tpqsyl5fdk"]
+
+[ext_resource type="Texture2D" uid="uid://4pi12k3c7y7e" path="res://data/richmen/img/Sultan of Brunei.png" id="1_enu4w"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_7fyj6"]
+
+[resource]
+script = ExtResource("2_7fyj6")
+uid = "Sultan of Brunei"
+name = "Sultan of Brunei"
+worth = 30
+img = ExtResource("1_enu4w")
+bio = "Sultan
+ of Brunei net worth: The Sultan of Brunei, also known as Hassanai 
+Bolkiah Mu'izzaddin Waddaulah, has a net worth of $30 billion. Born on 
+July 15, 1946"

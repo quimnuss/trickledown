@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://dlnbd8mrwbs3s"]
+
+[ext_resource type="Texture2D" uid="uid://c3i62kx8hh3ai" path="res://data/richmen/img/David Thomson.png" id="1_381os"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_1eyky"]
+
+[resource]
+script = ExtResource("2_1eyky")
+uid = "David Thomson"
+name = "David Thomson"
+worth = 50
+img = ExtResource("1_381os")
+bio = "David
+ Thomson net worth: David Thomson, the 3rd Baron Thomson of Fleet, is a 
+Canadian businessman, media magnate, art collector who has a net worth 
+of $50 billion. David Thomson is the Chairman of the Thomson Reuters 
+corporation and his family"

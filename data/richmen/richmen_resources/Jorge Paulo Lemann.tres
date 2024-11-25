@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://bwchtrriar421"]
+
+[ext_resource type="Texture2D" uid="uid://bliwdbnf5i5md" path="res://data/richmen/img/Jorge Paulo Lemann.png" id="1_125bb"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_jx1ty"]
+
+[resource]
+script = ExtResource("2_jx1ty")
+uid = "Jorge Paulo Lemann"
+name = "Jorge Paulo Lemann"
+worth = 20
+img = ExtResource("1_125bb")
+bio = "Jorge
+ Paulo Lemann Net Worth: Jorge Paulo Lemann is a Brazilian billionaire 
+investment banker and businessman who has a net worth of $20 billion. 
+Jorge Paulo Lemann first built his fortune in the 1970s"

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://c14s210me0xb3"]
+
+[ext_resource type="Texture2D" uid="uid://cajwr5xfgbqoa" path="res://data/richmen/img/Dan Gilbert.png" id="1_e8noh"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_mji0a"]
+
+[resource]
+script = ExtResource("2_mji0a")
+uid = "Dan Gilbert"
+name = "Dan Gilbert"
+worth = 32
+img = ExtResource("1_e8noh")
+bio = "Dan
+ Gilbert is an American self-made entrepreneur who has a net worth of 
+$32 billion dollars. Dan Gilbert earned his fortune as the founder and 
+CEO of Quicken Loans (originally called Rock Financial). The company's 
+name was changed after it was purchased by Intuit Inc., the company that
+ also created QuickBooks and TurboTax."

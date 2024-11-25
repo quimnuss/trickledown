@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://b1y83bnem01lx"]
+
+[ext_resource type="Texture2D" uid="uid://drlt1rp8kode5" path="res://data/richmen/img/Zhang Yiming.png" id="1_12dle"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_fylab"]
+
+[resource]
+script = ExtResource("2_fylab")
+uid = "Zhang Yiming"
+name = "Zhang Yiming"
+worth = 44
+img = ExtResource("1_12dle")
+bio = "Zhang
+ Yiming net worth: Zhang Yiming is a Chinese businessman and 
+entrepreneur who has a net worth of $44 billion. Zhang Yiming was born"

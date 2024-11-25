@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://dedb4y0w3d1ht"]
+
+[ext_resource type="Texture2D" uid="uid://8mm7espbmhj6" path="res://data/richmen/img/Jack Ma.png" id="1_6ikg5"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_4s66j"]
+
+[resource]
+script = ExtResource("2_4s66j")
+uid = "Jack Ma"
+name = "Jack Ma"
+worth = 34
+img = ExtResource("1_6ikg5")
+bio = "Jack
+ Ma is a Chinese businessman and investor who has a net worth of $34 
+billion. He is best known as the co-founder and former executive 
+chairman of the multinational conglomerate, Alibaba Group."

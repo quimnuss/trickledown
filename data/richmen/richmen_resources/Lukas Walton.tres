@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://1lrcadsn14ie"]
+
+[ext_resource type="Texture2D" uid="uid://yycroo55kara" path="res://data/richmen/img/Lukas Walton.png" id="1_nkxcp"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_63md3"]
+
+[resource]
+script = ExtResource("2_63md3")
+uid = "Lukas Walton"
+name = "Lukas Walton"
+worth = 26
+img = ExtResource("1_nkxcp")
+bio = "Lukas
+ Walton net worth: Lukas Walton is an American businessman who has a net
+ worth of $26 billion. Lukas is best known for being an heir of Wal-Mart
+ which was founded"

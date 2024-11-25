@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://bjl7sqv7n2a2a"]
+
+[ext_resource type="Texture2D" uid="uid://6n1jjtxhd0aw" path="res://data/richmen/img/Gautam Adani.png" id="1_be4kd"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_6d4xw"]
+
+[resource]
+script = ExtResource("2_6d4xw")
+uid = "Gautam Adani"
+name = "Gautam Adani"
+worth = 101
+img = ExtResource("1_be4kd")
+bio = "Gautam
+ Adani is an Indian entrepreneur who has a net worth of $101 billion. 
+Gautam Adani is a billionaire industrialist and philanthropist from 
+India, best known as the founder and chairman of the multinational 
+conglomerate Adani Group."

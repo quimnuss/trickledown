@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://cgw6dkkvktxen"]
+
+[ext_resource type="Texture2D" uid="uid://djmsqj0p3u5qn" path="res://data/richmen/img/Ma Huateng.png" id="1_i7385"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_uoeci"]
+
+[resource]
+script = ExtResource("2_uoeci")
+uid = "Ma Huateng"
+name = "Ma Huateng"
+worth = 38
+img = ExtResource("1_i7385")
+bio = "Pony
+ Ma Huateng net worth: Pony Ma Huateng is a Chinese internet 
+entrepreneur who has a net worth of $38 billion. Ma Huateng, nicknamed 
+\"Pony,\" is the founder, president, chief executive officer, and 
+executive board member of Tencent Holdings, Ltd."

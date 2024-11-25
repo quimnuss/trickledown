@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://brnl74fndi2cf"]
+
+[ext_resource type="Texture2D" uid="uid://c7t8nckjckitk" path="res://data/richmen/img/Sergey Brin.png" id="1_nu0v2"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_3ccf6"]
+
+[resource]
+script = ExtResource("2_3ccf6")
+uid = "Sergey Brin"
+name = "Sergey Brin"
+worth = 141
+img = ExtResource("1_nu0v2")
+bio = "Sergey
+ Brin is a Russian-born American computer scientist and internet 
+entrepreneur who has a net worth of $141 billion. Sergey Brin earned his
+ net worth as the co-founder of Google, which today is known by umbrella
+ parent company Alphabet. He co-founded the company with Larry Page, a 
+classmate at Standford's computer science graduate program."

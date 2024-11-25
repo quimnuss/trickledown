@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://cak6kpvkh7del"]
+
+[ext_resource type="Texture2D" uid="uid://dn3sh60dthr20" path="res://data/richmen/img/Dustin Moskovitz.png" id="1_0ypcf"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_fdlq6"]
+
+[resource]
+script = ExtResource("2_fdlq6")
+uid = "Dustin Moskovitz"
+name = "Dustin Moskovitz"
+worth = 25
+img = ExtResource("1_0ypcf")
+bio = "Dustin
+ Moskovitz is an American internet entrepreneur who has a net worth of 
+$25 billion. Dustin Moskovitz earned his net worth as a co-founder of 
+Facebook. Moskovitz's"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://qn6qi0vmh0vx"]
+
+[ext_resource type="Texture2D" uid="uid://dpxoxwelfxg72" path="res://data/richmen/img/Rupert Murdoch.png" id="1_pj0t8"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_lgphv"]
+
+[resource]
+script = ExtResource("2_lgphv")
+uid = "Rupert Murdoch"
+name = "Rupert Murdoch"
+worth = 19
+img = ExtResource("1_pj0t8")
+bio = "Rupert
+ Murdoch net worth: Rupert Murdoch is an Australian media mogul who 
+earned his fortune as the founder of News Corp. Rupert Murdoch has a net
+ worth of $19 billion. Although he is Australian, Murdoch"

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://bieidvo3cumyl"]
+
+[ext_resource type="Texture2D" uid="uid://4tp0x362jif2" path="res://data/richmen/img/Wang Wei.png" id="1_x0ul6"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_hmjeo"]
+
+[resource]
+script = ExtResource("2_hmjeo")
+uid = "Wang Wei"
+name = "Wang Wei"
+worth = 22
+img = ExtResource("1_x0ul6")
+bio = "Wang Wei Net Worth: Wang Wei is a Chinese transportation and logistics entrepreneur who has a net worth of"

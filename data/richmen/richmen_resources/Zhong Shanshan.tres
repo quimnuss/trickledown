@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://d1excbnwbrk0u"]
+
+[ext_resource type="Texture2D" uid="uid://bsjon3b38wpgy" path="res://data/richmen/img/Zhong Shanshan.png" id="1_fwjdb"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_cfpce"]
+
+[resource]
+script = ExtResource("2_cfpce")
+uid = "Zhong Shanshan"
+name = "Zhong Shanshan"
+worth = 47
+img = ExtResource("1_fwjdb")
+bio = "Zhong
+ Shanshan is a Chinese businessman and entrepreneur who has a net worth 
+of $47 billion. Zhong Shanshan earned his fortune thanks to the Chinese 
+bottled water company Nongfu Spring and the Beijing Wantai Biological 
+Pharmacy."

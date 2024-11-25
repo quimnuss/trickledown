@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://c52x3xrwy8x7d"]
+
+[ext_resource type="Texture2D" uid="uid://bbjysbdg6qwo2" path="res://data/richmen/img/Colin Huang.png" id="1_hdgpw"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_ldgon"]
+
+[resource]
+script = ExtResource("2_ldgon")
+uid = "Colin Huang"
+name = "Colin Huang"
+worth = 49
+img = ExtResource("1_hdgpw")
+bio = "Colin
+ Huang is a Chinese businessman, philanthropist, and investor who has a 
+net worth of $49 billion. Colin Huang is best known for being the 
+founder and former CEO of Pinduoduo"
