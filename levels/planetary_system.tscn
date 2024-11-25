@@ -460,6 +460,8 @@ time_warp_icons = Array[CompressedTexture2D]([ExtResource("33_a1v1w"), ExtResour
 [connection signal="body_entered" from="UniverseLimits/Killzone" to="UniverseLimits/Killzone" method="_on_body_entered"]
 [connection signal="body_entered" from="Star/PlanetCollision" to="Star/PlanetCollision" method="_on_body_entered"]
 [connection signal="body_entered" from="Star/HomePlanet/Sprite2D/PlanetCollision" to="Star/HomePlanet/Sprite2D/PlanetCollision" method="_on_body_entered"]
+[connection signal="richmen_launched" from="Star/HomePlanet/Launchpad" to="." method="_on_launchpad_richmen_launched"]
+[connection signal="rocket_spawned" from="Star/HomePlanet/Launchpad" to="." method="_on_launchpad_rocket_spawned"]
 [connection signal="visibility_changed" from="Star/HomePlanet/Launchpad" to="Star/HomePlanet/Launchpad" method="_on_visibility_changed"]
 [connection signal="body_entered" from="Star/HomePlanet/Satellite/Sprite2D/PlanetCollision" to="Star/HomePlanet/Satellite/Sprite2D/PlanetCollision" method="_on_body_entered"]
 [connection signal="body_exited" from="Star/HomePlanet/AtmosphereMilestone" to="Star/HomePlanet/AtmosphereMilestone" method="_on_body_exited"]

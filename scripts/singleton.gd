@@ -22,8 +22,7 @@ enum Milestone {
     ORBIT_STAR,
     ORBIT_SATELLITE,
     ESCAPE_VELOCITY,
-    VISIT_3,
     CRASH_ASTRONAUT,
 }
 
-var disabled_milestones : Array[String] = []
+var disabled_milestones : Array[String] = ["VISIT_3"]

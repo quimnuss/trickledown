@@ -8,6 +8,6 @@ func _ready() -> void:
 
 
 func _on_body_exited(body: Node2D) -> void:
-    if body is Astronaut:
+    if body is Astronaut and not body.is_queued_for_deletion():
         milestone_completed.emit(Singleton.Milestone.LAUNCH_ATMOSPHERE)
         queue_free()

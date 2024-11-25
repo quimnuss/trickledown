@@ -15,6 +15,8 @@ const CANNON_INITIAL_ROTATION := PI/2 + PI/2 + PI/4
 
 signal rocket_spawned(richmen_id : int)
 
+signal richmen_launched(astronaut : Astronaut)
+
 signal milestone_completed(milestone_enum : Singleton.Milestone)
 
 func _ready() -> void:
@@ -57,6 +59,7 @@ func spawn_rocket():
     Singleton.focused_body = astronaut
     astronaut.focus()
     rocket_spawned.emit(save_manager.current_save.richmen_launchpad)
+    richmen_launched.emit(astronaut)
     save_manager.current_save.rotate_richmen()
     save_manager.current_save.num_richmen -= 1
     save_manager.save()

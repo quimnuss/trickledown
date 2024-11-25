@@ -14,6 +14,11 @@ func _ready() -> void:
         milestoner.milestone_completed.connect(tasklist._on_milestone_completed)
         milestoner.milestone_completed.connect(milestone_toast._on_milestone_completed)
 
+func _on_milestoner_added(milestoner : Node2D):
+    milestoner.milestone_completed.connect(_on_milestone_completed)
+    milestoner.milestone_completed.connect(tasklist._on_milestone_completed)
+    milestoner.milestone_completed.connect(milestone_toast._on_milestone_completed)
+
 func _on_to_city_button_pressed() -> void:
     var scene_id : int = Singleton.Scene.CITY as int
     change_scene.emit(scene_id)
@@ -29,3 +34,7 @@ func _on_milestone_completed(milestone_enum : Singleton.Milestone):
         current_save.milestones.append(milestone_enum)
     current_save.milestones_stats[milestone_enum] = current_save.milestones_stats.get(milestone_enum, 0) + 1
     current_save.save()
+
+
+func _on_launchpad_richmen_launched(astronaut: Astronaut) -> void:
+    _on_milestoner_added(astronaut)

@@ -42,6 +42,7 @@ func _on_milestone_completed(milestone_enum : Singleton.Milestone):
         if checkbox_child.name == Singleton.Milestone.keys()[milestone_enum]:
             if not checkbox_child.button_pressed:
                 checkbox_child.button_pressed = true
+                await get_tree().create_timer(5).timeout
                 checkbox_child.disabled = true
                 milestones.move_child(checkbox_child, -1)
             break

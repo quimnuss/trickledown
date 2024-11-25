@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://c75vmbnxjighe"]
+[gd_scene load_steps=22 format=3 uid="uid://c75vmbnxjighe"]
 
 [ext_resource type="Texture2D" uid="uid://d38ua4nm6k705" path="res://assets/planets/Terran Wet - 305441705.png" id="1_2e2xp"]
 [ext_resource type="Script" path="res://levels/welcome.gd" id="1_fg01x"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://bfvk4u4ykokwo" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_5.png" id="13_yol1d"]
 [ext_resource type="Texture2D" uid="uid://bwocpuv7srru4" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_6.png" id="14_gkw03"]
 [ext_resource type="Texture2D" uid="uid://dk2xnq4m28jts" path="res://assets/ui_assets/arrow.png" id="14_qv8jr"]
+[ext_resource type="AudioStream" uid="uid://b0yimdynpqaus" path="res://assets/audio/spacemusic1.ogg" id="15_x85eb"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_w2602"]
 animations = [{
@@ -314,6 +315,11 @@ libraries = {
 "": SubResource("AnimationLibrary_jkbvo")
 }
 autoplay = "orbit"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("15_x85eb")
+volume_db = -20.0
+autoplay = true
 
 [connection signal="pressed" from="Control/MarginContainer2/VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="Control/MarginContainer2/VBoxContainer/NewGameButton" to="." method="_on_new_game_button_pressed"]
