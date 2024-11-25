@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="RichmenResources" load_steps=3 format=3 uid="uid://cisvlgp6xqyk"]
+
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="1_fy0h6"]
+[ext_resource type="Script" path="res://data/richmen/richmen_resources.gd" id="2_pp31b"]
+
+[resource]
+script = ExtResource("2_pp31b")
+richmen = Array[ExtResource("1_fy0h6")]([])

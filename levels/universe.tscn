@@ -34,7 +34,7 @@ stream = ExtResource("7_mynyy")
 volume_db = -10.0
 parameters/looping = false
 
-[connection signal="change_scene" from="PlanetaryCanvasLayer/PlanetarySystem" to="." method="_on_planetary_system_change_scene"]
 [connection signal="change_scene" from="PlanetaryCanvasLayer/PlanetarySystem" to="." method="_on_change_scene"]
+[connection signal="change_scene" from="PlanetaryCanvasLayer/PlanetarySystem" to="." method="_on_planetary_system_change_scene"]
 [connection signal="change_scene" from="City" to="." method="_on_change_scene"]
 [connection signal="change_scene" from="WorkCanvasLayer" to="." method="_on_change_scene"]

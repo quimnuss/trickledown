@@ -17,6 +17,7 @@ var richmen_value : Dictionary = {
     'Elon Tusk' : 151,
     'Bill Potes' : 124
 }
+
 @warning_ignore("unused_signal")
 signal richman_death(id : int)
 
