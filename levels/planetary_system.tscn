@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=3 uid="uid://bix0vgtkccr8k"]
+[gd_scene load_steps=56 format=3 uid="uid://bix0vgtkccr8k"]
 
 [ext_resource type="Script" path="res://components/visual_orbit.gd" id="1_8xlk2"]
 [ext_resource type="Texture2D" uid="uid://dkclsuxbdnwtn" path="res://assets/sky/dynamic_space_background/Nebula Red.png" id="1_fngs5"]
@@ -37,8 +37,10 @@
 [ext_resource type="Texture2D" uid="uid://c4epnsyupihu2" path="res://assets/ui_assets/time_warp/speed_0.png" id="33_a1v1w"]
 [ext_resource type="Script" path="res://ui/ui.gd" id="34_1ax38"]
 [ext_resource type="Texture2D" uid="uid://cwkwckh8h6uuo" path="res://assets/ui_assets/time_warp/speed_1.png" id="34_klinw"]
-[ext_resource type="Texture2D" uid="uid://ben12xvjgv6i5" path="res://assets/richmen/richmen_empty.png" id="35_4ektf"]
+[ext_resource type="PackedScene" uid="uid://cuua7j11qkp8m" path="res://ui/orbit_portrait.tscn" id="35_u3exb"]
 [ext_resource type="Texture2D" uid="uid://6uot5vtch8je" path="res://assets/ui_assets/time_warp/speed_2.png" id="35_xyw7w"]
+[ext_resource type="Texture2D" uid="uid://cdkfxvkddqxi6" path="res://data/richmen/img/Abigail Johnson.png" id="36_0hri1"]
+[ext_resource type="Resource" uid="uid://dlrwrgk3o3wwf" path="res://data/richmen/richmen_resources/Abigail Johnson.tres" id="36_43mlr"]
 [ext_resource type="Texture2D" uid="uid://twhx5e18ag3r" path="res://assets/ui_assets/time_warp/speed_4.png" id="36_xs0uj"]
 [ext_resource type="Texture2D" uid="uid://crkuacs0sxgda" path="res://assets/ui_assets/time_warp/speed_5.png" id="37_wcqr2"]
 [ext_resource type="PackedScene" uid="uid://djsseo0f6th6i" path="res://ui/task.tscn" id="39_x47u0"]
@@ -432,11 +434,10 @@ horizontal_alignment = 1
 layout_mode = 2
 theme_override_constants/separation = 20
 
-[node name="RichmenPortrait" type="TextureRect" parent="UI/VBoxContainer/HBoxContainer"]
-custom_minimum_size = Vector2(80, 80)
+[node name="RichmenPortrait" parent="UI/VBoxContainer/HBoxContainer" instance=ExtResource("35_u3exb")]
 layout_mode = 2
-texture = ExtResource("35_4ektf")
-expand_mode = 2
+icon = ExtResource("36_0hri1")
+richman_data = ExtResource("36_43mlr")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="UI"]
 anchors_preset = 3

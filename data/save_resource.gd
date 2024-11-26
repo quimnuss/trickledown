@@ -10,6 +10,8 @@ class_name SaveResource
 
 @export var richmen_deaths : Array[RichmanData] = []
 
+@export var richmen_grounded : Array[RichmanData] = []
+
 @warning_ignore("unused_signal")
 signal richman_death(richman_data : RichmanData)
 
@@ -17,11 +19,29 @@ signal richman_death(richman_data : RichmanData)
 
 @export var milestones_stats : Dictionary = {}
 
-const LATEST_SAVE_VERSION : int = 1
+const LATEST_SAVE_VERSION : int = 2
 
 var save_version : int = 2
 
-var richmen_paths = DirAccess.get_files_at("res://data/richmen/richmen_resources/")
+var richmen_paths : PackedStringArray = DirAccess.get_files_at("res://data/richmen/richmen_resources/")
+
+func cascade_num_richmen():
+    # TODO merge with dead richmen or allow repeating
+    for richman_data : RichmanData in richmen_grounded:
+        var idx : int = richmen_paths.find(richman_data.resource_path.get_file())
+        if idx >= 0:
+            richmen_paths.remove_at(idx)
+
+    if num_richmen > len(richmen_grounded):
+        for i in range(num_richmen - len(richmen_grounded)):
+            richmen_grounded.append(random_richman_data())
+    
+    if not launchpad_richman:
+        launchpad_richman = richmen_grounded.pop_front()
+    var richmen_grounded_names : Array[String] = []
+    for richman in richmen_grounded:
+        richmen_grounded_names.append(richman.name)
+    prints('launchpad richmen is ', launchpad_richman.name, " and grounded are ", richmen_grounded_names)
 
 func rotate_richmen():
     if self.launchpad_richman:
@@ -38,12 +58,12 @@ func reset():
     var default_resource = SaveResource.new()
     stonks = default_resource.stonks
     num_richmen = default_resource.num_richmen
-    richmen_launchpad = default_resource.richmen_launchpad
     launchpad_richman = null
     richmen_orbit = default_resource.richmen_orbit
     richmen_deaths = default_resource.richmen_deaths
     milestones = default_resource.milestones
     milestones_stats = default_resource.milestones_stats
+    cascade_num_richmen()
 
 
 func death(richman_data : RichmanData):
