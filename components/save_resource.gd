@@ -23,9 +23,3 @@ func save():
     var error := ResourceSaver.save(current_save, Config.save_path)
     if error:
         print("An error happened while saving data: ", error)
-
-func update_stonks(stonks, num_richmen):
-    current_save.num_richmen = num_richmen
-    current_save.stonks = stonks
-    save()
-    current_save.emit_changed()

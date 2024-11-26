@@ -9,15 +9,11 @@ var work_stonks_delta : int = 1000
 var richmen_threshold : int = 10000
 
 func _ready() -> void:
-    save_manager.changed.connect(_on_stonks_changed)
+    save_manager.current_save.changed.connect(_on_stonks_changed)
     _on_stonks_changed()
 
 func _on_classify_pressed() -> void:
-    var stonks : int = save_manager.current_save.stonks + work_stonks_delta
-    @warning_ignore("integer_division")
-    var num_richmen : int = save_manager.current_save.num_richmen + stonks / richmen_threshold
-    stonks = stonks % richmen_threshold
-    save_manager.update_stonks(stonks, num_richmen)
+    save_manager.current_save.increase_stonks()
 
 func _on_stonks_changed():
     stonks_value.text = str(save_manager.current_save.stonks)

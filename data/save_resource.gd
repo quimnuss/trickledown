@@ -21,9 +21,12 @@ signal richman_death(richman_data : RichmanData)
 
 const LATEST_SAVE_VERSION : int = 2
 
-var save_version : int = 2
+@export var save_version : int = 2
 
 var richmen_paths : PackedStringArray = DirAccess.get_files_at("res://data/richmen/richmen_resources/")
+
+var work_stonks_delta : int = 1000
+var richmen_threshold : int = 10000
 
 func cascade_num_richmen():
     # TODO merge with dead richmen or allow repeating
@@ -72,6 +75,15 @@ func death(richman_data : RichmanData):
     richmen_deaths.append(richman_data)
     save()
     self.emit_changed()
+
+func increase_stonks():
+    stonks += work_stonks_delta
+    @warning_ignore("integer_division")
+    num_richmen += stonks / richmen_threshold
+    stonks = stonks % richmen_threshold
+    
+    save()
+    emit_changed()
 
 
 func save():
