@@ -23,24 +23,55 @@ const LATEST_SAVE_VERSION : int = 2
 
 @export var save_version : int = 2
 
-var richmen_paths : PackedStringArray = DirAccess.get_files_at("res://data/richmen/richmen_resources/")
+@export var richmen_paths : PackedStringArray = preload("res://data/richmen/richmen_resources_list.tres").richmen_resources_list.duplicate()
 
 var work_stonks_delta : int = 1000
 var richmen_threshold : int = 10000
 
 func cascade_num_richmen():
+    richmen_paths = preload("res://data/richmen/richmen_resources_list.tres").richmen_resources_list.duplicate()
     # TODO merge with dead richmen or allow repeating
     for richman_data : RichmanData in richmen_grounded:
         var idx : int = richmen_paths.find(richman_data.resource_path.get_file())
         if idx >= 0:
+            prints('Removed path', richmen_paths[idx], "since it's already loaded on grounded")
             richmen_paths.remove_at(idx)
 
+    prints('Available richmen', len(richmen_paths))
+    if richmen_paths.is_empty():
+        prints("uh oh, pure anarchy achieved. You can't play.")
+        var aresource_filename = preload("res://data/richmen/richmen_resources_list.tres").richmen_resources_list[1]
+        prints('preloading again', aresource_filename)
+        var aresource = ResourceLoader.load("res://data/richmen/richmen_resources/" + aresource_filename)
+        prints(aresource,aresource.name)
+        return
+    else:
+        prints('Example:', richmen_paths[0], richmen_paths[1])
+
+    var a = []
+    for r in richmen_grounded:
+        a.append(r.name)
+    prints('Before regrounding', richmen_grounded, a)
     if num_richmen > len(richmen_grounded):
         for i in range(num_richmen - len(richmen_grounded)):
-            richmen_grounded.append(random_richman_data())
+            var richman : RichmanData = random_richman_data()
+            if richman:
+                prints('Appending', richman, richman.name, 'to the ground')
+                richmen_grounded.append(richman)
+            else:
+                prints('Returned an invalid richman')
     
+    var pre_richmen_grounded_names : Array[String] = []
+    for richman in richmen_grounded:
+        pre_richmen_grounded_names.append(richman.name)
+        
     if not launchpad_richman:
+        prints('richmen_grounded', pre_richmen_grounded_names, 'len', len(richmen_grounded))
         launchpad_richman = richmen_grounded.pop_front()
+        prints('popped launchpad richman', launchpad_richman, launchpad_richman.name, 'remaining', pre_richmen_grounded_names)
+    else:
+        prints('launchpad_richman is there and is called', launchpad_richman.name, launchpad_richman)
+        
     var richmen_grounded_names : Array[String] = []
     for richman in richmen_grounded:
         richmen_grounded_names.append(richman.name)
@@ -54,18 +85,21 @@ func rotate_richmen():
     
 func random_richman_data() -> RichmanData:
     var richmen_res_path : String = richmen_paths[randi() % len(richmen_paths)]
+    prints('respath', richmen_res_path)
     return ResourceLoader.load("res://data/richmen/richmen_resources/" + richmen_res_path)
 
 
 func reset():
+    prints('Resetting save')
     var default_resource = SaveResource.new()
     stonks = default_resource.stonks
     num_richmen = default_resource.num_richmen
     launchpad_richman = null
-    richmen_orbit = default_resource.richmen_orbit
-    richmen_deaths = default_resource.richmen_deaths
-    milestones = default_resource.milestones
-    milestones_stats = default_resource.milestones_stats
+    richmen_orbit = []
+    richmen_deaths = []
+    richmen_grounded = []
+    milestones = []
+    milestones_stats = {}
     cascade_num_richmen()
 
 
