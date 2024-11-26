@@ -13,7 +13,7 @@ var power := 50
 
 const CANNON_INITIAL_ROTATION := PI/2 + PI/2 + PI/4
 
-signal rocket_spawned(richmen_id : int)
+signal rocket_spawned(richman_data : RichmanData)
 
 signal richmen_launched(astronaut : Astronaut)
 
@@ -47,9 +47,8 @@ func _input(event: InputEvent) -> void:
 func spawn_rocket():
     var astronaut = preload("res://actors/astronaut.tscn").instantiate()
     var current_save : SaveResource = save_manager.current_save
-    astronaut.id = current_save.richmen_launchpad
+    astronaut.richman_data = current_save.launchpad_richman
     var richmen_names : Array = current_save.richmen_value.keys()
-    astronaut.name = richmen_names[current_save.richmen_launchpad % len(richmen_names)]
     astronaut.death.connect(current_save.death)
     get_parent().add_child(astronaut)
     astronaut.global_position = marker_2d.global_position
@@ -58,7 +57,7 @@ func spawn_rocket():
     astronaut.apply_central_impulse(impulse)
     Singleton.focused_body = astronaut
     astronaut.focus()
-    rocket_spawned.emit(save_manager.current_save.richmen_launchpad)
+    rocket_spawned.emit(save_manager.current_save.launchpad_richman)
     richmen_launched.emit(astronaut)
     save_manager.current_save.rotate_richmen()
     save_manager.current_save.num_richmen -= 1

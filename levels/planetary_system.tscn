@@ -24,7 +24,6 @@
 [ext_resource type="Script" path="res://components/focus.gd" id="15_5iuv1"]
 [ext_resource type="Script" path="res://components/save_resource.gd" id="22_hrhws"]
 [ext_resource type="AudioStream" uid="uid://bja7vokgvfatm" path="res://assets/audio_effects/rocket_launch.ogg" id="22_kt3lc"]
-[ext_resource type="Texture2D" uid="uid://eqtrg7dru72y" path="res://assets/richmen/richmen.png" id="23_8w78c"]
 [ext_resource type="Script" path="res://ui/orbit_container.gd" id="23_l8vuo"]
 [ext_resource type="Texture2D" uid="uid://dwpcq4sh3v1hn" path="res://assets/richmen/richmen_0.png" id="24_svqlb"]
 [ext_resource type="Texture2D" uid="uid://d01vqa72ep42c" path="res://assets/richmen/richmen_1.png" id="25_h34xa"]
@@ -38,6 +37,7 @@
 [ext_resource type="Texture2D" uid="uid://c4epnsyupihu2" path="res://assets/ui_assets/time_warp/speed_0.png" id="33_a1v1w"]
 [ext_resource type="Script" path="res://ui/ui.gd" id="34_1ax38"]
 [ext_resource type="Texture2D" uid="uid://cwkwckh8h6uuo" path="res://assets/ui_assets/time_warp/speed_1.png" id="34_klinw"]
+[ext_resource type="Texture2D" uid="uid://ben12xvjgv6i5" path="res://assets/richmen/richmen_empty.png" id="35_4ektf"]
 [ext_resource type="Texture2D" uid="uid://6uot5vtch8je" path="res://assets/ui_assets/time_warp/speed_2.png" id="35_xyw7w"]
 [ext_resource type="Texture2D" uid="uid://twhx5e18ag3r" path="res://assets/ui_assets/time_warp/speed_4.png" id="36_xs0uj"]
 [ext_resource type="Texture2D" uid="uid://crkuacs0sxgda" path="res://assets/ui_assets/time_warp/speed_5.png" id="37_wcqr2"]
@@ -432,11 +432,11 @@ horizontal_alignment = 1
 layout_mode = 2
 theme_override_constants/separation = 20
 
-[node name="RichmenPortrait" type="Sprite2D" parent="UI/VBoxContainer/HBoxContainer"]
-scale = Vector2(0.4, 0.4)
-texture = ExtResource("23_8w78c")
-centered = false
-hframes = 5
+[node name="RichmenPortrait" type="TextureRect" parent="UI/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = ExtResource("35_4ektf")
+expand_mode = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="UI"]
 anchors_preset = 3

@@ -1,10 +1,9 @@
 extends RigidBody2D
 class_name Astronaut
 
-var id : int
+var richman_data : RichmanData
 
-@warning_ignore("unused_signal")
-signal death(id : int)
+signal death(richman_data : RichmanData)
 
 @onready var astronaut_controller: AstronautController = $AstronautController
 
@@ -34,7 +33,7 @@ func kill():
     var camera : ZoomingCamera2DCentered = get_viewport().get_camera_2d()
     if camera.get_parent() == self:
         camera.detach()
-    death.emit(self.id)
+    death.emit(self.richman_data)
     queue_free()
 
 
