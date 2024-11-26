@@ -45,7 +45,7 @@ func _input(event: InputEvent) -> void:
 
 
 func spawn_rocket():
-    var astronaut = preload("res://actors/astronaut.tscn").instantiate()
+    var astronaut : Astronaut = preload("res://actors/astronaut.tscn").instantiate()
     var current_save : SaveResource = save_manager.current_save
     astronaut.richman_data = current_save.launchpad_richman
     astronaut.death.connect(current_save.death)
