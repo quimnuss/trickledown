@@ -48,6 +48,7 @@ func spawn_rocket():
     var astronaut : Astronaut = preload("res://actors/astronaut.tscn").instantiate()
     var current_save : SaveResource = save_manager.current_save
     astronaut.richman_data = current_save.launchpad_richman
+    assert(is_instance_valid(current_save.launchpad_richman))
     astronaut.death.connect(current_save.death)
     get_parent().add_child(astronaut)
     astronaut.global_position = marker_2d.global_position

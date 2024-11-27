@@ -28,6 +28,13 @@ const LATEST_SAVE_VERSION : int = 2
 var work_stonks_delta : int = 1000
 var richmen_threshold : int = 10000
 
+func _init():
+    prints('save resource loaded', self.resource_path, self.launchpad_richman)
+    if self.resource_path and not is_instance_valid(self.launchpad_richman):
+        push_warning('launchpad_richman not set')
+        prints('launchpad_richman not set')
+        
+
 func cascade_num_richmen():
     richmen_paths = preload("res://data/richmen/richmen_resources_list.tres").richmen_resources_list.duplicate()
     # TODO merge with dead richmen or allow repeating

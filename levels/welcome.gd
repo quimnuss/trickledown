@@ -11,10 +11,17 @@ func _ready():
             print("Savegame version mismatch. RESETING SAVE. Sorry, we're prototyping the game.")
             current_save.reset()
             current_save.save()
+    else:
+        create_first_time_save()
 
 func _on_start_button_pressed():
     get_tree().change_scene_to_file("res://levels/universe.tscn")
 
+func create_first_time_save():
+    var current_save : SaveResource = SaveResource.new()
+    current_save.reset()
+    current_save.take_over_path(Config.save_path)
+    current_save.save()
 
 func _on_new_game_button_pressed() -> void:
     if ResourceLoader.exists(Config.save_path):
@@ -22,6 +29,8 @@ func _on_new_game_button_pressed() -> void:
         current_save.reset()
         current_save.save()
         _on_start_button_pressed()
+    else:
+        create_first_time_save()
 
 
 func _on_tab_bar_tab_selected(tab: int) -> void:

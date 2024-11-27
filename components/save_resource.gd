@@ -1,18 +1,16 @@
 extends Node
 class_name SaveManager
-var current_save : SaveResource = SaveResource.new()
+var current_save : SaveResource
 
 
 signal changed
 
 func _ready() -> void:
-    if ResourceLoader.exists(Config.save_path):
-        current_save = load(Config.save_path)
-        if OS.is_debug_build() and Singleton.do_reset:
-            Singleton.do_reset = false
-            current_save.reset()
-    else:
-        save()
+    assert(ResourceLoader.exists(Config.save_path))
+    current_save = load(Config.save_path)
+    if OS.is_debug_build() and Singleton.do_reset:
+        Singleton.do_reset = false
+        current_save.reset()
     current_save.changed.connect(_rethrow_changed)
     current_save.emit_changed()
 
