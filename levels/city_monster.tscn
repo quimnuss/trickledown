@@ -1,0 +1,159 @@
+[gd_scene load_steps=16 format=3 uid="uid://co44gcb1n2vox"]
+
+[ext_resource type="Texture2D" uid="uid://bubculuuea5ai" path="res://assets/city/city_monster_background.png" id="1_dy10l"]
+[ext_resource type="Texture2D" uid="uid://c36841akw2rb1" path="res://assets/city/city_monster_purple.png" id="2_qi4r0"]
+[ext_resource type="Texture2D" uid="uid://dtdea4d306dbx" path="res://assets/city/city_monster_tower_monster.png" id="2_rm2ma"]
+[ext_resource type="Texture2D" uid="uid://tutokf7y6g1d" path="res://assets/city/city_monster_bus.png" id="3_1ogaa"]
+[ext_resource type="Script" path="res://scripts/sprite2d_looping.gd" id="3_t5ts8"]
+[ext_resource type="Texture2D" uid="uid://cfim4buy0ebki" path="res://assets/city/city_monster_green.png" id="4_2eiei"]
+[ext_resource type="Texture2D" uid="uid://ecogu24jwolf" path="res://assets/city/city_monster_zeppellin_monster.png" id="5_qf5g5"]
+[ext_resource type="Texture2D" uid="uid://deik2xrfqd0gb" path="res://assets/city/city_monster_pink_eye.png" id="6_uv3e1"]
+[ext_resource type="Texture2D" uid="uid://w462xm0ttjd5" path="res://assets/city/city_monster_red.png" id="6_xakke"]
+[ext_resource type="Texture2D" uid="uid://ckpo1h2ov0bws" path="res://assets/city/city_monster_triplered.png" id="7_0i7q6"]
+[ext_resource type="Texture2D" uid="uid://b715m7qty08ak" path="res://assets/city/city_monster_pink.png" id="8_r6dom"]
+[ext_resource type="Texture2D" uid="uid://dyrri3eun3nw4" path="res://assets/city/city_monster_sun_monster.png" id="11_30oy5"]
+
+[sub_resource type="Animation" id="Animation_xsu7h"]
+resource_name = "red"
+length = 8.0
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Red:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.02292, 3.53333, 5, 6),
+"transitions": PackedFloat32Array(2.92817, 0.450625, 4.75683, 1, 1),
+"update": 0,
+"values": [Vector2(640, 414), Vector2(577, 414), Vector2(577, 414), Vector2(640, 414), Vector2(640, 414)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Red:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.6, 1, 3.5, 3.9, 4.1, 4.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0, 2, 2, 0, 0, 2, 2, 0]
+}
+
+[sub_resource type="Animation" id="Animation_di7t8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Red:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(640, 414)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Red:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k5qhu"]
+_data = {
+"RESET": SubResource("Animation_di7t8"),
+"red": SubResource("Animation_xsu7h")
+}
+
+[node name="CityMonster" type="CanvasLayer"]
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="City" type="Sprite2D" parent="Node2D"]
+position = Vector2(571, 318)
+texture = ExtResource("1_dy10l")
+
+[node name="Tower" type="Sprite2D" parent="Node2D"]
+position = Vector2(550, 323)
+texture = ExtResource("2_rm2ma")
+
+[node name="Bus" type="Sprite2D" parent="Node2D"]
+position = Vector2(621, 393)
+texture = ExtResource("3_1ogaa")
+
+[node name="Purple" type="Sprite2D" parent="Node2D"]
+position = Vector2(382, 415)
+texture = ExtResource("2_qi4r0")
+hframes = 10
+vframes = 6
+frame = 57
+script = ExtResource("3_t5ts8")
+fps = 10.0
+num_frames = 57
+
+[node name="Green" type="Sprite2D" parent="Node2D"]
+position = Vector2(297, 389)
+texture = ExtResource("4_2eiei")
+hframes = 10
+vframes = 7
+frame = 61
+script = ExtResource("3_t5ts8")
+fps = 10.0
+num_frames = 61
+
+[node name="Zeppellin" type="Sprite2D" parent="Node2D"]
+position = Vector2(780, 212)
+texture = ExtResource("5_qf5g5")
+hframes = 10
+vframes = 3
+frame = 28
+script = ExtResource("3_t5ts8")
+num_frames = 28
+
+[node name="Pink" type="Sprite2D" parent="Node2D"]
+position = Vector2(496, 371)
+texture = ExtResource("8_r6dom")
+
+[node name="PinkEye" type="Sprite2D" parent="Node2D"]
+position = Vector2(495, 374)
+texture = ExtResource("6_uv3e1")
+hframes = 10
+vframes = 4
+frame = 35
+script = ExtResource("3_t5ts8")
+fps = 8.0
+num_frames = 35
+
+[node name="TripleRed" type="Sprite2D" parent="Node2D"]
+position = Vector2(816, 410)
+texture = ExtResource("7_0i7q6")
+vframes = 12
+frame = 1
+script = ExtResource("3_t5ts8")
+num_frames = 11
+
+[node name="Red" type="Sprite2D" parent="Node2D"]
+position = Vector2(640, 414)
+texture = ExtResource("6_xakke")
+hframes = 5
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D"]
+libraries = {
+"": SubResource("AnimationLibrary_k5qhu")
+}
+autoplay = "red"
+
+[node name="Sun" type="Sprite2D" parent="Node2D"]
+position = Vector2(562, 283)
+texture = ExtResource("11_30oy5")
