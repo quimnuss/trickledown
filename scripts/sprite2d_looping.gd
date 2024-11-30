@@ -8,4 +8,4 @@ extends Sprite2D
 func _ready() -> void:
     var duration : float = max(num_frames/fps, 0.1)
     var tween : Tween = create_tween().set_loops()
-    tween.tween_property(self, "frame", num_frames, num_frames/fps).from(0)
+    tween.tween_property(self, "frame", num_frames, num_frames/fps).set_delay(randf() * 2).from(0)

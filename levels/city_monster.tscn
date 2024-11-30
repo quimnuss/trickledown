@@ -1,9 +1,10 @@
-[gd_scene load_steps=16 format=3 uid="uid://co44gcb1n2vox"]
+[gd_scene load_steps=23 format=3 uid="uid://co44gcb1n2vox"]
 
 [ext_resource type="Texture2D" uid="uid://bubculuuea5ai" path="res://assets/city/city_monster_background.png" id="1_dy10l"]
 [ext_resource type="Texture2D" uid="uid://c36841akw2rb1" path="res://assets/city/city_monster_purple.png" id="2_qi4r0"]
 [ext_resource type="Texture2D" uid="uid://dtdea4d306dbx" path="res://assets/city/city_monster_tower_monster.png" id="2_rm2ma"]
 [ext_resource type="Texture2D" uid="uid://tutokf7y6g1d" path="res://assets/city/city_monster_bus.png" id="3_1ogaa"]
+[ext_resource type="Texture2D" uid="uid://bagfemokhm4cp" path="res://assets/city/city_monster_eyes.png" id="3_3t11h"]
 [ext_resource type="Script" path="res://scripts/sprite2d_looping.gd" id="3_t5ts8"]
 [ext_resource type="Texture2D" uid="uid://cfim4buy0ebki" path="res://assets/city/city_monster_green.png" id="4_2eiei"]
 [ext_resource type="Texture2D" uid="uid://ecogu24jwolf" path="res://assets/city/city_monster_zeppellin_monster.png" id="5_qf5g5"]
@@ -12,6 +13,75 @@
 [ext_resource type="Texture2D" uid="uid://ckpo1h2ov0bws" path="res://assets/city/city_monster_triplered.png" id="7_0i7q6"]
 [ext_resource type="Texture2D" uid="uid://b715m7qty08ak" path="res://assets/city/city_monster_pink.png" id="8_r6dom"]
 [ext_resource type="Texture2D" uid="uid://dyrri3eun3nw4" path="res://assets/city/city_monster_sun_monster.png" id="11_30oy5"]
+[ext_resource type="Texture2D" uid="uid://bxo4vtkra718w" path="res://assets/city/cloud.png" id="13_8fg1a"]
+[ext_resource type="Script" path="res://scripts/bobbing.gd" id="14_mgqpa"]
+[ext_resource type="Script" path="res://scripts/simple_orbit.gd" id="14_x78jw"]
+
+[sub_resource type="Animation" id="Animation_yk18i"]
+resource_name = "zeppellin"
+length = 8.0
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2, 4, 6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(770, 212), Vector2(760, 220), Vector2(750, 210), Vector2(760, 220)]
+}
+
+[sub_resource type="Animation" id="Animation_t0ydn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(780, 212)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bafdk"]
+_data = {
+"RESET": SubResource("Animation_t0ydn"),
+"zeppellin": SubResource("Animation_yk18i")
+}
+
+[sub_resource type="Animation" id="Animation_di7t8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Red:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(640, 414)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Red:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
 
 [sub_resource type="Animation" id="Animation_xsu7h"]
 resource_name = "red"
@@ -43,33 +113,6 @@ tracks/1/keys = {
 "values": [0, 2, 2, 0, 0, 2, 2, 0]
 }
 
-[sub_resource type="Animation" id="Animation_di7t8"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Red:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(640, 414)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Red:frame")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [0]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_k5qhu"]
 _data = {
 "RESET": SubResource("Animation_di7t8"),
@@ -87,6 +130,13 @@ texture = ExtResource("1_dy10l")
 [node name="Tower" type="Sprite2D" parent="Node2D"]
 position = Vector2(550, 323)
 texture = ExtResource("2_rm2ma")
+
+[node name="Eyes" type="Sprite2D" parent="Node2D/Tower"]
+position = Vector2(-20, -53)
+texture = ExtResource("3_3t11h")
+vframes = 7
+script = ExtResource("3_t5ts8")
+num_frames = 6
 
 [node name="Bus" type="Sprite2D" parent="Node2D"]
 position = Vector2(621, 393)
@@ -121,6 +171,12 @@ frame = 28
 script = ExtResource("3_t5ts8")
 num_frames = 28
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D/Zeppellin"]
+libraries = {
+"": SubResource("AnimationLibrary_bafdk")
+}
+autoplay = "zeppellin"
+
 [node name="Pink" type="Sprite2D" parent="Node2D"]
 position = Vector2(496, 371)
 texture = ExtResource("8_r6dom")
@@ -148,12 +204,74 @@ position = Vector2(640, 414)
 texture = ExtResource("6_xakke")
 hframes = 5
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D/Red"]
+root_node = NodePath("../..")
 libraries = {
 "": SubResource("AnimationLibrary_k5qhu")
 }
 autoplay = "red"
 
-[node name="Sun" type="Sprite2D" parent="Node2D"]
-position = Vector2(562, 283)
+[node name="SunAnchor" type="Node2D" parent="Node2D"]
+position = Vector2(433, 221)
+
+[node name="Node2D" type="Node2D" parent="Node2D/SunAnchor"]
+script = ExtResource("14_x78jw")
+
+[node name="Sun" type="Sprite2D" parent="Node2D/SunAnchor/Node2D"]
+position = Vector2(-19, 0)
 texture = ExtResource("11_30oy5")
+
+[node name="Eyes" type="Sprite2D" parent="Node2D/SunAnchor/Node2D/Sun"]
+position = Vector2(0, -4)
+texture = ExtResource("3_3t11h")
+vframes = 7
+frame = 6
+script = ExtResource("3_t5ts8")
+num_frames = 6
+
+[node name="Clouds" type="Node2D" parent="Node2D"]
+position = Vector2(568, 300)
+
+[node name="Cloud" type="Sprite2D" parent="Node2D/Clouds"]
+texture = ExtResource("13_8fg1a")
+script = ExtResource("14_mgqpa")
+
+[node name="Cloud2" type="Sprite2D" parent="Node2D/Clouds"]
+position = Vector2(276, -55)
+texture = ExtResource("13_8fg1a")
+script = ExtResource("14_mgqpa")
+
+[node name="Cloud3" type="Sprite2D" parent="Node2D/Clouds"]
+position = Vector2(-88, -23)
+texture = ExtResource("13_8fg1a")
+script = ExtResource("14_mgqpa")
+
+[node name="Cloud4" type="Sprite2D" parent="Node2D/Clouds"]
+position = Vector2(252, 36)
+texture = ExtResource("13_8fg1a")
+script = ExtResource("14_mgqpa")
+
+[node name="Cloud5" type="Sprite2D" parent="Node2D/Clouds"]
+position = Vector2(171, -73)
+texture = ExtResource("13_8fg1a")
+script = ExtResource("14_mgqpa")
+
+[node name="Cloud6" type="Sprite2D" parent="Node2D/Clouds"]
+position = Vector2(95, 37)
+texture = ExtResource("13_8fg1a")
+script = ExtResource("14_mgqpa")
+
+[node name="Cloud7" type="Sprite2D" parent="Node2D/Clouds"]
+position = Vector2(-135, 25)
+texture = ExtResource("13_8fg1a")
+script = ExtResource("14_mgqpa")
+
+[node name="Cloud8" type="Sprite2D" parent="Node2D/Clouds"]
+position = Vector2(-323, 40)
+texture = ExtResource("13_8fg1a")
+script = ExtResource("14_mgqpa")
+
+[node name="Cloud9" type="Sprite2D" parent="Node2D/Clouds"]
+position = Vector2(-221, -48)
+texture = ExtResource("13_8fg1a")
+script = ExtResource("14_mgqpa")
