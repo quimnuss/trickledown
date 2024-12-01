@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://co44gcb1n2vox"]
+[gd_scene load_steps=31 format=3 uid="uid://co44gcb1n2vox"]
 
 [ext_resource type="Texture2D" uid="uid://bubculuuea5ai" path="res://assets/city/city_monster_background.png" id="1_dy10l"]
 [ext_resource type="Texture2D" uid="uid://c36841akw2rb1" path="res://assets/city/city_monster_purple.png" id="2_qi4r0"]
@@ -11,11 +11,89 @@
 [ext_resource type="Texture2D" uid="uid://deik2xrfqd0gb" path="res://assets/city/city_monster_pink_eye.png" id="6_uv3e1"]
 [ext_resource type="Texture2D" uid="uid://w462xm0ttjd5" path="res://assets/city/city_monster_red.png" id="6_xakke"]
 [ext_resource type="Texture2D" uid="uid://ckpo1h2ov0bws" path="res://assets/city/city_monster_triplered.png" id="7_0i7q6"]
+[ext_resource type="Texture2D" uid="uid://tavkqnndt0dp" path="res://assets/city/city_monster_green_windows.png" id="8_4g5w8"]
 [ext_resource type="Texture2D" uid="uid://b715m7qty08ak" path="res://assets/city/city_monster_pink.png" id="8_r6dom"]
 [ext_resource type="Texture2D" uid="uid://dyrri3eun3nw4" path="res://assets/city/city_monster_sun_monster.png" id="11_30oy5"]
 [ext_resource type="Texture2D" uid="uid://bxo4vtkra718w" path="res://assets/city/cloud.png" id="13_8fg1a"]
 [ext_resource type="Script" path="res://scripts/bobbing.gd" id="14_mgqpa"]
 [ext_resource type="Script" path="res://scripts/simple_orbit.gd" id="14_x78jw"]
+[ext_resource type="Script" path="res://scripts/move_up.gd" id="17_6s582"]
+[ext_resource type="Texture2D" uid="uid://b2j3ewri0s3bx" path="res://assets/city/small_eye.png" id="17_a2pvw"]
+[ext_resource type="Texture2D" uid="uid://d3rnqgfanusxa" path="res://assets/city/city_monster_lighthouse.png" id="17_y243g"]
+[ext_resource type="Texture2D" uid="uid://bjnq5r7qaoad8" path="res://assets/city/cliff_water.png" id="19_by2po"]
+
+[sub_resource type="Animation" id="Animation_df4il"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_fvtwp"]
+resource_name = "shrink"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 2, 3.03333)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1.00089, -0.25, 0, 0.121886, -0.000657439, 1, -0.0781143, 0.0344183, 0.155219, -0.0753778, 0.799277, -0.833333, -0.0771531, 0.433333, 0.0372453, 0.850329, -0.25, 0, 0.25, 0, 0.82403, -0.25, 0, 1.3, 0.0230111, 1.00023, -0.9, 0.333991, 0.3, -0.0894147, 0.999573, -0.7, 0.000657439, 0.25, 0),
+"times": PackedFloat32Array(0, 1.8, 2, 3.06667, 4.1, 5, 7.03333, 8.03333)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k0tam"]
+_data = {
+"RESET": SubResource("Animation_df4il"),
+"shrink": SubResource("Animation_fvtwp")
+}
+
+[sub_resource type="Animation" id="Animation_t0ydn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(780, 212)]
+}
 
 [sub_resource type="Animation" id="Animation_yk18i"]
 resource_name = "zeppellin"
@@ -33,21 +111,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
 "values": [Vector2(770, 212), Vector2(760, 220), Vector2(750, 210), Vector2(760, 220)]
-}
-
-[sub_resource type="Animation" id="Animation_t0ydn"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(780, 212)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_bafdk"]
@@ -121,6 +184,10 @@ _data = {
 
 [node name="CityMonster" type="CanvasLayer"]
 
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+
 [node name="Node2D" type="Node2D" parent="."]
 
 [node name="City" type="Sprite2D" parent="Node2D"]
@@ -128,15 +195,22 @@ position = Vector2(571, 318)
 texture = ExtResource("1_dy10l")
 
 [node name="Tower" type="Sprite2D" parent="Node2D"]
-position = Vector2(550, 323)
+position = Vector2(548, 423)
 texture = ExtResource("2_rm2ma")
+offset = Vector2(0, -105)
 
 [node name="Eyes" type="Sprite2D" parent="Node2D/Tower"]
-position = Vector2(-20, -53)
+position = Vector2(1, -156)
 texture = ExtResource("3_3t11h")
 vframes = 7
 script = ExtResource("3_t5ts8")
 num_frames = 6
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D/Tower"]
+libraries = {
+"": SubResource("AnimationLibrary_k0tam")
+}
+autoplay = "shrink"
 
 [node name="Bus" type="Sprite2D" parent="Node2D"]
 position = Vector2(621, 393)
@@ -161,6 +235,16 @@ frame = 61
 script = ExtResource("3_t5ts8")
 fps = 10.0
 num_frames = 61
+
+[node name="Windows" type="Sprite2D" parent="Node2D/Green"]
+position = Vector2(2, -102)
+texture = ExtResource("8_4g5w8")
+hframes = 7
+frame = 6
+script = ExtResource("3_t5ts8")
+fps = 2.0
+num_frames = 6
+delay = 4
 
 [node name="Zeppellin" type="Sprite2D" parent="Node2D"]
 position = Vector2(780, 212)
@@ -215,24 +299,70 @@ autoplay = "red"
 position = Vector2(433, 221)
 
 [node name="Node2D" type="Node2D" parent="Node2D/SunAnchor"]
-script = ExtResource("14_x78jw")
 
 [node name="Sun" type="Sprite2D" parent="Node2D/SunAnchor/Node2D"]
 position = Vector2(-19, 0)
 texture = ExtResource("11_30oy5")
+script = ExtResource("14_x78jw")
+speed = 1.0
+a = 10.0
 
 [node name="Eyes" type="Sprite2D" parent="Node2D/SunAnchor/Node2D/Sun"]
-position = Vector2(0, -4)
+position = Vector2(-1, 5)
 texture = ExtResource("3_3t11h")
 vframes = 7
 frame = 6
 script = ExtResource("3_t5ts8")
 num_frames = 6
 
+[node name="LightHouseAnchor" type="Node2D" parent="Node2D"]
+position = Vector2(860, 424)
+
+[node name="Mask" type="Polygon2D" parent="Node2D/LightHouseAnchor"]
+clip_children = 1
+color = Color(0.756863, 0, 0, 1)
+polygon = PackedVector2Array(-15, -102, 14, -102, 20, 3, -19, 3)
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/LightHouseAnchor/Mask"]
+position = Vector2(0, -51)
+texture = ExtResource("17_y243g")
+hframes = 10
+vframes = 4
+frame = 32
+script = ExtResource("3_t5ts8")
+fps = 25.0
+num_frames = 32
+delay = 0
+
+[node name="StripesAnchor" type="Node2D" parent="Node2D/LightHouseAnchor/Mask"]
+position = Vector2(0, 125)
+script = ExtResource("17_6s582")
+speed = -50.0
+start_position = Vector2(50, 125)
+
+[node name="LightHouseEyes" type="Sprite2D" parent="Node2D/LightHouseAnchor"]
+position = Vector2(0, -110)
+texture = ExtResource("17_a2pvw")
+hframes = 5
+frame = 4
+script = ExtResource("3_t5ts8")
+num_frames = 4
+delay = 5
+
+[node name="Waterfall" type="Sprite2D" parent="Node2D"]
+position = Vector2(752, 440)
+texture = ExtResource("19_by2po")
+vframes = 11
+frame = 10
+script = ExtResource("3_t5ts8")
+num_frames = 10
+delay = 0
+
 [node name="Clouds" type="Node2D" parent="Node2D"]
 position = Vector2(568, 300)
 
 [node name="Cloud" type="Sprite2D" parent="Node2D/Clouds"]
+position = Vector2(1, 23)
 texture = ExtResource("13_8fg1a")
 script = ExtResource("14_mgqpa")
 
@@ -252,7 +382,7 @@ texture = ExtResource("13_8fg1a")
 script = ExtResource("14_mgqpa")
 
 [node name="Cloud5" type="Sprite2D" parent="Node2D/Clouds"]
-position = Vector2(171, -73)
+position = Vector2(169, -31)
 texture = ExtResource("13_8fg1a")
 script = ExtResource("14_mgqpa")
 
@@ -272,6 +402,6 @@ texture = ExtResource("13_8fg1a")
 script = ExtResource("14_mgqpa")
 
 [node name="Cloud9" type="Sprite2D" parent="Node2D/Clouds"]
-position = Vector2(-221, -48)
+position = Vector2(-213, -24)
 texture = ExtResource("13_8fg1a")
 script = ExtResource("14_mgqpa")
