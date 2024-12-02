@@ -19,7 +19,7 @@ func _ready():
     self.body_entered.connect(_on_body_entered)
     self.body_exited.connect(_on_body_exited)
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
     if completed:
         return
     if orbiting_astronaut:
