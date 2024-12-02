@@ -3,7 +3,7 @@ class_name AstronautController
 
 var impulse : Vector2 = Vector2.ZERO
 
-var FULL_POWER : float = 2.0
+var FULL_POWER : float = 0.5
 
 var DELTA_ROTATE : float = 0.1
 

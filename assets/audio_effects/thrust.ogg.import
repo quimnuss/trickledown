@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/thrust.ogg-dfe44fa20a54daa4b5b7f920f7c6a991.o
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0
