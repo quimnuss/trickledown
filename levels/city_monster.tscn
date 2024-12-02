@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=3 uid="uid://co44gcb1n2vox"]
+[gd_scene load_steps=51 format=3 uid="uid://co44gcb1n2vox"]
 
 [ext_resource type="Texture2D" uid="uid://bubculuuea5ai" path="res://assets/city/city_monster_background.png" id="1_dy10l"]
 [ext_resource type="Texture2D" uid="uid://cn2yioy8utio5" path="res://assets/city/parallax/sky.png" id="1_ul87s"]
@@ -33,6 +33,9 @@
 [ext_resource type="Texture2D" uid="uid://hnveln5wq5vc" path="res://assets/city/parallax/smog.png" id="29_n0b74"]
 [ext_resource type="Script" path="res://actors/capitalism.gd" id="30_t103r"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a4jql"]
+size = Vector2(44, 170.669)
+
 [sub_resource type="Animation" id="Animation_df4il"]
 length = 0.001
 tracks/0/type = "bezier"
@@ -60,7 +63,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_fvtwp"]
 resource_name = "shrink"
-length = 10.0
+length = 13.0
 loop_mode = 1
 tracks/0/type = "bezier"
 tracks/0/imported = false
@@ -71,7 +74,7 @@ tracks/0/loop_wrap = true
 tracks/0/keys = {
 "handle_modes": PackedInt32Array(0, 0, 0),
 "points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0, 2, 3.03333)
+"times": PackedFloat32Array(0, 0.566667, 1.6)
 }
 tracks/1/type = "bezier"
 tracks/1/imported = false
@@ -82,7 +85,7 @@ tracks/1/loop_wrap = true
 tracks/1/keys = {
 "handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0),
 "points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1.00089, -0.25, 0, 0.121886, -0.000657439, 1, -0.0781143, 0.0344183, 0.155219, -0.0753778, 0.799277, -0.833333, -0.0771531, 0.433333, 0.0372453, 0.850329, -0.25, 0, 0.25, 0, 0.82403, -0.25, 0, 1.3, 0.0230111, 1.00023, -0.9, 0.333991, 0.3, -0.0894147, 0.999573, -0.7, 0.000657439, 0.25, 0),
-"times": PackedFloat32Array(0, 1.8, 2, 3.06667, 4.1, 5, 7.03333, 8.03333)
+"times": PackedFloat32Array(0, 0.366667, 0.566667, 1.63334, 2.66667, 3.56667, 5.6, 6.6)
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_k0tam"]
@@ -91,8 +94,14 @@ _data = {
 "shrink": SubResource("Animation_fvtwp")
 }
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c04gg"]
+size = Vector2(56, 75)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aa1jm"]
 size = Vector2(109, 218)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f0d0p"]
+size = Vector2(92, 45)
 
 [sub_resource type="Animation" id="Animation_t0ydn"]
 length = 0.001
@@ -111,7 +120,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_yk18i"]
 resource_name = "zeppellin"
-length = 8.0
+length = 16.0
 loop_mode = 1
 step = 0.1
 tracks/0/type = "value"
@@ -121,7 +130,7 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 2, 4, 6),
+"times": PackedFloat32Array(0, 4, 8, 12),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
 "values": [Vector2(770, 212), Vector2(760, 220), Vector2(750, 210), Vector2(760, 220)]
@@ -133,8 +142,14 @@ _data = {
 "zeppellin": SubResource("Animation_yk18i")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_f0d0p"]
-size = Vector2(92, 45)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kk657"]
+size = Vector2(76, 94)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xdxah"]
+size = Vector2(44, 38)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hbe48"]
+size = Vector2(44, 38)
 
 [sub_resource type="Animation" id="Animation_di7t8"]
 length = 0.001
@@ -165,7 +180,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_xsu7h"]
 resource_name = "red"
-length = 8.0
+length = 12.0
 loop_mode = 1
 step = 0.1
 tracks/0/type = "value"
@@ -175,10 +190,10 @@ tracks/0/path = NodePath("Red:position")
 tracks/0/interp = 2
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 2.02292, 3.53333, 5, 6),
-"transitions": PackedFloat32Array(2.92817, 0.450625, 4.75683, 1, 1),
+"times": PackedFloat32Array(0, 2.02292, 3.53333, 5, 6, 12),
+"transitions": PackedFloat32Array(2.92817, 0.450625, 4.75683, 1, 1, 1),
 "update": 0,
-"values": [Vector2(640, 414), Vector2(577, 414), Vector2(577, 414), Vector2(640, 414), Vector2(640, 414)]
+"values": [Vector2(640, 414), Vector2(577, 414), Vector2(577, 414), Vector2(640, 414), Vector2(640, 414), Vector2(640, 414)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -187,10 +202,10 @@ tracks/1/path = NodePath("Red:frame")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.4, 0.6, 1, 3.5, 3.9, 4.1, 4.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.4, 0.6, 1, 3.5, 3.9, 4.1, 4.5, 8.3, 8.7, 8.9, 9.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [0, 2, 2, 0, 0, 2, 2, 0]
+"values": [0, 2, 2, 0, 0, 2, 2, 0, 0, 2, 2, 0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_k5qhu"]
@@ -198,6 +213,12 @@ _data = {
 "RESET": SubResource("Animation_di7t8"),
 "red": SubResource("Animation_xsu7h")
 }
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4jppo"]
+radius = 28.2843
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x37m4"]
+size = Vector2(24, 133)
 
 [node name="CityMonster" type="Node2D"]
 
@@ -214,6 +235,7 @@ texture = ExtResource("2_1l2m7")
 texture = ExtResource("3_jxjik")
 
 [node name="Sprite2D4" type="Sprite2D" parent="Background"]
+visible = false
 texture = ExtResource("4_40gck")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
@@ -265,12 +287,20 @@ script = ExtResource("8_nuh2n")
 looping_sprites = [NodePath("../Eyes")]
 animation_player = NodePath("../AnimationPlayer")
 
+[node name="InteractArea" type="Area2D" parent="City/Tower/Interactable"]
+position = Vector2(300, 278.355)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="City/Tower/Interactable/InteractArea"]
+position = Vector2(0, 66.3347)
+shape = SubResource("RectangleShape2D_a4jql")
+
 [node name="Eyes" type="Sprite2D" parent="City/Tower"]
 position = Vector2(1, -156)
 texture = ExtResource("3_3t11h")
 vframes = 7
 script = ExtResource("3_t5ts8")
 num_frames = 6
+delay = 4
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="City/Tower"]
 libraries = {
@@ -290,6 +320,13 @@ position = Vector2(-299, -429)
 script = ExtResource("8_nuh2n")
 looping_sprites = [NodePath("../PurpleFace")]
 
+[node name="InteractArea" type="Area2D" parent="City/Purple/Interactable"]
+position = Vector2(299, 429)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="City/Purple/Interactable/InteractArea"]
+position = Vector2(1, -40.5)
+shape = SubResource("RectangleShape2D_c04gg")
+
 [node name="PurpleBack" type="Sprite2D" parent="City/Purple"]
 position = Vector2(3, -39)
 texture = ExtResource("6_8ty34")
@@ -303,6 +340,7 @@ frame = 57
 script = ExtResource("3_t5ts8")
 fps = 10.0
 num_frames = 57
+delay = 8
 
 [node name="Green" type="Node2D" parent="City" groups=["buildings"]]
 position = Vector2(299, 429)
@@ -312,10 +350,10 @@ position = Vector2(-299, -429)
 script = ExtResource("8_nuh2n")
 looping_sprites = [NodePath("../GreenFace"), NodePath("../GreenFace/Windows")]
 
-[node name="InteractArea" type="Area2D" parent="City/Green"]
-position = Vector2(-1, -90)
+[node name="InteractArea" type="Area2D" parent="City/Green/Interactable"]
+position = Vector2(298, 339)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="City/Green/InteractArea"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="City/Green/Interactable/InteractArea"]
 position = Vector2(1.5, -37)
 shape = SubResource("RectangleShape2D_aa1jm")
 
@@ -332,6 +370,7 @@ frame = 61
 script = ExtResource("3_t5ts8")
 fps = 10.0
 num_frames = 61
+delay = 4
 
 [node name="Windows" type="Sprite2D" parent="City/Green/GreenFace"]
 position = Vector2(2, -102)
@@ -341,7 +380,7 @@ frame = 6
 script = ExtResource("3_t5ts8")
 fps = 2.0
 num_frames = 6
-delay = 4
+delay = 8
 
 [node name="Zeppellin" type="Sprite2D" parent="City" groups=["buildings"]]
 position = Vector2(780, 212)
@@ -351,6 +390,7 @@ vframes = 3
 frame = 28
 script = ExtResource("3_t5ts8")
 num_frames = 28
+delay = 4
 
 [node name="Interactable" type="Node2D" parent="City/Zeppellin" node_paths=PackedStringArray("looping_sprites", "animation_player")]
 position = Vector2(-299, -429)
@@ -358,17 +398,18 @@ script = ExtResource("8_nuh2n")
 looping_sprites = [NodePath("..")]
 animation_player = NodePath("../AnimationPlayer")
 
+[node name="InteractArea" type="Area2D" parent="City/Zeppellin/Interactable"]
+position = Vector2(299, 429)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="City/Zeppellin/Interactable/InteractArea"]
+position = Vector2(0, -5)
+shape = SubResource("RectangleShape2D_f0d0p")
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="City/Zeppellin"]
 libraries = {
 "": SubResource("AnimationLibrary_bafdk")
 }
 autoplay = "zeppellin"
-
-[node name="InteractArea" type="Area2D" parent="City/Zeppellin"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="City/Zeppellin/InteractArea"]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_f0d0p")
 
 [node name="Pink" type="Node2D" parent="City" groups=["buildings"]]
 position = Vector2(496, 371)
@@ -377,6 +418,13 @@ position = Vector2(496, 371)
 position = Vector2(-299, -429)
 script = ExtResource("8_nuh2n")
 looping_sprites = [NodePath("../PinkEye")]
+
+[node name="InteractArea" type="Area2D" parent="City/Pink/Interactable"]
+position = Vector2(299, 429)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="City/Pink/Interactable/InteractArea"]
+position = Vector2(-1, 16)
+shape = SubResource("RectangleShape2D_kk657")
 
 [node name="PinkBack" type="Sprite2D" parent="City/Pink"]
 texture = ExtResource("8_r6dom")
@@ -390,6 +438,7 @@ frame = 35
 script = ExtResource("3_t5ts8")
 fps = 8.0
 num_frames = 35
+delay = 4
 
 [node name="TripleRed" type="Node2D" parent="City" groups=["buildings"]]
 position = Vector2(816, 410)
@@ -398,6 +447,12 @@ position = Vector2(816, 410)
 position = Vector2(-299, -429)
 script = ExtResource("8_nuh2n")
 looping_sprites = [NodePath("../TripleRedEyes")]
+
+[node name="InteractArea" type="Area2D" parent="City/TripleRed/Interactable"]
+position = Vector2(299, 429)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="City/TripleRed/Interactable/InteractArea"]
+shape = SubResource("RectangleShape2D_xdxah")
 
 [node name="TripleRedBack" type="Sprite2D" parent="City/TripleRed"]
 position = Vector2(-2, -3)
@@ -420,6 +475,12 @@ position = Vector2(-299, -429)
 script = ExtResource("8_nuh2n")
 animation_player = NodePath("../AnimationPlayer")
 
+[node name="InteractArea" type="Area2D" parent="City/Red/Interactable"]
+position = Vector2(299, 429)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="City/Red/Interactable/InteractArea"]
+shape = SubResource("RectangleShape2D_hbe48")
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="City/Red"]
 root_node = NodePath("../..")
 libraries = {
@@ -434,13 +495,20 @@ position = Vector2(433, 221)
 position = Vector2(-299, -429)
 script = ExtResource("8_nuh2n")
 
+[node name="InteractArea" type="Area2D" parent="City/SunAnchor/Interactable"]
+position = Vector2(281, 436)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="City/SunAnchor/Interactable/InteractArea"]
+position = Vector2(-2, -5)
+shape = SubResource("CircleShape2D_4jppo")
+
 [node name="Node2D" type="Node2D" parent="City/SunAnchor"]
 
 [node name="Sun" type="Sprite2D" parent="City/SunAnchor/Node2D"]
 position = Vector2(-19, 0)
 texture = ExtResource("11_30oy5")
 script = ExtResource("14_x78jw")
-speed = 1.0
+speed = 0.5
 a = 10.0
 
 [node name="Eyes" type="Sprite2D" parent="City/SunAnchor/Node2D/Sun"]
@@ -450,6 +518,7 @@ vframes = 7
 frame = 6
 script = ExtResource("3_t5ts8")
 num_frames = 6
+delay = 6
 
 [node name="LightHouseAnchor" type="Node2D" parent="City" groups=["buildings"]]
 position = Vector2(860, 424)
@@ -458,6 +527,13 @@ position = Vector2(860, 424)
 position = Vector2(-299, -429)
 script = ExtResource("8_nuh2n")
 looping_sprites = [NodePath("../Mask/LightHouseBody"), NodePath("../LightHouseEyes")]
+
+[node name="InteractArea" type="Area2D" parent="City/LightHouseAnchor/Interactable"]
+position = Vector2(298, 416)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="City/LightHouseAnchor/Interactable/InteractArea"]
+position = Vector2(0, -55.5)
+shape = SubResource("RectangleShape2D_x37m4")
 
 [node name="Mask" type="Polygon2D" parent="City/LightHouseAnchor"]
 clip_children = 1
@@ -492,7 +568,7 @@ hframes = 5
 frame = 4
 script = ExtResource("3_t5ts8")
 num_frames = 4
-delay = 5
+delay = 10
 
 [node name="Waterfall" type="Sprite2D" parent="City"]
 position = Vector2(752, 440)
@@ -555,7 +631,3 @@ script = ExtResource("14_mgqpa")
 position = Vector2(-213, -24)
 texture = ExtResource("13_8fg1a")
 script = ExtResource("14_mgqpa")
-
-[connection signal="input_event" from="City/Green/InteractArea" to="City/Green/Interactable" method="_on_interact_area_input_event"]
-[connection signal="input_event" from="City/Green/InteractArea" to="City/Green/Interactable" method="_on_area_2d_input_event"]
-[connection signal="input_event" from="City/Zeppellin/InteractArea" to="City/Zeppellin/Interactable" method="_on_interact_area_input_event"]

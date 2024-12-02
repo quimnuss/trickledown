@@ -11,8 +11,8 @@ var tween : Tween
 func _ready() -> void:
     var duration : float = max(num_frames/fps, 0.1)
     tween = create_tween().set_loops()
-    tween.tween_property(self, "frame", num_frames, num_frames/fps).from(0)
-    tween.tween_interval(randf() * delay)
+    tween.tween_property(self, "frame", num_frames, duration).from(0)
+    tween.tween_interval(randf() * delay/4 + delay)
 
 func restart() -> void:
     tween.stop()
