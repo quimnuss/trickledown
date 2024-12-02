@@ -1,37 +1,14 @@
 [gd_scene load_steps=4 format=3 uid="uid://b778f20b5udf0"]
 
 [ext_resource type="Script" path="res://levels/city.gd" id="1_hmln8"]
-[ext_resource type="VideoStream" path="res://assets/city/city_monster.ogv" id="2_1k4qg"]
+[ext_resource type="PackedScene" uid="uid://co44gcb1n2vox" path="res://levels/city_monster.tscn" id="2_7tmjc"]
 [ext_resource type="StyleBox" uid="uid://cstqf7ew55mxr" path="res://ui/styles/margin_style_box_flat.tres" id="3_0fecl"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 layer = 2
 script = ExtResource("1_hmln8")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-color = Color(0.882353, 0.886275, 0.996078, 1)
-
-[node name="CenterContainer" type="CenterContainer" parent="."]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="CenterContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-stream = ExtResource("2_1k4qg")
-autoplay = true
-loop = true
+[node name="CityMonster" parent="." instance=ExtResource("2_7tmjc")]
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 anchors_preset = 3

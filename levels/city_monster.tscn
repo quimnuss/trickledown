@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://co44gcb1n2vox"]
+[gd_scene load_steps=44 format=3 uid="uid://co44gcb1n2vox"]
 
 [ext_resource type="Texture2D" uid="uid://bubculuuea5ai" path="res://assets/city/city_monster_background.png" id="1_dy10l"]
 [ext_resource type="Texture2D" uid="uid://cn2yioy8utio5" path="res://assets/city/parallax/sky.png" id="1_ul87s"]
@@ -28,6 +28,8 @@
 [ext_resource type="Texture2D" uid="uid://b2j3ewri0s3bx" path="res://assets/city/small_eye.png" id="17_a2pvw"]
 [ext_resource type="Texture2D" uid="uid://d3rnqgfanusxa" path="res://assets/city/city_monster_lighthouse.png" id="17_y243g"]
 [ext_resource type="Texture2D" uid="uid://bjnq5r7qaoad8" path="res://assets/city/cliff_water.png" id="19_by2po"]
+[ext_resource type="Texture2D" uid="uid://krfay34awk4s" path="res://assets/city/city_monster_triplered_back.png" id="20_vxxbb"]
+[ext_resource type="Texture2D" uid="uid://bh2b452f1s2ae" path="res://assets/city/city_monster_lighthouse_head.png" id="27_086er"]
 [ext_resource type="Texture2D" uid="uid://hnveln5wq5vc" path="res://assets/city/parallax/smog.png" id="29_n0b74"]
 [ext_resource type="Script" path="res://actors/capitalism.gd" id="30_t103r"]
 
@@ -197,9 +199,25 @@ _data = {
 "red": SubResource("Animation_xsu7h")
 }
 
-[node name="CityMonster" type="CanvasLayer"]
+[node name="CityMonster" type="Node2D"]
+
+[node name="Background" type="Node2D" parent="."]
+position = Vector2(472, 294)
+
+[node name="Sprite2D" type="Sprite2D" parent="Background"]
+texture = ExtResource("1_ul87s")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background"]
+texture = ExtResource("2_1l2m7")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Background"]
+texture = ExtResource("3_jxjik")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Background"]
+texture = ExtResource("4_40gck")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+visible = false
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
 position = Vector2(467, 297)
@@ -226,42 +244,57 @@ position = Vector2(467, 297)
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
 texture = ExtResource("4_40gck")
 
-[node name="Node2D" type="Node2D" parent="."]
+[node name="City" type="Node2D" parent="."]
 
-[node name="City" type="Sprite2D" parent="Node2D" groups=["buildings"]]
+[node name="Capitalism" type="Node" parent="City" node_paths=PackedStringArray("smog")]
+script = ExtResource("30_t103r")
+smog = NodePath("../Smog")
+
+[node name="CityBackground" type="Sprite2D" parent="City"]
 position = Vector2(571, 318)
 texture = ExtResource("1_dy10l")
 
-[node name="Tower" type="Sprite2D" parent="Node2D" groups=["buildings"]]
+[node name="Tower" type="Sprite2D" parent="City" groups=["buildings"]]
 position = Vector2(548, 423)
 texture = ExtResource("2_rm2ma")
 offset = Vector2(0, -105)
 
-[node name="Eyes" type="Sprite2D" parent="Node2D/Tower"]
+[node name="Interactable" type="Node2D" parent="City/Tower" node_paths=PackedStringArray("looping_sprites", "animation_player")]
+position = Vector2(-299, -429)
+script = ExtResource("8_nuh2n")
+looping_sprites = [NodePath("../Eyes")]
+animation_player = NodePath("../AnimationPlayer")
+
+[node name="Eyes" type="Sprite2D" parent="City/Tower"]
 position = Vector2(1, -156)
 texture = ExtResource("3_3t11h")
 vframes = 7
 script = ExtResource("3_t5ts8")
 num_frames = 6
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D/Tower"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="City/Tower"]
 libraries = {
 "": SubResource("AnimationLibrary_k0tam")
 }
 autoplay = "shrink"
 
-[node name="Bus" type="Sprite2D" parent="Node2D" groups=["buildings"]]
+[node name="Bus" type="Sprite2D" parent="City" groups=["buildings"]]
 position = Vector2(621, 393)
 texture = ExtResource("3_1ogaa")
 
-[node name="Purple" type="Node2D" parent="Node2D" groups=["buildings"]]
+[node name="Purple" type="Node2D" parent="City" groups=["buildings"]]
 position = Vector2(381, 429)
 
-[node name="PurpleBack" type="Sprite2D" parent="Node2D/Purple"]
+[node name="Interactable" type="Node2D" parent="City/Purple" node_paths=PackedStringArray("looping_sprites")]
+position = Vector2(-299, -429)
+script = ExtResource("8_nuh2n")
+looping_sprites = [NodePath("../PurpleFace")]
+
+[node name="PurpleBack" type="Sprite2D" parent="City/Purple"]
 position = Vector2(3, -39)
 texture = ExtResource("6_8ty34")
 
-[node name="PurpleFace" type="Sprite2D" parent="Node2D/Purple"]
+[node name="PurpleFace" type="Sprite2D" parent="City/Purple"]
 position = Vector2(1, -14)
 texture = ExtResource("2_qi4r0")
 hframes = 10
@@ -271,26 +304,26 @@ script = ExtResource("3_t5ts8")
 fps = 10.0
 num_frames = 57
 
-[node name="Green" type="Node2D" parent="Node2D" groups=["buildings"]]
+[node name="Green" type="Node2D" parent="City" groups=["buildings"]]
 position = Vector2(299, 429)
 
-[node name="Interactable" type="Node2D" parent="Node2D/Green" node_paths=PackedStringArray("looping_sprites")]
+[node name="Interactable" type="Node2D" parent="City/Green" node_paths=PackedStringArray("looping_sprites")]
 position = Vector2(-299, -429)
 script = ExtResource("8_nuh2n")
 looping_sprites = [NodePath("../GreenFace"), NodePath("../GreenFace/Windows")]
 
-[node name="InteractArea" type="Area2D" parent="Node2D/Green"]
+[node name="InteractArea" type="Area2D" parent="City/Green"]
 position = Vector2(-1, -90)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Green/InteractArea"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="City/Green/InteractArea"]
 position = Vector2(1.5, -37)
 shape = SubResource("RectangleShape2D_aa1jm")
 
-[node name="GreenBack" type="Sprite2D" parent="Node2D/Green"]
+[node name="GreenBack" type="Sprite2D" parent="City/Green"]
 position = Vector2(0, -124)
 texture = ExtResource("8_5uk0f")
 
-[node name="GreenFace" type="Sprite2D" parent="Node2D/Green"]
+[node name="GreenFace" type="Sprite2D" parent="City/Green"]
 position = Vector2(-2, -40)
 texture = ExtResource("4_2eiei")
 hframes = 10
@@ -300,7 +333,7 @@ script = ExtResource("3_t5ts8")
 fps = 10.0
 num_frames = 61
 
-[node name="Windows" type="Sprite2D" parent="Node2D/Green/GreenFace"]
+[node name="Windows" type="Sprite2D" parent="City/Green/GreenFace"]
 position = Vector2(2, -102)
 texture = ExtResource("8_4g5w8")
 hframes = 7
@@ -310,7 +343,7 @@ fps = 2.0
 num_frames = 6
 delay = 4
 
-[node name="Zeppellin" type="Sprite2D" parent="Node2D" groups=["buildings"]]
+[node name="Zeppellin" type="Sprite2D" parent="City" groups=["buildings"]]
 position = Vector2(780, 212)
 texture = ExtResource("5_qf5g5")
 hframes = 10
@@ -319,30 +352,37 @@ frame = 28
 script = ExtResource("3_t5ts8")
 num_frames = 28
 
-[node name="Interactable" type="Node2D" parent="Node2D/Zeppellin" node_paths=PackedStringArray("looping_sprites", "animation_player")]
+[node name="Interactable" type="Node2D" parent="City/Zeppellin" node_paths=PackedStringArray("looping_sprites", "animation_player")]
 position = Vector2(-299, -429)
 script = ExtResource("8_nuh2n")
 looping_sprites = [NodePath("..")]
 animation_player = NodePath("../AnimationPlayer")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D/Zeppellin"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="City/Zeppellin"]
 libraries = {
 "": SubResource("AnimationLibrary_bafdk")
 }
 autoplay = "zeppellin"
 
-[node name="InteractArea" type="Area2D" parent="Node2D/Zeppellin"]
+[node name="InteractArea" type="Area2D" parent="City/Zeppellin"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Zeppellin/InteractArea"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="City/Zeppellin/InteractArea"]
 position = Vector2(0, -5)
 shape = SubResource("RectangleShape2D_f0d0p")
 
-[node name="Pink" type="Sprite2D" parent="Node2D" groups=["buildings"]]
+[node name="Pink" type="Node2D" parent="City" groups=["buildings"]]
 position = Vector2(496, 371)
+
+[node name="Interactable" type="Node2D" parent="City/Pink" node_paths=PackedStringArray("looping_sprites")]
+position = Vector2(-299, -429)
+script = ExtResource("8_nuh2n")
+looping_sprites = [NodePath("../PinkEye")]
+
+[node name="PinkBack" type="Sprite2D" parent="City/Pink"]
 texture = ExtResource("8_r6dom")
 
-[node name="PinkEye" type="Sprite2D" parent="Node2D" groups=["buildings"]]
-position = Vector2(495, 374)
+[node name="PinkEye" type="Sprite2D" parent="City/Pink"]
+position = Vector2(-1, 3)
 texture = ExtResource("6_uv3e1")
 hframes = 10
 vframes = 4
@@ -351,39 +391,59 @@ script = ExtResource("3_t5ts8")
 fps = 8.0
 num_frames = 35
 
-[node name="TripleRed" type="Sprite2D" parent="Node2D" groups=["buildings"]]
+[node name="TripleRed" type="Node2D" parent="City" groups=["buildings"]]
 position = Vector2(816, 410)
+
+[node name="Interactable" type="Node2D" parent="City/TripleRed" node_paths=PackedStringArray("looping_sprites")]
+position = Vector2(-299, -429)
+script = ExtResource("8_nuh2n")
+looping_sprites = [NodePath("../TripleRedEyes")]
+
+[node name="TripleRedBack" type="Sprite2D" parent="City/TripleRed"]
+position = Vector2(-2, -3)
+texture = ExtResource("20_vxxbb")
+
+[node name="TripleRedEyes" type="Sprite2D" parent="City/TripleRed"]
 texture = ExtResource("7_0i7q6")
 vframes = 12
 frame = 1
 script = ExtResource("3_t5ts8")
 num_frames = 11
 
-[node name="Red" type="Sprite2D" parent="Node2D" groups=["buildings"]]
+[node name="Red" type="Sprite2D" parent="City" groups=["buildings"]]
 position = Vector2(640, 414)
 texture = ExtResource("6_xakke")
 hframes = 5
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D/Red"]
+[node name="Interactable" type="Node2D" parent="City/Red" node_paths=PackedStringArray("animation_player")]
+position = Vector2(-299, -429)
+script = ExtResource("8_nuh2n")
+animation_player = NodePath("../AnimationPlayer")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="City/Red"]
 root_node = NodePath("../..")
 libraries = {
 "": SubResource("AnimationLibrary_k5qhu")
 }
 autoplay = "red"
 
-[node name="SunAnchor" type="Node2D" parent="Node2D"]
+[node name="SunAnchor" type="Node2D" parent="City"]
 position = Vector2(433, 221)
 
-[node name="Node2D" type="Node2D" parent="Node2D/SunAnchor"]
+[node name="Interactable" type="Node2D" parent="City/SunAnchor"]
+position = Vector2(-299, -429)
+script = ExtResource("8_nuh2n")
 
-[node name="Sun" type="Sprite2D" parent="Node2D/SunAnchor/Node2D"]
+[node name="Node2D" type="Node2D" parent="City/SunAnchor"]
+
+[node name="Sun" type="Sprite2D" parent="City/SunAnchor/Node2D"]
 position = Vector2(-19, 0)
 texture = ExtResource("11_30oy5")
 script = ExtResource("14_x78jw")
 speed = 1.0
 a = 10.0
 
-[node name="Eyes" type="Sprite2D" parent="Node2D/SunAnchor/Node2D/Sun"]
+[node name="Eyes" type="Sprite2D" parent="City/SunAnchor/Node2D/Sun"]
 position = Vector2(-1, 5)
 texture = ExtResource("3_3t11h")
 vframes = 7
@@ -391,15 +451,20 @@ frame = 6
 script = ExtResource("3_t5ts8")
 num_frames = 6
 
-[node name="LightHouseAnchor" type="Node2D" parent="Node2D"]
+[node name="LightHouseAnchor" type="Node2D" parent="City" groups=["buildings"]]
 position = Vector2(860, 424)
 
-[node name="Mask" type="Polygon2D" parent="Node2D/LightHouseAnchor"]
+[node name="Interactable" type="Node2D" parent="City/LightHouseAnchor" node_paths=PackedStringArray("looping_sprites")]
+position = Vector2(-299, -429)
+script = ExtResource("8_nuh2n")
+looping_sprites = [NodePath("../Mask/LightHouseBody"), NodePath("../LightHouseEyes")]
+
+[node name="Mask" type="Polygon2D" parent="City/LightHouseAnchor"]
 clip_children = 1
 color = Color(0.756863, 0, 0, 1)
 polygon = PackedVector2Array(-15, -102, 14, -102, 20, 3, -19, 3)
 
-[node name="Sprite2D" type="Sprite2D" parent="Node2D/LightHouseAnchor/Mask"]
+[node name="LightHouseBody" type="Sprite2D" parent="City/LightHouseAnchor/Mask"]
 position = Vector2(0, -51)
 texture = ExtResource("17_y243g")
 hframes = 10
@@ -410,13 +475,17 @@ fps = 25.0
 num_frames = 32
 delay = 0
 
-[node name="StripesAnchor" type="Node2D" parent="Node2D/LightHouseAnchor/Mask"]
+[node name="StripesAnchor" type="Node2D" parent="City/LightHouseAnchor/Mask"]
 position = Vector2(0, 125)
 script = ExtResource("17_6s582")
 speed = -50.0
 start_position = Vector2(50, 125)
 
-[node name="LightHouseEyes" type="Sprite2D" parent="Node2D/LightHouseAnchor"]
+[node name="LightHouseHead" type="Sprite2D" parent="City/LightHouseAnchor"]
+position = Vector2(0, -122)
+texture = ExtResource("27_086er")
+
+[node name="LightHouseEyes" type="Sprite2D" parent="City/LightHouseAnchor"]
 position = Vector2(0, -110)
 texture = ExtResource("17_a2pvw")
 hframes = 5
@@ -425,7 +494,7 @@ script = ExtResource("3_t5ts8")
 num_frames = 4
 delay = 5
 
-[node name="Waterfall" type="Sprite2D" parent="Node2D"]
+[node name="Waterfall" type="Sprite2D" parent="City"]
 position = Vector2(752, 440)
 texture = ExtResource("19_by2po")
 vframes = 11
@@ -434,62 +503,59 @@ script = ExtResource("3_t5ts8")
 num_frames = 10
 delay = 0
 
-[node name="Clouds" type="Node2D" parent="Node2D"]
-position = Vector2(568, 300)
-
-[node name="Cloud" type="Sprite2D" parent="Node2D/Clouds"]
-position = Vector2(1, 23)
-texture = ExtResource("13_8fg1a")
-script = ExtResource("14_mgqpa")
-
-[node name="Cloud2" type="Sprite2D" parent="Node2D/Clouds"]
-position = Vector2(276, -55)
-texture = ExtResource("13_8fg1a")
-script = ExtResource("14_mgqpa")
-
-[node name="Cloud3" type="Sprite2D" parent="Node2D/Clouds"]
-position = Vector2(-88, -23)
-texture = ExtResource("13_8fg1a")
-script = ExtResource("14_mgqpa")
-
-[node name="Cloud4" type="Sprite2D" parent="Node2D/Clouds"]
-position = Vector2(252, 36)
-texture = ExtResource("13_8fg1a")
-script = ExtResource("14_mgqpa")
-
-[node name="Cloud5" type="Sprite2D" parent="Node2D/Clouds"]
-position = Vector2(169, -31)
-texture = ExtResource("13_8fg1a")
-script = ExtResource("14_mgqpa")
-
-[node name="Cloud6" type="Sprite2D" parent="Node2D/Clouds"]
-position = Vector2(95, 37)
-texture = ExtResource("13_8fg1a")
-script = ExtResource("14_mgqpa")
-
-[node name="Cloud7" type="Sprite2D" parent="Node2D/Clouds"]
-position = Vector2(-135, 25)
-texture = ExtResource("13_8fg1a")
-script = ExtResource("14_mgqpa")
-
-[node name="Cloud8" type="Sprite2D" parent="Node2D/Clouds"]
-position = Vector2(-323, 40)
-texture = ExtResource("13_8fg1a")
-script = ExtResource("14_mgqpa")
-
-[node name="Cloud9" type="Sprite2D" parent="Node2D/Clouds"]
-position = Vector2(-213, -24)
-texture = ExtResource("13_8fg1a")
-script = ExtResource("14_mgqpa")
-
-[node name="Smog" type="Sprite2D" parent="."]
+[node name="Smog" type="Sprite2D" parent="City"]
 modulate = Color(1, 1, 1, 0)
 position = Vector2(506, 359)
 texture = ExtResource("29_n0b74")
 
-[node name="Capitalism" type="Node" parent="."]
-script = ExtResource("30_t103r")
+[node name="Clouds" type="Node2D" parent="City"]
+position = Vector2(568, 300)
 
-[connection signal="input_event" from="Node2D/Green/InteractArea" to="Node2D/Green/Interactable" method="_on_interact_area_input_event"]
-[connection signal="input_event" from="Node2D/Green/InteractArea" to="Node2D/Green/Interactable" method="_on_area_2d_input_event"]
-[connection signal="input_event" from="Node2D/Zeppellin/InteractArea" to="Node2D/Zeppellin/Interactable" method="_on_interact_area_input_event"]
+[node name="Cloud" type="Sprite2D" parent="City/Clouds"]
+position = Vector2(1, 23)
+texture = ExtResource("13_8fg1a")
+script = ExtResource("14_mgqpa")
+
+[node name="Cloud2" type="Sprite2D" parent="City/Clouds"]
+position = Vector2(276, -55)
+texture = ExtResource("13_8fg1a")
+script = ExtResource("14_mgqpa")
+
+[node name="Cloud3" type="Sprite2D" parent="City/Clouds"]
+position = Vector2(-88, -23)
+texture = ExtResource("13_8fg1a")
+script = ExtResource("14_mgqpa")
+
+[node name="Cloud4" type="Sprite2D" parent="City/Clouds"]
+position = Vector2(252, 36)
+texture = ExtResource("13_8fg1a")
+script = ExtResource("14_mgqpa")
+
+[node name="Cloud5" type="Sprite2D" parent="City/Clouds"]
+position = Vector2(169, -31)
+texture = ExtResource("13_8fg1a")
+script = ExtResource("14_mgqpa")
+
+[node name="Cloud6" type="Sprite2D" parent="City/Clouds"]
+position = Vector2(95, 37)
+texture = ExtResource("13_8fg1a")
+script = ExtResource("14_mgqpa")
+
+[node name="Cloud7" type="Sprite2D" parent="City/Clouds"]
+position = Vector2(-135, 25)
+texture = ExtResource("13_8fg1a")
+script = ExtResource("14_mgqpa")
+
+[node name="Cloud8" type="Sprite2D" parent="City/Clouds"]
+position = Vector2(-323, 40)
+texture = ExtResource("13_8fg1a")
+script = ExtResource("14_mgqpa")
+
+[node name="Cloud9" type="Sprite2D" parent="City/Clouds"]
+position = Vector2(-213, -24)
+texture = ExtResource("13_8fg1a")
+script = ExtResource("14_mgqpa")
+
+[connection signal="input_event" from="City/Green/InteractArea" to="City/Green/Interactable" method="_on_interact_area_input_event"]
+[connection signal="input_event" from="City/Green/InteractArea" to="City/Green/Interactable" method="_on_area_2d_input_event"]
+[connection signal="input_event" from="City/Zeppellin/InteractArea" to="City/Zeppellin/Interactable" method="_on_interact_area_input_event"]

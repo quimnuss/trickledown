@@ -18,3 +18,5 @@ func restart() -> void:
     tween.stop()
     tween.play()
     
+func stop() -> void:
+    tween.stop()
