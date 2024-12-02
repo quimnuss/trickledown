@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://co44gcb1n2vox"]
+[gd_scene load_steps=36 format=3 uid="uid://co44gcb1n2vox"]
 
 [ext_resource type="Texture2D" uid="uid://bubculuuea5ai" path="res://assets/city/city_monster_background.png" id="1_dy10l"]
 [ext_resource type="Texture2D" uid="uid://c36841akw2rb1" path="res://assets/city/city_monster_purple.png" id="2_qi4r0"]
@@ -8,10 +8,13 @@
 [ext_resource type="Script" path="res://scripts/sprite2d_looping.gd" id="3_t5ts8"]
 [ext_resource type="Texture2D" uid="uid://cfim4buy0ebki" path="res://assets/city/city_monster_green.png" id="4_2eiei"]
 [ext_resource type="Texture2D" uid="uid://ecogu24jwolf" path="res://assets/city/city_monster_zeppellin_monster.png" id="5_qf5g5"]
+[ext_resource type="Texture2D" uid="uid://ck2lwxphw6ru8" path="res://assets/city/city_monster_purple_back.png" id="6_8ty34"]
 [ext_resource type="Texture2D" uid="uid://deik2xrfqd0gb" path="res://assets/city/city_monster_pink_eye.png" id="6_uv3e1"]
 [ext_resource type="Texture2D" uid="uid://w462xm0ttjd5" path="res://assets/city/city_monster_red.png" id="6_xakke"]
 [ext_resource type="Texture2D" uid="uid://ckpo1h2ov0bws" path="res://assets/city/city_monster_triplered.png" id="7_0i7q6"]
 [ext_resource type="Texture2D" uid="uid://tavkqnndt0dp" path="res://assets/city/city_monster_green_windows.png" id="8_4g5w8"]
+[ext_resource type="Texture2D" uid="uid://b2kmh5iior55p" path="res://assets/city/city_monster_green_back.png" id="8_5uk0f"]
+[ext_resource type="Script" path="res://components/interactable.gd" id="8_nuh2n"]
 [ext_resource type="Texture2D" uid="uid://b715m7qty08ak" path="res://assets/city/city_monster_pink.png" id="8_r6dom"]
 [ext_resource type="Texture2D" uid="uid://dyrri3eun3nw4" path="res://assets/city/city_monster_sun_monster.png" id="11_30oy5"]
 [ext_resource type="Texture2D" uid="uid://bxo4vtkra718w" path="res://assets/city/cloud.png" id="13_8fg1a"]
@@ -80,6 +83,9 @@ _data = {
 "shrink": SubResource("Animation_fvtwp")
 }
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aa1jm"]
+size = Vector2(109, 218)
+
 [sub_resource type="Animation" id="Animation_t0ydn"]
 length = 0.001
 tracks/0/type = "value"
@@ -118,6 +124,9 @@ _data = {
 "RESET": SubResource("Animation_t0ydn"),
 "zeppellin": SubResource("Animation_yk18i")
 }
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f0d0p"]
+size = Vector2(92, 45)
 
 [sub_resource type="Animation" id="Animation_di7t8"]
 length = 0.001
@@ -187,6 +196,7 @@ _data = {
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 1152.0
 offset_bottom = 648.0
+mouse_filter = 2
 
 [node name="Node2D" type="Node2D" parent="."]
 
@@ -216,8 +226,15 @@ autoplay = "shrink"
 position = Vector2(621, 393)
 texture = ExtResource("3_1ogaa")
 
-[node name="Purple" type="Sprite2D" parent="Node2D"]
-position = Vector2(382, 415)
+[node name="Purple" type="Node2D" parent="Node2D"]
+position = Vector2(381, 429)
+
+[node name="PurpleBack" type="Sprite2D" parent="Node2D/Purple"]
+position = Vector2(3, -39)
+texture = ExtResource("6_8ty34")
+
+[node name="PurpleFace" type="Sprite2D" parent="Node2D/Purple"]
+position = Vector2(1, -14)
 texture = ExtResource("2_qi4r0")
 hframes = 10
 vframes = 6
@@ -226,8 +243,27 @@ script = ExtResource("3_t5ts8")
 fps = 10.0
 num_frames = 57
 
-[node name="Green" type="Sprite2D" parent="Node2D"]
-position = Vector2(297, 389)
+[node name="Green" type="Node2D" parent="Node2D"]
+position = Vector2(299, 429)
+
+[node name="Interactable" type="Node2D" parent="Node2D/Green" node_paths=PackedStringArray("looping_sprites")]
+position = Vector2(-299, -429)
+script = ExtResource("8_nuh2n")
+looping_sprites = [NodePath("../GreenFace"), NodePath("../GreenFace/Windows")]
+
+[node name="InteractArea" type="Area2D" parent="Node2D/Green"]
+position = Vector2(-1, -90)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Green/InteractArea"]
+position = Vector2(1.5, -37)
+shape = SubResource("RectangleShape2D_aa1jm")
+
+[node name="GreenBack" type="Sprite2D" parent="Node2D/Green"]
+position = Vector2(0, -124)
+texture = ExtResource("8_5uk0f")
+
+[node name="GreenFace" type="Sprite2D" parent="Node2D/Green"]
+position = Vector2(-2, -40)
 texture = ExtResource("4_2eiei")
 hframes = 10
 vframes = 7
@@ -236,7 +272,7 @@ script = ExtResource("3_t5ts8")
 fps = 10.0
 num_frames = 61
 
-[node name="Windows" type="Sprite2D" parent="Node2D/Green"]
+[node name="Windows" type="Sprite2D" parent="Node2D/Green/GreenFace"]
 position = Vector2(2, -102)
 texture = ExtResource("8_4g5w8")
 hframes = 7
@@ -255,11 +291,23 @@ frame = 28
 script = ExtResource("3_t5ts8")
 num_frames = 28
 
+[node name="Interactable" type="Node2D" parent="Node2D/Zeppellin" node_paths=PackedStringArray("looping_sprites", "animation_player")]
+position = Vector2(-299, -429)
+script = ExtResource("8_nuh2n")
+looping_sprites = [NodePath("..")]
+animation_player = NodePath("../AnimationPlayer")
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D/Zeppellin"]
 libraries = {
 "": SubResource("AnimationLibrary_bafdk")
 }
 autoplay = "zeppellin"
+
+[node name="InteractArea" type="Area2D" parent="Node2D/Zeppellin"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Zeppellin/InteractArea"]
+position = Vector2(0, -5)
+shape = SubResource("RectangleShape2D_f0d0p")
 
 [node name="Pink" type="Sprite2D" parent="Node2D"]
 position = Vector2(496, 371)
@@ -405,3 +453,7 @@ script = ExtResource("14_mgqpa")
 position = Vector2(-213, -24)
 texture = ExtResource("13_8fg1a")
 script = ExtResource("14_mgqpa")
+
+[connection signal="input_event" from="Node2D/Green/InteractArea" to="Node2D/Green/Interactable" method="_on_area_2d_input_event"]
+[connection signal="input_event" from="Node2D/Green/InteractArea" to="Node2D/Green/Interactable" method="_on_interact_area_input_event"]
+[connection signal="input_event" from="Node2D/Zeppellin/InteractArea" to="Node2D/Zeppellin/Interactable" method="_on_interact_area_input_event"]
