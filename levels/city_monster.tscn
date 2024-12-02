@@ -1,12 +1,16 @@
-[gd_scene load_steps=36 format=3 uid="uid://co44gcb1n2vox"]
+[gd_scene load_steps=42 format=3 uid="uid://co44gcb1n2vox"]
 
 [ext_resource type="Texture2D" uid="uid://bubculuuea5ai" path="res://assets/city/city_monster_background.png" id="1_dy10l"]
+[ext_resource type="Texture2D" uid="uid://cn2yioy8utio5" path="res://assets/city/parallax/sky.png" id="1_ul87s"]
+[ext_resource type="Texture2D" uid="uid://ou2872x1f3qt" path="res://assets/city/parallax/rocks.png" id="2_1l2m7"]
 [ext_resource type="Texture2D" uid="uid://c36841akw2rb1" path="res://assets/city/city_monster_purple.png" id="2_qi4r0"]
 [ext_resource type="Texture2D" uid="uid://dtdea4d306dbx" path="res://assets/city/city_monster_tower_monster.png" id="2_rm2ma"]
 [ext_resource type="Texture2D" uid="uid://tutokf7y6g1d" path="res://assets/city/city_monster_bus.png" id="3_1ogaa"]
 [ext_resource type="Texture2D" uid="uid://bagfemokhm4cp" path="res://assets/city/city_monster_eyes.png" id="3_3t11h"]
+[ext_resource type="Texture2D" uid="uid://ccrpvrum3tvko" path="res://assets/city/parallax/clouds_1.png" id="3_jxjik"]
 [ext_resource type="Script" path="res://scripts/sprite2d_looping.gd" id="3_t5ts8"]
 [ext_resource type="Texture2D" uid="uid://cfim4buy0ebki" path="res://assets/city/city_monster_green.png" id="4_2eiei"]
+[ext_resource type="Texture2D" uid="uid://bby8ea8785e8v" path="res://assets/city/parallax/clouds_2.png" id="4_40gck"]
 [ext_resource type="Texture2D" uid="uid://ecogu24jwolf" path="res://assets/city/city_monster_zeppellin_monster.png" id="5_qf5g5"]
 [ext_resource type="Texture2D" uid="uid://ck2lwxphw6ru8" path="res://assets/city/city_monster_purple_back.png" id="6_8ty34"]
 [ext_resource type="Texture2D" uid="uid://deik2xrfqd0gb" path="res://assets/city/city_monster_pink_eye.png" id="6_uv3e1"]
@@ -24,6 +28,8 @@
 [ext_resource type="Texture2D" uid="uid://b2j3ewri0s3bx" path="res://assets/city/small_eye.png" id="17_a2pvw"]
 [ext_resource type="Texture2D" uid="uid://d3rnqgfanusxa" path="res://assets/city/city_monster_lighthouse.png" id="17_y243g"]
 [ext_resource type="Texture2D" uid="uid://bjnq5r7qaoad8" path="res://assets/city/cliff_water.png" id="19_by2po"]
+[ext_resource type="Texture2D" uid="uid://hnveln5wq5vc" path="res://assets/city/parallax/smog.png" id="29_n0b74"]
+[ext_resource type="Script" path="res://actors/capitalism.gd" id="30_t103r"]
 
 [sub_resource type="Animation" id="Animation_df4il"]
 length = 0.001
@@ -193,18 +199,40 @@ _data = {
 
 [node name="CityMonster" type="CanvasLayer"]
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_right = 1152.0
-offset_bottom = 648.0
-mouse_filter = 2
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(467, 297)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture = ExtResource("1_ul87s")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(467, 297)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture = ExtResource("2_1l2m7")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(467, 297)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+texture = ExtResource("3_jxjik")
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+visible = false
+position = Vector2(467, 297)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
+texture = ExtResource("4_40gck")
 
 [node name="Node2D" type="Node2D" parent="."]
 
-[node name="City" type="Sprite2D" parent="Node2D"]
+[node name="City" type="Sprite2D" parent="Node2D" groups=["buildings"]]
 position = Vector2(571, 318)
 texture = ExtResource("1_dy10l")
 
-[node name="Tower" type="Sprite2D" parent="Node2D"]
+[node name="Tower" type="Sprite2D" parent="Node2D" groups=["buildings"]]
 position = Vector2(548, 423)
 texture = ExtResource("2_rm2ma")
 offset = Vector2(0, -105)
@@ -222,11 +250,11 @@ libraries = {
 }
 autoplay = "shrink"
 
-[node name="Bus" type="Sprite2D" parent="Node2D"]
+[node name="Bus" type="Sprite2D" parent="Node2D" groups=["buildings"]]
 position = Vector2(621, 393)
 texture = ExtResource("3_1ogaa")
 
-[node name="Purple" type="Node2D" parent="Node2D"]
+[node name="Purple" type="Node2D" parent="Node2D" groups=["buildings"]]
 position = Vector2(381, 429)
 
 [node name="PurpleBack" type="Sprite2D" parent="Node2D/Purple"]
@@ -243,7 +271,7 @@ script = ExtResource("3_t5ts8")
 fps = 10.0
 num_frames = 57
 
-[node name="Green" type="Node2D" parent="Node2D"]
+[node name="Green" type="Node2D" parent="Node2D" groups=["buildings"]]
 position = Vector2(299, 429)
 
 [node name="Interactable" type="Node2D" parent="Node2D/Green" node_paths=PackedStringArray("looping_sprites")]
@@ -282,7 +310,7 @@ fps = 2.0
 num_frames = 6
 delay = 4
 
-[node name="Zeppellin" type="Sprite2D" parent="Node2D"]
+[node name="Zeppellin" type="Sprite2D" parent="Node2D" groups=["buildings"]]
 position = Vector2(780, 212)
 texture = ExtResource("5_qf5g5")
 hframes = 10
@@ -309,11 +337,11 @@ autoplay = "zeppellin"
 position = Vector2(0, -5)
 shape = SubResource("RectangleShape2D_f0d0p")
 
-[node name="Pink" type="Sprite2D" parent="Node2D"]
+[node name="Pink" type="Sprite2D" parent="Node2D" groups=["buildings"]]
 position = Vector2(496, 371)
 texture = ExtResource("8_r6dom")
 
-[node name="PinkEye" type="Sprite2D" parent="Node2D"]
+[node name="PinkEye" type="Sprite2D" parent="Node2D" groups=["buildings"]]
 position = Vector2(495, 374)
 texture = ExtResource("6_uv3e1")
 hframes = 10
@@ -323,7 +351,7 @@ script = ExtResource("3_t5ts8")
 fps = 8.0
 num_frames = 35
 
-[node name="TripleRed" type="Sprite2D" parent="Node2D"]
+[node name="TripleRed" type="Sprite2D" parent="Node2D" groups=["buildings"]]
 position = Vector2(816, 410)
 texture = ExtResource("7_0i7q6")
 vframes = 12
@@ -331,7 +359,7 @@ frame = 1
 script = ExtResource("3_t5ts8")
 num_frames = 11
 
-[node name="Red" type="Sprite2D" parent="Node2D"]
+[node name="Red" type="Sprite2D" parent="Node2D" groups=["buildings"]]
 position = Vector2(640, 414)
 texture = ExtResource("6_xakke")
 hframes = 5
@@ -454,6 +482,14 @@ position = Vector2(-213, -24)
 texture = ExtResource("13_8fg1a")
 script = ExtResource("14_mgqpa")
 
-[connection signal="input_event" from="Node2D/Green/InteractArea" to="Node2D/Green/Interactable" method="_on_area_2d_input_event"]
+[node name="Smog" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(506, 359)
+texture = ExtResource("29_n0b74")
+
+[node name="Capitalism" type="Node" parent="."]
+script = ExtResource("30_t103r")
+
 [connection signal="input_event" from="Node2D/Green/InteractArea" to="Node2D/Green/Interactable" method="_on_interact_area_input_event"]
+[connection signal="input_event" from="Node2D/Green/InteractArea" to="Node2D/Green/Interactable" method="_on_area_2d_input_event"]
 [connection signal="input_event" from="Node2D/Zeppellin/InteractArea" to="Node2D/Zeppellin/Interactable" method="_on_interact_area_input_event"]
