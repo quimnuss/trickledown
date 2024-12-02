@@ -28,9 +28,9 @@ func _on_new_game_button_pressed() -> void:
         var current_save : SaveResource = load(Config.save_path)
         current_save.reset()
         current_save.save()
-        _on_start_button_pressed()
     else:
         create_first_time_save()
+    _on_start_button_pressed()
 
 
 func _on_tab_bar_tab_selected(tab: int) -> void:
