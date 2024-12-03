@@ -41,7 +41,7 @@ func capitalism_consequences():
             var capitalization : Capitalization = building.get_node_or_null('Capitalization')
             if capitalization:
                 capitalization.capitalize()
-            prints('Capitalized',building)
+            prints('Capitalized',building.name)
     elif capitalized_buildings < 0 and not capitalist_buildings.is_empty():
         for i in range(abs(capitalized_buildings)):
             var building : Node = capitalist_buildings.pick_random()
@@ -50,7 +50,7 @@ func capitalism_consequences():
             var capitalization : Capitalization = building.get_node_or_null('Capitalization')
             if capitalization:
                 capitalization.liberate()
-            prints('Freed',building)
+            prints('Freed',building.name)
     
 
 func _on_save_changed():

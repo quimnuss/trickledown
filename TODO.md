@@ -17,10 +17,12 @@
 - [ ] Set the scale of the world to the astronaut instead of the planets (man as a mesure of all things)
 - [ ] Polish the physics engine area2d gravity-based approach
 - [ ] news feed filter by richmen
+- [ ] light
+- [ ] shake
 
 # Later
 
-- [ ] Hidden folks-style city with stories 
+- [ ] "Hidden folks"-style city with stories 
 - [ ] Stats on milestones:  I crashed # times on the home planet
 - [ ] Get the Orbital component working for a ship orbiting
 - [ ] Get the Orbital component working and a planet orbiting (no edge cases)
