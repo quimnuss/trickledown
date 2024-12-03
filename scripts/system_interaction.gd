@@ -6,6 +6,10 @@ extends Node
 
 var celestial_focus_index := 1
 
+func _ready():
+    var celestials_nodes : Array[Node] = get_tree().get_nodes_in_group("celestials")
+    celestials.assign(celestials_nodes)
+
 func _input(event: InputEvent) -> void:
     if event.is_action_pressed('ui_focus_prev') or event.is_action_pressed('ui_focus_next'):
         if camera.get_parent() is Astronaut:

@@ -1,7 +1,7 @@
 extends Node2D
 
-@export var orbit : Node
+@export var planet : Node
 
 func _draw():
-    if orbit:
-        draw_circle(Vector2.ZERO, orbit.a, Color.FIREBRICK, false, 2)
+    if planet:
+        draw_circle(Vector2.ZERO, planet.orbit.a, Color.FIREBRICK, false, 2)

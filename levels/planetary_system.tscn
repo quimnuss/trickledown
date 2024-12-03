@@ -1,11 +1,9 @@
-[gd_scene load_steps=59 format=3 uid="uid://bix0vgtkccr8k"]
+[gd_scene load_steps=65 format=3 uid="uid://bix0vgtkccr8k"]
 
 [ext_resource type="Script" path="res://components/visual_orbit.gd" id="1_8xlk2"]
 [ext_resource type="Texture2D" uid="uid://dkclsuxbdnwtn" path="res://assets/sky/dynamic_space_background/Nebula Red.png" id="1_fngs5"]
-[ext_resource type="Texture2D" uid="uid://c1p64shib4lr1" path="res://assets/planets/Terran Wet - 218550788.png" id="1_h4dba"]
 [ext_resource type="Script" path="res://scripts/system_interaction.gd" id="1_l75ko"]
 [ext_resource type="Script" path="res://levels/planetary_system.gd" id="1_srn0n"]
-[ext_resource type="Texture2D" uid="uid://bm1kn5gq2qxhn" path="res://assets/planets/Star.png" id="2_h5aj2"]
 [ext_resource type="Texture2D" uid="uid://dr3qb8prnyaxc" path="res://assets/sky/dynamic_space_background/Stars Small_1.png" id="2_tpl7i"]
 [ext_resource type="Texture2D" uid="uid://prwtbk4881hm" path="res://assets/sky/dynamic_space_background/Stars-Big_1_1_PC.png" id="3_6317u"]
 [ext_resource type="Script" path="res://components/orbit.gd" id="3_qk5fl"]
@@ -14,23 +12,30 @@
 [ext_resource type="Script" path="res://components/planet_collision.gd" id="8_tjsb8"]
 [ext_resource type="Script" path="res://components/visual_orbit_circular.gd" id="9_6o1fs"]
 [ext_resource type="Texture2D" uid="uid://c1avtceqxgww" path="res://assets/cannon/cannon.png" id="10_0un0d"]
+[ext_resource type="Texture2D" uid="uid://djdg1piw7hobt" path="res://assets/planets/Star - 1464915422 - spritesheet.png" id="10_3s3ll"]
 [ext_resource type="Script" path="res://actors/launchpad.gd" id="10_jcfrs"]
 [ext_resource type="Script" path="res://components/orbit_circular.gd" id="10_xiq20"]
 [ext_resource type="Texture2D" uid="uid://cnllos4hqa5xw" path="res://assets/cannon/cannon_base.png" id="11_1xq35"]
+[ext_resource type="Shader" path="res://effects/chroma_key.gdshader" id="11_xnu1m"]
 [ext_resource type="Script" path="res://scripts/zooming_camera_2d_centered.gd" id="11_xul2k"]
+[ext_resource type="VideoStream" path="res://assets/planets/Star-1464915422.ogv" id="12_cng5r"]
 [ext_resource type="Script" path="res://scripts/fire_effect.gd" id="12_hc8jd"]
 [ext_resource type="Script" path="res://components/orbit_milestone_checker.gd" id="12_m5nv6"]
 [ext_resource type="Texture2D" uid="uid://q6px2c0t84ov" path="res://assets/cannon/fire_effect.png" id="13_1f2mo"]
 [ext_resource type="Script" path="res://components/focus.gd" id="15_5iuv1"]
+[ext_resource type="Texture2D" uid="uid://blguqlvvytvv4" path="res://assets/planets/Terran Wet - 1464915422 - spritesheet.png" id="15_7kxxk"]
 [ext_resource type="Script" path="res://components/save_resource.gd" id="22_hrhws"]
 [ext_resource type="AudioStream" uid="uid://bja7vokgvfatm" path="res://assets/audio_effects/rocket_launch.ogg" id="22_kt3lc"]
 [ext_resource type="Script" path="res://ui/orbit_container.gd" id="23_l8vuo"]
 [ext_resource type="Texture2D" uid="uid://dwpcq4sh3v1hn" path="res://assets/richmen/richmen_0.png" id="24_svqlb"]
 [ext_resource type="Texture2D" uid="uid://d01vqa72ep42c" path="res://assets/richmen/richmen_1.png" id="25_h34xa"]
 [ext_resource type="Script" path="res://scripts/atmosphere.gd" id="25_j88wc"]
+[ext_resource type="Script" path="res://actors/planet.gd" id="26_6qqrx"]
 [ext_resource type="Texture2D" uid="uid://yl1uruis6m7o" path="res://assets/richmen/richmen_2.png" id="26_bcpub"]
 [ext_resource type="Script" path="res://ui/milestone_toast.gd" id="26_cu03p"]
 [ext_resource type="Texture2D" uid="uid://chd07578rfhdd" path="res://assets/richmen/richmen_3.png" id="27_eymce"]
+[ext_resource type="Texture2D" uid="uid://b1ythxh5rpoyo" path="res://assets/planets/Lava World - 1464915422 - spritesheet.png" id="27_kaqwd"]
+[ext_resource type="Script" path="res://scripts/sprite2d_looping.gd" id="28_xwui1"]
 [ext_resource type="Texture2D" uid="uid://cjums1lp8d8g" path="res://assets/richmen/richmen_4.png" id="28_yx18f"]
 [ext_resource type="Texture2D" uid="uid://b1g0p2hpuj3yd" path="res://assets/ui_assets/time_warp/speed_3.png" id="31_ex666"]
 [ext_resource type="Script" path="res://ui/speed_button.gd" id="32_5hu43"]
@@ -58,6 +63,12 @@ radius = 1329.54
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mfqtm"]
 radius = 482.017
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_78p51"]
+shader = ExtResource("11_xnu1m")
+shader_parameter/chroma_key_color = Color(1, 0.388235, 0.278431, 1)
+shader_parameter/pickup_range = 0.3
+shader_parameter/fade_amount = 0.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wsejb"]
 radius = 738.082
@@ -134,7 +145,7 @@ position = Vector2(4000, 0)
 rotation = 4.71239
 shape = SubResource("WorldBoundaryShape2D_yx0y8")
 
-[node name="Star" type="Node2D" parent="."]
+[node name="Star" type="Node2D" parent="." groups=["celestials"]]
 
 [node name="PlanetCollision" type="Area2D" parent="Star"]
 script = ExtResource("8_tjsb8")
@@ -162,16 +173,59 @@ milestone_type = 7
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Star/OrbitMilestoneChecker"]
 shape = SubResource("CircleShape2D_mfqtm")
 
-[node name="VisualOrbit" type="Node2D" parent="Star" node_paths=PackedStringArray("orbit")]
+[node name="VisualOrbitHomePlanet" type="Node2D" parent="Star" node_paths=PackedStringArray("planet")]
 script = ExtResource("9_6o1fs")
-orbit = NodePath("../HomePlanet/Orbit")
+planet = NodePath("../HomePlanet")
+
+[node name="VisualOrbitMars" type="Node2D" parent="Star" node_paths=PackedStringArray("planet")]
+script = ExtResource("9_6o1fs")
+planet = NodePath("../Mars")
 
 [node name="Sprite2D" type="Sprite2D" parent="Star"]
-texture = ExtResource("2_h5aj2")
+texture = ExtResource("10_3s3ll")
+hframes = 17
+vframes = 3
+frame = 50
+script = ExtResource("28_xwui1")
+fps = 1.0
 
-[node name="HomePlanet" type="Node2D" parent="Star"]
+[node name="ColorRect" type="ColorRect" parent="Star"]
+visible = false
+clip_children = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -344.0
+offset_top = -272.0
+offset_right = 344.0
+offset_bottom = 272.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="Star/ColorRect"]
+material = SubResource("ShaderMaterial_78p51")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -304.0
+offset_top = -304.0
+offset_right = 304.0
+offset_bottom = 304.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("12_cng5r")
+autoplay = true
+loop = true
+
+[node name="HomePlanet" type="Node2D" parent="Star" groups=["celestials"]]
 unique_name_in_owner = true
 position = Vector2(1400, 0)
+script = ExtResource("26_6qqrx")
 
 [node name="ZoomingCamera2D" type="Camera2D" parent="Star/HomePlanet"]
 unique_name_in_owner = true
@@ -218,7 +272,12 @@ milestone_type = 3
 shape = SubResource("CircleShape2D_fufu0")
 
 [node name="Sprite2D" type="Sprite2D" parent="Star/HomePlanet"]
-texture = ExtResource("1_h4dba")
+texture = ExtResource("15_7kxxk")
+hframes = 34
+vframes = 3
+frame = 101
+script = ExtResource("28_xwui1")
+fps = 2.0
 
 [node name="PlanetCollision" type="Area2D" parent="Star/HomePlanet/Sprite2D"]
 gravity_space_override = 3
@@ -291,7 +350,7 @@ position = Vector2(0, -9)
 stream = ExtResource("22_kt3lc")
 volume_db = -6.0
 
-[node name="Satellite" type="Node2D" parent="Star/HomePlanet"]
+[node name="Satellite" type="Node2D" parent="Star/HomePlanet" groups=["celestials"]]
 position = Vector2(400, 0)
 
 [node name="Orbit" type="Node2D" parent="Star/HomePlanet/Satellite"]
@@ -336,6 +395,61 @@ script = ExtResource("25_j88wc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/AtmosphereMilestone"]
 shape = SubResource("CircleShape2D_btgjb")
+
+[node name="Mars" type="Node2D" parent="Star" groups=["celestials"]]
+position = Vector2(2722, 0)
+script = ExtResource("26_6qqrx")
+
+[node name="Orbit" type="Node2D" parent="Star/Mars"]
+script = ExtResource("10_xiq20")
+speed = -0.004
+a = 2200.0
+
+[node name="GravityArea" type="Area2D" parent="Star/Mars"]
+collision_priority = 10.0
+priority = 5
+gravity_space_override = 3
+gravity_point = true
+gravity_point_unit_distance = 50.0
+gravity_point_center = Vector2(0, 0)
+gravity_direction = Vector2(0, 0)
+gravity = 400.0
+linear_damp_space_override = 3
+linear_damp = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Star/Mars/GravityArea"]
+shape = SubResource("CircleShape2D_wsejb")
+
+[node name="OrbitMilestoneChecker" type="Area2D" parent="Star/Mars"]
+script = ExtResource("12_m5nv6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Star/Mars/OrbitMilestoneChecker"]
+shape = SubResource("CircleShape2D_fufu0")
+
+[node name="OneOrbitMilestoneChecker" type="Area2D" parent="Star/Mars"]
+script = ExtResource("12_m5nv6")
+milestone_type = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Star/Mars/OneOrbitMilestoneChecker"]
+shape = SubResource("CircleShape2D_fufu0")
+
+[node name="Sprite2D" type="Sprite2D" parent="Star/Mars"]
+texture = ExtResource("27_kaqwd")
+hframes = 34
+vframes = 3
+frame = 101
+script = ExtResource("28_xwui1")
+fps = 3.0
+num_frames = 101
+delay = 0
+
+[node name="PlanetCollision" type="Area2D" parent="Star/Mars/Sprite2D"]
+gravity_space_override = 3
+script = ExtResource("8_tjsb8")
+milestone = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Star/Mars/Sprite2D/PlanetCollision"]
+shape = SubResource("CircleShape2D_thum1")
 
 [node name="UI" type="CanvasLayer" parent="."]
 script = ExtResource("34_1ax38")
@@ -485,6 +599,7 @@ time_warp_icons = Array[CompressedTexture2D]([ExtResource("33_a1v1w"), ExtResour
 [connection signal="visibility_changed" from="Star/HomePlanet/Launchpad" to="Star/HomePlanet/Launchpad" method="_on_visibility_changed"]
 [connection signal="body_entered" from="Star/HomePlanet/Satellite/Sprite2D/PlanetCollision" to="Star/HomePlanet/Satellite/Sprite2D/PlanetCollision" method="_on_body_entered"]
 [connection signal="body_exited" from="Star/HomePlanet/AtmosphereMilestone" to="Star/HomePlanet/AtmosphereMilestone" method="_on_body_exited"]
+[connection signal="body_entered" from="Star/Mars/Sprite2D/PlanetCollision" to="Star/Mars/Sprite2D/PlanetCollision" method="_on_body_entered"]
 [connection signal="pressed" from="UI/HBoxContainer2/QuitButton" to="UI" method="_on_quit_button_pressed"]
 [connection signal="pressed" from="UI/VBoxContainer/ToCityButton" to="." method="_on_to_city_button_pressed"]
 [connection signal="pressed" from="UI/VBoxContainer/ToWorkButton" to="." method="_on_to_work_button_pressed"]

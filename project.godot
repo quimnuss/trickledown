@@ -31,6 +31,7 @@ gravity_component="Components that cause gravity"
 buildings=""
 feeds=""
 persist=""
+celestials=""
 
 [gui]
 
