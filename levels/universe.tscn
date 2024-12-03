@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://c6c6tv7jbuyxu"]
+[gd_scene load_steps=10 format=3 uid="uid://c6c6tv7jbuyxu"]
 
 [ext_resource type="Script" path="res://levels/universe.gd" id="1_sysfn"]
 [ext_resource type="PackedScene" uid="uid://dn162xreoi5rh" path="res://levels/work.tscn" id="2_ochjt"]
@@ -6,6 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://b778f20b5udf0" path="res://levels/city.tscn" id="4_eh1rh"]
 [ext_resource type="Script" path="res://scripts/audio_player.gd" id="5_q1bxc"]
 [ext_resource type="AudioStream" uid="uid://bx8jtafwus55f" path="res://assets/audio/city_ambience.ogg" id="7_mynyy"]
+[ext_resource type="Script" path="res://ui/events_feed.gd" id="7_tgful"]
+[ext_resource type="PackedScene" uid="uid://d10uodl4gtsu6" path="res://ui/feed.tscn" id="8_stmrs"]
+[ext_resource type="Texture2D" uid="uid://dhknp8eo8taxg" path="res://assets/ui_assets/hidden.png" id="9_auft1"]
 
 [node name="Universe" type="Node2D"]
 script = ExtResource("1_sysfn")
@@ -34,7 +37,38 @@ stream = ExtResource("7_mynyy")
 volume_db = -10.0
 parameters/looping = false
 
+[node name="FeedLayer" type="CanvasLayer" parent="."]
+layer = 5
+
+[node name="EventsFeed" type="Control" parent="FeedLayer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 3
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_right = 300.0
+grow_vertical = 2
+size_flags_vertical = 0
+script = ExtResource("7_tgful")
+
+[node name="Feed" parent="FeedLayer/EventsFeed" groups=["feeds"] instance=ExtResource("8_stmrs")]
+layout_mode = 1
+offset_left = 18.0
+offset_right = 318.0
+offset_bottom = 38.0
+theme_override_constants/separation = 3
+
+[node name="HideFeed" type="Button" parent="FeedLayer/EventsFeed"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 4.0
+offset_right = 34.0
+offset_bottom = 36.0
+focus_mode = 0
+icon = ExtResource("9_auft1")
+
 [connection signal="change_scene" from="PlanetaryCanvasLayer/PlanetarySystem" to="." method="_on_planetary_system_change_scene"]
 [connection signal="change_scene" from="PlanetaryCanvasLayer/PlanetarySystem" to="." method="_on_change_scene"]
 [connection signal="change_scene" from="City" to="." method="_on_change_scene"]
 [connection signal="change_scene" from="WorkCanvasLayer" to="." method="_on_change_scene"]
+[connection signal="pressed" from="FeedLayer/EventsFeed/HideFeed" to="FeedLayer/EventsFeed" method="_on_hide_feed_pressed"]

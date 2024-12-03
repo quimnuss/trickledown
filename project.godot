@@ -29,6 +29,7 @@ window/stretch/mode="canvas_items"
 
 gravity_component="Components that cause gravity"
 buildings=""
+feeds=""
 
 [gui]
 

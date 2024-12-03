@@ -2,10 +2,11 @@
 # Now
 
 - [ ] Set the solar system
-- [ ] Interactable city: greybox
-- [ ] Add rich man side-effects in the city : fog, greyness, loss of animation
+- [ ] Improve catalan jokes
 
 ## Deute tècnic
+
+- [ ] Correctly save astronauts' position and velocity
 
 - [ ] find a way to have the slow timescale as Engine.time_scale = 1
 - [ ] Find a way to timescale only the physics and not the animations and cannon control
@@ -15,7 +16,6 @@
 # Next
 
 - [ ] display which SOI the astronaut is in (on_body_entered if gravity check priority and decide which SOI it is)
-- [ ] Remove done goals (or move them down)
 - [ ] Interactable city: simple animations
 - [ ] make the milestones incremental (don't put the whole list)
 - [ ] Set the scale of the world to the astronaut instead of the planets (man as a mesure of all things)
@@ -25,7 +25,7 @@
 
 # Later
 
-- [ ] Interactable city: story animations
+- [ ] Hidden folks-style city with stories 
 - [ ] Stats on milestones:  I crashed # times on the home planet
 - [ ] Get the Orbital component working for a ship orbiting
 - [ ] Get the Orbital component working and a planet orbiting (no edge cases)
@@ -34,7 +34,6 @@
 - [ ] Educate oneself with the orbital mechanics equations and how to simulate them
 - [ ] SOI change trajectory drawing
 - [ ] Switch to high definition planets instead of pixel art
-- [ ] Game achievements and/or contracts
 - [ ] Add rich man life highlights
 - [ ] Add successful landing feedback
 
@@ -51,6 +50,12 @@ If ground flight is implemented:
 
 # Done
 
+- [x] Lower thrust strength
+- [x] Game achievements and/or contracts
+- [x] Interactable city: story animations
+- [x] Remove done goals (or move them down)
+- [x] Add rich man side-effects in the city : fog, greyness, loss of animation
+- [x] Interactable city: greybox
 - [x] fix time warping
 - [x] hard milestones: orbits
 - [x] fix tutorial of orbital rich

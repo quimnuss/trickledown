@@ -21,3 +21,7 @@ func _on_richmen_status_changed():
         previous_richmen_num = save_resource.num_richmen
     
     
+
+
+func _on_hide_feed_pressed() -> void:
+    feed.visible = !feed.visible

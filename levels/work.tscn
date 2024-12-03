@@ -152,6 +152,7 @@ theme_override_font_sizes/font_size = 20
 text = "System"
 
 [node name="EventsFeed" type="Control" parent="."]
+visible = false
 custom_minimum_size = Vector2(300, 0)
 layout_mode = 3
 anchors_preset = 4
@@ -162,7 +163,7 @@ grow_vertical = 2
 size_flags_vertical = 0
 script = ExtResource("8_ual0j")
 
-[node name="Feed" parent="EventsFeed" instance=ExtResource("8_bs4or")]
+[node name="Feed" parent="EventsFeed" groups=["feeds"] instance=ExtResource("8_bs4or")]
 layout_mode = 1
 offset_left = 18.0
 offset_right = 318.0

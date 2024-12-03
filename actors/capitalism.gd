@@ -40,18 +40,18 @@ func capitalism_consequences():
             var building : Node = buildings.pick_random()
             buildings.erase(building)
             capitalist_buildings.append(building)
-            var interactable : Interactable = building.get_node_or_null('Interactable')
-            if interactable:
-                interactable.capitalize()
+            var capitalization : Capitalization = building.get_node_or_null('Capitalization')
+            if capitalization:
+                capitalization.capitalize()
             prints('Capitalized',building)
     elif capitalized_buildings < 0 and not capitalist_buildings.is_empty():
         for i in range(abs(capitalized_buildings)):
             var building : Node = capitalist_buildings.pick_random()
             capitalist_buildings.erase(building)
             buildings.append(building)
-            var interactable : Interactable = building.get_node_or_null('Interactable')
-            if interactable:
-                interactable.liberate()
+            var capitalization : Capitalization = building.get_node_or_null('Capitalization')
+            if capitalization:
+                capitalization.liberate()
             prints('Freed',building)
     
 

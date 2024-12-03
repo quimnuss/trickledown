@@ -18,7 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://ckpo1h2ov0bws" path="res://assets/city/city_monster_triplered.png" id="7_0i7q6"]
 [ext_resource type="Texture2D" uid="uid://tavkqnndt0dp" path="res://assets/city/city_monster_green_windows.png" id="8_4g5w8"]
 [ext_resource type="Texture2D" uid="uid://b2kmh5iior55p" path="res://assets/city/city_monster_green_back.png" id="8_5uk0f"]
-[ext_resource type="Script" path="res://components/interactable.gd" id="8_nuh2n"]
+[ext_resource type="Script" path="res://components/capitalization.gd" id="8_nuh2n"]
 [ext_resource type="Texture2D" uid="uid://b715m7qty08ak" path="res://assets/city/city_monster_pink.png" id="8_r6dom"]
 [ext_resource type="Texture2D" uid="uid://dyrri3eun3nw4" path="res://assets/city/city_monster_sun_monster.png" id="11_30oy5"]
 [ext_resource type="Texture2D" uid="uid://bxo4vtkra718w" path="res://assets/city/cloud.png" id="13_8fg1a"]
@@ -281,16 +281,16 @@ position = Vector2(548, 423)
 texture = ExtResource("2_rm2ma")
 offset = Vector2(0, -105)
 
-[node name="Interactable" type="Node2D" parent="City/Tower" node_paths=PackedStringArray("looping_sprites", "animation_player")]
+[node name="Capitalization" type="Node2D" parent="City/Tower" node_paths=PackedStringArray("looping_sprites", "animation_player")]
 position = Vector2(-299, -429)
 script = ExtResource("8_nuh2n")
 looping_sprites = [NodePath("../Eyes")]
 animation_player = NodePath("../AnimationPlayer")
 
-[node name="InteractArea" type="Area2D" parent="City/Tower/Interactable"]
+[node name="InteractArea" type="Area2D" parent="City/Tower/Capitalization"]
 position = Vector2(300, 278.355)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="City/Tower/Interactable/InteractArea"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="City/Tower/Capitalization/InteractArea"]
 position = Vector2(0, 66.3347)
 shape = SubResource("RectangleShape2D_a4jql")
 
@@ -315,15 +315,15 @@ texture = ExtResource("3_1ogaa")
 [node name="Purple" type="Node2D" parent="City" groups=["buildings"]]
 position = Vector2(381, 429)
 
-[node name="Interactable" type="Node2D" parent="City/Purple" node_paths=PackedStringArray("looping_sprites")]
+[node name="Capitalization" type="Node2D" parent="City/Purple" node_paths=PackedStringArray("looping_sprites")]
 position = Vector2(-299, -429)
 script = ExtResource("8_nuh2n")
 looping_sprites = [NodePath("../PurpleFace")]
 
-[node name="InteractArea" type="Area2D" parent="City/Purple/Interactable"]
+[node name="InteractArea" type="Area2D" parent="City/Purple/Capitalization"]
 position = Vector2(299, 429)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="City/Purple/Interactable/InteractArea"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="City/Purple/Capitalization/InteractArea"]
 position = Vector2(1, -40.5)
 shape = SubResource("RectangleShape2D_c04gg")
 
@@ -345,15 +345,15 @@ delay = 8
 [node name="Green" type="Node2D" parent="City" groups=["buildings"]]
 position = Vector2(299, 429)
 
-[node name="Interactable" type="Node2D" parent="City/Green" node_paths=PackedStringArray("looping_sprites")]
+[node name="Capitalization" type="Node2D" parent="City/Green" node_paths=PackedStringArray("looping_sprites")]
 position = Vector2(-299, -429)
 script = ExtResource("8_nuh2n")
 looping_sprites = [NodePath("../GreenFace"), NodePath("../GreenFace/Windows")]
 
-[node name="InteractArea" type="Area2D" parent="City/Green/Interactable"]
+[node name="InteractArea" type="Area2D" parent="City/Green/Capitalization"]
 position = Vector2(298, 339)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="City/Green/Interactable/InteractArea"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="City/Green/Capitalization/InteractArea"]
 position = Vector2(1.5, -37)
 shape = SubResource("RectangleShape2D_aa1jm")
 
@@ -392,16 +392,16 @@ script = ExtResource("3_t5ts8")
 num_frames = 28
 delay = 4
 
-[node name="Interactable" type="Node2D" parent="City/Zeppellin" node_paths=PackedStringArray("looping_sprites", "animation_player")]
+[node name="Capitalization" type="Node2D" parent="City/Zeppellin" node_paths=PackedStringArray("looping_sprites", "animation_player")]
 position = Vector2(-299, -429)
 script = ExtResource("8_nuh2n")
 looping_sprites = [NodePath("..")]
 animation_player = NodePath("../AnimationPlayer")
 
-[node name="InteractArea" type="Area2D" parent="City/Zeppellin/Interactable"]
+[node name="InteractArea" type="Area2D" parent="City/Zeppellin/Capitalization"]
 position = Vector2(299, 429)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="City/Zeppellin/Interactable/InteractArea"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="City/Zeppellin/Capitalization/InteractArea"]
 position = Vector2(0, -5)
 shape = SubResource("RectangleShape2D_f0d0p")
 
@@ -414,15 +414,15 @@ autoplay = "zeppellin"
 [node name="Pink" type="Node2D" parent="City" groups=["buildings"]]
 position = Vector2(496, 371)
 
-[node name="Interactable" type="Node2D" parent="City/Pink" node_paths=PackedStringArray("looping_sprites")]
+[node name="Capitalization" type="Node2D" parent="City/Pink" node_paths=PackedStringArray("looping_sprites")]
 position = Vector2(-299, -429)
 script = ExtResource("8_nuh2n")
 looping_sprites = [NodePath("../PinkEye")]
 
-[node name="InteractArea" type="Area2D" parent="City/Pink/Interactable"]
+[node name="InteractArea" type="Area2D" parent="City/Pink/Capitalization"]
 position = Vector2(299, 429)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="City/Pink/Interactable/InteractArea"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="City/Pink/Capitalization/InteractArea"]
 position = Vector2(-1, 16)
 shape = SubResource("RectangleShape2D_kk657")
 
@@ -443,15 +443,15 @@ delay = 4
 [node name="TripleRed" type="Node2D" parent="City" groups=["buildings"]]
 position = Vector2(816, 410)
 
-[node name="Interactable" type="Node2D" parent="City/TripleRed" node_paths=PackedStringArray("looping_sprites")]
+[node name="Capitalization" type="Node2D" parent="City/TripleRed" node_paths=PackedStringArray("looping_sprites")]
 position = Vector2(-299, -429)
 script = ExtResource("8_nuh2n")
 looping_sprites = [NodePath("../TripleRedEyes")]
 
-[node name="InteractArea" type="Area2D" parent="City/TripleRed/Interactable"]
+[node name="InteractArea" type="Area2D" parent="City/TripleRed/Capitalization"]
 position = Vector2(299, 429)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="City/TripleRed/Interactable/InteractArea"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="City/TripleRed/Capitalization/InteractArea"]
 shape = SubResource("RectangleShape2D_xdxah")
 
 [node name="TripleRedBack" type="Sprite2D" parent="City/TripleRed"]
@@ -470,15 +470,15 @@ position = Vector2(640, 414)
 texture = ExtResource("6_xakke")
 hframes = 5
 
-[node name="Interactable" type="Node2D" parent="City/Red" node_paths=PackedStringArray("animation_player")]
+[node name="Capitalization" type="Node2D" parent="City/Red" node_paths=PackedStringArray("animation_player")]
 position = Vector2(-299, -429)
 script = ExtResource("8_nuh2n")
 animation_player = NodePath("../AnimationPlayer")
 
-[node name="InteractArea" type="Area2D" parent="City/Red/Interactable"]
+[node name="InteractArea" type="Area2D" parent="City/Red/Capitalization"]
 position = Vector2(299, 429)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="City/Red/Interactable/InteractArea"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="City/Red/Capitalization/InteractArea"]
 shape = SubResource("RectangleShape2D_hbe48")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="City/Red"]
@@ -491,14 +491,14 @@ autoplay = "red"
 [node name="SunAnchor" type="Node2D" parent="City"]
 position = Vector2(433, 221)
 
-[node name="Interactable" type="Node2D" parent="City/SunAnchor"]
+[node name="Capitalization" type="Node2D" parent="City/SunAnchor"]
 position = Vector2(-299, -429)
 script = ExtResource("8_nuh2n")
 
-[node name="InteractArea" type="Area2D" parent="City/SunAnchor/Interactable"]
+[node name="InteractArea" type="Area2D" parent="City/SunAnchor/Capitalization"]
 position = Vector2(281, 436)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="City/SunAnchor/Interactable/InteractArea"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="City/SunAnchor/Capitalization/InteractArea"]
 position = Vector2(-2, -5)
 shape = SubResource("CircleShape2D_4jppo")
 
@@ -523,15 +523,15 @@ delay = 6
 [node name="LightHouseAnchor" type="Node2D" parent="City" groups=["buildings"]]
 position = Vector2(860, 424)
 
-[node name="Interactable" type="Node2D" parent="City/LightHouseAnchor" node_paths=PackedStringArray("looping_sprites")]
+[node name="Capitalization" type="Node2D" parent="City/LightHouseAnchor" node_paths=PackedStringArray("looping_sprites")]
 position = Vector2(-299, -429)
 script = ExtResource("8_nuh2n")
 looping_sprites = [NodePath("../Mask/LightHouseBody"), NodePath("../LightHouseEyes")]
 
-[node name="InteractArea" type="Area2D" parent="City/LightHouseAnchor/Interactable"]
+[node name="InteractArea" type="Area2D" parent="City/LightHouseAnchor/Capitalization"]
 position = Vector2(298, 416)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="City/LightHouseAnchor/Interactable/InteractArea"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="City/LightHouseAnchor/Capitalization/InteractArea"]
 position = Vector2(0, -55.5)
 shape = SubResource("RectangleShape2D_x37m4")
 

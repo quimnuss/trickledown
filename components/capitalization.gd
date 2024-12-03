@@ -1,5 +1,5 @@
 extends Node2D
-class_name Interactable
+class_name Capitalization
 
 @export var looping_sprites : Array[LoopingSprite]
 @export var animation_player : AnimationPlayer
@@ -23,6 +23,18 @@ func dance():
         if not is_liberated:
             capitalize()    
 
+func pop_to_feed(karma : EventsReader.Karma, building_name : String):
+    var msg : String = tr('CAPITALIZED') if karma == EventsReader.Karma.BAD else tr('FREED')
+    var feed : Feed = get_tree().get_first_node_in_group("feeds")
+    if is_instance_valid(feed):
+        var event_data : Dictionary = {
+            'richmen' : '',
+            'content': '%s %s' % [get_parent().name, msg],
+            'content_' + Config.lang: '%s %s' % [get_parent().name, msg],
+            'karma' : EventsReader.Karma.BAD
+        }
+        feed.pop_event(event_data)
+
 func capitalize():
     is_liberated = false
     get_parent().modulate = Color.DIM_GRAY
@@ -30,6 +42,8 @@ func capitalize():
         sprite.stop()
     if is_instance_valid(animation_player):
         animation_player.stop()
+    pop_to_feed(EventsReader.Karma.BAD, get_parent().name)
+
 
 func liberate():
     is_liberated = true
@@ -38,6 +52,7 @@ func liberate():
         sprite.restart()
     if is_instance_valid(animation_player):
         animation_player.play()
+    pop_to_feed(EventsReader.Karma.GOOD, get_parent().name)
 
 
 func _on_interact_area_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
