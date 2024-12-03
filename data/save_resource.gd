@@ -29,7 +29,6 @@ var work_stonks_delta : int = 1000
 var richmen_threshold : int = 10000
 
 func _init():
-    prints('save resource loaded', self.resource_path, self.launchpad_richman)
     if self.resource_path and not is_instance_valid(self.launchpad_richman):
         push_warning('launchpad_richman not set')
         prints('launchpad_richman not set')
@@ -83,7 +82,6 @@ func rotate_richmen():
     
 func random_richman_data() -> RichmanData:
     var richmen_res_path : String = richmen_paths[randi() % len(richmen_paths)]
-    prints('respath', richmen_res_path)
     return ResourceLoader.load("res://data/richmen/richmen_resources/" + richmen_res_path)
 
 

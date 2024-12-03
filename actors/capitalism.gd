@@ -19,14 +19,12 @@ var richmen_step : int = 2
 
 func _ready() -> void:
     current_save = load(Config.save_path)
-    print('city uses save',current_save.resource_path)
     richmen = current_save.num_richmen
     capitalism_level = richmen % richmen_step
     current_save.changed.connect(_on_save_changed)
     buildings = get_tree().get_nodes_in_group("buildings")
     randomize()
     buildings.shuffle()
-    print(buildings)
     
 
 func capitalism_consequences():

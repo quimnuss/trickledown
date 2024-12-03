@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://b3o4iph7vqse1"]
+[gd_scene load_steps=20 format=3 uid="uid://b3o4iph7vqse1"]
 
 [ext_resource type="Script" path="res://actors/astronaut.gd" id="1_bexqd"]
 [ext_resource type="Texture2D" uid="uid://don4lic36wxmv" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_1.png" id="2_koiem"]
@@ -15,6 +15,7 @@
 [ext_resource type="Script" path="res://components/velocity_vector.gd" id="11_4s410"]
 [ext_resource type="AudioStream" uid="uid://cddastfnjlloe" path="res://assets/audio_effects/thrust.ogg" id="14_2xvy1"]
 [ext_resource type="Script" path="res://components/thrust_sound.gd" id="15_8eao7"]
+[ext_resource type="Script" path="res://components/persist_xyv.gd" id="16_rtc06"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kwb5v"]
 radius = 3.0
@@ -116,6 +117,9 @@ stream = ExtResource("14_2xvy1")
 volume_db = -6.0
 parameters/looping = true
 script = ExtResource("15_8eao7")
+
+[node name="Persist" type="Node" parent="." groups=["persist"]]
+script = ExtResource("16_rtc06")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="burning" from="AstronautController" to="EnginePlume" method="_on_astronaut_controller_burning"]
