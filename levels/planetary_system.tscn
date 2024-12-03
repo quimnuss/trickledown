@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=3 uid="uid://bix0vgtkccr8k"]
+[gd_scene load_steps=59 format=3 uid="uid://bix0vgtkccr8k"]
 
 [ext_resource type="Script" path="res://components/visual_orbit.gd" id="1_8xlk2"]
 [ext_resource type="Texture2D" uid="uid://dkclsuxbdnwtn" path="res://assets/sky/dynamic_space_background/Nebula Red.png" id="1_fngs5"]
@@ -43,6 +43,9 @@
 [ext_resource type="Resource" uid="uid://dlrwrgk3o3wwf" path="res://data/richmen/richmen_resources/Abigail Johnson.tres" id="36_43mlr"]
 [ext_resource type="Texture2D" uid="uid://twhx5e18ag3r" path="res://assets/ui_assets/time_warp/speed_4.png" id="36_xs0uj"]
 [ext_resource type="Texture2D" uid="uid://crkuacs0sxgda" path="res://assets/ui_assets/time_warp/speed_5.png" id="37_wcqr2"]
+[ext_resource type="StyleBox" uid="uid://b5aoi0a2yek6e" path="res://ui/styles/trickledown_button_style_hover.tres" id="38_cu6wq"]
+[ext_resource type="StyleBox" uid="uid://bu8bff32projb" path="res://ui/styles/trickledown_button_style.tres" id="38_losiv"]
+[ext_resource type="Texture2D" uid="uid://boxq30u2fb6a0" path="res://assets/ui_assets/startup.png" id="39_gs2jo"]
 [ext_resource type="PackedScene" uid="uid://djsseo0f6th6i" path="res://ui/task.tscn" id="39_x47u0"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_yx0y8"]
@@ -439,22 +442,38 @@ layout_mode = 2
 icon = ExtResource("36_0hri1")
 richman_data = ExtResource("36_43mlr")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="UI"]
+[node name="HBoxContainer" type="VBoxContainer" parent="UI"]
 anchors_preset = 3
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -40.0
-offset_top = -40.0
+offset_left = -264.0
+offset_top = -185.0
+offset_right = -14.0
+offset_bottom = -30.0
 grow_horizontal = 0
 grow_vertical = 0
+theme_override_constants/separation = 20
+
+[node name="TrickleDown" type="Button" parent="UI/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(1, 0.32549, 0, 1)
+theme_override_colors/font_color = Color(1, 0.796078, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_constants/icon_max_width = 26
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = ExtResource("38_cu6wq")
+theme_override_styles/normal = ExtResource("38_losiv")
+text = "TRICKLEDOWN!"
+icon = ExtResource("39_gs2jo")
 
 [node name="SpeedButton" type="Button" parent="UI/HBoxContainer"]
 layout_mode = 2
 focus_mode = 0
 icon = ExtResource("31_ex666")
 flat = true
+icon_alignment = 2
 script = ExtResource("32_5hu43")
 time_warp_icons = Array[CompressedTexture2D]([ExtResource("33_a1v1w"), ExtResource("34_klinw"), ExtResource("35_xyw7w"), ExtResource("31_ex666"), ExtResource("36_xs0uj"), ExtResource("37_wcqr2")])
 
@@ -469,3 +488,4 @@ time_warp_icons = Array[CompressedTexture2D]([ExtResource("33_a1v1w"), ExtResour
 [connection signal="pressed" from="UI/HBoxContainer2/QuitButton" to="UI" method="_on_quit_button_pressed"]
 [connection signal="pressed" from="UI/VBoxContainer/ToCityButton" to="." method="_on_to_city_button_pressed"]
 [connection signal="pressed" from="UI/VBoxContainer/ToWorkButton" to="." method="_on_to_work_button_pressed"]
+[connection signal="pressed" from="UI/HBoxContainer/TrickleDown" to="Star/HomePlanet/Launchpad" method="_on_trickle_down_pressed"]

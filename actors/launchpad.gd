@@ -30,12 +30,12 @@ func _process(delta: float) -> void:
 
     if Input.is_action_pressed('up'):
         power += POWER_SPEED
-        power = clamp(power, 0, 1000)
+        power = clamp(power, 0, 150)
         fire_effect.update_power(power)
 
     elif Input.is_action_pressed('down'):
         power -= POWER_SPEED
-        power = clamp(power, 0, 1000)
+        power = clamp(power, 0, 150)
         fire_effect.update_power(power)
 
 func _input(event: InputEvent) -> void:
@@ -73,3 +73,8 @@ func _on_visibility_changed() -> void:
     var scene_visible : bool = is_visible_in_tree()
     set_process(scene_visible)
     set_process_input(scene_visible)
+
+
+func _on_trickle_down_pressed() -> void:
+    if save_manager.current_save.num_richmen > 0:
+        spawn_rocket()

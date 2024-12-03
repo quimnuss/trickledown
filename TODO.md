@@ -1,12 +1,9 @@
-
 # Now
 
 - [ ] Set the solar system
 - [ ] Improve catalan jokes
 
 ## Deute tècnic
-
-- [ ] Correctly save astronauts' position and velocity
 
 - [ ] find a way to have the slow timescale as Engine.time_scale = 1
 - [ ] Find a way to timescale only the physics and not the animations and cannon control
@@ -16,11 +13,9 @@
 # Next
 
 - [ ] display which SOI the astronaut is in (on_body_entered if gravity check priority and decide which SOI it is)
-- [ ] Interactable city: simple animations
 - [ ] make the milestones incremental (don't put the whole list)
 - [ ] Set the scale of the world to the astronaut instead of the planets (man as a mesure of all things)
 - [ ] Polish the physics engine area2d gravity-based approach
-- [ ] Improve the launch mechanic to have a TRICKLEDOWN button at set thrust
 - [ ] news feed filter by richmen
 
 # Later
@@ -39,6 +34,7 @@
 
 # Way later
 
+- [ ] (posponed) Correctly save astronauts' position and velocity
 - [ ] Add the in-flight craft close up view
 - [ ] Ship constructor
 - [ ] Check https://jokeapi.dev/
@@ -50,6 +46,9 @@ If ground flight is implemented:
 
 # Done
 
+- [x] Fix the cannon clamping
+- [x] Improve the launch mechanic to have a TRICKLEDOWN button at set thrust
+- [x] Interactable city: simple animations
 - [x] Lower thrust strength
 - [x] Game achievements and/or contracts
 - [x] Interactable city: story animations

@@ -20,7 +20,6 @@ config/icon="res://icon.svg"
 
 Singleton="*res://scripts/singleton.gd"
 Config="*res://scripts/config.gd"
-WorldSave="*res://scripts/world_save.gd"
 
 [display]
 

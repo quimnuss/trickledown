@@ -11,6 +11,9 @@ func _ready():
             print("Savegame version mismatch. RESETING SAVE. Sorry, we're prototyping the game.")
             current_save.reset()
             current_save.save()
+        print("Killing everybody in orbit since we don't save those atm")
+        current_save.richmen_orbit.clear()
+        current_save.save()
     else:
         create_first_time_save()
 

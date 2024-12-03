@@ -1,8 +1,8 @@
 extends Node2D
 
-const POWER_STEP := 50
+const POWER_STEP := 150/5
 @warning_ignore("integer_division")
-const POWER_SUBSTEP := 50/4
+const POWER_SUBSTEP := 150/5/4
 
 var current_level := 0
 var current_sublevel := 0

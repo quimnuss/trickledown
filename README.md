@@ -2,14 +2,19 @@
 
 A game about sending rich people to orbit (so they leave us in peace)
 
+## Palette
 
-# References
+Penn red, Sinopia, Orange (pantone), Carrot orange, Aureolin
+> #931D0A, #D1340B, #F65E0A, #F69A2C, #F7E609
+
+## References
 
 [Orbit simulation](https://github.com/Electrollama/OrbitSim/tree/master)
 
 2D, based on KSP and in python.
  Let me know if you'drather have any other form of comu
-# Credits
+
+## Credits
 
 [Planet generator](https://github.com/Deep-Fold/PixelPlanets)
 
