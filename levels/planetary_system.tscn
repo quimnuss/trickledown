@@ -187,7 +187,8 @@ hframes = 17
 vframes = 3
 frame = 50
 script = ExtResource("28_xwui1")
-fps = 1.0
+num_frames = 50
+delay = 0
 
 [node name="ColorRect" type="ColorRect" parent="Star"]
 visible = false
