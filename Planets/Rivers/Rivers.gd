@@ -21,8 +21,8 @@ func set_rotates(r):
     $Land.material.set_shader_parameter("rotation", r)
 
 func update_time(t):
-    $Cloud.material.set_shader_parameter("time", t * get_multiplier($Cloud.material) * 0.01)
-    $Land.material.set_shader_parameter("time", t * get_multiplier($Land.material) * 0.02)
+    $Cloud.material.set_shader_parameter("time", t * get_multiplier($Cloud.material) * 0.007)
+    $Land.material.set_shader_parameter("time", t * get_multiplier($Land.material) * 0.005)
 
 func set_custom_time(t):
     $Cloud.material.set_shader_parameter("time", t * get_multiplier($Cloud.material) * 0.5)

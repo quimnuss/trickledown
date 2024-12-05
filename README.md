@@ -18,6 +18,8 @@ Penn red, Sinopia, Orange (pantone), Carrot orange, Aureolin
 
 [Planet generator](https://github.com/Deep-Fold/PixelPlanets)
 
+Actually I ended up using the whole scene tree, so animated planets are thanks to him
+
 [Procedural Planet](https://www.youtube.com/watch?v=dzcFB_9xHtg)
 
 [Planet simulations in Godot](https://github.com/ThePathfindersCodex)
