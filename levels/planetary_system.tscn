@@ -1,4 +1,4 @@
-[gd_scene load_steps=65 format=3 uid="uid://bix0vgtkccr8k"]
+[gd_scene load_steps=66 format=3 uid="uid://bix0vgtkccr8k"]
 
 [ext_resource type="Script" path="res://components/visual_orbit.gd" id="1_8xlk2"]
 [ext_resource type="Texture2D" uid="uid://dkclsuxbdnwtn" path="res://assets/sky/dynamic_space_background/Nebula Red.png" id="1_fngs5"]
@@ -24,6 +24,7 @@
 [ext_resource type="Texture2D" uid="uid://q6px2c0t84ov" path="res://assets/cannon/fire_effect.png" id="13_1f2mo"]
 [ext_resource type="Script" path="res://components/focus.gd" id="15_5iuv1"]
 [ext_resource type="Texture2D" uid="uid://blguqlvvytvv4" path="res://assets/planets/Terran Wet - 1464915422 - spritesheet.png" id="15_7kxxk"]
+[ext_resource type="PackedScene" uid="uid://crdxh2i35dorc" path="res://Planets/Rivers/Rivers.tscn" id="19_rx3i1"]
 [ext_resource type="Script" path="res://components/save_resource.gd" id="22_hrhws"]
 [ext_resource type="AudioStream" uid="uid://bja7vokgvfatm" path="res://assets/audio_effects/rocket_launch.ogg" id="22_kt3lc"]
 [ext_resource type="Script" path="res://ui/orbit_container.gd" id="23_l8vuo"]
@@ -287,6 +288,19 @@ milestone = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Star/HomePlanet/Sprite2D/PlanetCollision"]
 shape = SubResource("CircleShape2D_thum1")
+
+[node name="VisualPlanet" parent="Star/HomePlanet" instance=ExtResource("19_rx3i1")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -50.0
+offset_right = -50.0
+offset_bottom = -50.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
 [node name="Launchpad" type="Node2D" parent="Star/HomePlanet"]
 position = Vector2(0, -50)
