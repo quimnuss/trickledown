@@ -1,11 +1,12 @@
-[gd_scene load_steps=23 format=3 uid="uid://c75vmbnxjighe"]
+[gd_scene load_steps=24 format=3 uid="uid://c75vmbnxjighe"]
 
 [ext_resource type="Texture2D" uid="uid://d38ua4nm6k705" path="res://assets/planets/Terran Wet - 305441705.png" id="1_2e2xp"]
 [ext_resource type="Script" path="res://levels/welcome.gd" id="1_fg01x"]
 [ext_resource type="Texture2D" uid="uid://dkclsuxbdnwtn" path="res://assets/sky/dynamic_space_background/Nebula Red.png" id="1_sekn6"]
 [ext_resource type="Texture2D" uid="uid://dr3qb8prnyaxc" path="res://assets/sky/dynamic_space_background/Stars Small_1.png" id="2_axj16"]
 [ext_resource type="Texture2D" uid="uid://prwtbk4881hm" path="res://assets/sky/dynamic_space_background/Stars-Big_1_1_PC.png" id="3_b1110"]
-[ext_resource type="Texture2D" uid="uid://b0y6s0ypljmjl" path="res://assets/planets/3x Terran Wet - 305441705.png" id="5_3gect"]
+[ext_resource type="Texture2D" uid="uid://blguqlvvytvv4" path="res://assets/planets/Terran Wet - 1464915422 - spritesheet.png" id="5_khd2k"]
+[ext_resource type="Script" path="res://scripts/sprite2d_looping.gd" id="6_f6qln"]
 [ext_resource type="Texture2D" uid="uid://dctbtvb20hxm8" path="res://assets/dollar_bill.png" id="8_nc60d"]
 [ext_resource type="Texture2D" uid="uid://don4lic36wxmv" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_1.png" id="9_71p17"]
 [ext_resource type="Texture2D" uid="uid://cuel3odc8mrl2" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_2.png" id="10_qb8q4"]
@@ -143,13 +144,20 @@ autoscroll = Vector2(20, 20)
 texture = ExtResource("3_b1110")
 
 [node name="HomePlanet" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(580, 327)
-texture = ExtResource("5_3gect")
+texture = ExtResource("5_khd2k")
+hframes = 34
+vframes = 3
+frame = 21
+script = ExtResource("6_f6qln")
+delay = 0
 
 [node name="PlanetClip" type="Sprite2D" parent="."]
 position = Vector2(580, 327)
-texture = ExtResource("5_3gect")
+texture = ExtResource("5_khd2k")
+hframes = 34
+vframes = 3
+script = ExtResource("6_f6qln")
 
 [node name="Astronaut" type="Node2D" parent="PlanetClip"]
 
