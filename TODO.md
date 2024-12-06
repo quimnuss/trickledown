@@ -14,6 +14,7 @@
 - [ ] event feed animation -> color change depending on karma
 - [ ] time warp label
 - [ ] camera shake
+- [ ] money rain on town after astronaut launch
 
 ## Deute tècnic
 
