@@ -1,15 +1,14 @@
 # Now - Ship requirements
 
-- [ ] Improve catalan jokes
 - [ ] check on milestone and animate xupar to the list
 - [ ] other planet goals
 - [ ] increase time increments
 - [ ] more camera zoom
 - [ ] animate 0 rics + fletxa to work
-- [ ] typed text
+- [ ] typed text effect on jokes
 - [ ] increase milestones menu speed
-- [ ] news are not allways poping up after a while
 - [ ] Reset evens when empty
+- [ ] Add more news
 - [ ] feed only toggable in sistema view, always visible in others
 - [ ] event feed animation -> color change depending on karma
 - [ ] time warp label
@@ -60,6 +59,7 @@ If ground flight is implemented:
 
 # Done
 
+- [x] Improve catalan jokes
 - [x] Set the solar system
 - [~] ~Switch to high definition planets instead of pixel art~
 - [x] Fix the cannon clamping
