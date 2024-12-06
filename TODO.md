@@ -1,7 +1,19 @@
-# Now
+# Now - Ship requirements
 
-- [ ] Set the solar system
 - [ ] Improve catalan jokes
+- [ ] check on milestone and animate xupar to the list
+- [ ] other planet goals
+- [ ] increase time increments
+- [ ] more camera zoom
+- [ ] animate 0 rics + fletxa to work
+- [ ] typed text
+- [ ] increase milestones menu speed
+- [ ] news are not allways poping up after a while
+- [ ] Reset evens when empty
+- [ ] feed only toggable in sistema view, always visible in others
+- [ ] event feed animation -> color change depending on karma
+- [ ] time warp label
+- [ ] camera shake
 
 ## Deute tècnic
 
@@ -12,13 +24,13 @@
 
 # Next
 
+- [ ] Set more solar system
 - [ ] display which SOI the astronaut is in (on_body_entered if gravity check priority and decide which SOI it is)
 - [ ] make the milestones incremental (don't put the whole list)
 - [ ] Set the scale of the world to the astronaut instead of the planets (man as a mesure of all things)
 - [ ] Polish the physics engine area2d gravity-based approach
 - [ ] news feed filter by richmen
 - [ ] light
-- [ ] shake
 
 # Later
 
@@ -30,7 +42,6 @@
 - [ ] Consider orbit edge cases
 - [ ] Educate oneself with the orbital mechanics equations and how to simulate them
 - [ ] SOI change trajectory drawing
-- [ ] Switch to high definition planets instead of pixel art
 - [ ] Add rich man life highlights
 - [ ] Add successful landing feedback
 
@@ -48,6 +59,8 @@ If ground flight is implemented:
 
 # Done
 
+- [x] Set the solar system
+- [~] ~Switch to high definition planets instead of pixel art~
 - [x] Fix the cannon clamping
 - [x] Improve the launch mechanic to have a TRICKLEDOWN button at set thrust
 - [x] Interactable city: simple animations
