@@ -23,6 +23,7 @@ shadow_size = 5
 custom_minimum_size = Vector2(300, 0)
 offset_right = 200.0
 offset_bottom = 30.0
+mouse_filter = 0
 theme_override_font_sizes/font_size = 14
 theme_override_styles/normal = SubResource("StyleBoxFlat_5fuqb")
 text = "News feed"

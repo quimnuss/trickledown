@@ -7,9 +7,12 @@ class_name Feed
 
 var events : Array[Dictionary] = []
 
+var all_events : Array[Dictionary] = []
+
 func _ready() -> void:
     feed_timer.timeout.connect(pop_news)
     events = EventsReader.read_from_JSON(events_file)
+    all_events = events.duplicate()
     
 
 func pop_event(event_data : Dictionary):
@@ -20,10 +23,14 @@ func pop_event(event_data : Dictionary):
     add_child(feed_box)
     events.erase(event_data)
 
+
 func pop_news():
-    if not events.is_empty():
-        var event_data : Dictionary = events.pick_random()
-        pop_event(event_data)
+    if events.is_empty():
+        events = all_events.duplicate()
+    
+    var event_data : Dictionary = events.pick_random()
+    pop_event(event_data)
+
 
 static func _pop_random_filtered(events_list : Array[Dictionary], filter : Dictionary) -> Variant:
     for event in events_list:
@@ -34,9 +41,10 @@ static func _pop_random_filtered(events_list : Array[Dictionary], filter : Dicti
             return event
     return null
 
+
 func pop_filtered_news(filter : Dictionary):
     if events.is_empty():
-        return
+        events = all_events.duplicate()
 
     var event_data : Variant = _pop_random_filtered(events, filter)
     if event_data:

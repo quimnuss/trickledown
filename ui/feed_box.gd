@@ -15,6 +15,10 @@ func _ready() -> void:
     tween.tween_property(self, 'modulate:a', 0, 2).set_delay(7)
     tween.tween_callback(queue_free)
 
+func _gui_input(event: InputEvent) -> void:
+    if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.is_pressed():
+        self.queue_free()
+
 
 static func Instantiate(content : String, karma : int, richmen : String = "", title : String = ""):
     var feed_box : FeedBox = preload("res://ui/feed_box.tscn").instantiate()

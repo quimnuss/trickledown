@@ -6,7 +6,10 @@ var file : FileAccess
 
 const FILECURSORMARGIN : int = 1000
 
+var typing_speed : float = 1
+
 func _ready():
+    #typing_tween = create_tween()
 
     jokes_path = "res://data/jokes_%s.txt" % Config.lang
     Config.language_changed.connect(_on_language_changed)
@@ -39,6 +42,11 @@ func next_joke():
     var joke : String = file.get_line()
     return joke
 
+var typing_tween : Tween
 
 func _on_classify_pressed() -> void:
     self.text = next_joke()
+    if is_instance_valid(typing_tween):
+        typing_tween.kill()
+    var typing_tween : Tween = get_tree().create_tween()
+    typing_tween.tween_property(self, "visible_characters", self.get_total_character_count(), typing_speed).from(0)

@@ -265,6 +265,7 @@ limit_bottom = 4000
 limit_smoothed = true
 position_smoothing_enabled = true
 script = ExtResource("11_xul2k")
+max_zoom = 15.0
 
 [node name="VisualOrbit" type="Node2D" parent="Star/HomePlanet"]
 script = ExtResource("1_8xlk2")
@@ -637,7 +638,7 @@ layout_mode = 2
 icon = ExtResource("36_0hri1")
 richman_data = ExtResource("36_43mlr")
 
-[node name="HBoxContainer" type="VBoxContainer" parent="UI"]
+[node name="Container" type="VBoxContainer" parent="UI"]
 anchors_preset = 3
 anchor_left = 1.0
 anchor_top = 1.0
@@ -651,7 +652,7 @@ grow_horizontal = 0
 grow_vertical = 0
 theme_override_constants/separation = 20
 
-[node name="TrickleDown" type="Button" parent="UI/HBoxContainer"]
+[node name="TrickleDown" type="Button" parent="UI/Container"]
 layout_mode = 2
 theme_override_colors/font_hover_color = Color(1, 0.32549, 0, 1)
 theme_override_colors/font_color = Color(1, 0.796078, 0, 1)
@@ -663,12 +664,16 @@ theme_override_styles/normal = ExtResource("38_losiv")
 text = "TRICKLEDOWN!"
 icon = ExtResource("39_gs2jo")
 
-[node name="SpeedButton" type="Button" parent="UI/HBoxContainer"]
+[node name="SpeedButton" type="Button" parent="UI/Container"]
 layout_mode = 2
+tooltip_text = "Right/Left Mouse Click"
 focus_mode = 0
+theme_override_constants/outline_size = 5
+text = "Time warp"
 icon = ExtResource("31_ex666")
 flat = true
-icon_alignment = 2
+icon_alignment = 1
+vertical_icon_alignment = 0
 script = ExtResource("32_5hu43")
 time_warp_icons = Array[CompressedTexture2D]([ExtResource("33_a1v1w"), ExtResource("34_klinw"), ExtResource("35_xyw7w"), ExtResource("31_ex666"), ExtResource("36_xs0uj"), ExtResource("37_wcqr2")])
 
@@ -684,4 +689,4 @@ time_warp_icons = Array[CompressedTexture2D]([ExtResource("33_a1v1w"), ExtResour
 [connection signal="pressed" from="UI/HBoxContainer2/QuitButton" to="UI" method="_on_quit_button_pressed"]
 [connection signal="pressed" from="UI/VBoxContainer/ToCityButton" to="." method="_on_to_city_button_pressed"]
 [connection signal="pressed" from="UI/VBoxContainer/ToWorkButton" to="." method="_on_to_work_button_pressed"]
-[connection signal="pressed" from="UI/HBoxContainer/TrickleDown" to="Star/HomePlanet/Launchpad" method="_on_trickle_down_pressed"]
+[connection signal="pressed" from="UI/Container/TrickleDown" to="Star/HomePlanet/Launchpad" method="_on_trickle_down_pressed"]

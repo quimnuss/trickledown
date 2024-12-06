@@ -5,6 +5,8 @@ extends Control
 @export var tasklist_container_width : int = 404
 @onready var milestones: VBoxContainer = %Milestones
 
+const EXPAND_LIST_TIME : float = 0.5
+
 func _ready():
     if not Config.skip_tutorial or Config.skip_tutorial:
         tasklist_container.position.x = 0
@@ -19,14 +21,14 @@ func _ready():
 func collapse():
     show_tasklist_button.button_pressed = false
     var tween = get_tree().create_tween()
-    tween.tween_property(tasklist_container, "position:x", -tasklist_container_width, 1)
+    tween.tween_property(tasklist_container, "position:x", -tasklist_container_width, EXPAND_LIST_TIME)
     tween.play()
 
 
 func expand():
     show_tasklist_button.button_pressed = true
     var tween = get_tree().create_tween()
-    tween.tween_property(tasklist_container, "position:x", 0, 1)
+    tween.tween_property(tasklist_container, "position:x", 0, EXPAND_LIST_TIME)
     tween.play()
 
 

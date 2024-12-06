@@ -73,7 +73,6 @@ grow_vertical = 2
 theme_override_constants/outline_size = 5
 theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_5qgum")
-horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 script = ExtResource("2_dfcvy")

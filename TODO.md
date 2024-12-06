@@ -1,17 +1,13 @@
 # Now - Ship requirements
 
-- [ ] check on milestone and animate xupar to the list
+- [ ] code a shaking component and apply it to controls
+
+- [ ] check animation on milestone completed toast
+- [ ] particle gather animation flow towards the milestone list (component)
 - [ ] other planet goals
-- [ ] increase time increments
-- [ ] more camera zoom
 - [ ] animate 0 rics + fletxa to work
-- [ ] typed text effect on jokes
-- [ ] increase milestones menu speed
-- [ ] Reset evens when empty
 - [ ] Add more news
-- [ ] feed only toggable in sistema view, always visible in others
 - [ ] event feed animation -> color change depending on karma
-- [ ] time warp label
 - [ ] camera shake
 - [ ] money rain on town after astronaut launch
 
@@ -59,6 +55,13 @@ If ground flight is implemented:
 
 # Done
 
+- [x] feed only toggable in sistema view, always visible in others
+- [x] increase milestones menu speed
+- [x] typed text effect on jokes
+- [x] Reset evens when empty
+- [x] time warp label
+- [x] increase time increments
+- [x] more camera zoom
 - [x] Improve catalan jokes
 - [x] Set the solar system
 - [~] ~Switch to high definition planets instead of pixel art~
