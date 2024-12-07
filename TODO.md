@@ -1,15 +1,15 @@
 # Now - Ship requirements
 
-- [ ] code a shaking component and apply it to controls
-
+- [ ] loop sistema song
+- [ ] change controls to full rcs? 8 way movement + q/e to rotate
 - [ ] check animation on milestone completed toast
 - [ ] particle gather animation flow towards the milestone list (component)
 - [ ] other planet goals
-- [ ] animate 0 rics + fletxa to work
 - [ ] Add more news
 - [ ] event feed animation -> color change depending on karma
 - [ ] camera shake
 - [ ] money rain on town after astronaut launch
+- [ ] exponential time warp instead of linear
 
 ## Deute tècnic
 
@@ -55,6 +55,8 @@ If ground flight is implemented:
 
 # Done
 
+- [x] code a shaking component and apply it to controls
+- [x] animate 0 rics + fletxa to work
 - [x] feed only toggable in sistema view, always visible in others
 - [x] increase milestones menu speed
 - [x] typed text effect on jokes

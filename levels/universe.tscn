@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://c6c6tv7jbuyxu"]
+[gd_scene load_steps=12 format=3 uid="uid://c6c6tv7jbuyxu"]
 
 [ext_resource type="Script" path="res://levels/universe.gd" id="1_sysfn"]
 [ext_resource type="PackedScene" uid="uid://dn162xreoi5rh" path="res://levels/work.tscn" id="2_ochjt"]
 [ext_resource type="PackedScene" uid="uid://bix0vgtkccr8k" path="res://levels/planetary_system.tscn" id="3_wa5gh"]
 [ext_resource type="PackedScene" uid="uid://b778f20b5udf0" path="res://levels/city.tscn" id="4_eh1rh"]
 [ext_resource type="Script" path="res://scripts/audio_player.gd" id="5_q1bxc"]
+[ext_resource type="AudioStream" uid="uid://b0yimdynpqaus" path="res://assets/audio/spacemusic1.ogg" id="6_j5l58"]
 [ext_resource type="AudioStream" uid="uid://bx8jtafwus55f" path="res://assets/audio/city_ambience.ogg" id="7_mynyy"]
 [ext_resource type="Script" path="res://ui/events_feed.gd" id="7_tgful"]
 [ext_resource type="PackedScene" uid="uid://d10uodl4gtsu6" path="res://ui/feed.tscn" id="8_stmrs"]
@@ -30,8 +31,10 @@ visible = false
 script = ExtResource("5_q1bxc")
 
 [node name="Track1" type="AudioStreamPlayer" parent="AudioManager"]
+stream = ExtResource("6_j5l58")
 volume_db = -10.0
 autoplay = true
+parameters/looping = false
 
 [node name="Track2" type="AudioStreamPlayer" parent="AudioManager"]
 stream = ExtResource("7_mynyy")
@@ -76,8 +79,8 @@ toggle_mode = true
 icon = ExtResource("9_auft1")
 expand_icon = true
 
-[connection signal="change_scene" from="PlanetaryCanvasLayer/PlanetarySystem" to="." method="_on_planetary_system_change_scene"]
 [connection signal="change_scene" from="PlanetaryCanvasLayer/PlanetarySystem" to="." method="_on_change_scene"]
+[connection signal="change_scene" from="PlanetaryCanvasLayer/PlanetarySystem" to="." method="_on_planetary_system_change_scene"]
 [connection signal="change_scene" from="City" to="." method="_on_change_scene"]
 [connection signal="change_scene" from="WorkCanvasLayer" to="." method="_on_change_scene"]
 [connection signal="pressed" from="FeedLayer/EventsFeed/HideFeed" to="FeedLayer/EventsFeed" method="_on_hide_feed_pressed"]

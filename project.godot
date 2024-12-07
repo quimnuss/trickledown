@@ -32,6 +32,7 @@ buildings=""
 feeds=""
 persist=""
 celestials=""
+work_shakes=""
 
 [gui]
 

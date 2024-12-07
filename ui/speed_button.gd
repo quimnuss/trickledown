@@ -1,6 +1,6 @@
 extends Button
 
-const MAX_TIME_WARP : float = 5.0
+const MAX_TIME_WARP : float = 2.0
 const NUM_ICON_STEPS : int = 5
 const TIME_WARP_DELTA : float = MAX_TIME_WARP / float(NUM_ICON_STEPS)
 const ICON_TIME_WARP_STEP : float = float(NUM_ICON_STEPS)/MAX_TIME_WARP
