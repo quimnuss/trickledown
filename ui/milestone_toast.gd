@@ -1,7 +1,6 @@
 extends RichTextLabel
 
 var completed_milestones : Array[Singleton.Milestone]
-@onready var check_animation: AnimatedSprite = $"../CheckAnimation"
 
 func _ready() -> void:
     self.modulate.a = 0
@@ -21,8 +20,6 @@ func toast():
     var tween = create_tween()
     tween.tween_property(self, 'modulate:a', 1, 1)
     tween.tween_property(self, 'modulate:a', 0, 1).set_delay(2)
-    check_animation.restart()
-    check_animation.visible = true
 
 func _on_milestone_completed(milestone_enum : Singleton.Milestone):
     if milestone_enum not in completed_milestones:
