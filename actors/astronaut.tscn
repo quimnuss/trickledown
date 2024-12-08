@@ -145,7 +145,7 @@ script = ExtResource("16_rtc06")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="burning" from="AstronautController" to="EnginePlumeFront" method="_on_astronaut_controller_burning"]
-[connection signal="burning" from="AstronautController" to="EnginePlumeBack" method="_on_astronaut_controller_burning"]
-[connection signal="burning" from="AstronautController" to="ThrustSound" method="_on_astronaut_controller_burning"]
 [connection signal="burning" from="AstronautController" to="EnginePlumeRight" method="_on_astronaut_controller_burning"]
+[connection signal="burning" from="AstronautController" to="EnginePlumeBack" method="_on_astronaut_controller_burning"]
 [connection signal="burning" from="AstronautController" to="EnginePlumeLeft" method="_on_astronaut_controller_burning"]
+[connection signal="burning" from="AstronautController" to="ThrustSound" method="_on_astronaut_controller_burning"]
