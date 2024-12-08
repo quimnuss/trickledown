@@ -31,6 +31,16 @@ func expand():
     tween.tween_property(tasklist_container, "position:x", 0, EXPAND_LIST_TIME)
     tween.play()
 
+func highlight_tasklist_button():
+    var original_modulate = Color.WHITE
+    var high_color : Color = Color.GREEN
+    var tween : Tween = get_tree().create_tween()
+    const NUM_OSCILLATIONS : int = 2
+    for i in range(NUM_OSCILLATIONS):
+        tween.tween_property(show_tasklist_button, "modulate", high_color, 0.25)
+        tween.tween_property(show_tasklist_button, "modulate", Color.WHITE, 0.25)
+    tween.tween_property(show_tasklist_button, "modulate", original_modulate, 0.25)
+
 
 func _on_show_tasklist_button_pressed() -> void:
     if show_tasklist_button.button_pressed:
@@ -44,6 +54,8 @@ func _on_milestone_completed(milestone_enum : Singleton.Milestone):
         if checkbox_child.name == Singleton.Milestone.keys()[milestone_enum]:
             if not checkbox_child.button_pressed:
                 checkbox_child.button_pressed = true
+                #if show_tasklist_button.pressed:
+                highlight_tasklist_button()
                 await get_tree().create_timer(5).timeout
                 checkbox_child.disabled = true
                 milestones.move_child(checkbox_child, -1)

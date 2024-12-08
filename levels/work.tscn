@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dn162xreoi5rh"]
+[gd_scene load_steps=9 format=3 uid="uid://dn162xreoi5rh"]
 
 [ext_resource type="Script" path="res://levels/work.gd" id="1_l5xem"]
 [ext_resource type="Texture2D" uid="uid://disk2funmk7lp" path="res://assets/ui_assets/nine_patch.png" id="1_ulvov"]
@@ -7,8 +7,6 @@
 [ext_resource type="Texture2D" uid="uid://dmnpegqpxmdu2" path="res://assets/smiley_sad.png" id="4_6tu7q"]
 [ext_resource type="Script" path="res://scripts/stonks_label.gd" id="5_4kf1n"]
 [ext_resource type="Script" path="res://components/save_resource.gd" id="6_j81lu"]
-[ext_resource type="PackedScene" uid="uid://d10uodl4gtsu6" path="res://ui/feed.tscn" id="8_bs4or"]
-[ext_resource type="Script" path="res://ui/events_feed.gd" id="8_ual0j"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5qgum"]
 content_margin_left = 20.0
@@ -157,25 +155,6 @@ layout_mode = 2
 theme_override_constants/outline_size = 8
 theme_override_font_sizes/font_size = 20
 text = "System"
-
-[node name="EventsFeed" type="Control" parent="."]
-visible = false
-custom_minimum_size = Vector2(300, 0)
-layout_mode = 3
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_right = 300.0
-grow_vertical = 2
-size_flags_vertical = 0
-script = ExtResource("8_ual0j")
-
-[node name="Feed" parent="EventsFeed" groups=["feeds"] instance=ExtResource("8_bs4or")]
-layout_mode = 1
-offset_left = 18.0
-offset_right = 318.0
-offset_bottom = 38.0
-theme_override_constants/separation = 3
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Happy" to="MarginContainer/VBoxContainer/NinePatchRect/JokeText" method="_on_classify_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Happy" to="Score" method="_on_classify_pressed"]

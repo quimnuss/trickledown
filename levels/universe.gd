@@ -36,10 +36,12 @@ func _on_change_scene(scene: Singleton.Scene) -> void:
         Singleton.Scene.SYSTEM:
             planetary_canvas_layer.visible = true
             planetary_system_ui.visible = true
+            hide_feed.visible = true
             feed.visible = not hide_feed.button_pressed
             audio_manager.crossfade(preload("res://assets/audio/spacemusic1.ogg"), -20)
         _:
             planetary_canvas_layer.visible = true
             planetary_system_ui.visible = true
+            hide_feed.visible = true
             feed.visible = not hide_feed.button_pressed
             audio_manager.crossfade(preload("res://assets/audio/spacemusic1.ogg"), -20)

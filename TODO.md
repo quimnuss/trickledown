@@ -4,7 +4,6 @@
 - [ ] loop sistema song
 - [ ] check animation on milestone completed toast
 - [ ] other planet goals
-- [ ] event feed animation -> color change depending on karma
 - [ ] camera shake
 - [ ] money rain on town after astronaut launch
 - [ ] exponential time warp instead of linear
@@ -54,6 +53,7 @@ If ground flight is implemented:
 
 # Done
 
+- [x] event feed animation -> color change depending on karma
 - [x] change controls to full rcs? 8 way movement + q/e to rotate
 - [x] code a shaking component and apply it to controls
 - [x] animate 0 rics + fletxa to work

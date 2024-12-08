@@ -46,14 +46,8 @@ func cascade_num_richmen():
     prints('Available richmen', len(richmen_paths))
     if richmen_paths.is_empty():
         prints("uh oh, pure anarchy achieved. You can't play.")
-        var aresource_filename = preload("res://data/richmen/richmen_resources_list.tres").richmen_resources_list[1]
-        var aresource = ResourceLoader.load("res://data/richmen/richmen_resources/" + aresource_filename)
         return
 
-
-    var a = []
-    for r in richmen_grounded:
-        a.append(r.name)
     if num_richmen > len(richmen_grounded):
         for i in range(num_richmen - len(richmen_grounded)):
             var richman : RichmanData = random_richman_data()

@@ -1,5 +1,6 @@
 extends Node2D
 
+@warning_ignore("integer_division")
 const POWER_STEP := 150/5
 @warning_ignore("integer_division")
 const POWER_SUBSTEP := 150/5/4
