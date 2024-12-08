@@ -225,7 +225,7 @@
   },
   {
     "guid": "47881456-3cd9-4323-9e09-c8ef06294fdb",
-    "content": "Popular software compny found to have stolen it's core code from an informal meeting",
+    "content": "Popular software company found to have stolen it's core code from an informal meeting",
     "content_ca": "S'ha trobat una empresa de programari popular que ha robat el seu codi bàsic d'una reunió informal",
     "karma": 2,
     "richmen": "billgates",
@@ -238,5 +238,733 @@
     "karma": 2,
     "richmen": "billgates",
     "title": ""
+  },
+  {
+    "guid": "b274117c-b4de-4b4d-bdc7-2ef52dbf5918",
+    "content": "Erosion of public services as economy is diverted to Tax Havens",
+    "content_ca": "Erosió dels serveis públics al divertir l'ecònomia a paradisos fiscals",
+    "karma": 2,
+    "richmen": "jeffbezos",
+    "title": "Tax Evasion Consequences"
+  },
+  {
+    "guid": "22ddde70-324b-4f28-83fd-8836eb716bc3",
+    "content": "Investors lose millions in market manipulation",
+    "content_ca": "Inversors perden milions per manipulació del mercat",
+    "karma": 2,
+    "richmen": "jordanbelfort",
+    "title": "Investor Losses"
+  },
+  {
+    "guid": "871ecaad-6232-4f06-b876-f3c07bf996de",
+    "content": "River ecosystems destroyed by toxic dumping",
+    "content_ca": "Ecosistemes fluvials destruïts per abocaments tòxics",
+    "karma": 2,
+    "richmen": "jamesratcliffe",
+    "title": "Ecosystem Destruction"
+  },
+  {
+    "guid": "1a498cba-08e5-42ff-81c7-7f4ec3e78105",
+    "content": "Generations trapped in poverty from child labor abuses",
+    "content_ca": "Generacions atrapades en la pobresa per abusos de mà d'obra infantil",
+    "karma": 2,
+    "richmen": "",
+    "title": "Child Labor Harm"
+  },
+  {
+    "guid": "1cad03a4-37ff-4ec3-b90e-0740dd99f1cb",
+    "content": "Economic inequality deepened by offshore hoarding",
+    "content_ca": "La desigualtat econòmica s'agreuja per acumulació a l'estranger",
+    "karma": 2,
+    "richmen": "",
+    "title": "Economic Inequality"
+  },
+  {
+    "guid": "dc531930-010b-4503-a39e-4bbef20122e1",
+    "content": "Health risks rise from harmful product sales",
+    "content_ca": "Augmenten els riscos per a la salut per la venda de productes nocius",
+    "karma": 2,
+    "richmen": "",
+    "title": "Health Risks"
+  },
+  {
+    "guid": "321d0c04-8cfe-4b08-bc6d-8e4ed4e28529",
+    "content": "Small businesses stifled by monopolistic practices",
+    "content_ca": "Petites empreses asfixiades per pràctiques monopolístiques",
+    "karma": 2,
+    "richmen": "",
+    "title": "Small Business Harm"
+  },
+  {
+    "guid": "24ad14af-0ea1-49b0-964b-2ebabb41524d",
+    "content": "Increased injuries from unsafe workplace practices",
+    "content_ca": "Augment de lesions per pràctiques laborals insegures",
+    "karma": 2,
+    "richmen": "jeffbezos",
+    "title": "Worker Injuries"
+  },
+  {
+    "guid": "17fd9185-5cbf-4115-a38f-1e13b4ba0732",
+    "content": "Renters displaced by excessive charges",
+    "content_ca": "Llogaters desplaçats per càrrecs excessius",
+    "karma": 2,
+    "richmen": "",
+    "title": "Renter Displacement"
+  },
+  {
+    "guid": "733f5f05-80d3-41e8-8f48-3a26534685c6",
+    "content": "Human rights violations harm migrant workers",
+    "content_ca": "Les violacions de drets humans perjudiquen els treballadors migrants",
+    "karma": 2,
+    "richmen": "",
+    "title": "Migrant Rights"
+  },
+  {
+    "guid": "94fd9299-73e6-480e-b004-1c1af0f7beca",
+    "content": "Public funds diverted through charity fraud",
+    "content_ca": "Fons públics desviats per frau en beneficència",
+    "karma": 2,
+    "richmen": "billgates",
+    "title": "Public Fund Loss"
+  },
+  {
+    "guid": "9e401815-00ea-4f92-b774-a44aebc0697d",
+    "content": "Political integrity undermined by bribery",
+    "content_ca": "La integritat política es veu afectada pels suborns",
+    "karma": 2,
+    "richmen": "",
+    "title": "Political Bribery"
+  },
+  {
+    "guid": "2789b2a0-a4f1-46fb-9dce-07b2527a9313",
+    "content": "Climate change worsens due to mass deforestation",
+    "content_ca": "El canvi climàtic empitjora a causa de la desforestació massiva",
+    "karma": 2,
+    "richmen": "",
+    "title": "Climate Harm"
+  },
+  {
+    "guid": "8572e45e-40cf-4728-8126-06d5b4c1f6e1",
+    "content": "Democracy eroded by influence buying",
+    "content_ca": "La democràcia s'erosiona pel compra d'influència",
+    "karma": 2,
+    "richmen": "elainemarshall",
+    "title": "Democracy Erosion"
+  },
+  {
+    "guid": "5d0f75e6-38fb-4897-8721-b15bf0b9dbca",
+    "content": "Water access crisis from hoarding",
+    "content_ca": "Crisi d'accés a l'aigua per acaparament",
+    "karma": 2,
+    "richmen": "",
+    "title": "Water Crisis"
+  },
+  {
+    "guid": "97865c8b-cfc6-4205-b9bf-b9f222b20ac7",
+    "content": "Communities devastated by displacement",
+    "content_ca": "Comunitats devastades pel desplaçament",
+    "karma": 2,
+    "richmen": "",
+    "title": "Community Harm"
+  },
+  {
+    "guid": "11b327c1-37e9-44a6-8516-a000d4f88dfb",
+    "content": "Marine life killed by repeated oil spills",
+    "content_ca": "Vida marina assassinada per vessaments repetits de petroli",
+    "karma": 2,
+    "richmen": "",
+    "title": "Marine Loss"
+  },
+  {
+    "guid": "6e88c7ec-abc1-4d7e-b2f3-3fe43641c953",
+    "content": "Global workers exploited through sweatshops",
+    "content_ca": "Treballadors globals explotats a través de tallers d'explotació",
+    "karma": 2,
+    "richmen": "amancioortega",
+    "title": "Worker Exploitation"
+  },
+  {
+    "guid": "72d4361d-f2bd-479c-ac53-d23327033a96",
+    "content": "Public trust eroded by propaganda campaigns",
+    "content_ca": "La confiança pública erosionada per campanyes de propaganda",
+    "karma": 2,
+    "richmen": "rupertmurdoch",
+    "title": "Trust Erosion"
+  },
+  {
+    "guid": "4c87cee6-5474-44b2-b91b-44de82228759",
+    "content": "Whistleblowers silenced through unethical lawsuits",
+    "content_ca": "Denunciants silenciats mitjançant demandes poc ètiques",
+    "karma": 2,
+    "richmen": "",
+    "title": "Whistleblower Harm"
+  },
+  {
+    "guid": "7ea25ade-b7e8-4ff0-9705-a08fa5532694",
+    "content": "Addiction crises worsened by product marketing",
+    "content_ca": "Les crisis d'addicció empitjoren pel màrqueting de productes",
+    "karma": 2,
+    "richmen": "",
+    "title": "Addiction Crisis"
+  },
+  {
+    "guid": "e9e31b49-ad31-44c4-8c2c-dc65314c0029",
+    "content": "Labor rights dismantled by union busting",
+    "content_ca": "Els drets laborals desmantellats pel trencament de sindicats",
+    "karma": 2,
+    "richmen": "jimwalton",
+    "title": "Labor Rights Harm"
+  },
+  {
+    "guid": "de151181-f45b-49ee-bdc4-ea5cea9c10b1",
+    "content": "Unsafe housing endangers tenants",
+    "content_ca": "Habitatges insegurs posen en perill els llogaters",
+    "karma": 2,
+    "richmen": "",
+    "title": "Tenant Endangerment"
+  },
+  {
+    "guid": "942781c0-3e8d-4f22-b9c6-fe5b27f03ecb",
+    "content": "Privacy violations put users at risk",
+    "content_ca": "Les violacions de privacitat posen els usuaris en risc",
+    "karma": 2,
+    "richmen": "markzuckerberg",
+    "title": "User Privacy Risk"
+  },
+  {
+    "guid": "479dc746-d98e-4cf0-862b-a864d2d2cd96",
+    "content": "Long-term environmental harm from cover-ups",
+    "content_ca": "Danys ambientals a llarg termini per encobriments",
+    "karma": 2,
+    "richmen": "",
+    "title": "Environmental Harm"
+  },
+  {
+    "guid": "b958be35-c45b-4686-bfba-b71462381bd2",
+    "content": "Cultural heritage damaged by illegal acquisitions",
+    "content_ca": "El patrimoni cultural danyat per adquisicions il·legals",
+    "karma": 2,
+    "richmen": "",
+    "title": "Cultural Harm"
+  },
+  {
+    "guid": "06783bfa-74ca-4182-a14e-b30796d60919",
+    "content": "Small creators struggle due to plagiarism",
+    "content_ca": "Petits creadors pateixen a causa del plagi",
+    "karma": 2,
+    "richmen": "",
+    "title": "Creator Struggles"
+  },
+  {
+    "guid": "c22b4cc7-2d95-4a9c-b53a-2f8de70b4cc4",
+    "content": "Communities suffer from small business destruction",
+    "content_ca": "Les comunitats pateixen per la destrucció de petites empreses",
+    "karma": 2,
+    "richmen": "jimwalton",
+    "title": "Community Loss"
+  },
+  {
+    "guid": "69e15938-7b16-4e02-93f2-f3ee7f01c224",
+    "content": "Innovation hindered by competitor bullying",
+    "content_ca": "La innovació obstaculitzada per l'intimidació a competidors",
+    "karma": 2,
+    "richmen": "larryellison",
+    "title": "Innovation Blocked"
+  },
+  {
+    "guid": "acad0319-a34b-4b6e-9591-1f3181c8d879",
+    "content": "Public misled by climate denial funding",
+    "content_ca": "El públic enganyat pel finançament de la negació climàtica",
+    "karma": 2,
+    "richmen": "lenblavatnik",
+    "title": "Climate Misinformation"
+  },
+  {
+    "guid": "65117add-ae92-429b-9dff-c71fe0bf5bef",
+    "content": "Homelessness rises due to profiteering",
+    "content_ca": "Augment dels sense sostre per afany de lucre",
+    "karma": 2,
+    "richmen": "stephenschwarzman",
+    "title": "Homelessness Increase"
+  },
+  {
+    "guid": "fcd445c5-3630-4d0a-8087-a532cea9fe08",
+    "content": "Public health endangered by pandemic loopholes",
+    "content_ca": "La salut pública en perill per buits legals pandèmics",
+    "karma": 2,
+    "richmen": "",
+    "title": "Public Health Harm"
+  },
+  {
+    "guid": "9d485eb8-ea3c-4221-b2e2-394708c219f1",
+    "content": "Billion-dollar tax evasion scandal exposed",
+    "content_ca": "Es revela escàndol d'evasió fiscal de milers de milions",
+    "karma": 2,
+    "richmen": "jeffbezos",
+    "title": "Tax Evasion Scandal"
+  },
+  {
+    "guid": "04e95396-722c-4946-8fa5-de5865eb78b8",
+    "content": "Major stock market manipulation uncovered",
+    "content_ca": "Es destapa gran manipulació del mercat de valors",
+    "karma": 2,
+    "richmen": "",
+    "title": "Stock Market Fraud"
+  },
+  {
+    "guid": "04ed7746-9d01-4696-8ed8-8f3ff8419fda",
+    "content": "Toxic waste dumping in rivers revealed",
+    "content_ca": "Revelat l'abocament de residus tòxics als rius",
+    "karma": 2,
+    "richmen": "",
+    "title": "Toxic Dumping"
+  },
+  {
+    "guid": "6c72857d-c8e0-4ed5-be44-57360b255344",
+    "content": "Child labor exploitation uncovered",
+    "content_ca": "Es destapa l'explotació de la mà d'obra infantil",
+    "karma": 2,
+    "richmen": "",
+    "title": "Child Labor Scandal"
+  },
+  {
+    "guid": "ed054937-bc51-4241-bcc7-525e65844bb9",
+    "content": "Offshore billions stash exposed",
+    "content_ca": "Revelat amagatall de milers de milions a l'estranger",
+    "karma": 2,
+    "richmen": "",
+    "title": "Offshore Funds"
+  },
+  {
+    "guid": "7a3d5bfe-e03a-4cdc-b6b3-a77437c8d8e0",
+    "content": "Harmful product sales scandal",
+    "content_ca": "Escàndol de venda de productes nocius",
+    "karma": 2,
+    "richmen": "",
+    "title": "Harmful Product Sales"
+  },
+  {
+    "guid": "86f9b418-fb54-43b3-811e-9bcc747cffde",
+    "content": "Industry monopolization controversy",
+    "content_ca": "Controvèrsia per la monopolització d'indústries",
+    "karma": 2,
+    "richmen": "",
+    "title": "Industry Monopoly"
+  },
+  {
+    "guid": "b2da437d-bbe3-46d7-b0f1-11670fb414cc",
+    "content": "Unsafe workplace practices revealed",
+    "content_ca": "Revelades pràctiques laborals insegures",
+    "karma": 2,
+    "richmen": "jeffbezos",
+    "title": "Unsafe Work Practices"
+  },
+  {
+    "guid": "3fff870b-0e4f-4fd0-b025-6110f06bfe76",
+    "content": "Excessive rent charges exposed",
+    "content_ca": "Revelats cobraments excessius de lloguer",
+    "karma": 2,
+    "richmen": "",
+    "title": "Rent Exploitation"
+  },
+  {
+    "guid": "c5682117-fe57-4243-9beb-46107c39b49f",
+    "content": "Migrant worker exploitation exposed",
+    "content_ca": "Revelada l'explotació de treballadors migrants",
+    "karma": 2,
+    "richmen": "",
+    "title": "Worker Exploitation"
+  },
+  {
+    "guid": "1a8ecdcf-0d4b-4df2-bc8d-ffd9c74510a1",
+    "content": "Charity tax scheme scandal",
+    "content_ca": "Escàndol d'esquemes fiscals en beneficència",
+    "karma": 2,
+    "richmen": "billgates",
+    "title": "Charity Fraud"
+  },
+  {
+    "guid": "42f5fdab-070e-4c25-aa61-d6012c89eaa7",
+    "content": "Government bribery case uncovered",
+    "content_ca": "Es destapa cas de suborns governamentals",
+    "karma": 2,
+    "richmen": "",
+    "title": "Bribery Case"
+  },
+  {
+    "guid": "27e85116-e112-40f9-a551-51c3df926ffd",
+    "content": "Mass deforestation scandal revealed",
+    "content_ca": "Es revela escàndol de desforestació massiva",
+    "karma": 2,
+    "richmen": "",
+    "title": "Deforestation Scandal"
+  },
+  {
+    "guid": "44c0ce1b-037e-4e8d-afd3-9cc7a73cbb5f",
+    "content": "Political influence buying exposed",
+    "content_ca": "Revelat el compra d'influència política",
+    "karma": 2,
+    "richmen": "",
+    "title": "Influence Buying"
+  },
+  {
+    "guid": "8a6cf792-9ee9-4fa0-801f-b312ee4bf8bf",
+    "content": "Water rights hoarding scandal",
+    "content_ca": "Escàndol d'acaparament de drets d'aigua",
+    "karma": 2,
+    "richmen": "",
+    "title": "Water Hoarding"
+  },
+  {
+    "guid": "7a119ebd-19d4-46eb-bc26-2a4299f43059",
+    "content": "Indigenous displacement uncovered",
+    "content_ca": "Es destapa desplaçament de comunitats indígenes",
+    "karma": 2,
+    "richmen": "",
+    "title": "Indigenous Displacement"
+  },
+  {
+    "guid": "6d6b926f-f0a3-4e95-a86f-476913c82810",
+    "content": "Repeated oil spill incidents revealed",
+    "content_ca": "Revelats vessaments de petroli repetits",
+    "karma": 2,
+    "richmen": "",
+    "title": "Oil Spill Scandal"
+  },
+  {
+    "guid": "389d6126-ea74-47e7-824a-d4a1e375a0e8",
+    "content": "Sweatshop labor abroad exposed",
+    "content_ca": "Revelada mà d'obra en tallers d'explotació a l'estranger",
+    "karma": 2,
+    "richmen": "amancioortega",
+    "title": "Sweatshop Labor"
+  },
+  {
+    "guid": "d95a3dc5-2a53-4d8d-bbd2-c1d6f29ac114",
+    "content": "Propaganda campaign funding revealed",
+    "content_ca": "Revelat el finançament de campanyes de propaganda",
+    "karma": 2,
+    "richmen": "rupertmurdoch",
+    "title": "Propaganda Funding"
+  },
+  {
+    "guid": "e7d40d7b-0ce5-479c-8e81-cc59b51608ea",
+    "content": "Unethical lawsuits scandal",
+    "content_ca": "Escàndol de demandes poc ètiques",
+    "karma": 2,
+    "richmen": "",
+    "title": "Unethical Lawsuits"
+  },
+  {
+    "guid": "f1a6188a-7f1f-4f37-9a49-f2d76636a075",
+    "content": "Addictive product promotion exposed",
+    "content_ca": "Revelada la promoció de productes addictius",
+    "karma": 2,
+    "richmen": "",
+    "title": "Addictive Products"
+  },
+  {
+    "guid": "5294f777-65b5-4ec1-b6c9-866d3da05e86",
+    "content": "Union busting practices revealed",
+    "content_ca": "Revelades pràctiques de desmantellament sindical",
+    "karma": 2,
+    "richmen": "jimwalton",
+    "title": "Union Busting"
+  },
+  {
+    "guid": "c6f98a73-7a68-42c7-9f53-9f5f44c0e008",
+    "content": "Dangerous housing scandal exposed",
+    "content_ca": "Revelat escàndol d'habitatges perillosos",
+    "karma": 2,
+    "richmen": "",
+    "title": "Housing Scandal"
+  },
+  {
+    "guid": "824a8708-322a-4d7f-9849-90c011524b8b",
+    "content": "Privacy rights violations uncovered",
+    "content_ca": "Es destapen violacions de drets de privacitat",
+    "karma": 2,
+    "richmen": "markzuckerberg",
+    "title": "Privacy Violations"
+  },
+  {
+    "guid": "7edca1f1-a75e-4b78-9e1e-e21b836679b0",
+    "content": "Environmental damage cover-up exposed",
+    "content_ca": "Revelat encobriment de danys ambientals",
+    "karma": 2,
+    "richmen": "",
+    "title": "Environmental Damage"
+  },
+  {
+    "guid": "e802e112-7548-4af5-940b-a9e4cbffb628",
+    "content": "Illegal artifact acquisitions revealed",
+    "content_ca": "Revelades adquisicions il·legals d'artefactes",
+    "karma": 2,
+    "richmen": "",
+    "title": "Artifact Scandal"
+  },
+  {
+    "guid": "189bd2ed-5e06-4869-92f5-09c2103b0595",
+    "content": "Small creators plagiarism scandal",
+    "content_ca": "Escàndol de plagi de petits creadors",
+    "karma": 2,
+    "richmen": "",
+    "title": "Creator Plagiarism"
+  },
+  {
+    "guid": "a316a2cd-8f45-4551-95ee-023e4e2b6f3a",
+    "content": "Small business destruction exposed",
+    "content_ca": "Revelada destrucció de petites empreses",
+    "karma": 2,
+    "richmen": "jimwalton",
+    "title": "Business Destruction"
+  },
+  {
+    "guid": "f3a2eb5b-30d8-459c-be22-09d139416628",
+    "content": "Competitor bullying lawsuits revealed",
+    "content_ca": "Revelades demandes per intimidació a competidors",
+    "karma": 2,
+    "richmen": "larryellison",
+    "title": "Competitor Lawsuits"
+  },
+  {
+    "guid": "73a4a069-fdbf-404a-8b23-71c89c6407c8",
+    "content": "Climate change denial funding exposed",
+    "content_ca": "Revelat el finançament de la negació del canvi climàtic",
+    "karma": 2,
+    "richmen": "lenblavatnik",
+    "title": "Climate Denial"
+  },
+  {
+    "guid": "061c8570-be00-4c19-94ed-69736088d059",
+    "content": "Housing crisis caused by profiteering revealed",
+    "content_ca": "Es destapa crisi d'habitatge per afany de lucre",
+    "karma": 2,
+    "richmen": "stephenschwarzman",
+    "title": "Housing Crisis"
+  },
+  {
+    "guid": "7684fc89-72c4-432e-8a8d-d0082a2aad79",
+    "content": "Pandemic loophole exploitation exposed",
+    "content_ca": "Revelada explotació de buits legals durant la pandèmia",
+    "karma": 2,
+    "richmen": "",
+    "title": "Pandemic Scandal"
+  },
+  {
+    "guid": "e34f6c09-69b3-4f57-8c5f-d6c928d8fa3a",
+    "content": "Communities flourish with shared resources",
+    "content_ca": "Les comunitats prosperen amb recursos compartits",
+    "karma": 0,
+    "richmen": "anarchistsociety",
+    "title": "Shared Resource Growth"
+  },
+  {
+    "guid": "b23a7e85-4d24-4c37-8bb7-f7c27a843db3",
+    "content": "Crime rates drop due to equality",
+    "content_ca": "Millores en igualtat redueix la criminalitat",
+    "karma": 0,
+    "richmen": "anarchistsociety",
+    "title": "Crime Reduction"
+  },
+  {
+    "guid": "f7b21c57-2a47-4e4c-9441-35cf779ae834",
+    "content": "Healthcare access improves universally",
+    "content_ca": "L'accés a la salut millora universalment",
+    "karma": 0,
+    "richmen": "anarchistsociety",
+    "title": "Universal Healthcare"
+  },
+  {
+    "guid": "91fcb063-2f6d-4df3-9a58-fbcfa96c83b7",
+    "content": "Education flourishes through Freire's Pedagogy for the Oppressed",
+    "content_ca": "L'educació prospera mitjançant la pedagogia de l'oprimit de Freire",
+    "karma": 0,
+    "richmen": "anarchistsociety",
+    "title": "Education Flourishes"
+  },
+  {
+    "guid": "d452e749-42b1-49f7-b8e2-35b2b4d578bc",
+    "content": "Workplace equality boosts productivity",
+    "content_ca": "La igualtat laboral augmenta la productivitat",
+    "karma": 0,
+    "richmen": "anarchistsociety",
+    "title": "Workplace Equality"
+  },
+  {
+    "guid": "5c47c2e6-8924-4264-87b5-903ab0b81c95",
+    "content": "Artistic expression thrives without censorship",
+    "content_ca": "L'expressió artística explota al suprimir la censura",
+    "karma": 0,
+    "richmen": "anarchistsociety",
+    "title": "Artistic Freedom"
+  },
+  {
+    "guid": "af65d7de-6e93-42e1-8c27-6f8425b17c36",
+    "content": "Housing security achieved through Housing Cooperatives",
+    "content_ca": "Seguretat habitacional assegurada via cooperatives d'habitatge",
+    "karma": 0,
+    "richmen": "anarchistsociety",
+    "title": "Housing Security"
+  },
+  {
+    "guid": "62d1a844-828d-4b32-bb44-12b7c8d0c9f4",
+    "content": "Mental health improves with mutual aid",
+    "content_ca": "La salut mental millora amb l'ajuda mútua",
+    "karma": 0,
+    "richmen": "anarchistsociety",
+    "title": "Mental Health Gains"
+  },
+  {
+    "guid": "7b16c67d-2c74-49f9-857c-f8ed47f3462a",
+    "content": "Environmental preservation thrives in shared stewardship",
+    "content_ca": "La preservació ambiental prospera gràcies a la gestió compartida",
+    "karma": 0,
+    "richmen": "anarchistsociety",
+    "title": "Environmental Gains"
+  },
+  {
+    "guid": "0195b7f4-3f9c-4b3b-99df-cb2c6c556e91",
+    "content": "Poverty eradicated through resource sharing",
+    "content_ca": "La compartició de recursos eradica la pobresa ",
+    "karma": 0,
+    "richmen": "anarchistsociety",
+    "title": "Poverty Eradication"
+  },
+  {
+    "guid": "de5b7268-f3d2-44e3-a647-4f9cd97b9a25",
+    "content": "Innovation thrives in comunal Hacklabs",
+    "content_ca": "Hacklabs comunitaris fan explotar la innovació",
+    "karma": 0,
+    "richmen": "anarchistsociety",
+    "title": "Innovation Growth"
+  },
+  {
+    "guid": "ffcb5e3c-3e37-4d79-8082-73de9f8d7ab5",
+    "content": "Disputes resolved peacefully via consensus",
+    "content_ca": "Els conflictes es resolen pacíficament mitjançant consens",
+    "karma": 0,
+    "richmen": "anarchistsociety",
+    "title": "Peaceful Resolutions"
+  },
+  {
+    "guid": "ec175294-f24d-412f-821f-4e55ab521f71",
+    "content": "Transformative Justice successfully implemented",
+    "content_ca": "Justícia transformativa s'implementa amb èxit",
+    "karma": 0,
+    "richmen": "anarchistsociety",
+    "title": "Peaceful Resolutions"
+  },
+  {
+    "guid": "4297d5cb-c207-4a59-9c3a-7d50b2c7d233",
+    "content": "Equality fosters trust within communities",
+    "content_ca": "La igualtat fomenta la confiança dins les comunitats",
+    "karma": 0,
+    "richmen": "anarchistsociety",
+    "title": "Community Trust"
+  },
+  {
+    "guid": "bc162e4b-bb3d-49df-9477-9d0de4e3a82e",
+    "content": "Economic stability achieved through local autonomy",
+    "content_ca": "L'estabilitat econòmica s'aconsegueix amb l'autonomia local",
+    "karma": 0,
+    "richmen": "anarchistsociety",
+    "title": "Economic Stability"
+  },
+  {
+    "guid": "eb8f9622-8e9c-4d4f-8773-bf2865e9c0b8",
+    "content": "Communal farming eliminates food insecurity",
+    "content_ca": "L'agricultura comunal elimina la inseguretat alimentària",
+    "karma": 0,
+    "richmen": "anarchistsociety",
+    "title": "Food Security"
+  },
+  {
+    "guid": "14326c7d-88f4-43d8-9142-4bd597932d28",
+    "content": "Transportation access expands through public initiatives",
+    "content_ca": "L'accés al transport s'expandeix mitjançant iniciatives públiques",
+    "karma": 0,
+    "richmen": "anarchistsociety",
+    "title": "Transport Expansion"
+  },
+  {
+    "guid": "71d2b60b-27b4-40f1-a907-5a65ebd2dcb8",
+    "content": "Local economies flourish under decentralized systems",
+    "content_ca": "Les economies locals prosperen amb sistemes descentralitzats",
+    "karma": 0,
+    "richmen": "anarchistsociety",
+    "title": "Local Economies Thrive"
+  },
+  {
+    "guid": "6edcd85b-4541-4ef8-a840-f6c4c4d78f49",
+    "content": "Diversity celebrated in cultural exchanges",
+    "content_ca": "Diversos intercanvis culturals celebren la diversitat",
+    "karma": 0,
+    "richmen": "anarchistsociety",
+    "title": "Diversity Celebrated"
+  },
+  {
+    "guid": "b129c578-61e4-4772-8799-f0b65c4b3d73",
+    "content": "Human rights protected through collective action",
+    "content_ca": "Els drets humans protegits mitjançant acció col·lectiva",
+    "karma": 0,
+    "richmen": "anarchistsociety",
+    "title": "Human Rights Upheld"
+  },
+  {
+    "guid": "e3b4d637-92d8-45d4-b2a9-65a5789e9d47",
+    "content": "Scientific advancements accelerate through shared knowledge",
+    "content_ca": "Els avenços científics s'acceleren mitjançant el coneixement compartit",
+    "karma": 0,
+    "richmen": "anarchistsociety",
+    "title": "Science Advances"
+  },
+  {
+    "guid": "bb426b76-6385-47da-8e7a-2d81f7389e9a",
+    "content": "Consumer needs met by ethical production",
+    "content_ca": "Les necessitats dels consumidors cobertes amb producció ètica",
+    "karma": 0,
+    "richmen": "anarchistsociety",
+    "title": "Ethical Production"
+  },
+  {
+    "guid": "c7f874f7-2e2f-4de4-9f89-35b4f6eaf854",
+    "content": "Accessible technology bridges social gaps",
+    "content_ca": "La tecnologia accessible redueix les esquerdes socials",
+    "karma": 0,
+    "richmen": "anarchistsociety",
+    "title": "Tech Accessibility"
+  },
+  {
+    "guid": "d986f0b5-5f3b-4f83-9c28-f6b5d3a8c9b3",
+    "content": "Disabilities Accessibility improved with inclusive planning",
+    "content_ca": "La planificació inclusiva millora l'accessibilitat dels edificis",
+    "karma": 0,
+    "richmen": "anarchistsociety",
+    "title": "Inclusive Planning"
+  },
+  {
+    "guid": "e715fb3a-3e45-4df8-8a2c-3bf65f83947f",
+    "content": "Renewable energy adopted universally",
+    "content_ca": "L'energia renovable adoptada universalment",
+    "karma": 0,
+    "richmen": "anarchistsociety",
+    "title": "Renewable Energy"
+  },
+  {
+    "guid": "3bd5a487-7d28-42e1-b92b-d58247d3f92a",
+    "content": "Gender equality improves societal wellbeing",
+    "content_ca": "La igualtat de gènere millora el benestar social",
+    "karma": 0,
+    "richmen": "anarchistsociety",
+    "title": "Gender Equality"
+  },
+  {
+    "guid": "a6ab5143-403e-48ce-8dc6-996152f8f5f6",
+    "content": "Energy consumption reduced via local production",
+    "content_ca": "reducció del consum d'energia via producció local",
+    "karma": 0,
+    "richmen": "anarchistsociety",
+    "title": "Renewable Energy\n"
   }
 ]
