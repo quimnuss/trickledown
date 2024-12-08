@@ -31,7 +31,7 @@ func pop_to_feed(karma : EventsReader.Karma, building_name : String):
             'richmen' : '',
             'content': '%s %s' % [get_parent().name, msg],
             'content_' + Config.lang: '%s %s' % [get_parent().name, msg],
-            'karma' : EventsReader.Karma.BAD
+            'karma' : karma
         }
         feed.pop_event(event_data)
 

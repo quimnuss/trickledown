@@ -1,13 +1,10 @@
 # Now - Ship requirements
 
-- [ ] Add more news
 - [ ] loop sistema song
-- [ ] check animation on milestone completed toast
 - [ ] other planet goals
 - [ ] camera shake
-- [ ] money rain on town after astronaut launch
-- [ ] exponential time warp instead of linear
 - [ ] particle gather animation flow towards the milestone list (component)
+- [ ] exponential time warp instead of linear
 
 ## Deute tècnic
 
@@ -53,6 +50,9 @@ If ground flight is implemented:
 
 # Done
 
+- [~] check animation on milestone completed toast
+- [~] money rain on town after astronaut launch
+- [x] Add more news
 - [x] event feed animation -> color change depending on karma
 - [x] change controls to full rcs? 8 way movement + q/e to rotate
 - [x] code a shaking component and apply it to controls
