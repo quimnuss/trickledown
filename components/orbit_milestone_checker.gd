@@ -68,7 +68,7 @@ func _on_body_exited(body: Node2D) -> void:
                 body.astronaut_controller.burning.disconnect(_on_astronaut_thrusted)
         reset()
 
-func _on_astronaut_thrusted(_amount : float):
+func _on_astronaut_thrusted(_direction : Vector2):
     total_angle = 0
     if orbiting_astronaut:
         last_astronaut_to_body = orbiting_astronaut.global_position - self.global_position

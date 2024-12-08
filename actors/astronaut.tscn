@@ -70,7 +70,17 @@ default_color = Color(0.905882, 0.666667, 0.737255, 1)
 gradient = SubResource("Gradient_6y4pp")
 script = ExtResource("11_4s410")
 
-[node name="EnginePlume" type="Sprite2D" parent="."]
+[node name="EnginePlumeFront" type="Sprite2D" parent="."]
+visible = false
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_6vyxb")
+hframes = 8
+vframes = 4
+frame = 12
+script = ExtResource("4_q2hbb")
+direction = Vector2(0, -1)
+
+[node name="EnginePlumeRight" type="Sprite2D" parent="."]
 visible = false
 rotation = 1.5708
 scale = Vector2(0.1, 0.1)
@@ -79,8 +89,20 @@ hframes = 8
 vframes = 4
 frame = 12
 script = ExtResource("4_q2hbb")
+direction = Vector2(1, 0)
 
-[node name="BackEnginePlume" type="Sprite2D" parent="."]
+[node name="EnginePlumeBack" type="Sprite2D" parent="."]
+visible = false
+rotation = 3.14159
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_6vyxb")
+hframes = 8
+vframes = 4
+frame = 12
+script = ExtResource("4_q2hbb")
+direction = Vector2(0, 1)
+
+[node name="EnginePlumeLeft" type="Sprite2D" parent="."]
 visible = false
 rotation = -1.5708
 scale = Vector2(0.1, 0.1)
@@ -89,7 +111,7 @@ hframes = 8
 vframes = 4
 frame = 12
 script = ExtResource("4_q2hbb")
-forward = false
+direction = Vector2(-1, 0)
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="."]
 randomness = 0.8
@@ -122,6 +144,8 @@ script = ExtResource("15_8eao7")
 script = ExtResource("16_rtc06")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
-[connection signal="burning" from="AstronautController" to="EnginePlume" method="_on_astronaut_controller_burning"]
-[connection signal="burning" from="AstronautController" to="BackEnginePlume" method="_on_astronaut_controller_burning"]
+[connection signal="burning" from="AstronautController" to="EnginePlumeFront" method="_on_astronaut_controller_burning"]
+[connection signal="burning" from="AstronautController" to="EnginePlumeBack" method="_on_astronaut_controller_burning"]
 [connection signal="burning" from="AstronautController" to="ThrustSound" method="_on_astronaut_controller_burning"]
+[connection signal="burning" from="AstronautController" to="EnginePlumeRight" method="_on_astronaut_controller_burning"]
+[connection signal="burning" from="AstronautController" to="EnginePlumeLeft" method="_on_astronaut_controller_burning"]

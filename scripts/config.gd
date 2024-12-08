@@ -8,9 +8,12 @@ var lang : String = 'en'
 
 var langs : Array[String] = ['en', 'ca']
 
+var is_two_axis : bool = false
+
 var config = ConfigFile.new()
 
 signal language_changed
+
 
 func _ready():
     var err = config.load(SAVEFILE)
@@ -22,24 +25,27 @@ func _ready():
 
 func config_init():
     config.set_value("preferences", "skip_tutorial", false)
+    config.set_value("preferences", "is_two_axis", false)
     config.set_value("preferences", "language", "en")
     config.save(SAVEFILE)
 
 
 func load_config():
     skip_tutorial = config.get_value("preferences", "skip_tutorial", skip_tutorial)
+    is_two_axis = config.get_value("preferences", "is_two_axis", is_two_axis)
     lang = config.get_value("preferences", "language", lang)
     TranslationServer.set_locale(lang)
 
 
 func save():
     config.set_value("preferences", "skip_tutorial", skip_tutorial)
+    config.set_value("preferences", "is_two_axis", is_two_axis)
     config.set_value("preferences", "language", lang)
     config.save(SAVEFILE)
 
 
 func show_config():
-    prints('config', SAVEFILE, ':\nskip_tutorial', skip_tutorial, 'language:', lang)
+    prints('config', SAVEFILE, ':\nskip_tutorial', skip_tutorial, 'is_two_axis', is_two_axis, 'language:', lang)
 
 
 func change_language(new_language_id : int):

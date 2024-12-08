@@ -48,5 +48,5 @@ func _on_classify_pressed() -> void:
     self.text = next_joke()
     if is_instance_valid(typing_tween):
         typing_tween.kill()
-    var typing_tween : Tween = get_tree().create_tween()
+    typing_tween = get_tree().create_tween()
     typing_tween.tween_property(self, "visible_characters", self.get_total_character_count(), typing_speed).from(0)

@@ -1,8 +1,8 @@
 extends AudioStreamPlayer2D
 
 
-func _on_astronaut_controller_burning(thrust_percent: float) -> void:
-    if thrust_percent != 0 and not self.playing:
+func _on_astronaut_controller_burning(thrust_direction: Vector2) -> void:
+    if thrust_direction.length_squared() > 0 and not self.playing:
         self.play()
-    else:
+    elif thrust_direction.length_squared() == 0:
         self.stop()
