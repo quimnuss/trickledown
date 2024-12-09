@@ -1,10 +1,10 @@
 extends Node
-
 class_name ShakeComponent
 
 var current_shake = 0
 
-@export var sprite: Node2D
+@export var event_bus_connected : bool = false
+
 @export var shake_amount: = 5.0
 @export var shake_duration: = 0.5
 
@@ -15,6 +15,8 @@ func _ready():
     # does not work if a parent changes it's position (e.g. like a container)
     # use the sort children signal to set it instead
     original_position = get_parent().position
+    if event_bus_connected:
+        EventBus.shake.connect(_on_trigger_shake)
 
 
 func _on_trigger_shake():

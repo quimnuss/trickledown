@@ -36,6 +36,7 @@ func kill():
         camera.detach()
     death.emit(self.richman_data)
     queue_free()
+    EventBus.shake.emit()
 
 
 func _on_body_entered(body: Node) -> void:

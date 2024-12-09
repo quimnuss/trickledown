@@ -1,8 +1,6 @@
 # Now - Ship requirements
 
-- [ ] loop sistema song
 - [ ] other planet goals
-- [ ] camera shake
 - [ ] particle gather animation flow towards the milestone list (component)
 - [ ] exponential time warp instead of linear
 
@@ -50,6 +48,8 @@ If ground flight is implemented:
 
 # Done
 
+- [x] loop sistema song
+- [x] camera shake
 - [~] check animation on milestone completed toast
 - [~] money rain on town after astronaut launch
 - [x] Add more news

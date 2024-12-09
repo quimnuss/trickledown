@@ -34,12 +34,10 @@ script = ExtResource("5_q1bxc")
 stream = ExtResource("6_j5l58")
 volume_db = -10.0
 autoplay = true
-parameters/looping = false
 
 [node name="Track2" type="AudioStreamPlayer" parent="AudioManager"]
 stream = ExtResource("7_mynyy")
 volume_db = -10.0
-parameters/looping = false
 
 [node name="FeedLayer" type="CanvasLayer" parent="."]
 layer = 5

@@ -66,6 +66,7 @@ func spawn_rocket():
 
     milestone_completed.emit(Singleton.Milestone.LAUNCH)
     rocket_launch_sound.play()
+    EventBus.shake.emit()
     
 
 

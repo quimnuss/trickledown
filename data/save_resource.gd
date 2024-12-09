@@ -28,6 +28,7 @@ const LATEST_SAVE_VERSION : int = 2
 var work_stonks_delta : int = 1000
 var richmen_threshold : int = 10000
 
+
 func _init():
     if self.resource_path and not is_instance_valid(self.launchpad_richman):
         push_warning('launchpad_richman not set')
@@ -103,12 +104,12 @@ func death(richman_data : RichmanData):
 func increase_stonks():
     stonks += work_stonks_delta
     @warning_ignore("integer_division")
-    num_richmen += stonks / richmen_threshold
+    var delta_num_richmen : int = stonks / richmen_threshold
+    num_richmen += delta_num_richmen
     stonks = stonks % richmen_threshold
     
     save()
     emit_changed()
-
 
 func save():
     var error := ResourceSaver.save(self, self.resource_path)

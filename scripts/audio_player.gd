@@ -15,6 +15,7 @@ func _ready():
     if !OS.is_debug_build() or is_demo:
         play_music(background_music, -20.0)
 
+
 func play_music(music : AudioStream, volume = -6.0):
 
     if track_1.stream == music:
