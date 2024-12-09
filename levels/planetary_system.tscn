@@ -1,4 +1,4 @@
-[gd_scene load_steps=71 format=3 uid="uid://bix0vgtkccr8k"]
+[gd_scene load_steps=72 format=3 uid="uid://bix0vgtkccr8k"]
 
 [ext_resource type="Script" path="res://components/visual_orbit.gd" id="1_8xlk2"]
 [ext_resource type="Texture2D" uid="uid://dkclsuxbdnwtn" path="res://assets/sky/dynamic_space_background/Nebula Red.png" id="1_fngs5"]
@@ -57,6 +57,7 @@
 [ext_resource type="Texture2D" uid="uid://boxq30u2fb6a0" path="res://assets/ui_assets/startup.png" id="39_gs2jo"]
 [ext_resource type="PackedScene" uid="uid://djsseo0f6th6i" path="res://ui/task.tscn" id="39_x47u0"]
 [ext_resource type="Script" path="res://components/shake_component.gd" id="44_7kix8"]
+[ext_resource type="Script" path="res://ui/richmen_bio.gd" id="47_obx2q"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_yx0y8"]
 
@@ -592,6 +593,26 @@ alignment = 1
 script = ExtResource("23_l8vuo")
 portraits = Array[Texture]([ExtResource("24_svqlb"), ExtResource("25_h34xa"), ExtResource("26_bcpub"), ExtResource("27_eymce"), ExtResource("28_yx18f")])
 
+[node name="RichmenBio" type="RichTextLabel" parent="UI"]
+visible = false
+custom_minimum_size = Vector2(200, 0)
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -329.0
+offset_right = -58.0
+offset_bottom = 207.0
+grow_horizontal = 0
+mouse_force_pass_scroll_events = false
+theme_override_constants/outline_size = 5
+bbcode_enabled = true
+text = "[font_size=30][center]Abigail Johnson[/center][/font_size]
+Abigail
+ Johnson is an American businesswoman who has a net worth of $28 
+billion. Abigail Johnson is the Chairman, CEO and President of the 
+company started by her father, Fidelity Investments."
+script = ExtResource("47_obx2q")
+
 [node name="VBoxContainer" type="VBoxContainer" parent="UI"]
 anchors_preset = 6
 anchor_left = 1.0
@@ -608,13 +629,17 @@ theme_override_constants/separation = 20
 alignment = 1
 
 [node name="ToCityButton" type="Button" parent="UI/VBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
+size_flags_horizontal = 8
 theme_override_constants/outline_size = 8
 theme_override_font_sizes/font_size = 20
 text = "City"
 
 [node name="ToWorkButton" type="Button" parent="UI/VBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
+size_flags_horizontal = 8
 theme_override_constants/outline_size = 8
 theme_override_font_sizes/font_size = 20
 text = "WORK"
@@ -625,6 +650,7 @@ script = ExtResource("44_7kix8")
 [node name="RichmenCount" type="Label" parent="UI/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
+size_flags_horizontal = 8
 theme_override_font_sizes/font_size = 20
 text = "richmen"
 horizontal_alignment = 1
@@ -634,10 +660,13 @@ script = ExtResource("44_7kix8")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="UI/VBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 8
+mouse_filter = 0
 theme_override_constants/separation = 20
 
 [node name="RichmenPortrait" parent="UI/VBoxContainer/HBoxContainer" instance=ExtResource("35_u3exb")]
 layout_mode = 2
+toggle_mode = true
 icon = ExtResource("36_0hri1")
 richman_data = ExtResource("36_43mlr")
 
@@ -701,4 +730,5 @@ offset_bottom = 37.0
 [connection signal="sort_children" from="UI/VBoxContainer" to="UI/VBoxContainer/RichmenCount/ShakeComponent" method="_on_container_sort_children"]
 [connection signal="pressed" from="UI/VBoxContainer/ToCityButton" to="." method="_on_to_city_button_pressed"]
 [connection signal="pressed" from="UI/VBoxContainer/ToWorkButton" to="." method="_on_to_work_button_pressed"]
+[connection signal="toggled" from="UI/VBoxContainer/HBoxContainer/RichmenPortrait" to="UI/RichmenBio" method="_on_richmen_portrait_toggled"]
 [connection signal="pressed" from="UI/Container/TrickleDown" to="Star/HomePlanet/Launchpad" method="_on_trickle_down_pressed"]
