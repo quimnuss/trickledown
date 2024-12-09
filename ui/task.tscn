@@ -54,15 +54,16 @@ corner_radius_bottom_right = 20
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_xmvte")
+tasklist_container_width = 304
 
 [node name="TasklistContainer" type="HBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -204.0
-offset_right = 60.0
-offset_bottom = 64.0
+offset_left = -304.0
+offset_right = 160.0
+offset_bottom = 124.0
 grow_horizontal = 0
 
 [node name="PanelContainer" type="PanelContainer" parent="TasklistContainer"]
@@ -81,13 +82,13 @@ vertical_alignment = 1
 
 [node name="Milestones" type="VBoxContainer" parent="TasklistContainer/PanelContainer/VBoxContainer"]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(400, 60)
+custom_minimum_size = Vector2(300, 60)
 layout_mode = 2
 theme_override_constants/separation = 10
 script = ExtResource("2_vfgwe")
 
 [node name="CheckBox" type="CheckBox" parent="TasklistContainer/PanelContainer/VBoxContainer/Milestones"]
-custom_minimum_size = Vector2(400, 0)
+custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 5

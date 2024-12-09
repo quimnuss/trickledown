@@ -1,6 +1,6 @@
 # Now - Ship requirements
 
-- [ ] other planet goals
+- [ ] Show bio on launchpad click
 - [ ] particle gather animation flow towards the milestone list (component)
 - [ ] exponential time warp instead of linear
 
@@ -48,6 +48,7 @@ If ground flight is implemented:
 
 # Done
 
+- [x] other planet goals
 - [x] loop sistema song
 - [x] camera shake
 - [~] check animation on milestone completed toast

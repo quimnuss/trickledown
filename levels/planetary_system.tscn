@@ -492,13 +492,14 @@ shape = SubResource("CircleShape2D_wsejb")
 
 [node name="OrbitMilestoneChecker" type="Area2D" parent="Star/Mars"]
 script = ExtResource("12_m5nv6")
+milestone_type = 13
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Star/Mars/OrbitMilestoneChecker"]
 shape = SubResource("CircleShape2D_fufu0")
 
 [node name="OneOrbitMilestoneChecker" type="Area2D" parent="Star/Mars"]
 script = ExtResource("12_m5nv6")
-milestone_type = 3
+milestone_type = 12
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Star/Mars/OneOrbitMilestoneChecker"]
 shape = SubResource("CircleShape2D_fufu0")
@@ -509,7 +510,7 @@ texture = ExtResource("33_4cjp2")
 [node name="PlanetCollision" type="Area2D" parent="Star/Mars/Sprite2D"]
 gravity_space_override = 3
 script = ExtResource("8_tjsb8")
-milestone = 1
+milestone = 11
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Star/Mars/Sprite2D/PlanetCollision"]
 shape = SubResource("CircleShape2D_nkw6e")
@@ -543,13 +544,6 @@ script = ExtResource("34_1ax38")
 
 [node name="SaveManager" type="Node" parent="UI"]
 script = ExtResource("22_hrhws")
-
-[node name="Tasklist" parent="UI" instance=ExtResource("39_x47u0")]
-unique_name_in_owner = true
-offset_left = 1.0
-offset_top = 37.0
-offset_right = 1.0
-offset_bottom = 37.0
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="UI"]
 anchors_preset = 1
@@ -685,6 +679,13 @@ icon_alignment = 1
 vertical_icon_alignment = 0
 script = ExtResource("32_5hu43")
 time_warp_icons = Array[CompressedTexture2D]([ExtResource("33_a1v1w"), ExtResource("34_klinw"), ExtResource("35_xyw7w"), ExtResource("31_ex666"), ExtResource("36_xs0uj"), ExtResource("37_wcqr2")])
+
+[node name="Tasklist" parent="UI" instance=ExtResource("39_x47u0")]
+unique_name_in_owner = true
+offset_left = 1.0
+offset_top = 37.0
+offset_right = 1.0
+offset_bottom = 37.0
 
 [connection signal="body_entered" from="UniverseLimits/Killzone" to="UniverseLimits/Killzone" method="_on_body_entered"]
 [connection signal="body_entered" from="Star/PlanetCollision" to="Star/PlanetCollision" method="_on_body_entered"]

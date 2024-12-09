@@ -30,6 +30,9 @@ CRASH_SATELLITE,crash with a satellite,esclafa't contra un satèl·lit
 ORBIT_STAR,orbit around the system's Star,orbita al voltant de l'estrella del sistema
 ORBIT_SATELLITE,orbit around the satellite,orbita al voltant del satèl·lit
 ESCAPE_VELOCITY,reach the system escape velocity,assoleix velocitat d'escapament
+ORBIT_ONE_MARS,orbit once around Mars,orbita una vegada al voltant de Mart
+ORBIT_STABLE_MARS,stable orbit around Mars,òrbita estable al voltant de Mart
+CRASH_MARS,crash with Mars,esclafa't contra Mart
 VISIT_3,visit the three celestial bodies in one trip,visita els tres cossos celestials en un viatge
 CRASH_ASTRONAUT,crash against another astronaut,xoca amb un altre astronauta
 GO_BEYOND,do whatever you like with them! The rich do not suffer,fes el què vulguis amb ells! Els rics no pateixen

@@ -23,6 +23,9 @@ enum Milestone {
     ORBIT_SATELLITE,
     ESCAPE_VELOCITY,
     CRASH_ASTRONAUT,
+    CRASH_MARS,
+    ORBIT_ONE_MARS,
+    ORBIT_STABLE_MARS
 }
 
 var disabled_milestones : Array[String] = ["VISIT_3"]

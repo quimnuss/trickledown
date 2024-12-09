@@ -71,14 +71,15 @@ offset_right = 52.0
 offset_bottom = -1.0
 grow_vertical = 0
 focus_mode = 0
-theme_override_colors/icon_pressed_color = Color(0, 0.854902, 0.901961, 0.670588)
+theme_override_colors/icon_pressed_color = Color(0, 0.854902, 0.901961, 0.396078)
 theme_override_icons/icon = ExtResource("9_3wnwo")
 toggle_mode = true
 icon = ExtResource("9_auft1")
+flat = true
 expand_icon = true
 
-[connection signal="change_scene" from="PlanetaryCanvasLayer/PlanetarySystem" to="." method="_on_change_scene"]
 [connection signal="change_scene" from="PlanetaryCanvasLayer/PlanetarySystem" to="." method="_on_planetary_system_change_scene"]
+[connection signal="change_scene" from="PlanetaryCanvasLayer/PlanetarySystem" to="." method="_on_change_scene"]
 [connection signal="change_scene" from="City" to="." method="_on_change_scene"]
 [connection signal="change_scene" from="WorkCanvasLayer" to="." method="_on_change_scene"]
 [connection signal="pressed" from="FeedLayer/EventsFeed/HideFeed" to="FeedLayer/EventsFeed" method="_on_hide_feed_pressed"]
