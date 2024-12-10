@@ -2,6 +2,14 @@
 
 A game about sending rich people to orbit (so they leave us in peace)
 
+## Tools
+
+Regenerate the richmen resources:
+
+``bash
+
+``
+
 ## Palette
 
 Penn red, Sinopia, Orange (pantone), Carrot orange, Aureolin
