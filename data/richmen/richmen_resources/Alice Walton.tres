@@ -1,15 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://cafc1bt1wufqk"]
 
-[ext_resource type="Texture2D" uid="uid://dj2ayb7fmtdmj" path="res://data/richmen/img/Alice Walton.png" id="1_vxvxs"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_dg3oa"]
+[ext_resource type="Texture2D" uid="uid://dj2ayb7fmtdmj" path="res://data/richmen/img/Alice Walton.png" id="1_6ny8x"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_veyeu"]
 
 [resource]
-script = ExtResource("2_dg3oa")
+script = ExtResource("2_veyeu")
 uid = "Alice Walton"
 name = "Alice Walton"
 worth = 73
-img = ExtResource("1_vxvxs")
-bio = "Alice
- Walton is the daughter of Walmart founder Sam Walton. Alice Walton has a
- net worth of $73 billion. Alice Walton is one the richest women in the 
-world and the 20 richest people in the world."
+img = ExtResource("1_6ny8x")
+bio = "Alice Walton is the daughter of Walmart founder Sam Walton. Alice Walton has a net worth of $73 billion. Alice Walton is one the richest women in the world and the 20 richest people in the world."

@@ -1,17 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://cbdf065eh6n1c"]
 
-[ext_resource type="Texture2D" uid="uid://1jfoyu1lu24u" path="res://data/richmen/img/Michael Dell.png" id="1_83pyy"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_tgk03"]
+[ext_resource type="Texture2D" uid="uid://1jfoyu1lu24u" path="res://data/richmen/img/Michael Dell.png" id="1_8ejn4"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_2pn3f"]
 
 [resource]
-script = ExtResource("2_tgk03")
+script = ExtResource("2_2pn3f")
 uid = "Michael Dell"
 name = "Michael Dell"
 worth = 112
-img = ExtResource("1_83pyy")
-bio = "Michael
- Dell is an American business executive and technology entrepreneur who 
-has a net worth of $112 billion. Dell dropped out of college and 
-abandoned his unfinished medical degree to start a computer repair 
-business that would prove to be extremely profitable. This $1,000 
-venture eventually grew into Dell, Inc."
+img = ExtResource("1_8ejn4")
+bio = "Michael Dell is an American business executive and technology entrepreneur who has a net worth of $112 billion. Dell dropped out of college and abandoned his unfinished medical degree to start a computer repair business that would prove to be extremely profitable. This $1,000 venture eventually grew into Dell, Inc."

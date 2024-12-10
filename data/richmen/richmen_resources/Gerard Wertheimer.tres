@@ -1,15 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://b82qy8mrej2nl"]
 
-[ext_resource type="Texture2D" uid="uid://cn1g3g8466nl8" path="res://data/richmen/img/Gerard Wertheimer.png" id="1_sstr5"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_84fka"]
+[ext_resource type="Texture2D" uid="uid://cn1g3g8466nl8" path="res://data/richmen/img/Gerard Wertheimer.png" id="1_m8175"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_4ax6h"]
 
 [resource]
-script = ExtResource("2_84fka")
+script = ExtResource("2_4ax6h")
 uid = "Gerard Wertheimer"
 name = "Gerard Wertheimer"
 worth = 45
-img = ExtResource("1_sstr5")
-bio = "Gerard
- Wertheimer net worth: Gerard Wertheimer net worth: Gerard Wertheimer is
- a French businessman who has a net worth of $45 billion. He is best 
-known for owning and operating The House of Chanel perfume company."
+img = ExtResource("1_m8175")
+bio = " Gerard Wertheimer is a French businessman who has a net worth of $45 billion. He is best known for owning and operating The House of Chanel perfume company."

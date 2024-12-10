@@ -1,15 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://cxertpo6pmim"]
 
-[ext_resource type="Texture2D" uid="uid://yv1djyypgj4p" path="res://data/richmen/img/Viktor Vekselberg.png" id="1_283b1"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_a4iqs"]
+[ext_resource type="Texture2D" uid="uid://yv1djyypgj4p" path="res://data/richmen/img/Viktor Vekselberg.png" id="1_bt55k"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_plcyw"]
 
 [resource]
-script = ExtResource("2_a4iqs")
+script = ExtResource("2_plcyw")
 uid = "Viktor Vekselberg"
 name = "Viktor Vekselberg"
 worth = 17
-img = ExtResource("1_283b1")
-bio = "Viktor
- Vekselberg net worth: Viktor Vekselberg is a businessman who has a net 
-worth of $17 billion dollars which makes him one of the richest people 
-in Russia"
+img = ExtResource("1_bt55k")
+bio = " Viktor Vekselberg is a businessman who has a net worth of $17 billion dollars which makes him one of the richest people in Russia"

@@ -1,15 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://ddbiwwfscm2wn"]
 
-[ext_resource type="Texture2D" uid="uid://by0653vai217d" path="res://data/richmen/img/Gina Rinehart.png" id="1_vbnwc"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_gy11m"]
+[ext_resource type="Texture2D" uid="uid://by0653vai217d" path="res://data/richmen/img/Gina Rinehart.png" id="1_xwtn6"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_l3ig5"]
 
 [resource]
-script = ExtResource("2_gy11m")
+script = ExtResource("2_l3ig5")
 uid = "Gina Rinehart"
 name = "Gina Rinehart"
 worth = 23
-img = ExtResource("1_vbnwc")
-bio = "Gina
- Rinehart Net Worth: Gina Rinehart is an Australian mining heiress who 
-has a net worth of $23 billion. Gina Rinehart is the richest person in 
-Australia and one of the richest people in the world."
+img = ExtResource("1_xwtn6")
+bio = " Gina Rinehart is an Australian mining heiress who has a net worth of $23 billion. Gina Rinehart is the richest person in Australia and one of the richest people in the world."

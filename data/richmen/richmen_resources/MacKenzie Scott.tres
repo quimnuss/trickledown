@@ -1,15 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://c27se3ikr71lf"]
 
-[ext_resource type="Texture2D" uid="uid://24j17nk1tubf" path="res://data/richmen/img/MacKenzie Scott.png" id="1_qj0vu"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_eeex0"]
+[ext_resource type="Texture2D" uid="uid://24j17nk1tubf" path="res://data/richmen/img/MacKenzie Scott.png" id="1_4l50q"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_78ehg"]
 
 [resource]
-script = ExtResource("2_eeex0")
+script = ExtResource("2_78ehg")
 uid = "MacKenzie Scott"
 name = "MacKenzie Scott"
 worth = 36
-img = ExtResource("1_qj0vu")
-bio = "MacKenzie
- Scott, formerly known as MacKenzie Bezos, is an American novelist, 
-philanthropist and activist who has a net worth of $36 billion. 
-MacKenzie Scott"
+img = ExtResource("1_4l50q")
+bio = "MacKenzie Scott, formerly known as MacKenzie Bezos, is an American novelist, philanthropist and activist who has a net worth of $36 billion. MacKenzie Scott"

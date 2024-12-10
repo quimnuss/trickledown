@@ -1,16 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://d072r6dcvtwso"]
 
-[ext_resource type="Texture2D" uid="uid://cfh8kofpb6tfk" path="res://data/richmen/img/Mukesh Ambani.png" id="1_ej66n"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_hs7qx"]
+[ext_resource type="Texture2D" uid="uid://cfh8kofpb6tfk" path="res://data/richmen/img/Mukesh Ambani.png" id="1_uptoe"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_d2o05"]
 
 [resource]
-script = ExtResource("2_hs7qx")
+script = ExtResource("2_d2o05")
 uid = "Mukesh Ambani"
 name = "Mukesh Ambani"
 worth = 108
-img = ExtResource("1_ej66n")
-bio = "Mukesh
- Ambani is an Indian businessman who has a net worth of $108 billion. 
-Mukesh Ambani earned his net worth through his career at Reliance 
-Industries, a Fortune 500 company, where he is chairman, managing 
-director, and largest shareholder."
+img = ExtResource("1_uptoe")
+bio = "Mukesh Ambani is an Indian businessman who has a net worth of $108 billion. Mukesh Ambani earned his net worth through his career at Reliance Industries, a Fortune 500 company, where he is chairman, managing director, and largest shareholder."

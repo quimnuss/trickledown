@@ -1,15 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://bx0i56vf6y877"]
 
-[ext_resource type="Texture2D" uid="uid://dlu3naj55d8xa" path="res://data/richmen/img/Charles Koch.png" id="1_mpffl"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_yxevo"]
+[ext_resource type="Texture2D" uid="uid://dlu3naj55d8xa" path="res://data/richmen/img/Charles Koch.png" id="1_5msdn"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_wn2ki"]
 
 [resource]
-script = ExtResource("2_yxevo")
+script = ExtResource("2_wn2ki")
 uid = "Charles Koch"
 name = "Charles Koch"
 worth = 60
-img = ExtResource("1_mpffl")
-bio = "Charles
- Koch is an American businessman who has a net worth of $60 billion. 
-Charles Koch has been ranked as high as the fourth richest person in the
- world. Today he is one of the 20 richest people in the world."
+img = ExtResource("1_5msdn")
+bio = "Charles Koch is an American businessman who has a net worth of $60 billion. Charles Koch has been ranked as high as the fourth richest person in the world. Today he is one of the 20 richest people in the world."

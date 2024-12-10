@@ -1,15 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://da6r2dtcvv446"]
 
-[ext_resource type="Texture2D" uid="uid://c5cywo3j0dndu" path="res://data/richmen/img/Stefan Quandt.png" id="1_6o1ef"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_758km"]
+[ext_resource type="Texture2D" uid="uid://c5cywo3j0dndu" path="res://data/richmen/img/Stefan Quandt.png" id="1_8krvy"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_dpwyj"]
 
 [resource]
-script = ExtResource("2_758km")
+script = ExtResource("2_dpwyj")
 uid = "Stefan Quandt"
 name = "Stefan Quandt"
 worth = 26
-img = ExtResource("1_6o1ef")
-bio = "Stefan
- Quandt net worth: Stefan Quandt is a German automobile heir who has a 
-net worth of $26 billion. That makes him one of the richest people in 
-Germany. He is also one of the richest people in the world."
+img = ExtResource("1_8krvy")
+bio = " Stefan Quandt is a German automobile heir who has a net worth of $26 billion. That makes him one of the richest people in Germany. He is also one of the richest people in the world."

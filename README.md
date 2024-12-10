@@ -4,11 +4,11 @@ A game about sending rich people to orbit (so they leave us in peace)
 
 ## Tools
 
-Regenerate the richmen resources:
+To download the celebrities bio and worth
+you can use [this script](https://gist.github.com/quimnuss/8edb6b167a1ce2ad60ce2f81195708d2)
 
-``bash
-
-``
+But to regenerate the richmen resources you use the tool script `data/richmen/richmen_from_json.gd`
+by opening the script in the editor and right-clicking -> 
 
 ## Palette
 

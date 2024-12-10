@@ -1,15 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://cpw18aqe0cvus"]
 
-[ext_resource type="Texture2D" uid="uid://cb2m2guqym6bd" path="res://data/richmen/img/Giovanni Ferrero.png" id="1_lqxym"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_4hp3m"]
+[ext_resource type="Texture2D" uid="uid://cb2m2guqym6bd" path="res://data/richmen/img/Giovanni Ferrero.png" id="1_otwir"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_6auba"]
 
 [resource]
-script = ExtResource("2_4hp3m")
+script = ExtResource("2_6auba")
 uid = "Giovanni Ferrero"
 name = "Giovanni Ferrero"
 worth = 41
-img = ExtResource("1_lqxym")
-bio = "Giovanni
- Ferrero is an Italian businessman who has a net worth of $41 billion. 
-Giovanni Ferrero was born in Farigliano, Italy in April 1964. He is best
- known for being part"
+img = ExtResource("1_otwir")
+bio = "Giovanni Ferrero is an Italian businessman who has a net worth of $41 billion. Giovanni Ferrero was born in Farigliano, Italy in April 1964. He is best known for being part"

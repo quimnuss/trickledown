@@ -1,16 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://b8oph5u2lodoa"]
 
-[ext_resource type="Texture2D" uid="uid://b3p6orh2oqn0t" path="res://data/richmen/img/Amancio Ortega Gaona.png" id="1_btcre"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_nyevj"]
+[ext_resource type="Texture2D" uid="uid://b3p6orh2oqn0t" path="res://data/richmen/img/Amancio Ortega Gaona.png" id="1_c56t5"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_8qh2d"]
 
 [resource]
-script = ExtResource("2_nyevj")
+script = ExtResource("2_8qh2d")
 uid = "Amancio Ortega Gaona"
 name = "Amancio Ortega Gaona"
 worth = 85
-img = ExtResource("1_btcre")
-bio = "Amancio
- Ortega net worth: Amancio Ortega Gaona is a Spanish fashion executive 
-and entrepreneur who has a net worth of $85 billion. Amancio Ortega 
-Gaona earned his fortune as the founder of Inditex, which is the parent 
-company of fashion empire Zara."
+img = ExtResource("1_c56t5")
+bio = "Amancio Ortega Gaona is a Spanish fashion executive and entrepreneur who has a net worth of $85 billion. Amancio Ortega Gaona earned his fortune as the founder of Inditex, which is the parent company of fashion empire Zara."

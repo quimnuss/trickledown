@@ -1,15 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://mcsi8tgw8wee"]
 
-[ext_resource type="Texture2D" uid="uid://c7ny6o6tkdeh7" path="res://data/richmen/img/German Larrea Mota Velasco.png" id="1_f7efp"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_omlkb"]
+[ext_resource type="Texture2D" uid="uid://c7ny6o6tkdeh7" path="res://data/richmen/img/German Larrea Mota Velasco.png" id="1_a85yu"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_5q4ms"]
 
 [resource]
-script = ExtResource("2_omlkb")
+script = ExtResource("2_5q4ms")
 uid = "German Larrea Mota Velasco"
 name = "German Larrea Mota Velasco"
 worth = 30
-img = ExtResource("1_f7efp")
-bio = "German
- Larrea Mota Velasco net worth: German Larrea Mota Velasco is a Mexican 
-businessman who has a net worth of $30 billion. German Larrea Mota 
-Velasco"
+img = ExtResource("1_a85yu")
+bio = " German Larrea Mota Velasco is a Mexican businessman who has a net worth of $30 billion. German Larrea Mota Velasco"

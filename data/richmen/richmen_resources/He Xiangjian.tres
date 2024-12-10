@@ -1,14 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://s5ry06jax4ml"]
 
-[ext_resource type="Texture2D" uid="uid://7stt8xrxgc3f" path="res://data/richmen/img/He Xiangjian.png" id="1_cgpc2"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_87hw7"]
+[ext_resource type="Texture2D" uid="uid://7stt8xrxgc3f" path="res://data/richmen/img/He Xiangjian.png" id="1_4l3wy"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_8t63o"]
 
 [resource]
-script = ExtResource("2_87hw7")
+script = ExtResource("2_8t63o")
 uid = "He Xiangjian"
 name = "He Xiangjian"
 worth = 27
-img = ExtResource("1_cgpc2")
-bio = "He
- Xiangjian net worth: He Xiangjian is the co-founder of Midea Group who 
-has a net worth of $27 billion. He Xiangjian owns Midea, which is one of"
+img = ExtResource("1_4l3wy")
+bio = " He Xiangjian is the co-founder of Midea Group who has a net worth of $27 billion. He Xiangjian owns Midea, which is one of"

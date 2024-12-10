@@ -1,15 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://b52mswm075d6"]
 
-[ext_resource type="Texture2D" uid="uid://5ja8sqaw4mp6" path="res://data/richmen/img/Carlos Slim Helu.png" id="1_3bdfk"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_iqpch"]
+[ext_resource type="Texture2D" uid="uid://5ja8sqaw4mp6" path="res://data/richmen/img/Carlos Slim Helu.png" id="1_a4ahe"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_0f700"]
 
 [resource]
-script = ExtResource("2_iqpch")
+script = ExtResource("2_0f700")
 uid = "Carlos Slim Helu"
 name = "Carlos Slim Helu"
 worth = 101
-img = ExtResource("1_3bdfk")
-bio = "Carlos
- Slim Helu is a Mexican businessman who has a net worth of $101 billion.
- Carlos Slim Helu is the richest person in Mexico and one of the richest
- people in the world."
+img = ExtResource("1_a4ahe")
+bio = "Carlos Slim Helu is a Mexican businessman who has a net worth of $101 billion. Carlos Slim Helu is the richest person in Mexico and one of the richest people in the world."

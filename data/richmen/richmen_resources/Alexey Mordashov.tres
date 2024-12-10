@@ -1,15 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://dvtlhdn63xfmd"]
 
-[ext_resource type="Texture2D" uid="uid://dyfs6sbvuxj1v" path="res://data/richmen/img/Alexey Mordashov.png" id="1_dmwom"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_o77ta"]
+[ext_resource type="Texture2D" uid="uid://dyfs6sbvuxj1v" path="res://data/richmen/img/Alexey Mordashov.png" id="1_hh6tt"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_yyvt1"]
 
 [resource]
-script = ExtResource("2_o77ta")
+script = ExtResource("2_yyvt1")
 uid = "Alexey Mordashov"
 name = "Alexey Mordashov"
 worth = 20
-img = ExtResource("1_dmwom")
-bio = "Alexey
- Mordashov net worth: Alexey Mordashov is a businessman who has a net 
-worth of $20 billion dollars which makes him one of the richest people 
-in Russia"
+img = ExtResource("1_hh6tt")
+bio = " Alexey Mordashov is a businessman who has a net worth of $20 billion dollars which makes him one of the richest people in Russia"

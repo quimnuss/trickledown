@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://fjjuknp2lhai"]
 
-[ext_resource type="Texture2D" uid="uid://28f8g1u7p8ax" path="res://data/richmen/img/Vladimir Lisin.png" id="1_t1o06"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_syps7"]
+[ext_resource type="Texture2D" uid="uid://28f8g1u7p8ax" path="res://data/richmen/img/Vladimir Lisin.png" id="1_l3ehr"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_o02p4"]
 
 [resource]
-script = ExtResource("2_syps7")
+script = ExtResource("2_o02p4")
 uid = "Vladimir Lisin"
 name = "Vladimir Lisin"
 worth = 19
-img = ExtResource("1_t1o06")
-bio = "Vladimir Lisin net worth: Vladimir Lisin is a Russian steel tycoon who has a net worth of $19 billion dollars."
+img = ExtResource("1_l3ehr")
+bio = " Vladimir Lisin is a Russian steel tycoon who has a net worth of $19 billion dollars."

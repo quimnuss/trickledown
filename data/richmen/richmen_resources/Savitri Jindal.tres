@@ -1,15 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://bn5kfhfrp08l6"]
 
-[ext_resource type="Texture2D" uid="uid://b37j0yd4kteqi" path="res://data/richmen/img/Savitri Jindal.png" id="1_xobg8"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_26i15"]
+[ext_resource type="Texture2D" uid="uid://b37j0yd4kteqi" path="res://data/richmen/img/Savitri Jindal.png" id="1_fognk"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_pwvdp"]
 
 [resource]
-script = ExtResource("2_26i15")
+script = ExtResource("2_pwvdp")
 uid = "Savitri Jindal"
 name = "Savitri Jindal"
 worth = 27
-img = ExtResource("1_xobg8")
-bio = "Savitri
- Jindal net worth: Savitri Jindal is an Indian steel baroness who has a 
-net worth of $27 billion. Her fortune makes her the richest woman in 
-India"
+img = ExtResource("1_fognk")
+bio = " Savitri Jindal is an Indian steel baroness who has a net worth of $27 billion. Her fortune makes her the richest woman in India"

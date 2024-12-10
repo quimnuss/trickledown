@@ -1,15 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://b4mbik5xu0jla"]
 
-[ext_resource type="Texture2D" uid="uid://cpstuheudfyux" path="res://data/richmen/img/Li Ka-shing.png" id="1_78puj"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_ut3q3"]
+[ext_resource type="Texture2D" uid="uid://cpstuheudfyux" path="res://data/richmen/img/Li Ka-shing.png" id="1_i5dex"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_7vlqo"]
 
 [resource]
-script = ExtResource("2_ut3q3")
+script = ExtResource("2_7vlqo")
 uid = "Li Ka-shing"
 name = "Li Ka-shing"
 worth = 31
-img = ExtResource("1_78puj")
-bio = "Li
- Ka-shing is a Hong Kong-born businessman who has a net worth of $31 
-billion. As of this writing, Ka-shing is one of the 40 richest people on
- the planet."
+img = ExtResource("1_i5dex")
+bio = "Li Ka-shing is a Hong Kong-born businessman who has a net worth of $31 billion. As of this writing, Ka-shing is one of the 40 richest people on the planet."

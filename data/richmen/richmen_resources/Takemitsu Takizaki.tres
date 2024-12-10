@@ -1,14 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://mth7y2cvlj8l"]
 
-[ext_resource type="Texture2D" uid="uid://q6sron3vubpf" path="res://data/richmen/img/Takemitsu Takizaki.png" id="1_e330t"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_kulq0"]
+[ext_resource type="Texture2D" uid="uid://q6sron3vubpf" path="res://data/richmen/img/Takemitsu Takizaki.png" id="1_0wgeo"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_wbdvq"]
 
 [resource]
-script = ExtResource("2_kulq0")
+script = ExtResource("2_wbdvq")
 uid = "Takemitsu Takizaki"
 name = "Takemitsu Takizaki"
 worth = 24
-img = ExtResource("1_e330t")
-bio = "Takemitsu
- Takizaki net worth: Takemitsu Takizaki is a Japanese billionaire who 
-has a net worth of $24 billion. Takemitsu Takizaki is the founder"
+img = ExtResource("1_0wgeo")
+bio = " Takemitsu Takizaki is a Japanese billionaire who has a net worth of $24 billion. Takemitsu Takizaki is the founder"

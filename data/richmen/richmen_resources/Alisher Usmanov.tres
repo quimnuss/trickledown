@@ -1,15 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://bxxtm2a0mkxrj"]
 
-[ext_resource type="Texture2D" uid="uid://bvrphn2rpn7hu" path="res://data/richmen/img/Alisher Usmanov.png" id="1_exx27"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_gh44g"]
+[ext_resource type="Texture2D" uid="uid://bvrphn2rpn7hu" path="res://data/richmen/img/Alisher Usmanov.png" id="1_mq4db"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_vhx4s"]
 
 [resource]
-script = ExtResource("2_gh44g")
+script = ExtResource("2_vhx4s")
 uid = "Alisher Usmanov"
 name = "Alisher Usmanov"
 worth = 18
-img = ExtResource("1_exx27")
-bio = "Alisher
- Usmanov net worth: Alisher Usmanov is an Uzbek-born Russian businessman
- who has a net worth of $18 billion. Alisher Usmanov has earned his net 
-worth"
+img = ExtResource("1_mq4db")
+bio = " Alisher Usmanov is an Uzbek-born Russian businessman who has a net worth of $18 billion. Alisher Usmanov has earned his net worth"

@@ -1,14 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://cgg0x4fllpsrh"]
 
-[ext_resource type="Texture2D" uid="uid://bc0mrl045awoh" path="res://data/richmen/img/Shiv Nadar.png" id="1_fxvt5"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_3m7pr"]
+[ext_resource type="Texture2D" uid="uid://bc0mrl045awoh" path="res://data/richmen/img/Shiv Nadar.png" id="1_3lb4g"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_f3d4o"]
 
 [resource]
-script = ExtResource("2_3m7pr")
+script = ExtResource("2_f3d4o")
 uid = "Shiv Nadar"
 name = "Shiv Nadar"
 worth = 35
-img = ExtResource("1_fxvt5")
-bio = "Shiv
- Nadar net worth: Shiv Nadar is an Indian tech tycoon who has a net 
-worth of $35 billion. Shiv Nadar is the founder and chairman of HCL"
+img = ExtResource("1_3lb4g")
+bio = " Shiv Nadar is an Indian tech tycoon who has a net worth of $35 billion. Shiv Nadar is the founder and chairman of HCL"

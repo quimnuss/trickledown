@@ -1,14 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://i4t1e25ikpwr"]
 
-[ext_resource type="Texture2D" uid="uid://b1b30x8yskm1j" path="res://data/richmen/img/Francois Pinault.png" id="1_g40o0"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_sf0do"]
+[ext_resource type="Texture2D" uid="uid://b1b30x8yskm1j" path="res://data/richmen/img/Francois Pinault.png" id="1_mys2d"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_nroh6"]
 
 [resource]
-script = ExtResource("2_sf0do")
+script = ExtResource("2_nroh6")
 uid = "Francois Pinault"
 name = "Francois Pinault"
 worth = 40
-img = ExtResource("1_g40o0")
-bio = "Francois
- Pinault is a French luxury goods mogul who has a net worth of $40 
-billion. His net worth has grown astronomically in recent years."
+img = ExtResource("1_mys2d")
+bio = "François Pinault is a French luxury goods mogul who has a net worth of $40 billion. His net worth has grown astronomically in recent years."

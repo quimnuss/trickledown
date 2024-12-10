@@ -1,14 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://e613fvlnet8"]
 
-[ext_resource type="Texture2D" uid="uid://cel2tjcvp7sml" path="res://data/richmen/img/Sheikh Mansour bin Zayed Al Nahyan.png" id="1_aphcm"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_fcin4"]
+[ext_resource type="Texture2D" uid="uid://cel2tjcvp7sml" path="res://data/richmen/img/Sheikh Mansour bin Zayed Al Nahyan.png" id="1_2sfxm"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_ne42c"]
 
 [resource]
-script = ExtResource("2_fcin4")
+script = ExtResource("2_ne42c")
 uid = "Sheikh Mansour bin Zayed Al Nahyan"
 name = "Sheikh Mansour bin Zayed Al Nahyan"
 worth = 30
-img = ExtResource("1_aphcm")
-bio = "Sheikh
- Mansour net worth: Sheikh Mansour bin Zayed Al Nahyan is a United Arab 
-Emirates politician and businessman who has a net worth of"
+img = ExtResource("1_2sfxm")
+bio = " Sheikh Mansour bin Zayed Al Nahyan is a United Arab Emirates politician and businessman who has a net worth of 30 Billion."

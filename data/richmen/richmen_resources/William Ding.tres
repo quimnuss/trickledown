@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://dm776u13oobti"]
 
-[ext_resource type="Texture2D" uid="uid://bjaq3f35r5lad" path="res://data/richmen/img/William Ding.png" id="1_x30r8"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_xtcqg"]
+[ext_resource type="Texture2D" uid="uid://bjaq3f35r5lad" path="res://data/richmen/img/William Ding.png" id="1_v08ko"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_wj7fl"]
 
 [resource]
-script = ExtResource("2_xtcqg")
+script = ExtResource("2_wj7fl")
 uid = "William Ding"
 name = "William Ding"
 worth = 26
-img = ExtResource("1_x30r8")
-bio = "William Ding net worth: William Ding is a Chinese entrepreneur who has a net worth is $26 billion. Born in Ningbo"
+img = ExtResource("1_v08ko")
+bio = " William Ding is a Chinese entrepreneur who has a net worth is $26 billion. Born in Ningbo"

@@ -1,16 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://covfq7ptnnnpe"]
 
-[ext_resource type="Texture2D" uid="uid://b4oni5mpw17eb" path="res://data/richmen/img/Satoshi Nakamoto.png" id="1_uvilf"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_hqhi7"]
+[ext_resource type="Texture2D" uid="uid://b4oni5mpw17eb" path="res://data/richmen/img/Satoshi Nakamoto.png" id="1_tcsyi"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_g0mr7"]
 
 [resource]
-script = ExtResource("2_hqhi7")
+script = ExtResource("2_g0mr7")
 uid = "Satoshi Nakamoto"
 name = "Satoshi Nakamoto"
 worth = 22
-img = ExtResource("1_uvilf")
-bio = "Satoshi
- Nakamoto is a computer software developer and alleged Bitcoin 
-entrepreneur who has a net worth of $22 billion. Satoshi Nakamoto is the
- pseudonym used by the person or persons who created the cryptocurrency 
-bitcoin."
+img = ExtResource("1_tcsyi")
+bio = "Satoshi Nakamoto is a computer software developer and alleged Bitcoin entrepreneur who has a net worth of $22 billion. Satoshi Nakamoto is the pseudonym used by the person or persons who created the cryptocurrency bitcoin."

@@ -1,15 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://sb2ufsachif1"]
 
-[ext_resource type="Texture2D" uid="uid://ca0a0pgf0v5yy" path="res://data/richmen/img/Françoise Bettencourt-Meyers.png" id="1_cfxbl"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_14esn"]
+[ext_resource type="Texture2D" uid="uid://ca0a0pgf0v5yy" path="res://data/richmen/img/Françoise Bettencourt-Meyers.png" id="1_p1upf"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_fgb5l"]
 
 [resource]
-script = ExtResource("2_14esn")
+script = ExtResource("2_fgb5l")
 uid = "Françoise Bettencourt-Meyers"
 name = "Françoise Bettencourt-Meyers"
 worth = 102
-img = ExtResource("1_cfxbl")
-bio = "Françoise
- Bettencourt-Meyers net worth: Françoise Bettencourt-Meyers is a French 
-author and heiress who has a net worth of $102 billion. Françoise 
-Bettencourt-Meyers is the richest woman in the world."
+img = ExtResource("1_p1upf")
+bio = " Françoise Bettencourt-Meyers is a French author and heiress who has a net worth of $102 billion. Françoise Bettencourt-Meyers is the richest woman in the world."
