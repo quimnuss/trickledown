@@ -1,7 +1,8 @@
 # Now - Ship requirements
 
 - [ ] particle gather animation flow towards the milestone list (component)
-- [ ] exponential time warp instead of linear
+- [ ] review and translate all bios
+- [ ] limit cannon angles
 
 ## Deute tècnic
 
@@ -47,6 +48,7 @@ If ground flight is implemented:
 
 # Done
 
+- [x] exponential time warp instead of linear
 - [x] Show bio on launchpad click
 - [x] other planet goals
 - [x] loop sistema song
