@@ -5,7 +5,7 @@ extends CanvasLayer
 @onready var richmen_count: Label = %RichmenCount
 @onready var richmen_portrait: OrbitPortrait = $VBoxContainer/HBoxContainer/RichmenPortrait
 @onready var orbit_container: HBoxContainer = $OrbitContainer
-@onready var richmen_bio: RichTextLabel = $RichmenBio
+@onready var richmen_bio: Control = $RichmenBio
 
 
 func _ready():
