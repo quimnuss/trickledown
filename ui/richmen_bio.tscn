@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://pq2pdpwae0oo"]
+[gd_scene load_steps=3 format=3 uid="uid://pq2pdpwae0oo"]
 
 [ext_resource type="Script" path="res://ui/richmen_bio.gd" id="1_jbvsi"]
+[ext_resource type="Texture2D" uid="uid://disk2funmk7lp" path="res://assets/ui_assets/nine_patch.png" id="2_binxb"]
 
 [node name="RichmenBio" type="Control"]
 custom_minimum_size = Vector2(200, 0)
@@ -28,7 +29,41 @@ layout_mode = 2
 size_flags_horizontal = 8
 text = "x"
 
-[node name="BioText" type="RichTextLabel" parent="VBoxContainer"]
+[node name="NinePatchRect" type="NinePatchRect" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource("2_binxb")
+region_rect = Rect2(267, 4, 128, 128)
+patch_margin_left = 50
+patch_margin_top = 50
+patch_margin_right = 50
+patch_margin_bottom = 50
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/NinePatchRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/NinePatchRect/MarginContainer"]
+layout_mode = 2
+
+[node name="BioTitle" type="Label" parent="VBoxContainer/NinePatchRect/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Somebody"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BioText" type="RichTextLabel" parent="VBoxContainer/NinePatchRect/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 size_flags_vertical = 3

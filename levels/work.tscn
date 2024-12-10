@@ -4,17 +4,11 @@
 [ext_resource type="Texture2D" uid="uid://disk2funmk7lp" path="res://assets/ui_assets/nine_patch.png" id="1_ulvov"]
 [ext_resource type="Script" path="res://scripts/joke_text.gd" id="2_dfcvy"]
 [ext_resource type="Texture2D" uid="uid://bx1aaae4xtjhw" path="res://assets/smiley.png" id="3_3oloo"]
+[ext_resource type="StyleBox" uid="uid://d0ja1syuk5ock" path="res://ui/styles/nine_path_text_style.tres" id="3_udvn8"]
 [ext_resource type="Texture2D" uid="uid://dmnpegqpxmdu2" path="res://assets/smiley_sad.png" id="4_6tu7q"]
 [ext_resource type="Script" path="res://scripts/stonks_label.gd" id="5_4kf1n"]
 [ext_resource type="Script" path="res://components/save_resource.gd" id="6_j81lu"]
 [ext_resource type="Script" path="res://components/shake_component.gd" id="8_2ke47"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5qgum"]
-content_margin_left = 20.0
-content_margin_top = 20.0
-content_margin_right = 20.0
-content_margin_bottom = 20.0
-bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [node name="WorkCanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_l5xem")
@@ -71,7 +65,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/outline_size = 5
 theme_override_font_sizes/font_size = 40
-theme_override_styles/normal = SubResource("StyleBoxFlat_5qgum")
+theme_override_styles/normal = ExtResource("3_udvn8")
 vertical_alignment = 1
 autowrap_mode = 2
 script = ExtResource("2_dfcvy")
