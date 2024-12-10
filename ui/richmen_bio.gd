@@ -14,3 +14,7 @@ func _on_richmen_portrait_toggled(toggled_on: bool) -> void:
 
 func _on_close_button_pressed():
     self.visible = false
+
+
+func _on_richmen_portrait_pressed():
+    self.visible = not self.visible

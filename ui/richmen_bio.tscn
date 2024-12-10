@@ -46,10 +46,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 50
-theme_override_constants/margin_top = 50
-theme_override_constants/margin_right = 50
-theme_override_constants/margin_bottom = 50
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 20
 
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/NinePatchRect/MarginContainer"]
 layout_mode = 2
@@ -57,7 +57,7 @@ layout_mode = 2
 [node name="BioTitle" type="Label" parent="VBoxContainer/NinePatchRect/MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 20
 text = "Somebody"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -67,6 +67,7 @@ unique_name_in_owner = true
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_font_sizes/normal_font_size = 12
 bbcode_enabled = true
 text = "lorem ipsum"
 
