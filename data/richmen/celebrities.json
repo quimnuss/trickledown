@@ -8,31 +8,31 @@
   {
     "name": "Jeff Bezos",
     "img": "Jeff Bezos.png",
-    "bio": "Jeff Bezos is an American philanthropist, businessman and space explorer who has a net worth of $226 billion. Jeff Bezos earned his fortune as the founder of Amazon.com. Jeff Bezos is the former CEO and current president and chairman of the board of Amazon. He first surpassed Bill Gates in terms of wealth in July 2017. He was the richest person in the world without interruption between October 2017 and January 2021.",
+    "bio": "Jeff Bezos is an American philanthropist, businessman and space explorer who has a net worth of $226 billion. Jeff Bezos earned his fortune as the founder of Amazon.com. Jeff Bezos is the former CEO and current president and chairman of the board of Amazon. He was the richest person in the world without interruption between October 2017 and January 2021.",
     "worth": "226"
   },
   {
     "name": "Larry Ellison",
     "img": "Larry Ellison.png",
-    "bio": "Larry Ellison is an American billionaire entrepreneur who has a net worth of $204 billion. Larry Ellison earned his enormous fortune as the founder of software giant Oracle. He also served as CEO until September 2014. Ellison's net worth makes him one of the richest people in the world, behind other tycoons like Jeff Bezos",
+    "bio": "Larry Ellison is an American billionaire entrepreneur who has a net worth of $204 billion. Larry Ellison earned his enormous fortune as the founder of software giant Oracle. He also served as CEO until September 2014. Ellison's net worth makes him one of the richest people in the world, behind other tycoons like Jeff Bezos.",
     "worth": "204"
   },
   {
     "name": "Mark Zuckerberg",
     "img": "Mark Zuckerberg.png",
-    "bio": "Mark Zuckerberg is an American technology entrepreneur and philanthropist who has a net worth of $200 billion. Mark Zuckerberg has spent much of the last decade as one of the richest people in the world. Out of the top 100 richest people in the world, Mark is the youngest.",
+    "bio": "Mark Zuckerberg is an American technology entrepreneur and philanthropist who has a net worth of $200 billion. The vast majority of Mark's fortune is attributable to his shares in Facebook.",
     "worth": "200"
   },
   {
     "name": "Bernard Arnault",
     "img": "Bernard Arnault.png",
-    "bio": "Bernard Arnault is a French billionaire entrepreneur who has a net worth of $181 billion. Bernard Arnault earned his fortune as the chairman and chief executive of the world's largest luxury goods company, LVMH. For most of his adult life, Bernard's net worth",
+    "bio": "Bernard Arnault is a French billionaire entrepreneur who has a net worth of $181 billion. Bernard Arnault earned his fortune as the chairman and chief executive of the world's largest luxury goods company, LVMH.",
     "worth": "181"
   },
   {
     "name": "Bill Gates",
     "img": "Bill Gates.png",
-    "bio": "Bill Gates is an American billionaire entrepreneur, author and philanthropist who has a net worth of $156 billion. Bill Gates earned his first fortune as the co-founder and former chairman and CEO of Microsoft. Today he owns less than 1.3% of Microsoft. He has sold tens of billions of dollars worth of Microsoft shares over the years. The proceeds of his sales have funded Cascade Investment LLC, the vehicle Gates uses to invest in hundreds of other companies.",
+    "bio": "Bill Gates is an American billionaire entrepreneur, author and philanthropist who has a net worth of $156 billion. Bill Gates earned his first fortune as the co-founder and former chairman and CEO of Microsoft. The proceeds of his sales have funded Cascade Investment LLC.",
     "worth": "156"
   },
   {
@@ -56,13 +56,13 @@
   {
     "name": "Warren Buffett",
     "img": "Warren Buffett.png",
-    "bio": " Warren Buffett is an American investor and philanthropist who has a net worth of $138 billion. Warren Buffett is widely considered the greatest investor of the 20th century.",
+    "bio": "Warren Buffett is an American investor and philanthropist who has a net worth of $138 billion. Warren's wealth comes from his ownership stake in the holding company Berkshire Hathaway. Warren Buffett is widely considered the greatest investor of the 20th century. ",
     "worth": "138"
   },
   {
     "name": "Jensen Huang",
     "img": "Jensen Huang.png",
-    "bio": "Jensen Huang is a Taiwanese-American billionaire business magnate and electrical engineer who has a net worth of $120 billion. Jensen Huang earned his fortune as the co-founder and CEO",
+    "bio": "Jensen Huang is a Taiwanese-American billionaire business magnate and electrical engineer who has a net worth of $120 billion. Jensen Huang earned his fortune as the co-founder and CEO of the technology company Nvidia Corporation, which designs GPUs, APIs, and SoCs, among other hardware and software.",
     "worth": "120"
   },
   {
@@ -80,13 +80,13 @@
   {
     "name": "Françoise Bettencourt-Meyers",
     "img": "Françoise Bettencourt-Meyers.png",
-    "bio": " Françoise Bettencourt-Meyers is a French author and heiress who has a net worth of $102 billion. Françoise Bettencourt-Meyers is the richest woman in the world.",
+    "bio": "Françoise Bettencourt-Meyers is a French author and heiress who has a net worth of $102 billion. Françoise Bettencourt-Meyers is the richest woman in the world. Françoise inherited her fortune from her mother, the late Liliane Bettencourt. Liliane was one of the principal shareholders of L'Oreal. To this day, Françoise's family still retains a 33% stake in L'Oreal. She mostly focuses on writing Bible commentaries and books on Jewish-Christian relations.",
     "worth": "102"
   },
   {
     "name": "Carlos Slim Helu",
     "img": "Carlos Slim Helu.png",
-    "bio": "Carlos Slim Helu is a Mexican businessman who has a net worth of $101 billion. Carlos Slim Helu is the richest person in Mexico and one of the richest people in the world.",
+    "bio": "Carlos Slim Helu is a Mexican businessman who has a net worth of $101 billion. Carlos Slim Helu is the richest person in Mexico and one of the richest people in the world. He earned his fortune thanks to his roughly 57% stake in the mobile phone giant America Movil. He also holds large stakes in the banking and insurance company Grupo Financiero Inbursa and holding company Grupo Carso, and other stakes in companies including Minera Frisco and the New York Time",
     "worth": "101"
   },
   {
@@ -128,43 +128,43 @@
   {
     "name": "Vladimir Putin",
     "img": "Vladimir Putin.png",
-    "bio": " Vladimir Putin is a Russian politician who was born in the Soviet Union and has a net worth of $70 billion dollars. Vladimir Putin is currently serving",
+    "bio": "Vladimir Putin is a Russian politician who was born in the Soviet Union and has a net worth of $70 billion dollars. Vladimir Putin is currently the Acting President of the Russian Federation.",
     "worth": "70"
   },
   {
     "name": "Julia Flesher Koch",
     "img": "Julia Flesher Koch.png",
-    "bio": " Julia Flesher Koch is an American businesswoman and philanthropist who has a net worth of $63 billion. Julia Flesher Koch inherited her fortune as the widow of billionaire tycoon David Koch.",
+    "bio": "Julia Flesher Koch is an American businesswoman and philanthropist who has a net worth of $63 billion. Julia Flesher Koch inherited her fortune as the widow of billionaire tycoon David Koch.",
     "worth": "63"
   },
   {
     "name": "Charles Koch",
     "img": "Charles Koch.png",
-    "bio": "Charles Koch is an American businessman who has a net worth of $60 billion. Charles Koch has been ranked as high as the fourth richest person in the world. Today he is one of the 20 richest people in the world.",
+    "bio": "Charles Koch is an American businessman who has a net worth of $60 billion. For much of his adult life, Charles has been co-owner of Koch Industries, along with brother David.",
     "worth": "60"
   },
   {
     "name": "Jacqueline Mars",
     "img": "Jacqueline Mars.png",
-    "bio": " Jacqueline Mars is a billionaire heiress and philanthropist who has a net worth of $55 billion. Jacqueline Mars is the daughter of Forrest Edward Mars, Sr., and granddaughter of Frank C. Mars,",
+    "bio": "Jacqueline Mars is a billionaire heiress and philanthropist who has a net worth of $55 billion. Jacqueline Mars is the daughter of Forrest Edward Mars, Sr., and granddaughter of Frank C. Mars,",
     "worth": "55"
   },
   {
     "name": "John Mars",
     "img": "John Mars.png",
-    "bio": " John Mars is a Wyoming-based businessman who has a net worth of $54 billion. The son and",
+    "bio": "John Mars is a Wyoming-based businessman who has a net worth of $54 billion. John Mars serves as the chairman of the multinational Mars corporation. A member of the prominent Mars family, he is the grandson of Frank C. Mars, who started the eponymous confectionery and food company in Tacoma, Washington in 1911. ",
     "worth": "54"
   },
   {
     "name": "David Thomson",
     "img": "David Thomson.png",
-    "bio": " David Thomson, the 3rd Baron Thomson of Fleet, is a Canadian businessman, media magnate, art collector who has a net worth of $50 billion. David Thomson is the Chairman of the Thomson Reuters corporation and his family",
+    "bio": "David Thomson, the 3rd Baron Thomson of Fleet, is a Canadian businessman, media magnate, art collector who has a net worth of $50 billion. David Thomson is the Chairman of the Thomson Reuters corporation and his family is the richest in Canada.",
     "worth": "50"
   },
   {
     "name": "Colin Huang",
     "img": "Colin Huang.png",
-    "bio": "Colin Huang is a Chinese businessman, philanthropist, and investor who has a net worth of $49 billion. Colin Huang is best known for being the founder and former CEO of Pinduoduo",
+    "bio": "Colin Huang is a Chinese businessman, philanthropist, and investor who has a net worth of $49 billion. Colin Huang is best known for being the founder and former CEO of Pinduoduo, China's largest e-commerce platform. Pinduoduo is owned by PDD Holdings, which also owns e-commerce giant Temu.",
     "worth": "49"
   },
   {
@@ -176,25 +176,25 @@
   {
     "name": "Jeff Yass",
     "img": "Jeff Yass.png",
-    "bio": "Jeff Yass is a billionaire businessman who has a net worth of $46 billion. Jeff Yass earned his fortune as the co-founder of the Philadelphia-based",
+    "bio": "Jeff Yass is a billionaire businessman who has a net worth of $46 billion. Jeff Yass earned his fortune as the co-founder of the Philadelphia-based trading and technology firm Susquehanna International Group.",
     "worth": "46"
   },
   {
     "name": "Gerard Wertheimer",
     "img": "Gerard Wertheimer.png",
-    "bio": " Gerard Wertheimer is a French businessman who has a net worth of $45 billion. He is best known for owning and operating The House of Chanel perfume company.",
+    "bio": "Gerard Wertheimer is a French businessman who has a net worth of $45 billion. He is best known for owning and operating The House of Chanel perfume company. Their grandfather Pierre co-founded the House of Chanel with Coco Chanel.",
     "worth": "45"
   },
   {
     "name": "Alain Wertheimer",
     "img": "Alain Wertheimer.png",
-    "bio": " Alain Wertheimer is a French businessman who has a net worth of $45 billion. Alain Wertheimer was born",
+    "bio": "Alain Wertheimer is a French businessman who has a net worth of $45 billion. Alain Wertheimer and his brother Gerard own the controlling interest in the House of Chanel. The brothers are also invested in Bell & Ross. Their grandfather Pierre co-founded the House of Chanel with Coco Chanel.",
     "worth": "45"
   },
   {
     "name": "Zhang Yiming",
     "img": "Zhang Yiming.png",
-    "bio": " Zhang Yiming is a Chinese businessman and entrepreneur who has a net worth of $44 billion. Zhang Yiming was born",
+    "bio": "Zhang Yiming is a Chinese businessman and entrepreneur who has a net worth of $44 billion. Zhang Yiming is a billionaire Chinese Internet entrepreneur, best known for co-founding the company ByteDance and developing its popular video-sharing service TikTok.",
     "worth": "44"
   },
   {
@@ -230,13 +230,13 @@
   {
     "name": "Klaus-Michael Kuhne",
     "img": "Klaus-Michael Kuhne.png",
-    "bio": " Klaus-Michael Kuhne has a net worth of $40 billion. In 2023 when his net worth surpassed the $30 billion net worth of German supermarket",
+    "bio": "Klaus-Michael Kuhne has a net worth of $40 billion. In 2023 when his net worth surpassed the $30 billion net worth of German supermarket",
     "worth": "40"
   },
   {
     "name": "Len Blavatnik",
     "img": "Len Blavatnik.png",
-    "bio": " Len Blavatnik is a Ukrainian-American businessman who has a net worth of $40 billion. Len Blavatnik earned his net worth through his business investments in coal, oil, real estate and more",
+    "bio": "Len Blavatnik is a Ukrainian-American businessman who has a net worth of $40 billion. Len Blavatnik earned his net worth through his business investments in coal, oil, real estate and more",
     "worth": "40"
   },
   {
@@ -248,7 +248,7 @@
   {
     "name": "Ma Huateng",
     "img": "Ma Huateng.png",
-    "bio": " Pony Ma Huateng is a Chinese internet entrepreneur who has a net worth of $38 billion. Ma Huateng, nicknamed \"Pony,\" is the founder, president, chief executive officer, and executive board member of Tencent Holdings, Ltd.",
+    "bio": "Pony Ma Huateng is a Chinese internet entrepreneur who has a net worth of $38 billion. Ma Huateng, nicknamed \"Pony,\" is the founder, president, chief executive officer, and executive board member of Tencent Holdings, Ltd.",
     "worth": "38"
   },
   {
@@ -260,19 +260,19 @@
   {
     "name": "Shiv Nadar",
     "img": "Shiv Nadar.png",
-    "bio": " Shiv Nadar is an Indian tech tycoon who has a net worth of $35 billion. Shiv Nadar is the founder and chairman of HCL",
+    "bio": "Shiv Nadar is an Indian tech tycoon who has a net worth of $35 billion. Shiv Nadar is the founder and chairman of HCL",
     "worth": "35"
   },
   {
     "name": "Vladimir Potanin",
     "img": "Vladimir Potanin.png",
-    "bio": " Vladimir Potanin is a Russian billionaire oligarch who has a net worth of $35 billion. That makes Vladimir one of the richest people in Russia.",
+    "bio": "Vladimir Potanin is a Russian billionaire oligarch who has a net worth of $35 billion. That makes Vladimir one of the richest people in Russia.",
     "worth": "35"
   },
   {
     "name": "Tadashi Yanai",
     "img": "Tadashi Yanai.png",
-    "bio": " Tadashi Yanai is a Japanese entrepreneur who has a net worth of $35 billion. A businessman and CEO, Tadashi Yanai is the President and founder of the Japanese company, Fast Retailing",
+    "bio": "Tadashi Yanai is a Japanese entrepreneur who has a net worth of $35 billion. A businessman and CEO, Tadashi Yanai is the President and founder of the Japanese company, Fast Retailing",
     "worth": "35"
   },
   {
@@ -284,13 +284,13 @@
   {
     "name": "Miriam Adelson",
     "img": "Miriam Adelson.png",
-    "bio": " Miriam Adelson is an Israeli American physician, political donor and casino heiress who has a net worth of $34 billion.",
+    "bio": "Miriam Adelson is an Israeli American physician, political donor and casino heiress who has a net worth of $34 billion.",
     "worth": "34"
   },
   {
     "name": "Lee Shau Kee",
     "img": "Lee Shau Kee.png",
-    "bio": " Lee Shau Kee is a real estate mogul from Hong Kong who has a net worth of $33 billion. Born in Shunde, Guangdong, China, in 1928, Lee Shau Kee is the majority owner of Henderson Land Development, a Hong Kong-based company that works in property development, management, and construction.",
+    "bio": "Lee Shau Kee is a real estate mogul from Hong Kong who has a net worth of $33 billion. Born in Shunde, Guangdong, China, in 1928, Lee Shau Kee is the majority owner of Henderson Land Development, a Hong Kong-based company that works in property development, management, and construction.",
     "worth": "33"
   },
   {
@@ -326,37 +326,37 @@
   {
     "name": "Maha Vajiralongkorn",
     "img": "Maha Vajiralongkorn.png",
-    "bio": " Maha Vajiralongkorn is the crown prince of Thailand and has a net worth of $30 billion. Maha Vajiralongkorn was born",
+    "bio": "Maha Vajiralongkorn is the crown prince of Thailand and has a net worth of $30 billion.",
     "worth": "30"
   },
   {
     "name": "Dieter Schwarz",
     "img": "Dieter Schwarz.png",
-    "bio": "Dieter Schwarz is a German entrepreneur who has a net worth of $30 billion. Dieter Schwarz inherited the Schwarz-Gruppe (Schwarz Group) from his father",
+    "bio": "Dieter Schwarz is a German entrepreneur who has a net worth of $30 billion. Dieter Schwarz inherited the Schwarz-Gruppe (Schwarz Group) from his father.",
     "worth": "30"
   },
   {
     "name": "German Larrea Mota Velasco",
     "img": "German Larrea Mota Velasco.png",
-    "bio": " German Larrea Mota Velasco is a Mexican businessman who has a net worth of $30 billion. German Larrea Mota Velasco",
+    "bio": "German Larrea Mota Velasco is a Mexican businessman who has a net worth of $30 billion. German Larrea Mota Velasco is the CEO of Grupo Mexico, the country's largest mining corporation and one of the largest copper producers in the world. What's more, he owns over 5,000 kilometers of railroads that stretch across 71% of Mexico.",
     "worth": "30"
   },
   {
     "name": "Sultan of Brunei",
     "img": "Sultan of Brunei.png",
-    "bio": " The Sultan of Brunei, also known as Hassanai Bolkiah Mu'izzaddin Waddaulah, has a net worth of $30 billion. Born on July 15, 1946",
+    "bio": "The Sultan of Brunei, also known as Hassanai Bolkiah Mu'izzaddin Waddaulah, has a net worth of $30 billion.",
     "worth": "30"
   },
   {
     "name": "Sheikh Mansour bin Zayed Al Nahyan",
     "img": "Sheikh Mansour bin Zayed Al Nahyan.png",
-    "bio": " Sheikh Mansour bin Zayed Al Nahyan is a United Arab Emirates politician and businessman who has a net worth of 30 Billion.",
+    "bio": "Sheikh Mansour bin Zayed Al Nahyan is a United Arab Emirates politician and businessman who has a net worth of 30 Billion.",
     "worth": "30"
   },
   {
     "name": "Aliko Dangote",
     "img": "Aliko Dangote.png",
-    "bio": " Aliko Dangote is a Nigerian businessman who has a net worth of $28 billion. Aliko Dangote has at times been the richest person in Nigeria",
+    "bio": "Aliko Dangote is a Nigerian businessman who has a net worth of $28 billion. Aliko Dangote has at times been the richest person in Nigeria",
     "worth": "28"
   },
   {
@@ -368,103 +368,103 @@
   {
     "name": "He Xiangjian",
     "img": "He Xiangjian.png",
-    "bio": " He Xiangjian is the co-founder of Midea Group who has a net worth of $27 billion. He Xiangjian owns Midea, which is one of",
+    "bio": "He Xiangjian is the co-founder of Midea Group who has a net worth of $27 billion. He Xiangjian owns Midea, which is one of",
     "worth": "27"
   },
   {
     "name": "Savitri Jindal",
     "img": "Savitri Jindal.png",
-    "bio": " Savitri Jindal is an Indian steel baroness who has a net worth of $27 billion. Her fortune makes her the richest woman in India",
+    "bio": "Savitri Jindal is an Indian steel baroness who has a net worth of $27 billion. Her fortune makes her the richest woman in India",
     "worth": "27"
   },
   {
     "name": "R. Budi Hartono",
     "img": "R. Budi Hartono.png",
-    "bio": " R. Budi Hartono is a Chinese Indonesian tobacco billionaire who has a net worth of $26 billion. Born in Indonesia, R. Budi Hartono and his brother",
+    "bio": "R. Budi Hartono is a Chinese Indonesian tobacco billionaire who has a net worth of $26 billion. Born in Indonesia, R. Budi Hartono and his brother",
     "worth": "26"
   },
   {
     "name": "Andrew Forrest",
     "img": "Andrew Forrest.png",
-    "bio": " Andrew Forrest is a Western Australian mining magnate who has a net worth of $26 billion. Andrew Forrest is currently the non-executive chairman",
+    "bio": "Andrew Forrest is a Western Australian mining magnate who has a net worth of $26 billion. Andrew Forrest is currently the non-executive chairman",
     "worth": "26"
   },
   {
     "name": "Stefan Quandt",
     "img": "Stefan Quandt.png",
-    "bio": " Stefan Quandt is a German automobile heir who has a net worth of $26 billion. That makes him one of the richest people in Germany. He is also one of the richest people in the world.",
+    "bio": "Stefan Quandt is a German automobile heir who has a net worth of $26 billion. That makes him one of the richest people in Germany. He is also one of the richest people in the world.",
     "worth": "26"
   },
   {
     "name": "Lukas Walton",
     "img": "Lukas Walton.png",
-    "bio": " Lukas Walton is an American businessman who has a net worth of $26 billion. Lukas is best known for being an heir of Wal-Mart which was founded",
+    "bio": "Lukas Walton is an American businessman who has a net worth of $26 billion. Lukas is best known for being an heir of Wal-Mart.",
     "worth": "26"
   },
   {
     "name": "William Ding",
     "img": "William Ding.png",
-    "bio": " William Ding is a Chinese entrepreneur who has a net worth is $26 billion. Born in Ningbo",
+    "bio": "William Ding is a Chinese entrepreneur who has a net worth is $26 billion. In the late 90s, he founded the internet company, NetEase. NetEase's site, 163.com, has become the 27th most visited site in the world, largely due to its multiplayer gaming applications.",
     "worth": "26"
   },
   {
     "name": "Susanne Klatten",
     "img": "Susanne Klatten.png",
-    "bio": " Susanne Klatten is a German businesswoman who has a net worth of $26 billion dollars. Susanne Klatten",
+    "bio": "Susanne Klatten is a German businesswoman who has a net worth of $26 billion dollars. Susanne Klatten is the daughter of the late Nazi industrialist Herbert Quandt. With major holdings in BMW and the chemical company Altana, she is the richest woman in Germany and one of the richest people on the planet.",
     "worth": "26"
   },
   {
     "name": "Eric Yuan",
     "img": "Eric Yuan.png",
-    "bio": " Eric Yuan is a Chinese American businessman and entrepreneur who has a net worth of $25 billion. Eric Yuan was born in China",
+    "bio": "Eric Yuan is a Chinese American businessman and entrepreneur who has a net worth of $25 billion. Eric earned his fortune as the founder and CEO of Zoom Video Communications.",
     "worth": "25"
   },
   {
     "name": "Dustin Moskovitz",
     "img": "Dustin Moskovitz.png",
-    "bio": "Dustin Moskovitz is an American internet entrepreneur who has a net worth of $25 billion. Dustin Moskovitz earned his net worth as a co-founder of Facebook. Moskovitz's",
+    "bio": "Dustin Moskovitz is an American internet entrepreneur who has a net worth of $25 billion. Dustin Moskovitz earned his net worth as a co-founder of Facebook.",
     "worth": "25"
   },
   {
     "name": "Elaine Marshall",
     "img": "Elaine Marshall.png",
-    "bio": " Elaine Tettemer Marshall is an American billionaire who has a net worth of $24 billion. She is a member of the Board of Koch Industries",
+    "bio": "Elaine Tettemer Marshall is an American billionaire who has a net worth of $24 billion. Elaine Marshall is a member of the Board of Koch Industries and is the widow of E. Pierce Marshall, from whom she inherited her position and wealth.",
     "worth": "24"
   },
   {
     "name": "Takemitsu Takizaki",
     "img": "Takemitsu Takizaki.png",
-    "bio": " Takemitsu Takizaki is a Japanese billionaire who has a net worth of $24 billion. Takemitsu Takizaki is the founder",
+    "bio": "Takemitsu Takizaki is a Japanese billionaire who has a net worth of $24 billion. Takemitsu Takizaki is the founder of Keyence, a company which creates sensors, bar-code readers, vision systems, digital microscopes and other electronic components for factory automation systems. Even though labeled as manufacturer, Keyence specializes solely in product planning and development and does not manufacture final products. ",
     "worth": "24"
   },
   {
     "name": "Iris Fontbona",
     "img": "Iris Fontbona.png",
-    "bio": " Iris Fontbona is a Chilean businesswoman who has a net worth of $24 billion. Iris Fontbona acquired that wealth by",
+    "bio": "Iris Fontbona is a Chilean businesswoman who has a net worth of $24 billion. Iris Fontbona earned her fortune by marrying Andronico Luksic, who built one of the biggest copper mining companies in the world, Antofagasta.",
     "worth": "24"
   },
   {
     "name": "Forrest Mars Jr",
     "img": "Forrest Mars Jr.png",
-    "bio": " Forrest Mars, Jr. is the eldest son of Forrest Mars Sr. and grandson of Frank C. Mars, founders of the American candy",
+    "bio": "Forrest Mars, Jr. is the eldest son of Forrest Mars Sr. and grandson of Frank C. Mars, founders of the American candy Mars.",
     "worth": "23"
   },
   {
     "name": "Gina Rinehart",
     "img": "Gina Rinehart.png",
-    "bio": " Gina Rinehart is an Australian mining heiress who has a net worth of $23 billion. Gina Rinehart is the richest person in Australia and one of the richest people in the world.",
+    "bio": "Gina Rinehart is an Australian mining heiress who has a net worth of $23 billion. Gina Rinehart is the richest person in Australia and one of the richest people in the world. Gina currently serves as the Executive Chairwoman of Hancock Prospecting, a company she inherited from her father.",
     "worth": "23"
   },
   {
     "name": "Wang Wei",
     "img": "Wang Wei.png",
-    "bio": " Wang Wei is a Chinese transportation and logistics entrepreneur who has a net worth of",
+    "bio": "Wang Wei is a Chinese transportation and logistics entrepreneur who has a net worth of $22 billion. Wang Wei prefers to keep a low profile running his unlisted company, SF Express, behind closed doors. His SF Express provides super-fast delivery throughout most of China's parts. It is now expanding into southeast region.",
     "worth": "22"
   },
   {
     "name": "Qin Yinglin",
     "img": "Qin Yinglin.png",
-    "bio": " Qin Yinglin is a Chinese businessman and pig farmer who has a net worth of $22 billion. He is perhaps",
+    "bio": "Qin Yinglin is a Chinese businessman and pig farmer who has a net worth of $22 billion. He made his money by being China's largest pig breeder. The country is the world's biggest pork consumer.",
     "worth": "22"
   },
   {
@@ -482,25 +482,25 @@
   {
     "name": "David Tepper",
     "img": "David Tepper.png",
-    "bio": "David Tepper net worth and salary: David Tepper is an American businessman and philanthropist who has net worth of $21 billion. For many years he was one of the richest people in New Jersey.",
+    "bio": "David Tepper is an American businessman and philanthropist who has net worth of $21 billion. David Tepper earned his fortune as the founder of the hedge fund Appaloosa Management. For many years he was one of the richest people in New Jersey.",
     "worth": "21"
   },
   {
     "name": "Xu Yangtian",
     "img": "Xu Yangtian.png",
-    "bio": "Xu Yangtian, better known as Chris Xu, is a Chinese fashion entrepreneur who has a net worth of $20 billion. Xu Yangtian earned his fortune as the founder of",
+    "bio": "Xu Yangtian, better known as Chris Xu, is a Chinese fashion entrepreneur who has a net worth of $20 billion. Xu Yangtian earned his fortune as the founder of the e-commerce fast-fashion retail giant Shein.",
     "worth": "20"
   },
   {
     "name": "Leonid Mikhelson",
     "img": "Leonid Mikhelson.png",
-    "bio": " Leonid Mikhelson is a Russian businessman who has a net worth of $20 billion dollars which makes him one of the richest people",
+    "bio": "Leonid Mikhelson is a Russian businessman who has a net worth of $20 billion dollars which makes him one of the richest people in Russia. He renamed the company, Novatek, and shepherded it through a massive restructuring that included adding oil and gas production to its pipeline and roadwork divisions.",
     "worth": "20"
   },
   {
     "name": "Andy Bechtolsheim",
     "img": "Andy Bechtolsheim.png",
-    "bio": "Andy Bechtolsheim is a German billionaire tech entrepreneur, electrical engineer and investor who has a net worth $20 billion. Andy earned his first fortune as the founder of Sun Microsystems",
+    "bio": "Andy Bechtolsheim is a German billionaire tech entrepreneur, electrical engineer and investor who has a net worth $20 billion. Andy earned his first fortune as the founder of Sun Microsystems  but the majority of his fortune comes thanks to Google. Andy and his former Stanford professor David Cheriton were the two FIRST investors in Google.",
     "worth": "20"
   },
   {
@@ -512,13 +512,13 @@
   {
     "name": "Jorge Paulo Lemann",
     "img": "Jorge Paulo Lemann.png",
-    "bio": " Jorge Paulo Lemann is a Brazilian billionaire investment banker and businessman who has a net worth of $20 billion. Jorge Paulo Lemann first built his fortune in the 1970s",
+    "bio": "Jorge Paulo Lemann is a Brazilian billionaire investment banker and businessman who has a net worth of $20 billion. Jorge Paulo Lemann first built his fortune in the 1970s as a co-founder of Banco Garantia.",
     "worth": "20"
   },
   {
     "name": "John Menard",
     "img": "John Menard.png",
-    "bio": "John Menard, Jr. Net Worth: John R. Menard, Jr. is an American entrepreneur and billionaire who a net worth of $20 billion. He is the founder and owner",
+    "bio": "John Menard, Jr. Net Worth: John R. Menard, Jr. is an American entrepreneur and billionaire who a net worth of $20 billion. He is the founder and owner of Menards, a major Midwestern home improvement chain. He is also a former IndyCar racing team owner. Menard is a partner in Robby Gordon Motorsports with NASCAR owner and driver Robby Gordon.",
     "worth": "20"
   },
   {
@@ -530,37 +530,37 @@
   {
     "name": "Alexey Mordashov",
     "img": "Alexey Mordashov.png",
-    "bio": " Alexey Mordashov is a businessman who has a net worth of $20 billion dollars which makes him one of the richest people in Russia",
+    "bio": "Alexey Mordashov is a businessman who has a net worth of $20 billion dollars which makes him one of the richest people in Russia. He became general director in the mid-90s, and subsequently launched, Severstal, a mining conglomerate.",
     "worth": "20"
   },
   {
     "name": "Dilip Shanghvi",
     "img": "Dilip Shanghvi.png",
-    "bio": " Dilip Shanghvi is an Indian pharmaceutical entrepreneur who has a net worth of $20 billion. Dilip Shanghvi is the founder and managing director",
+    "bio": "Dilip Shanghvi is an Indian pharmaceutical entrepreneur who has a net worth of $20 billion. Dilip Shanghvi is the founder and managing director of Sun Pharmaceutical Industries Limited. Ever since its creation in 1982, Sun Pharma has developed into the fifth-largest drug-maker in India.",
     "worth": "20"
   },
   {
     "name": "Vladimir Lisin",
     "img": "Vladimir Lisin.png",
-    "bio": " Vladimir Lisin is a Russian steel tycoon who has a net worth of $19 billion dollars.",
+    "bio": "Vladimir Lisin is a Russian steel tycoon who has a net worth of $19 billion dollars. Lisin is the chairman and majority shareholder in one of the largest steel companies in Russia, Novolipetsk (NLMK).",
     "worth": "19"
   },
   {
     "name": "Rupert Murdoch",
     "img": "Rupert Murdoch.png",
-    "bio": " Rupert Murdoch is an Australian media mogul who earned his fortune as the founder of News Corp. Rupert Murdoch has a net worth of $19 billion. Although he is Australian, Murdoch",
+    "bio": "Rupert Murdoch is an Australian media mogul who earned his fortune as the founder of News Corp. Rupert Murdoch has a net worth of $19 billion.",
     "worth": "19"
   },
   {
     "name": "Pallonji Mistry",
     "img": "Pallonji Mistry.png",
-    "bio": " Pallonji Mistry is an Irish Indian billionaire who has a net worth of $19 billion dollars which",
+    "bio": "Pallonji Mistry is an Irish Indian billionaire who has a net worth of $19 billion dollars. He is the chairman of the Shapoorji Pallonji Group, a massive construction company that is responsible for most of the major buildings in Mumbai, including the Hong Kong & Shanghai Bank and the Standard Chartered Bank.",
     "worth": "19"
   },
   {
     "name": "James Ratcliffe",
     "img": "James Ratcliffe.png",
-    "bio": " James Ratcliffe is a British chemical engineer turned financier and industrialist who has a net worth of",
+    "bio": "James Ratcliffe is a British chemical engineer turned financier and industrialist who has a net worth of $19 billion. Former engineer, James Ratcliffe has been chairing Ineos Group, chemical powerhouse with an estimated turnover of $44 billion, since 1998. Now he only serves as CEO of the company that has grown through acquisitions and partnerships.",
     "worth": "19"
   },
   {
@@ -572,31 +572,31 @@
   {
     "name": "Donald Bren",
     "img": "Donald Bren.png",
-    "bio": "Donald Bren is an American businessman who has a net worth of $18 billion. Donald Bren is the chairman of the Irvine Group and is widely regarded as the wealthiest real estate",
+    "bio": "Donald Bren is an American businessman who has a net worth of $18 billion. Donald Bren is the chairman of the Irvine Group and is widely regarded as the wealthiest real estate developer in the United States",
     "worth": "18"
   },
   {
     "name": "David & Simon Reuben",
     "img": "David & Simon Reuben.png",
-    "bio": " David & Simon Reuben are British businessmen and philanthropists who have a net worth of",
+    "bio": "David & Simon Reuben are British businessmen and philanthropists who have a net worth of $18 billion. David and Simon first joined together in their Trans World group, which turned into the third largest metal producer in the world after they bought up more than half of Russia's aluminium industry.",
     "worth": "18"
   },
   {
     "name": "Lakshmi Mittal",
     "img": "Lakshmi Mittal.png",
-    "bio": " Lakshmi Mittal is an Indian steel magnate who has a net worth of $18 billion. Based in the U.K., Lakshmi Mittal is the chairman and former CEO of the second-largest largest steel making company in the world, ArcelorMittal",
+    "bio": "Lakshmi Mittal is an Indian steel magnate who has a net worth of $18 billion. Based in the U.K., Lakshmi Mittal is the chairman and former CEO of the second-largest largest steel making company in the world, ArcelorMittal, and he serves as chairman of Aperam, a stainless steel manufacturer.",
     "worth": "18"
   },
   {
     "name": "Alisher Usmanov",
     "img": "Alisher Usmanov.png",
-    "bio": " Alisher Usmanov is an Uzbek-born Russian businessman who has a net worth of $18 billion. Alisher Usmanov has earned his net worth",
+    "bio": "Alisher Usmanov is an Uzbek-born Russian businessman who has a net worth of $18 billion. Alisher Usmanov has earned his net worth from mining, lumber, and various other investments. He is the majority shareholder of the Russian industrial conglomerate Metalloinvest, which he founded to manage Gazprom's metals interests.",
     "worth": "18"
   },
   {
     "name": "Viktor Vekselberg",
     "img": "Viktor Vekselberg.png",
-    "bio": " Viktor Vekselberg is a businessman who has a net worth of $17 billion dollars which makes him one of the richest people in Russia",
+    "bio": "Viktor Vekselberg is a businessman who has a net worth of $17 billion dollars which makes him one of the richest people in Russia. He began building up his fortune with copper and aluminum smelting businesses, and then moved to oil production. He became co-owner and chairman of Tyumen Oil in the mid-90s, and then brokered a deal with multinational oil company, BP. ",
     "worth": "17"
   }
 ]
