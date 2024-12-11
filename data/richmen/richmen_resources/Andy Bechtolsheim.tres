@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://dsy712oysnuhl"]
 
-[ext_resource type="Texture2D" uid="uid://duclndesfoh3a" path="res://data/richmen/img/Andy Bechtolsheim.png" id="1_5f01w"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_kigd3"]
+[ext_resource type="Texture2D" uid="uid://duclndesfoh3a" path="res://data/richmen/img/Andy Bechtolsheim.png" id="1_7rrdo"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_gbu6u"]
 
 [resource]
-script = ExtResource("2_kigd3")
-uid = "Andy Bechtolsheim"
+script = ExtResource("2_gbu6u")
+uid = "andybechtolsheim"
 name = "Andy Bechtolsheim"
 worth = 20
-img = ExtResource("1_5f01w")
-bio = "Andy Bechtolsheim is a German billionaire tech entrepreneur, electrical engineer and investor who has a net worth $20 billion. Andy earned his first fortune as the founder of Sun Microsystems  but the majority of his fortune comes thanks to Google. Andy and his former Stanford professor David Cheriton were the two FIRST investors in Google."
+img = ExtResource("1_7rrdo")
+bio = "bio_andybechtolsheim"

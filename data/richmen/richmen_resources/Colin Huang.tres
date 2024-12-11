@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://c52x3xrwy8x7d"]
 
-[ext_resource type="Texture2D" uid="uid://bbjysbdg6qwo2" path="res://data/richmen/img/Colin Huang.png" id="1_dvmr3"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_1ybip"]
+[ext_resource type="Texture2D" uid="uid://bbjysbdg6qwo2" path="res://data/richmen/img/Colin Huang.png" id="1_p34po"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_mo3mi"]
 
 [resource]
-script = ExtResource("2_1ybip")
-uid = "Colin Huang"
+script = ExtResource("2_mo3mi")
+uid = "colinhuang"
 name = "Colin Huang"
 worth = 49
-img = ExtResource("1_dvmr3")
-bio = "Colin Huang is a Chinese businessman, philanthropist, and investor who has a net worth of $49 billion. Colin Huang is best known for being the founder and former CEO of Pinduoduo, China's largest e-commerce platform. Pinduoduo is owned by PDD Holdings, which also owns e-commerce giant Temu."
+img = ExtResource("1_p34po")
+bio = "bio_colinhuang"

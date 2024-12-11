@@ -5,8 +5,8 @@
 
 [resource]
 script = ExtResource("2_5qhi3")
-uid = "Abigail Johnson"
+uid = "abigailjohnson"
 name = "Abigail Johnson"
 worth = 28
 img = ExtResource("1_dvjet")
-bio = "Abigail Johnson is an American businesswoman who has a net worth of $28 billion. Abigail Johnson is the Chairman, CEO and President of the company started by her father, Fidelity Investments."
+bio = "bio_abigailjohnson"

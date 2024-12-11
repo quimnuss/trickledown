@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://c1eei8shd8o46"]
 
-[ext_resource type="Texture2D" uid="uid://dpdcni6wi1xjh" path="res://data/richmen/img/Jeff Bezos.png" id="1_qagh7"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_gqll0"]
+[ext_resource type="Texture2D" uid="uid://dpdcni6wi1xjh" path="res://data/richmen/img/Jeff Bezos.png" id="1_kuqsv"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_4fex5"]
 
 [resource]
-script = ExtResource("2_gqll0")
-uid = "Jeff Bezos"
+script = ExtResource("2_4fex5")
+uid = "jeffbezos"
 name = "Jeff Bezos"
 worth = 226
-img = ExtResource("1_qagh7")
-bio = "Jeff Bezos is an American philanthropist, businessman and space explorer who has a net worth of $226 billion. Jeff Bezos earned his fortune as the founder of Amazon.com. Jeff Bezos is the former CEO and current president and chairman of the board of Amazon. He was the richest person in the world without interruption between October 2017 and January 2021."
+img = ExtResource("1_kuqsv")
+bio = "bio_jeffbezos"

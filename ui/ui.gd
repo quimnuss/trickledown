@@ -30,7 +30,7 @@ func _on_save_changed():
         var launchpad_richman : RichmanData = save_manager.current_save.launchpad_richman
         richmen_portrait.richman_data = launchpad_richman
         richmen_portrait.refresh()
-        richmen_bio.set_bio_text(launchpad_richman.name, launchpad_richman.bio)
+        richmen_bio.set_bio_text(launchpad_richman.name, tr(launchpad_richman.bio))
     richmen_portrait.visible = save_manager.current_save.num_richmen > 0
     orbit_container.update_orbit_portraits(save_manager.current_save.richmen_orbit)
 

@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://cqtsubksd0j3"]
 
-[ext_resource type="Texture2D" uid="uid://w2qlkey0aaob" path="res://data/richmen/img/Eric Yuan.png" id="1_wxq5g"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_t7p3r"]
+[ext_resource type="Texture2D" uid="uid://w2qlkey0aaob" path="res://data/richmen/img/Eric Yuan.png" id="1_wi3aw"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_jbff7"]
 
 [resource]
-script = ExtResource("2_t7p3r")
-uid = "Eric Yuan"
+script = ExtResource("2_jbff7")
+uid = "ericyuan"
 name = "Eric Yuan"
 worth = 25
-img = ExtResource("1_wxq5g")
-bio = "Eric Yuan is a Chinese American businessman and entrepreneur who has a net worth of $25 billion. Eric earned his fortune as the founder and CEO of Zoom Video Communications."
+img = ExtResource("1_wi3aw")
+bio = "bio_ericyuan"

@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://cud71rt00a82y"]
 
-[ext_resource type="Texture2D" uid="uid://dprclnu7aduqk" path="res://data/richmen/img/Eric Schmidt.png" id="1_i4jd6"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_ywm4k"]
+[ext_resource type="Texture2D" uid="uid://dprclnu7aduqk" path="res://data/richmen/img/Eric Schmidt.png" id="1_8ccib"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_j5qfe"]
 
 [resource]
-script = ExtResource("2_ywm4k")
-uid = "Eric Schmidt"
+script = ExtResource("2_j5qfe")
+uid = "ericschmidt"
 name = "Eric Schmidt"
 worth = 32
-img = ExtResource("1_i4jd6")
-bio = "Eric Schmidt is an American businessman and philanthropist who has a net worth of $32 billion. Eric Schmidt is most notable for being the former CEO of Google. Eric was brought in to take over as CEO from company founders Larry Page and Sergey Brin in 2001."
+img = ExtResource("1_8ccib")
+bio = "bio_ericschmidt"

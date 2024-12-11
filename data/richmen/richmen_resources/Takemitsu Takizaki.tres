@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://mth7y2cvlj8l"]
 
-[ext_resource type="Texture2D" uid="uid://q6sron3vubpf" path="res://data/richmen/img/Takemitsu Takizaki.png" id="1_0wgeo"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_wbdvq"]
+[ext_resource type="Texture2D" uid="uid://q6sron3vubpf" path="res://data/richmen/img/Takemitsu Takizaki.png" id="1_wqcro"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_6vdwj"]
 
 [resource]
-script = ExtResource("2_wbdvq")
-uid = "Takemitsu Takizaki"
+script = ExtResource("2_6vdwj")
+uid = "takemitsutakizaki"
 name = "Takemitsu Takizaki"
 worth = 24
-img = ExtResource("1_0wgeo")
-bio = "Takemitsu Takizaki is a Japanese billionaire who has a net worth of $24 billion. Takemitsu Takizaki is the founder of Keyence, a company which creates sensors, bar-code readers, vision systems, digital microscopes and other electronic components for factory automation systems. Even though labeled as manufacturer, Keyence specializes solely in product planning and development and does not manufacture final products. "
+img = ExtResource("1_wqcro")
+bio = "bio_takemitsutakizaki"

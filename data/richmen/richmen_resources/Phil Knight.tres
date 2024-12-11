@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://b2b7qma0a6eyx"]
 
-[ext_resource type="Texture2D" uid="uid://do022oj5l0of4" path="res://data/richmen/img/Phil Knight.png" id="1_1m776"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_55k3k"]
+[ext_resource type="Texture2D" uid="uid://do022oj5l0of4" path="res://data/richmen/img/Phil Knight.png" id="1_qvt2t"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_wotv3"]
 
 [resource]
-script = ExtResource("2_55k3k")
-uid = "Phil Knight"
+script = ExtResource("2_wotv3")
+uid = "philknight"
 name = "Phil Knight"
 worth = 43
-img = ExtResource("1_1m776")
-bio = "Phil Knight is an American businessman, sports fan and philanthropist who has a net worth of $43 billion. Phil Knight earned his net worth as the founder and largest individual shareholder of Nike Inc."
+img = ExtResource("1_qvt2t")
+bio = "bio_philknight"

@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://civbhr8ckphsx"]
 
-[ext_resource type="Texture2D" uid="uid://b5jokbvrklid1" path="res://data/richmen/img/Miriam Adelson.png" id="1_5torn"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_ad668"]
+[ext_resource type="Texture2D" uid="uid://b5jokbvrklid1" path="res://data/richmen/img/Miriam Adelson.png" id="1_hk8o7"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_g22ia"]
 
 [resource]
-script = ExtResource("2_ad668")
-uid = "Miriam Adelson"
+script = ExtResource("2_g22ia")
+uid = "miriamadelson"
 name = "Miriam Adelson"
 worth = 34
-img = ExtResource("1_5torn")
-bio = "Miriam Adelson is an Israeli American physician, political donor and casino heiress who has a net worth of $34 billion."
+img = ExtResource("1_hk8o7")
+bio = "bio_miriamadelson"

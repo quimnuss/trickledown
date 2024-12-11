@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://mcsi8tgw8wee"]
 
-[ext_resource type="Texture2D" uid="uid://c7ny6o6tkdeh7" path="res://data/richmen/img/German Larrea Mota Velasco.png" id="1_a85yu"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_5q4ms"]
+[ext_resource type="Texture2D" uid="uid://c7ny6o6tkdeh7" path="res://data/richmen/img/German Larrea Mota Velasco.png" id="1_up550"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_7s1b4"]
 
 [resource]
-script = ExtResource("2_5q4ms")
-uid = "German Larrea Mota Velasco"
+script = ExtResource("2_7s1b4")
+uid = "germanlarreamotavelasco"
 name = "German Larrea Mota Velasco"
 worth = 30
-img = ExtResource("1_a85yu")
-bio = "German Larrea Mota Velasco is a Mexican businessman who has a net worth of $30 billion. German Larrea Mota Velasco is the CEO of Grupo Mexico, the country's largest mining corporation and one of the largest copper producers in the world. What's more, he owns over 5,000 kilometers of railroads that stretch across 71% of Mexico."
+img = ExtResource("1_up550")
+bio = "bio_germanlarreamotavelasco"

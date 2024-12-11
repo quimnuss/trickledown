@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://clgrxdtsvmgpk"]
 
-[ext_resource type="Texture2D" uid="uid://bipxp4674o3gn" path="res://data/richmen/img/Iris Fontbona.png" id="1_aebgg"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_cc73s"]
+[ext_resource type="Texture2D" uid="uid://bipxp4674o3gn" path="res://data/richmen/img/Iris Fontbona.png" id="1_lc846"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_pfy8g"]
 
 [resource]
-script = ExtResource("2_cc73s")
-uid = "Iris Fontbona"
+script = ExtResource("2_pfy8g")
+uid = "irisfontbona"
 name = "Iris Fontbona"
 worth = 24
-img = ExtResource("1_aebgg")
-bio = "Iris Fontbona is a Chilean businesswoman who has a net worth of $24 billion. Iris Fontbona earned her fortune by marrying Andronico Luksic, who built one of the biggest copper mining companies in the world, Antofagasta."
+img = ExtResource("1_lc846")
+bio = "bio_irisfontbona"

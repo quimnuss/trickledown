@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://dx3ixu4qn8djw"]
 
-[ext_resource type="Texture2D" uid="uid://djdrqpp7u7lo1" path="res://data/richmen/img/Maha Vajiralongkorn.png" id="1_mf240"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_cdmo6"]
+[ext_resource type="Texture2D" uid="uid://djdrqpp7u7lo1" path="res://data/richmen/img/Maha Vajiralongkorn.png" id="1_ooxl1"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_r02x7"]
 
 [resource]
-script = ExtResource("2_cdmo6")
-uid = "Maha Vajiralongkorn"
+script = ExtResource("2_r02x7")
+uid = "mahavajiralongkorn"
 name = "Maha Vajiralongkorn"
 worth = 30
-img = ExtResource("1_mf240")
-bio = "Maha Vajiralongkorn is the crown prince of Thailand and has a net worth of $30 billion."
+img = ExtResource("1_ooxl1")
+bio = "bio_mahavajiralongkorn"

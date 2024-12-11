@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://bb347ycwnluif"
+
+[deps]
+
+files=["res://data/richmen/celebrities_bio.en.translation", "res://data/richmen/celebrities_bio.ca.translation"]
+
+source_file="res://data/richmen/celebrities_bio.csv"
+dest_files=["res://data/richmen/celebrities_bio.en.translation", "res://data/richmen/celebrities_bio.ca.translation"]
+
+[params]
+
+compress=true
+delimiter=0

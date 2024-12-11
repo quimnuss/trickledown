@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://6aq2x1ktmwls"]
 
-[ext_resource type="Texture2D" uid="uid://bnt5yjr40ipeh" path="res://data/richmen/img/Lee Shau Kee.png" id="1_amegn"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_ue6ij"]
+[ext_resource type="Texture2D" uid="uid://bnt5yjr40ipeh" path="res://data/richmen/img/Lee Shau Kee.png" id="1_8mmc7"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_1swaq"]
 
 [resource]
-script = ExtResource("2_ue6ij")
-uid = "Lee Shau Kee"
+script = ExtResource("2_1swaq")
+uid = "leeshaukee"
 name = "Lee Shau Kee"
 worth = 33
-img = ExtResource("1_amegn")
-bio = "Lee Shau Kee is a real estate mogul from Hong Kong who has a net worth of $33 billion. Born in Shunde, Guangdong, China, in 1928, Lee Shau Kee is the majority owner of Henderson Land Development, a Hong Kong-based company that works in property development, management, and construction."
+img = ExtResource("1_8mmc7")
+bio = "bio_leeshaukee"

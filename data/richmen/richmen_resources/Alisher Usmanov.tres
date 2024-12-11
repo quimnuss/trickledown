@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://bxxtm2a0mkxrj"]
 
-[ext_resource type="Texture2D" uid="uid://bvrphn2rpn7hu" path="res://data/richmen/img/Alisher Usmanov.png" id="1_mq4db"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_vhx4s"]
+[ext_resource type="Texture2D" uid="uid://bvrphn2rpn7hu" path="res://data/richmen/img/Alisher Usmanov.png" id="1_d2mwj"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_u7o7u"]
 
 [resource]
-script = ExtResource("2_vhx4s")
-uid = "Alisher Usmanov"
+script = ExtResource("2_u7o7u")
+uid = "alisherusmanov"
 name = "Alisher Usmanov"
 worth = 18
-img = ExtResource("1_mq4db")
-bio = "Alisher Usmanov is an Uzbek-born Russian businessman who has a net worth of $18 billion. Alisher Usmanov has earned his net worth from mining, lumber, and various other investments. He is the majority shareholder of the Russian industrial conglomerate Metalloinvest, which he founded to manage Gazprom's metals interests."
+img = ExtResource("1_d2mwj")
+bio = "bio_alisherusmanov"

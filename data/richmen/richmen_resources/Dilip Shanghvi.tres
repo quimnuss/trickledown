@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://0laje54iem3y"]
 
-[ext_resource type="Texture2D" uid="uid://cgjq5615ig0ut" path="res://data/richmen/img/Dilip Shanghvi.png" id="1_8kyrv"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_55xhy"]
+[ext_resource type="Texture2D" uid="uid://cgjq5615ig0ut" path="res://data/richmen/img/Dilip Shanghvi.png" id="1_r77xh"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_bcut7"]
 
 [resource]
-script = ExtResource("2_55xhy")
-uid = "Dilip Shanghvi"
+script = ExtResource("2_bcut7")
+uid = "dilipshanghvi"
 name = "Dilip Shanghvi"
 worth = 20
-img = ExtResource("1_8kyrv")
-bio = "Dilip Shanghvi is an Indian pharmaceutical entrepreneur who has a net worth of $20 billion. Dilip Shanghvi is the founder and managing director of Sun Pharmaceutical Industries Limited. Ever since its creation in 1982, Sun Pharma has developed into the fifth-largest drug-maker in India."
+img = ExtResource("1_r77xh")
+bio = "bio_dilipshanghvi"

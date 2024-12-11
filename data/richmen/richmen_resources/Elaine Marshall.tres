@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://jrv8m8o822vu"]
 
-[ext_resource type="Texture2D" uid="uid://bdxdva4kr384o" path="res://data/richmen/img/Elaine Marshall.png" id="1_q0ga4"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_2g353"]
+[ext_resource type="Texture2D" uid="uid://bdxdva4kr384o" path="res://data/richmen/img/Elaine Marshall.png" id="1_x64nm"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_o3fgr"]
 
 [resource]
-script = ExtResource("2_2g353")
-uid = "Elaine Marshall"
+script = ExtResource("2_o3fgr")
+uid = "elainemarshall"
 name = "Elaine Marshall"
 worth = 24
-img = ExtResource("1_q0ga4")
-bio = "Elaine Tettemer Marshall is an American billionaire who has a net worth of $24 billion. Elaine Marshall is a member of the Board of Koch Industries and is the widow of E. Pierce Marshall, from whom she inherited her position and wealth."
+img = ExtResource("1_x64nm")
+bio = "bio_elainemarshall"

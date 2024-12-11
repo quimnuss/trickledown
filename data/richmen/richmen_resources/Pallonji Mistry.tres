@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://ci0kt6vr5mfc7"]
 
-[ext_resource type="Texture2D" uid="uid://cw3p050o343b5" path="res://data/richmen/img/Pallonji Mistry.png" id="1_oplwd"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_xj46n"]
+[ext_resource type="Texture2D" uid="uid://cw3p050o343b5" path="res://data/richmen/img/Pallonji Mistry.png" id="1_kryvg"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_fa47n"]
 
 [resource]
-script = ExtResource("2_xj46n")
-uid = "Pallonji Mistry"
+script = ExtResource("2_fa47n")
+uid = "pallonjimistry"
 name = "Pallonji Mistry"
 worth = 19
-img = ExtResource("1_oplwd")
-bio = "Pallonji Mistry is an Irish Indian billionaire who has a net worth of $19 billion dollars. He is the chairman of the Shapoorji Pallonji Group, a massive construction company that is responsible for most of the major buildings in Mumbai, including the Hong Kong & Shanghai Bank and the Standard Chartered Bank."
+img = ExtResource("1_kryvg")
+bio = "bio_pallonjimistry"

@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://te0ud4lvfko0"]
 
-[ext_resource type="Texture2D" uid="uid://dsf1pyxw8ju3y" path="res://data/richmen/img/Aliko Dangote.png" id="1_g34ot"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_da8ti"]
+[ext_resource type="Texture2D" uid="uid://dsf1pyxw8ju3y" path="res://data/richmen/img/Aliko Dangote.png" id="1_k1rev"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_vk048"]
 
 [resource]
-script = ExtResource("2_da8ti")
-uid = "Aliko Dangote"
+script = ExtResource("2_vk048")
+uid = "alikodangote"
 name = "Aliko Dangote"
 worth = 28
-img = ExtResource("1_g34ot")
-bio = "Aliko Dangote is a Nigerian businessman who has a net worth of $28 billion. Aliko Dangote has at times been the richest person in Nigeria"
+img = ExtResource("1_k1rev")
+bio = "bio_alikodangote"

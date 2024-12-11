@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://h3n8xmacqq54"]
 
-[ext_resource type="Texture2D" uid="uid://b8ate6bvhdj77" path="res://data/richmen/img/Donald Bren.png" id="1_25rdf"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_ohvtp"]
+[ext_resource type="Texture2D" uid="uid://b8ate6bvhdj77" path="res://data/richmen/img/Donald Bren.png" id="1_7frw2"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_fsyxg"]
 
 [resource]
-script = ExtResource("2_ohvtp")
-uid = "Donald Bren"
+script = ExtResource("2_fsyxg")
+uid = "donaldbren"
 name = "Donald Bren"
 worth = 18
-img = ExtResource("1_25rdf")
-bio = "Donald Bren is an American businessman who has a net worth of $18 billion. Donald Bren is the chairman of the Irvine Group and is widely regarded as the wealthiest real estate developer in the United States"
+img = ExtResource("1_7frw2")
+bio = "bio_donaldbren"

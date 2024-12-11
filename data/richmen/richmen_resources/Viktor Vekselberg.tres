@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://cxertpo6pmim"]
 
-[ext_resource type="Texture2D" uid="uid://yv1djyypgj4p" path="res://data/richmen/img/Viktor Vekselberg.png" id="1_bt55k"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_plcyw"]
+[ext_resource type="Texture2D" uid="uid://yv1djyypgj4p" path="res://data/richmen/img/Viktor Vekselberg.png" id="1_5xmfv"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_k5m2x"]
 
 [resource]
-script = ExtResource("2_plcyw")
-uid = "Viktor Vekselberg"
+script = ExtResource("2_k5m2x")
+uid = "viktorvekselberg"
 name = "Viktor Vekselberg"
 worth = 17
-img = ExtResource("1_bt55k")
-bio = "Viktor Vekselberg is a businessman who has a net worth of $17 billion dollars which makes him one of the richest people in Russia. He began building up his fortune with copper and aluminum smelting businesses, and then moved to oil production. He became co-owner and chairman of Tyumen Oil in the mid-90s, and then brokered a deal with multinational oil company, BP. "
+img = ExtResource("1_5xmfv")
+bio = "bio_viktorvekselberg"

@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://ue0asdkm6hp5"]
 
-[ext_resource type="Texture2D" uid="uid://bbal5mad37ovc" path="res://data/richmen/img/Jensen Huang.png" id="1_kn0nv"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_0fpxe"]
+[ext_resource type="Texture2D" uid="uid://bbal5mad37ovc" path="res://data/richmen/img/Jensen Huang.png" id="1_yyi8g"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_acekn"]
 
 [resource]
-script = ExtResource("2_0fpxe")
-uid = "Jensen Huang"
+script = ExtResource("2_acekn")
+uid = "jensenhuang"
 name = "Jensen Huang"
 worth = 120
-img = ExtResource("1_kn0nv")
-bio = "Jensen Huang is a Taiwanese-American billionaire business magnate and electrical engineer who has a net worth of $120 billion. Jensen Huang earned his fortune as the co-founder and CEO of the technology company Nvidia Corporation, which designs GPUs, APIs, and SoCs, among other hardware and software."
+img = ExtResource("1_yyi8g")
+bio = "bio_jensenhuang"

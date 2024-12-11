@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://7t7gotssplhx"]
 
-[ext_resource type="Texture2D" uid="uid://b72dw1fp0u6td" path="res://data/richmen/img/Bill Gates.png" id="1_ysm6p"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_luk8l"]
+[ext_resource type="Texture2D" uid="uid://b72dw1fp0u6td" path="res://data/richmen/img/Bill Gates.png" id="1_586nh"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_rm3b5"]
 
 [resource]
-script = ExtResource("2_luk8l")
-uid = "Bill Gates"
+script = ExtResource("2_rm3b5")
+uid = "billgates"
 name = "Bill Gates"
 worth = 156
-img = ExtResource("1_ysm6p")
-bio = "Bill Gates is an American billionaire entrepreneur, author and philanthropist who has a net worth of $156 billion. Bill Gates earned his first fortune as the co-founder and former chairman and CEO of Microsoft. The proceeds of his sales have funded Cascade Investment LLC."
+img = ExtResource("1_586nh")
+bio = "bio_billgates"

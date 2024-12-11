@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://fwhrcs7in43y"]
 
-[ext_resource type="Texture2D" uid="uid://cmfqylp7vs32o" path="res://data/richmen/img/Susanne Klatten.png" id="1_qomxy"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_vt4ty"]
+[ext_resource type="Texture2D" uid="uid://cmfqylp7vs32o" path="res://data/richmen/img/Susanne Klatten.png" id="1_jq0p5"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_l5sl4"]
 
 [resource]
-script = ExtResource("2_vt4ty")
-uid = "Susanne Klatten"
+script = ExtResource("2_l5sl4")
+uid = "susanneklatten"
 name = "Susanne Klatten"
 worth = 26
-img = ExtResource("1_qomxy")
-bio = "Susanne Klatten is a German businesswoman who has a net worth of $26 billion dollars. Susanne Klatten is the daughter of the late Nazi industrialist Herbert Quandt. With major holdings in BMW and the chemical company Altana, she is the richest woman in Germany and one of the richest people on the planet."
+img = ExtResource("1_jq0p5")
+bio = "bio_susanneklatten"

@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://ddbiwwfscm2wn"]
 
-[ext_resource type="Texture2D" uid="uid://by0653vai217d" path="res://data/richmen/img/Gina Rinehart.png" id="1_xwtn6"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_l3ig5"]
+[ext_resource type="Texture2D" uid="uid://by0653vai217d" path="res://data/richmen/img/Gina Rinehart.png" id="1_xsetf"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_wpl7p"]
 
 [resource]
-script = ExtResource("2_l3ig5")
-uid = "Gina Rinehart"
+script = ExtResource("2_wpl7p")
+uid = "ginarinehart"
 name = "Gina Rinehart"
 worth = 23
-img = ExtResource("1_xwtn6")
-bio = "Gina Rinehart is an Australian mining heiress who has a net worth of $23 billion. Gina Rinehart is the richest person in Australia and one of the richest people in the world. Gina currently serves as the Executive Chairwoman of Hancock Prospecting, a company she inherited from her father."
+img = ExtResource("1_xsetf")
+bio = "bio_ginarinehart"

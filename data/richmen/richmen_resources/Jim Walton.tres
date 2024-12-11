@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://d0qqcfs08cr5b"]
 
-[ext_resource type="Texture2D" uid="uid://c4y0qxcr6pd6l" path="res://data/richmen/img/Jim Walton.png" id="1_rnq0i"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_g7gw7"]
+[ext_resource type="Texture2D" uid="uid://c4y0qxcr6pd6l" path="res://data/richmen/img/Jim Walton.png" id="1_msfqd"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_e0jj4"]
 
 [resource]
-script = ExtResource("2_g7gw7")
-uid = "Jim Walton"
+script = ExtResource("2_e0jj4")
+uid = "jimwalton"
 name = "Jim Walton"
 worth = 75
-img = ExtResource("1_rnq0i")
-bio = "Jim Walton is an American billionaire businessman who has a net worth of $75 billion. Jim Walton is the youngest son of Walmart founder Sam Walton. Upon Sam's death, Jim and his siblings split a roughly 40% stake in their father's company."
+img = ExtResource("1_msfqd")
+bio = "bio_jimwalton"

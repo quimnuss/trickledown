@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://bwchtrriar421"]
 
-[ext_resource type="Texture2D" uid="uid://bliwdbnf5i5md" path="res://data/richmen/img/Jorge Paulo Lemann.png" id="1_c4jy4"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_d3ata"]
+[ext_resource type="Texture2D" uid="uid://bliwdbnf5i5md" path="res://data/richmen/img/Jorge Paulo Lemann.png" id="1_8am3j"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_yf6pi"]
 
 [resource]
-script = ExtResource("2_d3ata")
-uid = "Jorge Paulo Lemann"
+script = ExtResource("2_yf6pi")
+uid = "jorgepaulolemann"
 name = "Jorge Paulo Lemann"
 worth = 20
-img = ExtResource("1_c4jy4")
-bio = "Jorge Paulo Lemann is a Brazilian billionaire investment banker and businessman who has a net worth of $20 billion. Jorge Paulo Lemann first built his fortune in the 1970s as a co-founder of Banco Garantia."
+img = ExtResource("1_8am3j")
+bio = "bio_jorgepaulolemann"

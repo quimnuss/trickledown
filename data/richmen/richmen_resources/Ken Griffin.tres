@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://6wvh1li6yi13"]
 
-[ext_resource type="Texture2D" uid="uid://dmamke8ikbwea" path="res://data/richmen/img/Ken Griffin.png" id="1_4vuym"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_xoe8d"]
+[ext_resource type="Texture2D" uid="uid://dmamke8ikbwea" path="res://data/richmen/img/Ken Griffin.png" id="1_c47rd"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_7e4re"]
 
 [resource]
-script = ExtResource("2_xoe8d")
-uid = "Ken Griffin"
+script = ExtResource("2_7e4re")
+uid = "kengriffin"
 name = "Ken Griffin"
 worth = 41
-img = ExtResource("1_4vuym")
-bio = "Ken Griffin is an American entrepreneur who has a net worth of $41 billion. Griffin is the CEO of Citadel, a hedge fund with over $65 billion in assets under management."
+img = ExtResource("1_c47rd")
+bio = "bio_kengriffin"

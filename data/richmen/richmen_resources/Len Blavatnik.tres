@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://04jkt6p7id6t"]
 
-[ext_resource type="Texture2D" uid="uid://cltv5e6yqkhg1" path="res://data/richmen/img/Len Blavatnik.png" id="1_vdiml"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_kap0p"]
+[ext_resource type="Texture2D" uid="uid://cltv5e6yqkhg1" path="res://data/richmen/img/Len Blavatnik.png" id="1_g573g"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_1w5xd"]
 
 [resource]
-script = ExtResource("2_kap0p")
-uid = "Len Blavatnik"
+script = ExtResource("2_1w5xd")
+uid = "lenblavatnik"
 name = "Len Blavatnik"
 worth = 40
-img = ExtResource("1_vdiml")
-bio = "Len Blavatnik is a Ukrainian-American businessman who has a net worth of $40 billion. Len Blavatnik earned his net worth through his business investments in coal, oil, real estate and more"
+img = ExtResource("1_g573g")
+bio = "bio_lenblavatnik"

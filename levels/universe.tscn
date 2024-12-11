@@ -78,8 +78,8 @@ icon = ExtResource("9_auft1")
 flat = true
 expand_icon = true
 
-[connection signal="change_scene" from="PlanetaryCanvasLayer/PlanetarySystem" to="." method="_on_planetary_system_change_scene"]
 [connection signal="change_scene" from="PlanetaryCanvasLayer/PlanetarySystem" to="." method="_on_change_scene"]
+[connection signal="change_scene" from="PlanetaryCanvasLayer/PlanetarySystem" to="." method="_on_planetary_system_change_scene"]
 [connection signal="change_scene" from="City" to="." method="_on_change_scene"]
 [connection signal="change_scene" from="WorkCanvasLayer" to="." method="_on_change_scene"]
 [connection signal="pressed" from="FeedLayer/EventsFeed/HideFeed" to="FeedLayer/EventsFeed" method="_on_hide_feed_pressed"]

@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://c1gfu5nltrw6h"]
 
-[ext_resource type="Texture2D" uid="uid://bno8pyb5fg1ea" path="res://data/richmen/img/Jeff Yass.png" id="1_lk3db"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_0bcux"]
+[ext_resource type="Texture2D" uid="uid://bno8pyb5fg1ea" path="res://data/richmen/img/Jeff Yass.png" id="1_pq5p4"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_mlqtq"]
 
 [resource]
-script = ExtResource("2_0bcux")
-uid = "Jeff Yass"
+script = ExtResource("2_mlqtq")
+uid = "jeffyass"
 name = "Jeff Yass"
 worth = 46
-img = ExtResource("1_lk3db")
-bio = "Jeff Yass is a billionaire businessman who has a net worth of $46 billion. Jeff Yass earned his fortune as the co-founder of the Philadelphia-based trading and technology firm Susquehanna International Group."
+img = ExtResource("1_pq5p4")
+bio = "bio_jeffyass"

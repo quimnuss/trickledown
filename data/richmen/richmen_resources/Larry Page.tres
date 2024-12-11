@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://c2yps35rsppmv"]
 
-[ext_resource type="Texture2D" uid="uid://cl3mlbox3xrsi" path="res://data/richmen/img/Larry Page.png" id="1_1g1lq"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_7ro5e"]
+[ext_resource type="Texture2D" uid="uid://cl3mlbox3xrsi" path="res://data/richmen/img/Larry Page.png" id="1_taknt"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_auvcw"]
 
 [resource]
-script = ExtResource("2_7ro5e")
-uid = "Larry Page"
+script = ExtResource("2_auvcw")
+uid = "larrypage"
 name = "Larry Page"
 worth = 150
-img = ExtResource("1_1g1lq")
-bio = "Larry Page is an American billionaire entrepreneur who has a net worth of $150 billion. Larry Page earned his fortune as the co-founder of Google, which is today known by its umbrella parent company Alphabet."
+img = ExtResource("1_taknt")
+bio = "bio_larrypage"

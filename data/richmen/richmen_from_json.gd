@@ -13,10 +13,10 @@ func _run():
     var celebrities : Array[Dictionary] = read_json(json_path)
     for celebrity in celebrities:
         var richman_data : RichmanData = RichmanData.new()
+        richman_data.uid = celebrity['id']
         richman_data.name = celebrity['name']
         richman_data.bio = celebrity['bio']
         richman_data.worth = celebrity['worth']
-        richman_data.uid = celebrity['name']
         var texture : Texture = load('res://data/richmen/img/%s.png' % celebrity['name'])
         richman_data.img = texture
         var save_result = ResourceSaver.save(richman_data, 'res://data/richmen/richmen_resources/%s.tres' % richman_data.name)

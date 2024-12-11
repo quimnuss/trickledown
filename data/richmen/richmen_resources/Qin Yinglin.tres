@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://d3s0ytnpudoho"]
 
-[ext_resource type="Texture2D" uid="uid://b1ysjyte1wg8y" path="res://data/richmen/img/Qin Yinglin.png" id="1_rlnwl"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_r057v"]
+[ext_resource type="Texture2D" uid="uid://b1ysjyte1wg8y" path="res://data/richmen/img/Qin Yinglin.png" id="1_ae7cb"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_35mg2"]
 
 [resource]
-script = ExtResource("2_r057v")
-uid = "Qin Yinglin"
+script = ExtResource("2_35mg2")
+uid = "qinyinglin"
 name = "Qin Yinglin"
 worth = 22
-img = ExtResource("1_rlnwl")
-bio = "Qin Yinglin is a Chinese businessman and pig farmer who has a net worth of $22 billion. He made his money by being China's largest pig breeder. The country is the world's biggest pork consumer."
+img = ExtResource("1_ae7cb")
+bio = "bio_qinyinglin"

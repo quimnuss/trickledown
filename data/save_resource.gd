@@ -19,9 +19,9 @@ signal richman_death(richman_data : RichmanData)
 
 @export var milestones_stats : Dictionary = {}
 
-const LATEST_SAVE_VERSION : int = 2
+const LATEST_SAVE_VERSION : int = 3
 
-@export var save_version : int = 2
+@export var save_version : int = 3
 
 @export var richmen_paths : PackedStringArray = preload("res://data/richmen/richmen_resources_list.tres").richmen_resources_list.duplicate()
 
@@ -69,6 +69,7 @@ func cascade_num_richmen():
         richmen_grounded_names.append(richman.name)
     prints('launchpad richmen is ', launchpad_richman.name, " and grounded are ", richmen_grounded_names)
 
+
 func rotate_richmen():
     if self.launchpad_richman:
         self.richmen_orbit.append(self.launchpad_richman)
@@ -101,6 +102,7 @@ func death(richman_data : RichmanData):
     save()
     self.emit_changed()
 
+
 func increase_stonks():
     stonks += work_stonks_delta
     @warning_ignore("integer_division")
@@ -110,6 +112,7 @@ func increase_stonks():
     
     save()
     emit_changed()
+
 
 func save():
     var error := ResourceSaver.save(self, self.resource_path)

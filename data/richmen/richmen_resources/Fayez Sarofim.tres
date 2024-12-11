@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://bgo45nllu0qwk"]
 
-[ext_resource type="Texture2D" uid="uid://cwlhg5twj8nfa" path="res://data/richmen/img/Fayez Sarofim.png" id="1_pbhky"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_287mp"]
+[ext_resource type="Texture2D" uid="uid://cwlhg5twj8nfa" path="res://data/richmen/img/Fayez Sarofim.png" id="1_ampqw"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_njn5c"]
 
 [resource]
-script = ExtResource("2_287mp")
-uid = "Fayez Sarofim"
+script = ExtResource("2_njn5c")
+uid = "fayezsarofim"
 name = "Fayez Sarofim"
 worth = 20
-img = ExtResource("1_pbhky")
-bio = "Fayez Sarofim was an Egyptian-American billionaire and investment manager and businessman who had a net worth of $20 billion at the time of his death in 2022."
+img = ExtResource("1_ampqw")
+bio = "bio_fayezsarofim"

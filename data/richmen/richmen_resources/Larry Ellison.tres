@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://bdmmrhs7tpy06"]
 
-[ext_resource type="Texture2D" uid="uid://bo5rcjqtaei3x" path="res://data/richmen/img/Larry Ellison.png" id="1_32m6a"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_4d0yb"]
+[ext_resource type="Texture2D" uid="uid://bo5rcjqtaei3x" path="res://data/richmen/img/Larry Ellison.png" id="1_fqdrw"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_lcauc"]
 
 [resource]
-script = ExtResource("2_4d0yb")
-uid = "Larry Ellison"
+script = ExtResource("2_lcauc")
+uid = "larryellison"
 name = "Larry Ellison"
 worth = 204
-img = ExtResource("1_32m6a")
-bio = "Larry Ellison is an American billionaire entrepreneur who has a net worth of $204 billion. Larry Ellison earned his enormous fortune as the founder of software giant Oracle. He also served as CEO until September 2014. Ellison's net worth makes him one of the richest people in the world, behind other tycoons like Jeff Bezos."
+img = ExtResource("1_fqdrw")
+bio = "bio_larryellison"

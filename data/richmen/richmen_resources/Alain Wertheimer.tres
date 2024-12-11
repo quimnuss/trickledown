@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://byflat7lydcdc"]
 
-[ext_resource type="Texture2D" uid="uid://bohoxyh0ww5m0" path="res://data/richmen/img/Alain Wertheimer.png" id="1_jqdrn"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_x3aq2"]
+[ext_resource type="Texture2D" uid="uid://bohoxyh0ww5m0" path="res://data/richmen/img/Alain Wertheimer.png" id="1_gkhxq"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_gjpqo"]
 
 [resource]
-script = ExtResource("2_x3aq2")
-uid = "Alain Wertheimer"
+script = ExtResource("2_gjpqo")
+uid = "alainwertheimer"
 name = "Alain Wertheimer"
 worth = 45
-img = ExtResource("1_jqdrn")
-bio = "Alain Wertheimer is a French businessman who has a net worth of $45 billion. Alain Wertheimer and his brother Gerard own the controlling interest in the House of Chanel. The brothers are also invested in Bell & Ross. Their grandfather Pierre co-founded the House of Chanel with Coco Chanel."
+img = ExtResource("1_gkhxq")
+bio = "bio_alainwertheimer"

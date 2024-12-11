@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://12xcbbvh26l3"]
 
-[ext_resource type="Texture2D" uid="uid://b6jg4l67o0ca4" path="res://data/richmen/img/Stephen Schwarzman.png" id="1_8hn7y"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_xsgit"]
+[ext_resource type="Texture2D" uid="uid://b6jg4l67o0ca4" path="res://data/richmen/img/Stephen Schwarzman.png" id="1_6sxmu"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_pcjxh"]
 
 [resource]
-script = ExtResource("2_xsgit")
-uid = "Stephen Schwarzman"
+script = ExtResource("2_pcjxh")
+uid = "stephenschwarzman"
 name = "Stephen Schwarzman"
 worth = 42
-img = ExtResource("1_8hn7y")
-bio = "Stephen Schwarzman is an American businessman who has a net worth of $42 billion. That net worth makes him one of the richest people in New York. Stephen earned his fortune thanks to The Blackstone Group which he co-founded."
+img = ExtResource("1_6sxmu")
+bio = "bio_stephenschwarzman"

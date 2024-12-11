@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://8dtacwpctgo0"]
 
-[ext_resource type="Texture2D" uid="uid://c5368mdnc07e0" path="res://data/richmen/img/R. Budi Hartono.png" id="1_518qk"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_pkrpe"]
+[ext_resource type="Texture2D" uid="uid://c5368mdnc07e0" path="res://data/richmen/img/R. Budi Hartono.png" id="1_cs8ob"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_e25hs"]
 
 [resource]
-script = ExtResource("2_pkrpe")
-uid = "R. Budi Hartono"
+script = ExtResource("2_e25hs")
+uid = "rbudihartono"
 name = "R. Budi Hartono"
 worth = 26
-img = ExtResource("1_518qk")
-bio = "R. Budi Hartono is a Chinese Indonesian tobacco billionaire who has a net worth of $26 billion. Born in Indonesia, R. Budi Hartono and his brother"
+img = ExtResource("1_cs8ob")
+bio = "bio_r.budihartono"

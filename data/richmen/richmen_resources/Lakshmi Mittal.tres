@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://ba3yldqq0qaxs"]
 
-[ext_resource type="Texture2D" uid="uid://d14sa7q2eutsy" path="res://data/richmen/img/Lakshmi Mittal.png" id="1_borkk"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_ndwg6"]
+[ext_resource type="Texture2D" uid="uid://d14sa7q2eutsy" path="res://data/richmen/img/Lakshmi Mittal.png" id="1_4tkvh"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_d031p"]
 
 [resource]
-script = ExtResource("2_ndwg6")
-uid = "Lakshmi Mittal"
+script = ExtResource("2_d031p")
+uid = "lakshmimittal"
 name = "Lakshmi Mittal"
 worth = 18
-img = ExtResource("1_borkk")
-bio = "Lakshmi Mittal is an Indian steel magnate who has a net worth of $18 billion. Based in the U.K., Lakshmi Mittal is the chairman and former CEO of the second-largest largest steel making company in the world, ArcelorMittal, and he serves as chairman of Aperam, a stainless steel manufacturer."
+img = ExtResource("1_4tkvh")
+bio = "bio_lakshmimittal"
