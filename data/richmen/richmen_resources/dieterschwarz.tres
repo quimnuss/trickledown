@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://c2ljb0y2ojiv3"]
+
+[ext_resource type="Texture2D" uid="uid://ccvycp5lf72r7" path="res://data/richmen/img/dieterschwarz.png" id="1_1h82m"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_wtftc"]
+
+[resource]
+script = ExtResource("2_wtftc")
+uid = "dieterschwarz"
+name = "Dieter Schwarz"
+worth = 30
+img = ExtResource("1_1h82m")
+bio = "bio_dieterschwarz"

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://d3o8m4u62sacc"]
+
+[ext_resource type="Texture2D" uid="uid://cd1moqlqn11no" path="res://data/richmen/img/francoisebettencourtmeyers.png" id="1_rcvvq"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_ikltb"]
+
+[resource]
+script = ExtResource("2_ikltb")
+uid = "francoisebettencourtmeyers"
+name = "Françoise Bettencourt-Meyers"
+worth = 102
+img = ExtResource("1_rcvvq")
+bio = "bio_francoisebettencourtmeyers"

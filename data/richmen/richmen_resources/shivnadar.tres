@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://dmqbncah5jn0p"]
+
+[ext_resource type="Texture2D" uid="uid://biixm42druucx" path="res://data/richmen/img/shivnadar.png" id="1_c50ei"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_6yg3x"]
+
+[resource]
+script = ExtResource("2_6yg3x")
+uid = "shivnadar"
+name = "Shiv Nadar"
+worth = 35
+img = ExtResource("1_c50ei")
+bio = "bio_shivnadar"

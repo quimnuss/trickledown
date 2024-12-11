@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://c55062adjjssw"]
+
+[ext_resource type="Texture2D" uid="uid://bdqt5bfjix4ml" path="res://data/richmen/img/jeffbezos.png" id="1_tiphe"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_ay8uo"]
+
+[resource]
+script = ExtResource("2_ay8uo")
+uid = "jeffbezos"
+name = "Jeff Bezos"
+worth = 226
+img = ExtResource("1_tiphe")
+bio = "bio_jeffbezos"

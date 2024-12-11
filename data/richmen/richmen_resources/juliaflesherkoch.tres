@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://bu2x8kxkikkow"]
+
+[ext_resource type="Texture2D" uid="uid://dwrbi2lxp0kif" path="res://data/richmen/img/juliaflesherkoch.png" id="1_0sb8p"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_luruh"]
+
+[resource]
+script = ExtResource("2_luruh")
+uid = "juliaflesherkoch"
+name = "Julia Flesher Koch"
+worth = 63
+img = ExtResource("1_0sb8p")
+bio = "bio_juliaflesherkoch"

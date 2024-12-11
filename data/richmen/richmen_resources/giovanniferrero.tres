@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://x650r03dfa3y"]
+
+[ext_resource type="Texture2D" uid="uid://fb0sp0engpud" path="res://data/richmen/img/giovanniferrero.png" id="1_v5vrr"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_cx816"]
+
+[resource]
+script = ExtResource("2_cx816")
+uid = "giovanniferrero"
+name = "Giovanni Ferrero"
+worth = 41
+img = ExtResource("1_v5vrr")
+bio = "bio_giovanniferrero"

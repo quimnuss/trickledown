@@ -49,7 +49,7 @@
 [ext_resource type="PackedScene" uid="uid://cuua7j11qkp8m" path="res://ui/orbit_portrait.tscn" id="35_u3exb"]
 [ext_resource type="Texture2D" uid="uid://6uot5vtch8je" path="res://assets/ui_assets/time_warp/speed_2.png" id="35_xyw7w"]
 [ext_resource type="Texture2D" uid="uid://cdkfxvkddqxi6" path="res://data/richmen/img/Abigail Johnson.png" id="36_0hri1"]
-[ext_resource type="Resource" uid="uid://dlrwrgk3o3wwf" path="res://data/richmen/richmen_resources/Abigail Johnson.tres" id="36_43mlr"]
+[ext_resource type="Resource" uid="uid://dlrwrgk3o3wwf" path="res://data/richmen/richmen_resources/abigailjohnson.tres" id="36_43mlr"]
 [ext_resource type="Texture2D" uid="uid://twhx5e18ag3r" path="res://assets/ui_assets/time_warp/speed_4.png" id="36_xs0uj"]
 [ext_resource type="Texture2D" uid="uid://crkuacs0sxgda" path="res://assets/ui_assets/time_warp/speed_5.png" id="37_wcqr2"]
 [ext_resource type="StyleBox" uid="uid://b5aoi0a2yek6e" path="res://ui/styles/trickledown_button_style_hover.tres" id="38_cu6wq"]

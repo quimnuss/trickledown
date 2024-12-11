@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://c2pm8llxm03du"]
+
+[ext_resource type="Texture2D" uid="uid://dkjrsc8pvrasd" path="res://data/richmen/img/salmanbinabdulazizalsaud.png" id="1_ggus0"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_mwy33"]
+
+[resource]
+script = ExtResource("2_mwy33")
+uid = "salmanbinabdulazizalsaud"
+name = "Salman bin Abdulaziz Al Saud"
+worth = 20
+img = ExtResource("1_ggus0")
+bio = "bio_salmanbinabdulazizalsaud"

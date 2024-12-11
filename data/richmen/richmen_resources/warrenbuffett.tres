@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://cgxcren3k405e"]
+
+[ext_resource type="Texture2D" uid="uid://hl1mojwqldd0" path="res://data/richmen/img/warrenbuffett.png" id="1_mfpv7"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_y26yj"]
+
+[resource]
+script = ExtResource("2_y26yj")
+uid = "warrenbuffett"
+name = "Warren Buffett"
+worth = 138
+img = ExtResource("1_mfpv7")
+bio = "bio_warrenbuffett"

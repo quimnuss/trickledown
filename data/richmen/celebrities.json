@@ -2,700 +2,700 @@
   {
     "id": "elonmusk",
     "name": "Elon Musk",
-    "img": "Elon Musk.png",
+    "img": "elonmusk.png",
     "bio": "bio_elonmusk",
     "worth": 333
   },
   {
     "id": "jeffbezos",
     "name": "Jeff Bezos",
-    "img": "Jeff Bezos.png",
+    "img": "jeffbezos.png",
     "bio": "bio_jeffbezos",
     "worth": 226
   },
   {
     "id": "larryellison",
     "name": "Larry Ellison",
-    "img": "Larry Ellison.png",
+    "img": "larryellison.png",
     "bio": "bio_larryellison",
     "worth": 204
   },
   {
     "id": "markzuckerberg",
     "name": "Mark Zuckerberg",
-    "img": "Mark Zuckerberg.png",
+    "img": "markzuckerberg.png",
     "bio": "bio_markzuckerberg",
     "worth": 200
   },
   {
     "id": "bernardarnault",
     "name": "Bernard Arnault",
-    "img": "Bernard Arnault.png",
+    "img": "bernardarnault.png",
     "bio": "bio_bernardarnault",
     "worth": 181
   },
   {
     "id": "billgates",
     "name": "Bill Gates",
-    "img": "Bill Gates.png",
+    "img": "billgates.png",
     "bio": "bio_billgates",
     "worth": 156
   },
   {
     "id": "larrypage",
     "name": "Larry Page",
-    "img": "Larry Page.png",
+    "img": "larrypage.png",
     "bio": "bio_larrypage",
     "worth": 150
   },
   {
     "id": "steveballmer",
     "name": "Steve Ballmer",
-    "img": "Steve Ballmer.png",
+    "img": "steveballmer.png",
     "bio": "bio_steveballmer",
     "worth": 145
   },
   {
     "id": "sergeybrin",
     "name": "Sergey Brin",
-    "img": "Sergey Brin.png",
+    "img": "sergeybrin.png",
     "bio": "bio_sergeybrin",
     "worth": 141
   },
   {
     "id": "warrenbuffett",
     "name": "Warren Buffett",
-    "img": "Warren Buffett.png",
+    "img": "warrenbuffett.png",
     "bio": "bio_warrenbuffett",
     "worth": 138
   },
   {
     "id": "jensenhuang",
     "name": "Jensen Huang",
-    "img": "Jensen Huang.png",
+    "img": "jensenhuang.png",
     "bio": "bio_jensenhuang",
     "worth": 120
   },
   {
     "id": "michaeldell",
     "name": "Michael Dell",
-    "img": "Michael Dell.png",
+    "img": "michaeldell.png",
     "bio": "bio_michaeldell",
     "worth": 112
   },
   {
     "id": "mukeshambani",
     "name": "Mukesh Ambani",
-    "img": "Mukesh Ambani.png",
+    "img": "mukeshambani.png",
     "bio": "bio_mukeshambani",
     "worth": 108
   },
   {
-    "id": "françoisebettencourtmeyers",
+    "id": "francoisebettencourtmeyers",
     "name": "Françoise Bettencourt-Meyers",
-    "img": "Françoise Bettencourt-Meyers.png",
-    "bio": "bio_françoisebettencourt-meyers",
+    "img": "francoisebettencourtmeyers.png",
+    "bio": "bio_francoisebettencourtmeyers",
     "worth": 102
   },
   {
     "id": "carlosslimhelu",
     "name": "Carlos Slim Helu",
-    "img": "Carlos Slim Helu.png",
+    "img": "carlosslimhelu.png",
     "bio": "bio_carlosslimhelu",
     "worth": 101
   },
   {
     "id": "gautamadani",
     "name": "Gautam Adani",
-    "img": "Gautam Adani.png",
+    "img": "gautamadani.png",
     "bio": "bio_gautamadani",
     "worth": 101
   },
   {
     "id": "amancioortegagaona",
     "name": "Amancio Ortega Gaona",
-    "img": "Amancio Ortega Gaona.png",
+    "img": "amancioortegagaona.png",
     "bio": "bio_amancioortegagaona",
     "worth": 85
   },
   {
     "id": "jimwalton",
     "name": "Jim Walton",
-    "img": "Jim Walton.png",
+    "img": "jimwalton.png",
     "bio": "bio_jimwalton",
     "worth": 75
   },
   {
     "id": "robwalton",
     "name": "Rob Walton",
-    "img": "Rob Walton.png",
+    "img": "robwalton.png",
     "bio": "bio_robwalton",
     "worth": 74
   },
   {
     "id": "alicewalton",
     "name": "Alice Walton",
-    "img": "Alice Walton.png",
+    "img": "alicewalton.png",
     "bio": "bio_alicewalton",
     "worth": 73
   },
   {
     "id": "michaelbloomberg",
     "name": "Michael Bloomberg",
-    "img": "Michael Bloomberg.png",
+    "img": "michaelbloomberg.png",
     "bio": "bio_michaelbloomberg",
     "worth": 70
   },
   {
     "id": "vladimirputin",
     "name": "Vladimir Putin",
-    "img": "Vladimir Putin.png",
+    "img": "vladimirputin.png",
     "bio": "bio_vladimirputin",
     "worth": 70
   },
   {
     "id": "juliaflesherkoch",
     "name": "Julia Flesher Koch",
-    "img": "Julia Flesher Koch.png",
+    "img": "juliaflesherkoch.png",
     "bio": "bio_juliaflesherkoch",
     "worth": 63
   },
   {
     "id": "charleskoch",
     "name": "Charles Koch",
-    "img": "Charles Koch.png",
+    "img": "charleskoch.png",
     "bio": "bio_charleskoch",
     "worth": 60
   },
   {
     "id": "jacquelinemars",
     "name": "Jacqueline Mars",
-    "img": "Jacqueline Mars.png",
+    "img": "jacquelinemars.png",
     "bio": "bio_jacquelinemars",
     "worth": 55
   },
   {
     "id": "johnmars",
     "name": "John Mars",
-    "img": "John Mars.png",
+    "img": "johnmars.png",
     "bio": "bio_johnmars",
     "worth": 54
   },
   {
     "id": "davidthomson",
     "name": "David Thomson",
-    "img": "David Thomson.png",
+    "img": "davidthomson.png",
     "bio": "bio_davidthomson",
     "worth": 50
   },
   {
     "id": "colinhuang",
     "name": "Colin Huang",
-    "img": "Colin Huang.png",
+    "img": "colinhuang.png",
     "bio": "bio_colinhuang",
     "worth": 49
   },
   {
     "id": "zhongshanshan",
     "name": "Zhong Shanshan",
-    "img": "Zhong Shanshan.png",
+    "img": "zhongshanshan.png",
     "bio": "bio_zhongshanshan",
     "worth": 47
   },
   {
     "id": "jeffyass",
     "name": "Jeff Yass",
-    "img": "Jeff Yass.png",
+    "img": "jeffyass.png",
     "bio": "bio_jeffyass",
     "worth": 46
   },
   {
     "id": "gerardwertheimer",
     "name": "Gerard Wertheimer",
-    "img": "Gerard Wertheimer.png",
+    "img": "gerardwertheimer.png",
     "bio": "bio_gerardwertheimer",
     "worth": 45
   },
   {
     "id": "alainwertheimer",
     "name": "Alain Wertheimer",
-    "img": "Alain Wertheimer.png",
+    "img": "alainwertheimer.png",
     "bio": "bio_alainwertheimer",
     "worth": 45
   },
   {
     "id": "zhangyiming",
     "name": "Zhang Yiming",
-    "img": "Zhang Yiming.png",
+    "img": "zhangyiming.png",
     "bio": "bio_zhangyiming",
     "worth": 44
   },
   {
     "id": "philknight",
     "name": "Phil Knight",
-    "img": "Phil Knight.png",
+    "img": "philknight.png",
     "bio": "bio_philknight",
     "worth": 43
   },
   {
     "id": "stephenschwarzman",
     "name": "Stephen Schwarzman",
-    "img": "Stephen Schwarzman.png",
+    "img": "stephenschwarzman.png",
     "bio": "bio_stephenschwarzman",
     "worth": 42
   },
   {
     "id": "changpengzhao",
     "name": "Changpeng Zhao",
-    "img": "Changpeng Zhao.png",
+    "img": "changpengzhao.png",
     "bio": "bio_changpengzhao",
     "worth": 42
   },
   {
     "id": "kengriffin",
     "name": "Ken Griffin",
-    "img": "Ken Griffin.png",
+    "img": "kengriffin.png",
     "bio": "bio_kengriffin",
     "worth": 41
   },
   {
     "id": "giovanniferrero",
     "name": "Giovanni Ferrero",
-    "img": "Giovanni Ferrero.png",
+    "img": "giovanniferrero.png",
     "bio": "bio_giovanniferrero",
     "worth": 41
   },
   {
     "id": "klausmichaelkuhne",
     "name": "Klaus-Michael Kuhne",
-    "img": "Klaus-Michael Kuhne.png",
-    "bio": "bio_klaus-michaelkuhne",
+    "img": "klausmichaelkuhne.png",
+    "bio": "bio_klausmichaelkuhne",
     "worth": 40
   },
   {
     "id": "lenblavatnik",
     "name": "Len Blavatnik",
-    "img": "Len Blavatnik.png",
+    "img": "lenblavatnik.png",
     "bio": "bio_lenblavatnik",
     "worth": 40
   },
   {
     "id": "francoispinault",
     "name": "Francois Pinault",
-    "img": "Francois Pinault.png",
+    "img": "francoispinault.png",
     "bio": "bio_francoispinault",
     "worth": 40
   },
   {
     "id": "mahuateng",
     "name": "Ma Huateng",
-    "img": "Ma Huateng.png",
+    "img": "mahuateng.png",
     "bio": "bio_mahuateng",
     "worth": 38
   },
   {
     "id": "mackenziescott",
     "name": "MacKenzie Scott",
-    "img": "MacKenzie Scott.png",
+    "img": "mackenziescott.png",
     "bio": "bio_mackenziescott",
     "worth": 36
   },
   {
     "id": "shivnadar",
     "name": "Shiv Nadar",
-    "img": "Shiv Nadar.png",
+    "img": "shivnadar.png",
     "bio": "bio_shivnadar",
     "worth": 35
   },
   {
     "id": "vladimirpotanin",
     "name": "Vladimir Potanin",
-    "img": "Vladimir Potanin.png",
+    "img": "vladimirpotanin.png",
     "bio": "bio_vladimirpotanin",
     "worth": 35
   },
   {
     "id": "tadashiyanai",
     "name": "Tadashi Yanai",
-    "img": "Tadashi Yanai.png",
+    "img": "tadashiyanai.png",
     "bio": "bio_tadashiyanai",
     "worth": 35
   },
   {
     "id": "jackma",
     "name": "Jack Ma",
-    "img": "Jack Ma.png",
+    "img": "jackma.png",
     "bio": "bio_jackma",
     "worth": 34
   },
   {
     "id": "miriamadelson",
     "name": "Miriam Adelson",
-    "img": "Miriam Adelson.png",
+    "img": "miriamadelson.png",
     "bio": "bio_miriamadelson",
     "worth": 34
   },
   {
     "id": "leeshaukee",
     "name": "Lee Shau Kee",
-    "img": "Lee Shau Kee.png",
+    "img": "leeshaukee.png",
     "bio": "bio_leeshaukee",
     "worth": 33
   },
   {
     "id": "ericschmidt",
     "name": "Eric Schmidt",
-    "img": "Eric Schmidt.png",
+    "img": "ericschmidt.png",
     "bio": "bio_ericschmidt",
     "worth": 32
   },
   {
     "id": "dangilbert",
     "name": "Dan Gilbert",
-    "img": "Dan Gilbert.png",
+    "img": "dangilbert.png",
     "bio": "bio_dangilbert",
     "worth": 32
   },
   {
     "id": "likashing",
     "name": "Li Ka-shing",
-    "img": "Li Ka-shing.png",
-    "bio": "bio_lika-shing",
+    "img": "likashing.png",
+    "bio": "bio_likashing",
     "worth": 31
   },
   {
     "id": "eduardosaverin",
     "name": "Eduardo Saverin",
-    "img": "Eduardo Saverin.png",
+    "img": "eduardosaverin.png",
     "bio": "bio_eduardosaverin",
     "worth": 30
   },
   {
     "id": "markmateschitz",
     "name": "Mark Mateschitz",
-    "img": "Mark Mateschitz.png",
+    "img": "markmateschitz.png",
     "bio": "bio_markmateschitz",
     "worth": 30
   },
   {
     "id": "mahavajiralongkorn",
     "name": "Maha Vajiralongkorn",
-    "img": "Maha Vajiralongkorn.png",
+    "img": "mahavajiralongkorn.png",
     "bio": "bio_mahavajiralongkorn",
     "worth": 30
   },
   {
     "id": "dieterschwarz",
     "name": "Dieter Schwarz",
-    "img": "Dieter Schwarz.png",
+    "img": "dieterschwarz.png",
     "bio": "bio_dieterschwarz",
     "worth": 30
   },
   {
     "id": "germanlarreamotavelasco",
     "name": "German Larrea Mota Velasco",
-    "img": "German Larrea Mota Velasco.png",
+    "img": "germanlarreamotavelasco.png",
     "bio": "bio_germanlarreamotavelasco",
     "worth": 30
   },
   {
     "id": "sultanofbrunei",
     "name": "Sultan of Brunei",
-    "img": "Sultan of Brunei.png",
+    "img": "sultanofbrunei.png",
     "bio": "bio_sultanofbrunei",
     "worth": 30
   },
   {
     "id": "sheikhmansourbinzayedalnahyan",
     "name": "Sheikh Mansour bin Zayed Al Nahyan",
-    "img": "Sheikh Mansour bin Zayed Al Nahyan.png",
+    "img": "sheikhmansourbinzayedalnahyan.png",
     "bio": "bio_sheikhmansourbinzayedalnahyan",
     "worth": 30
   },
   {
     "id": "alikodangote",
     "name": "Aliko Dangote",
-    "img": "Aliko Dangote.png",
+    "img": "alikodangote.png",
     "bio": "bio_alikodangote",
     "worth": 28
   },
   {
     "id": "abigailjohnson",
     "name": "Abigail Johnson",
-    "img": "Abigail Johnson.png",
+    "img": "abigailjohnson.png",
     "bio": "bio_abigailjohnson",
     "worth": 28
   },
   {
     "id": "hexiangjian",
     "name": "He Xiangjian",
-    "img": "He Xiangjian.png",
+    "img": "hexiangjian.png",
     "bio": "bio_hexiangjian",
     "worth": 27
   },
   {
     "id": "savitrijindal",
     "name": "Savitri Jindal",
-    "img": "Savitri Jindal.png",
+    "img": "savitrijindal.png",
     "bio": "bio_savitrijindal",
     "worth": 27
   },
   {
     "id": "rbudihartono",
     "name": "R. Budi Hartono",
-    "img": "R. Budi Hartono.png",
+    "img": "rbudihartono.png",
     "bio": "bio_r.budihartono",
     "worth": 26
   },
   {
     "id": "andrewforrest",
     "name": "Andrew Forrest",
-    "img": "Andrew Forrest.png",
+    "img": "andrewforrest.png",
     "bio": "bio_andrewforrest",
     "worth": 26
   },
   {
     "id": "stefanquandt",
     "name": "Stefan Quandt",
-    "img": "Stefan Quandt.png",
+    "img": "stefanquandt.png",
     "bio": "bio_stefanquandt",
     "worth": 26
   },
   {
     "id": "lukaswalton",
     "name": "Lukas Walton",
-    "img": "Lukas Walton.png",
+    "img": "lukaswalton.png",
     "bio": "bio_lukaswalton",
     "worth": 26
   },
   {
     "id": "williamding",
     "name": "William Ding",
-    "img": "William Ding.png",
+    "img": "williamding.png",
     "bio": "bio_williamding",
     "worth": 26
   },
   {
     "id": "susanneklatten",
     "name": "Susanne Klatten",
-    "img": "Susanne Klatten.png",
+    "img": "susanneklatten.png",
     "bio": "bio_susanneklatten",
     "worth": 26
   },
   {
     "id": "ericyuan",
     "name": "Eric Yuan",
-    "img": "Eric Yuan.png",
+    "img": "ericyuan.png",
     "bio": "bio_ericyuan",
     "worth": 25
   },
   {
     "id": "dustinmoskovitz",
     "name": "Dustin Moskovitz",
-    "img": "Dustin Moskovitz.png",
+    "img": "dustinmoskovitz.png",
     "bio": "bio_dustinmoskovitz",
     "worth": 25
   },
   {
     "id": "elainemarshall",
     "name": "Elaine Marshall",
-    "img": "Elaine Marshall.png",
+    "img": "elainemarshall.png",
     "bio": "bio_elainemarshall",
     "worth": 24
   },
   {
     "id": "takemitsutakizaki",
     "name": "Takemitsu Takizaki",
-    "img": "Takemitsu Takizaki.png",
+    "img": "takemitsutakizaki.png",
     "bio": "bio_takemitsutakizaki",
     "worth": 24
   },
   {
     "id": "irisfontbona",
     "name": "Iris Fontbona",
-    "img": "Iris Fontbona.png",
+    "img": "irisfontbona.png",
     "bio": "bio_irisfontbona",
     "worth": 24
   },
   {
     "id": "forrestmarsjr",
     "name": "Forrest Mars Jr",
-    "img": "Forrest Mars Jr.png",
+    "img": "forrestmarsjr.png",
     "bio": "bio_forrestmarsjr",
     "worth": 23
   },
   {
     "id": "ginarinehart",
     "name": "Gina Rinehart",
-    "img": "Gina Rinehart.png",
+    "img": "ginarinehart.png",
     "bio": "bio_ginarinehart",
     "worth": 23
   },
   {
     "id": "wangwei",
     "name": "Wang Wei",
-    "img": "Wang Wei.png",
+    "img": "wangwei.png",
     "bio": "bio_wangwei",
     "worth": 22
   },
   {
     "id": "qinyinglin",
     "name": "Qin Yinglin",
-    "img": "Qin Yinglin.png",
+    "img": "qinyinglin.png",
     "bio": "bio_qinyinglin",
     "worth": 22
   },
   {
     "id": "jamesdyson",
     "name": "James Dyson",
-    "img": "James Dyson.png",
+    "img": "jamesdyson.png",
     "bio": "bio_jamesdyson",
     "worth": 22
   },
   {
     "id": "satoshinakamoto",
     "name": "Satoshi Nakamoto",
-    "img": "Satoshi Nakamoto.png",
+    "img": "satoshinakamoto.png",
     "bio": "bio_satoshinakamoto",
     "worth": 22
   },
   {
     "id": "davidtepper",
     "name": "David Tepper",
-    "img": "David Tepper.png",
+    "img": "davidtepper.png",
     "bio": "bio_davidtepper",
     "worth": 21
   },
   {
     "id": "xuyangtian",
     "name": "Xu Yangtian",
-    "img": "Xu Yangtian.png",
+    "img": "xuyangtian.png",
     "bio": "bio_xuyangtian",
     "worth": 20
   },
   {
     "id": "leonidmikhelson",
     "name": "Leonid Mikhelson",
-    "img": "Leonid Mikhelson.png",
+    "img": "leonidmikhelson.png",
     "bio": "bio_leonidmikhelson",
     "worth": 20
   },
   {
     "id": "andybechtolsheim",
     "name": "Andy Bechtolsheim",
-    "img": "Andy Bechtolsheim.png",
+    "img": "andybechtolsheim.png",
     "bio": "bio_andybechtolsheim",
     "worth": 20
   },
   {
     "id": "salmanbinabdulazizalsaud",
     "name": "Salman bin Abdulaziz Al Saud",
-    "img": "Salman bin Abdulaziz Al Saud.png",
+    "img": "salmanbinabdulazizalsaud.png",
     "bio": "bio_salmanbinabdulazizalsaud",
     "worth": 20
   },
   {
     "id": "jorgepaulolemann",
     "name": "Jorge Paulo Lemann",
-    "img": "Jorge Paulo Lemann.png",
+    "img": "jorgepaulolemann.png",
     "bio": "bio_jorgepaulolemann",
     "worth": 20
   },
   {
     "id": "johnmenard",
     "name": "John Menard",
-    "img": "John Menard.png",
+    "img": "johnmenard.png",
     "bio": "bio_johnmenard",
     "worth": 20
   },
   {
     "id": "fayezsarofim",
     "name": "Fayez Sarofim",
-    "img": "Fayez Sarofim.png",
+    "img": "fayezsarofim.png",
     "bio": "bio_fayezsarofim",
     "worth": 20
   },
   {
     "id": "alexeymordashov",
     "name": "Alexey Mordashov",
-    "img": "Alexey Mordashov.png",
+    "img": "alexeymordashov.png",
     "bio": "bio_alexeymordashov",
     "worth": 20
   },
   {
     "id": "dilipshanghvi",
     "name": "Dilip Shanghvi",
-    "img": "Dilip Shanghvi.png",
+    "img": "dilipshanghvi.png",
     "bio": "bio_dilipshanghvi",
     "worth": 20
   },
   {
     "id": "vladimirlisin",
     "name": "Vladimir Lisin",
-    "img": "Vladimir Lisin.png",
+    "img": "vladimirlisin.png",
     "bio": "bio_vladimirlisin",
     "worth": 19
   },
   {
     "id": "rupertmurdoch",
     "name": "Rupert Murdoch",
-    "img": "Rupert Murdoch.png",
+    "img": "rupertmurdoch.png",
     "bio": "bio_rupertmurdoch",
     "worth": 19
   },
   {
     "id": "pallonjimistry",
     "name": "Pallonji Mistry",
-    "img": "Pallonji Mistry.png",
+    "img": "pallonjimistry.png",
     "bio": "bio_pallonjimistry",
     "worth": 19
   },
   {
     "id": "jamesratcliffe",
     "name": "James Ratcliffe",
-    "img": "James Ratcliffe.png",
+    "img": "jamesratcliffe.png",
     "bio": "bio_jamesratcliffe",
     "worth": 19
   },
   {
     "id": "sheikhkhalifabinzayedalnahyan",
     "name": "Sheikh Khalifa Bin Zayed Al Nahyan",
-    "img": "Sheikh Khalifa Bin Zayed Al Nahyan.png",
+    "img": "sheikhkhalifabinzayedalnahyan.png",
     "bio": "bio_sheikhkhalifabinzayedalnahyan",
     "worth": 18
   },
   {
     "id": "donaldbren",
     "name": "Donald Bren",
-    "img": "Donald Bren.png",
+    "img": "donaldbren.png",
     "bio": "bio_donaldbren",
     "worth": 18
   },
   {
-    "id": "david&simonreuben",
+    "id": "davidsimonreuben",
     "name": "David & Simon Reuben",
-    "img": "David & Simon Reuben.png",
-    "bio": "bio_david&simonreuben",
+    "img": "davidsimonreuben.png",
+    "bio": "bio_davidsimonreuben",
     "worth": 18
   },
   {
     "id": "lakshmimittal",
     "name": "Lakshmi Mittal",
-    "img": "Lakshmi Mittal.png",
+    "img": "lakshmimittal.png",
     "bio": "bio_lakshmimittal",
     "worth": 18
   },
   {
     "id": "alisherusmanov",
     "name": "Alisher Usmanov",
-    "img": "Alisher Usmanov.png",
+    "img": "alisherusmanov.png",
     "bio": "bio_alisherusmanov",
     "worth": 18
   },
   {
     "id": "viktorvekselberg",
     "name": "Viktor Vekselberg",
-    "img": "Viktor Vekselberg.png",
+    "img": "viktorvekselberg.png",
     "bio": "bio_viktorvekselberg",
     "worth": 17
   }

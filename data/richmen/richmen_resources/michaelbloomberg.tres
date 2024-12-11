@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://d0uhghuh8sq0o"]
+
+[ext_resource type="Texture2D" uid="uid://450hsnrnwibx" path="res://data/richmen/img/michaelbloomberg.png" id="1_xekis"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_pjrom"]
+
+[resource]
+script = ExtResource("2_pjrom")
+uid = "michaelbloomberg"
+name = "Michael Bloomberg"
+worth = 70
+img = ExtResource("1_xekis")
+bio = "bio_michaelbloomberg"

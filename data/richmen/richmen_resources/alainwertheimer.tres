@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://cprrqdjiyevfm"]
+
+[ext_resource type="Texture2D" uid="uid://cif67qp2objb" path="res://data/richmen/img/alainwertheimer.png" id="1_hr5lm"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_ec7t3"]
+
+[resource]
+script = ExtResource("2_ec7t3")
+uid = "alainwertheimer"
+name = "Alain Wertheimer"
+worth = 45
+img = ExtResource("1_hr5lm")
+bio = "bio_alainwertheimer"

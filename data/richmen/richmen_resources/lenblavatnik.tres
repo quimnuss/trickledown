@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://u7oxkx3caqmm"]
+
+[ext_resource type="Texture2D" uid="uid://bcym5y8y36tg" path="res://data/richmen/img/lenblavatnik.png" id="1_vwej8"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_3lnc7"]
+
+[resource]
+script = ExtResource("2_3lnc7")
+uid = "lenblavatnik"
+name = "Len Blavatnik"
+worth = 40
+img = ExtResource("1_vwej8")
+bio = "bio_lenblavatnik"

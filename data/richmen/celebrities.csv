@@ -1,101 +1,101 @@
 id,name,img,bio,worth
-elonmusk,Elon Musk,Elon Musk.png,bio_elonmusk,333
-jeffbezos,Jeff Bezos,Jeff Bezos.png,bio_jeffbezos,226
-larryellison,Larry Ellison,Larry Ellison.png,bio_larryellison,204
-markzuckerberg,Mark Zuckerberg,Mark Zuckerberg.png,bio_markzuckerberg,200
-bernardarnault,Bernard Arnault,Bernard Arnault.png,bio_bernardarnault,181
-billgates,Bill Gates,Bill Gates.png,bio_billgates,156
-larrypage,Larry Page,Larry Page.png,bio_larrypage,150
-steveballmer,Steve Ballmer,Steve Ballmer.png,bio_steveballmer,145
-sergeybrin,Sergey Brin,Sergey Brin.png,bio_sergeybrin,141
-warrenbuffett,Warren Buffett,Warren Buffett.png,bio_warrenbuffett,138
-jensenhuang,Jensen Huang,Jensen Huang.png,bio_jensenhuang,120
-michaeldell,Michael Dell,Michael Dell.png,bio_michaeldell,112
-mukeshambani,Mukesh Ambani,Mukesh Ambani.png,bio_mukeshambani,108
-françoisebettencourtmeyers,Françoise Bettencourt-Meyers,Françoise Bettencourt-Meyers.png,bio_françoisebettencourt-meyers,102
-carlosslimhelu,Carlos Slim Helu,Carlos Slim Helu.png,bio_carlosslimhelu,101
-gautamadani,Gautam Adani,Gautam Adani.png,bio_gautamadani,101
-amancioortegagaona,Amancio Ortega Gaona,Amancio Ortega Gaona.png,bio_amancioortegagaona,85
-jimwalton,Jim Walton,Jim Walton.png,bio_jimwalton,75
-robwalton,Rob Walton,Rob Walton.png,bio_robwalton,74
-alicewalton,Alice Walton,Alice Walton.png,bio_alicewalton,73
-michaelbloomberg,Michael Bloomberg,Michael Bloomberg.png,bio_michaelbloomberg,70
-vladimirputin,Vladimir Putin,Vladimir Putin.png,bio_vladimirputin,70
-juliaflesherkoch,Julia Flesher Koch,Julia Flesher Koch.png,bio_juliaflesherkoch,63
-charleskoch,Charles Koch,Charles Koch.png,bio_charleskoch,60
-jacquelinemars,Jacqueline Mars,Jacqueline Mars.png,bio_jacquelinemars,55
-johnmars,John Mars,John Mars.png,bio_johnmars,54
-davidthomson,David Thomson,David Thomson.png,bio_davidthomson,50
-colinhuang,Colin Huang,Colin Huang.png,bio_colinhuang,49
-zhongshanshan,Zhong Shanshan,Zhong Shanshan.png,bio_zhongshanshan,47
-jeffyass,Jeff Yass,Jeff Yass.png,bio_jeffyass,46
-gerardwertheimer,Gerard Wertheimer,Gerard Wertheimer.png,bio_gerardwertheimer,45
-alainwertheimer,Alain Wertheimer,Alain Wertheimer.png,bio_alainwertheimer,45
-zhangyiming,Zhang Yiming,Zhang Yiming.png,bio_zhangyiming,44
-philknight,Phil Knight,Phil Knight.png,bio_philknight,43
-stephenschwarzman,Stephen Schwarzman,Stephen Schwarzman.png,bio_stephenschwarzman,42
-changpengzhao,Changpeng Zhao,Changpeng Zhao.png,bio_changpengzhao,42
-kengriffin,Ken Griffin,Ken Griffin.png,bio_kengriffin,41
-giovanniferrero,Giovanni Ferrero,Giovanni Ferrero.png,bio_giovanniferrero,41
-klausmichaelkuhne,Klaus-Michael Kuhne,Klaus-Michael Kuhne.png,bio_klaus-michaelkuhne,40
-lenblavatnik,Len Blavatnik,Len Blavatnik.png,bio_lenblavatnik,40
-francoispinault,Francois Pinault,Francois Pinault.png,bio_francoispinault,40
-mahuateng,Ma Huateng,Ma Huateng.png,bio_mahuateng,38
-mackenziescott,MacKenzie Scott,MacKenzie Scott.png,bio_mackenziescott,36
-shivnadar,Shiv Nadar,Shiv Nadar.png,bio_shivnadar,35
-vladimirpotanin,Vladimir Potanin,Vladimir Potanin.png,bio_vladimirpotanin,35
-tadashiyanai,Tadashi Yanai,Tadashi Yanai.png,bio_tadashiyanai,35
-jackma,Jack Ma,Jack Ma.png,bio_jackma,34
-miriamadelson,Miriam Adelson,Miriam Adelson.png,bio_miriamadelson,34
-leeshaukee,Lee Shau Kee,Lee Shau Kee.png,bio_leeshaukee,33
-ericschmidt,Eric Schmidt,Eric Schmidt.png,bio_ericschmidt,32
-dangilbert,Dan Gilbert,Dan Gilbert.png,bio_dangilbert,32
-likashing,Li Ka-shing,Li Ka-shing.png,bio_lika-shing,31
-eduardosaverin,Eduardo Saverin,Eduardo Saverin.png,bio_eduardosaverin,30
-markmateschitz,Mark Mateschitz,Mark Mateschitz.png,bio_markmateschitz,30
-mahavajiralongkorn,Maha Vajiralongkorn,Maha Vajiralongkorn.png,bio_mahavajiralongkorn,30
-dieterschwarz,Dieter Schwarz,Dieter Schwarz.png,bio_dieterschwarz,30
-germanlarreamotavelasco,German Larrea Mota Velasco,German Larrea Mota Velasco.png,bio_germanlarreamotavelasco,30
-sultanofbrunei,Sultan of Brunei,Sultan of Brunei.png,bio_sultanofbrunei,30
-sheikhmansourbinzayedalnahyan,Sheikh Mansour bin Zayed Al Nahyan,Sheikh Mansour bin Zayed Al Nahyan.png,bio_sheikhmansourbinzayedalnahyan,30
-alikodangote,Aliko Dangote,Aliko Dangote.png,bio_alikodangote,28
-abigailjohnson,Abigail Johnson,Abigail Johnson.png,bio_abigailjohnson,28
-hexiangjian,He Xiangjian,He Xiangjian.png,bio_hexiangjian,27
-savitrijindal,Savitri Jindal,Savitri Jindal.png,bio_savitrijindal,27
-rbudihartono,R. Budi Hartono,R. Budi Hartono.png,bio_r.budihartono,26
-andrewforrest,Andrew Forrest,Andrew Forrest.png,bio_andrewforrest,26
-stefanquandt,Stefan Quandt,Stefan Quandt.png,bio_stefanquandt,26
-lukaswalton,Lukas Walton,Lukas Walton.png,bio_lukaswalton,26
-williamding,William Ding,William Ding.png,bio_williamding,26
-susanneklatten,Susanne Klatten,Susanne Klatten.png,bio_susanneklatten,26
-ericyuan,Eric Yuan,Eric Yuan.png,bio_ericyuan,25
-dustinmoskovitz,Dustin Moskovitz,Dustin Moskovitz.png,bio_dustinmoskovitz,25
-elainemarshall,Elaine Marshall,Elaine Marshall.png,bio_elainemarshall,24
-takemitsutakizaki,Takemitsu Takizaki,Takemitsu Takizaki.png,bio_takemitsutakizaki,24
-irisfontbona,Iris Fontbona,Iris Fontbona.png,bio_irisfontbona,24
-forrestmarsjr,Forrest Mars Jr,Forrest Mars Jr.png,bio_forrestmarsjr,23
-ginarinehart,Gina Rinehart,Gina Rinehart.png,bio_ginarinehart,23
-wangwei,Wang Wei,Wang Wei.png,bio_wangwei,22
-qinyinglin,Qin Yinglin,Qin Yinglin.png,bio_qinyinglin,22
-jamesdyson,James Dyson,James Dyson.png,bio_jamesdyson,22
-satoshinakamoto,Satoshi Nakamoto,Satoshi Nakamoto.png,bio_satoshinakamoto,22
-davidtepper,David Tepper,David Tepper.png,bio_davidtepper,21
-xuyangtian,Xu Yangtian,Xu Yangtian.png,bio_xuyangtian,20
-leonidmikhelson,Leonid Mikhelson,Leonid Mikhelson.png,bio_leonidmikhelson,20
-andybechtolsheim,Andy Bechtolsheim,Andy Bechtolsheim.png,bio_andybechtolsheim,20
-salmanbinabdulazizalsaud,Salman bin Abdulaziz Al Saud,Salman bin Abdulaziz Al Saud.png,bio_salmanbinabdulazizalsaud,20
-jorgepaulolemann,Jorge Paulo Lemann,Jorge Paulo Lemann.png,bio_jorgepaulolemann,20
-johnmenard,John Menard,John Menard.png,bio_johnmenard,20
-fayezsarofim,Fayez Sarofim,Fayez Sarofim.png,bio_fayezsarofim,20
-alexeymordashov,Alexey Mordashov,Alexey Mordashov.png,bio_alexeymordashov,20
-dilipshanghvi,Dilip Shanghvi,Dilip Shanghvi.png,bio_dilipshanghvi,20
-vladimirlisin,Vladimir Lisin,Vladimir Lisin.png,bio_vladimirlisin,19
-rupertmurdoch,Rupert Murdoch,Rupert Murdoch.png,bio_rupertmurdoch,19
-pallonjimistry,Pallonji Mistry,Pallonji Mistry.png,bio_pallonjimistry,19
-jamesratcliffe,James Ratcliffe,James Ratcliffe.png,bio_jamesratcliffe,19
-sheikhkhalifabinzayedalnahyan,Sheikh Khalifa Bin Zayed Al Nahyan,Sheikh Khalifa Bin Zayed Al Nahyan.png,bio_sheikhkhalifabinzayedalnahyan,18
-donaldbren,Donald Bren,Donald Bren.png,bio_donaldbren,18
-david&simonreuben,David & Simon Reuben,David & Simon Reuben.png,bio_david&simonreuben,18
-lakshmimittal,Lakshmi Mittal,Lakshmi Mittal.png,bio_lakshmimittal,18
-alisherusmanov,Alisher Usmanov,Alisher Usmanov.png,bio_alisherusmanov,18
-viktorvekselberg,Viktor Vekselberg,Viktor Vekselberg.png,bio_viktorvekselberg,17
+elonmusk,Elon Musk,elonmusk.png,bio_elonmusk,333
+jeffbezos,Jeff Bezos,jeffbezos.png,bio_jeffbezos,226
+larryellison,Larry Ellison,larryellison.png,bio_larryellison,204
+markzuckerberg,Mark Zuckerberg,markzuckerberg.png,bio_markzuckerberg,200
+bernardarnault,Bernard Arnault,bernardarnault.png,bio_bernardarnault,181
+billgates,Bill Gates,billgates.png,bio_billgates,156
+larrypage,Larry Page,larrypage.png,bio_larrypage,150
+steveballmer,Steve Ballmer,steveballmer.png,bio_steveballmer,145
+sergeybrin,Sergey Brin,sergeybrin.png,bio_sergeybrin,141
+warrenbuffett,Warren Buffett,warrenbuffett.png,bio_warrenbuffett,138
+jensenhuang,Jensen Huang,jensenhuang.png,bio_jensenhuang,120
+michaeldell,Michael Dell,michaeldell.png,bio_michaeldell,112
+mukeshambani,Mukesh Ambani,mukeshambani.png,bio_mukeshambani,108
+francoisebettencourtmeyers,Françoise Bettencourt-Meyers,francoisebettencourtmeyers.png,bio_francoisebettencourtmeyers,102
+carlosslimhelu,Carlos Slim Helu,carlosslimhelu.png,bio_carlosslimhelu,101
+gautamadani,Gautam Adani,gautamadani.png,bio_gautamadani,101
+amancioortegagaona,Amancio Ortega Gaona,amancioortegagaona.png,bio_amancioortegagaona,85
+jimwalton,Jim Walton,jimwalton.png,bio_jimwalton,75
+robwalton,Rob Walton,robwalton.png,bio_robwalton,74
+alicewalton,Alice Walton,alicewalton.png,bio_alicewalton,73
+michaelbloomberg,Michael Bloomberg,michaelbloomberg.png,bio_michaelbloomberg,70
+vladimirputin,Vladimir Putin,vladimirputin.png,bio_vladimirputin,70
+juliaflesherkoch,Julia Flesher Koch,juliaflesherkoch.png,bio_juliaflesherkoch,63
+charleskoch,Charles Koch,charleskoch.png,bio_charleskoch,60
+jacquelinemars,Jacqueline Mars,jacquelinemars.png,bio_jacquelinemars,55
+johnmars,John Mars,johnmars.png,bio_johnmars,54
+davidthomson,David Thomson,davidthomson.png,bio_davidthomson,50
+colinhuang,Colin Huang,colinhuang.png,bio_colinhuang,49
+zhongshanshan,Zhong Shanshan,zhongshanshan.png,bio_zhongshanshan,47
+jeffyass,Jeff Yass,jeffyass.png,bio_jeffyass,46
+gerardwertheimer,Gerard Wertheimer,gerardwertheimer.png,bio_gerardwertheimer,45
+alainwertheimer,Alain Wertheimer,alainwertheimer.png,bio_alainwertheimer,45
+zhangyiming,Zhang Yiming,zhangyiming.png,bio_zhangyiming,44
+philknight,Phil Knight,philknight.png,bio_philknight,43
+stephenschwarzman,Stephen Schwarzman,stephenschwarzman.png,bio_stephenschwarzman,42
+changpengzhao,Changpeng Zhao,changpengzhao.png,bio_changpengzhao,42
+kengriffin,Ken Griffin,kengriffin.png,bio_kengriffin,41
+giovanniferrero,Giovanni Ferrero,giovanniferrero.png,bio_giovanniferrero,41
+klausmichaelkuhne,Klaus-Michael Kuhne,klausmichaelkuhne.png,bio_klausmichaelkuhne,40
+lenblavatnik,Len Blavatnik,lenblavatnik.png,bio_lenblavatnik,40
+francoispinault,Francois Pinault,francoispinault.png,bio_francoispinault,40
+mahuateng,Ma Huateng,mahuateng.png,bio_mahuateng,38
+mackenziescott,MacKenzie Scott,mackenziescott.png,bio_mackenziescott,36
+shivnadar,Shiv Nadar,shivnadar.png,bio_shivnadar,35
+vladimirpotanin,Vladimir Potanin,vladimirpotanin.png,bio_vladimirpotanin,35
+tadashiyanai,Tadashi Yanai,tadashiyanai.png,bio_tadashiyanai,35
+jackma,Jack Ma,jackma.png,bio_jackma,34
+miriamadelson,Miriam Adelson,miriamadelson.png,bio_miriamadelson,34
+leeshaukee,Lee Shau Kee,leeshaukee.png,bio_leeshaukee,33
+ericschmidt,Eric Schmidt,ericschmidt.png,bio_ericschmidt,32
+dangilbert,Dan Gilbert,dangilbert.png,bio_dangilbert,32
+likashing,Li Ka-shing,likashing.png,bio_lika-shing,31
+eduardosaverin,Eduardo Saverin,eduardosaverin.png,bio_eduardosaverin,30
+markmateschitz,Mark Mateschitz,markmateschitz.png,bio_markmateschitz,30
+mahavajiralongkorn,Maha Vajiralongkorn,mahavajiralongkorn.png,bio_mahavajiralongkorn,30
+dieterschwarz,Dieter Schwarz,dieterschwarz.png,bio_dieterschwarz,30
+germanlarreamotavelasco,German Larrea Mota Velasco,germanlarreamotavelasco.png,bio_germanlarreamotavelasco,30
+sultanofbrunei,Sultan of Brunei,sultanofbrunei.png,bio_sultanofbrunei,30
+sheikhmansourbinzayedalnahyan,Sheikh Mansour bin Zayed Al Nahyan,sheikhmansourbinzayedalnahyan.png,bio_sheikhmansourbinzayedalnahyan,30
+alikodangote,Aliko Dangote,alikodangote.png,bio_alikodangote,28
+abigailjohnson,Abigail Johnson,abigailjohnson.png,bio_abigailjohnson,28
+hexiangjian,He Xiangjian,hexiangjian.png,bio_hexiangjian,27
+savitrijindal,Savitri Jindal,savitrijindal.png,bio_savitrijindal,27
+rbudihartono,R. Budi Hartono,rbudihartono.png,bio_rbudihartono,26
+andrewforrest,Andrew Forrest,andrewforrest.png,bio_andrewforrest,26
+stefanquandt,Stefan Quandt,stefanquandt.png,bio_stefanquandt,26
+lukaswalton,Lukas Walton,lukaswalton.png,bio_lukaswalton,26
+williamding,William Ding,williamding.png,bio_williamding,26
+susanneklatten,Susanne Klatten,susanneklatten.png,bio_susanneklatten,26
+ericyuan,Eric Yuan,ericyuan.png,bio_ericyuan,25
+dustinmoskovitz,Dustin Moskovitz,dustinmoskovitz.png,bio_dustinmoskovitz,25
+elainemarshall,Elaine Marshall,elainemarshall.png,bio_elainemarshall,24
+takemitsutakizaki,Takemitsu Takizaki,takemitsutakizaki.png,bio_takemitsutakizaki,24
+irisfontbona,Iris Fontbona,irisfontbona.png,bio_irisfontbona,24
+forrestmarsjr,Forrest Mars Jr,forrestmarsjr.png,bio_forrestmarsjr,23
+ginarinehart,Gina Rinehart,ginarinehart.png,bio_ginarinehart,23
+wangwei,Wang Wei,wangwei.png,bio_wangwei,22
+qinyinglin,Qin Yinglin,qinyinglin.png,bio_qinyinglin,22
+jamesdyson,James Dyson,jamesdyson.png,bio_jamesdyson,22
+satoshinakamoto,Satoshi Nakamoto,satoshinakamoto.png,bio_satoshinakamoto,22
+davidtepper,David Tepper,davidtepper.png,bio_davidtepper,21
+xuyangtian,Xu Yangtian,xuyangtian.png,bio_xuyangtian,20
+leonidmikhelson,Leonid Mikhelson,leonidmikhelson.png,bio_leonidmikhelson,20
+andybechtolsheim,Andy Bechtolsheim,andybechtolsheim.png,bio_andybechtolsheim,20
+salmanbinabdulazizalsaud,Salman bin Abdulaziz Al Saud,salmanbinabdulazizalsaud.png,bio_salmanbinabdulazizalsaud,20
+jorgepaulolemann,Jorge Paulo Lemann,jorgepaulolemann.png,bio_jorgepaulolemann,20
+johnmenard,John Menard,johnmenard.png,bio_johnmenard,20
+fayezsarofim,Fayez Sarofim,fayezsarofim.png,bio_fayezsarofim,20
+alexeymordashov,Alexey Mordashov,alexeymordashov.png,bio_alexeymordashov,20
+dilipshanghvi,Dilip Shanghvi,dilipshanghvi.png,bio_dilipshanghvi,20
+vladimirlisin,Vladimir Lisin,vladimirlisin.png,bio_vladimirlisin,19
+rupertmurdoch,Rupert Murdoch,rupertmurdoch.png,bio_rupertmurdoch,19
+pallonjimistry,Pallonji Mistry,pallonjimistry.png,bio_pallonjimistry,19
+jamesratcliffe,James Ratcliffe,jamesratcliffe.png,bio_jamesratcliffe,19
+sheikhkhalifabinzayedalnahyan,Sheikh Khalifa Bin Zayed Al Nahyan,sheikhkhalifabinzayedalnahyan.png,bio_sheikhkhalifabinzayedalnahyan,18
+donaldbren,Donald Bren,donaldbren.png,bio_donaldbren,18
+davidsimonreuben,David & Simon Reuben,davidsimonreuben.png,bio_davidsimonreuben,18
+lakshmimittal,Lakshmi Mittal,lakshmimittal.png,bio_lakshmimittal,18
+alisherusmanov,Alisher Usmanov,alisherusmanov.png,bio_alisherusmanov,18
+viktorvekselberg,Viktor Vekselberg,viktorvekselberg.png,bio_viktorvekselberg,17

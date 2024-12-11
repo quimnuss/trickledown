@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://dscbd2fedvhnw"]
+
+[ext_resource type="Texture2D" uid="uid://bpmvkh4x4yv8y" path="res://data/richmen/img/qinyinglin.png" id="1_upgo0"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_acc2i"]
+
+[resource]
+script = ExtResource("2_acc2i")
+uid = "qinyinglin"
+name = "Qin Yinglin"
+worth = 22
+img = ExtResource("1_upgo0")
+bio = "bio_qinyinglin"

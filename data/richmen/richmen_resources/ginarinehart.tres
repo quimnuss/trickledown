@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://bi8yaxh1g6dao"]
+
+[ext_resource type="Texture2D" uid="uid://dxet86fqvwa81" path="res://data/richmen/img/ginarinehart.png" id="1_uy3um"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_3p4vr"]
+
+[resource]
+script = ExtResource("2_3p4vr")
+uid = "ginarinehart"
+name = "Gina Rinehart"
+worth = 23
+img = ExtResource("1_uy3um")
+bio = "bio_ginarinehart"

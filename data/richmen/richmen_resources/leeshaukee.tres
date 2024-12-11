@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://bf8csa2pl1gn2"]
+
+[ext_resource type="Texture2D" uid="uid://df8bsfjotnf6p" path="res://data/richmen/img/leeshaukee.png" id="1_4wutq"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_5wx33"]
+
+[resource]
+script = ExtResource("2_5wx33")
+uid = "leeshaukee"
+name = "Lee Shau Kee"
+worth = 33
+img = ExtResource("1_4wutq")
+bio = "bio_leeshaukee"

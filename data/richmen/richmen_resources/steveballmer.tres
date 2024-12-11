@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://dm5atqw6bblv7"]
+
+[ext_resource type="Texture2D" uid="uid://cya1k6chd87yp" path="res://data/richmen/img/steveballmer.png" id="1_oeof0"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_20q0w"]
+
+[resource]
+script = ExtResource("2_20q0w")
+uid = "steveballmer"
+name = "Steve Ballmer"
+worth = 145
+img = ExtResource("1_oeof0")
+bio = "bio_steveballmer"

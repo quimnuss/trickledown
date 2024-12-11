@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://lmvwueolg0p2"]
+
+[ext_resource type="Texture2D" uid="uid://da1vdcystmedk" path="res://data/richmen/img/larrypage.png" id="1_06xno"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_dhrs6"]
+
+[resource]
+script = ExtResource("2_dhrs6")
+uid = "larrypage"
+name = "Larry Page"
+worth = 150
+img = ExtResource("1_06xno")
+bio = "bio_larrypage"

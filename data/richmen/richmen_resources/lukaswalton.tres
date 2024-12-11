@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://b2xmd7oefepts"]
+
+[ext_resource type="Texture2D" uid="uid://d4fus47dkbwah" path="res://data/richmen/img/lukaswalton.png" id="1_oe8q3"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_xi4fw"]
+
+[resource]
+script = ExtResource("2_xi4fw")
+uid = "lukaswalton"
+name = "Lukas Walton"
+worth = 26
+img = ExtResource("1_oe8q3")
+bio = "bio_lukaswalton"

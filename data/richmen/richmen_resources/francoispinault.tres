@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://bih55hkxe55hd"]
+
+[ext_resource type="Texture2D" uid="uid://b0k750ah8h7i6" path="res://data/richmen/img/francoispinault.png" id="1_kxfd5"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_y3hbm"]
+
+[resource]
+script = ExtResource("2_y3hbm")
+uid = "francoispinault"
+name = "Francois Pinault"
+worth = 40
+img = ExtResource("1_kxfd5")
+bio = "bio_francoispinault"

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://n5n1tru87wv1"]
+
+[ext_resource type="Texture2D" uid="uid://caq4jjwo3glyu" path="res://data/richmen/img/dustinmoskovitz.png" id="1_hgc73"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_25ieq"]
+
+[resource]
+script = ExtResource("2_25ieq")
+uid = "dustinmoskovitz"
+name = "Dustin Moskovitz"
+worth = 25
+img = ExtResource("1_hgc73")
+bio = "bio_dustinmoskovitz"

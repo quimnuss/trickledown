@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://wvsom46fv7ol"]
+
+[ext_resource type="Texture2D" uid="uid://do0chfhqvq4oi" path="res://data/richmen/img/johnmenard.png" id="1_r2vwk"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_ywxyu"]
+
+[resource]
+script = ExtResource("2_ywxyu")
+uid = "johnmenard"
+name = "John Menard"
+worth = 20
+img = ExtResource("1_r2vwk")
+bio = "bio_johnmenard"

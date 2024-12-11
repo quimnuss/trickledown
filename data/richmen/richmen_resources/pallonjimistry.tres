@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://dnem672ows83y"]
+
+[ext_resource type="Texture2D" uid="uid://b04oh83012r4c" path="res://data/richmen/img/pallonjimistry.png" id="1_5ilnv"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_gxafu"]
+
+[resource]
+script = ExtResource("2_gxafu")
+uid = "pallonjimistry"
+name = "Pallonji Mistry"
+worth = 19
+img = ExtResource("1_5ilnv")
+bio = "bio_pallonjimistry"

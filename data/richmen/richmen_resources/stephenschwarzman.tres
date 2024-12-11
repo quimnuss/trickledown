@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://d0edfqq2pdwg3"]
+
+[ext_resource type="Texture2D" uid="uid://boln1movxj8j7" path="res://data/richmen/img/stephenschwarzman.png" id="1_nhv2l"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_qn64v"]
+
+[resource]
+script = ExtResource("2_qn64v")
+uid = "stephenschwarzman"
+name = "Stephen Schwarzman"
+worth = 42
+img = ExtResource("1_nhv2l")
+bio = "bio_stephenschwarzman"

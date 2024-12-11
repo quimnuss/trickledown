@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://tk8cmegh1s8n"]
+
+[ext_resource type="Texture2D" uid="uid://xsnuse8108ba" path="res://data/richmen/img/rupertmurdoch.png" id="1_c06n3"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_f7sdm"]
+
+[resource]
+script = ExtResource("2_f7sdm")
+uid = "rupertmurdoch"
+name = "Rupert Murdoch"
+worth = 19
+img = ExtResource("1_c06n3")
+bio = "bio_rupertmurdoch"

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://dvplh6qphvw3h"]
+
+[ext_resource type="Texture2D" uid="uid://dgxo50mg8tpk6" path="res://data/richmen/img/vladimirlisin.png" id="1_khs4r"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_b6oyu"]
+
+[resource]
+script = ExtResource("2_b6oyu")
+uid = "vladimirlisin"
+name = "Vladimir Lisin"
+worth = 19
+img = ExtResource("1_khs4r")
+bio = "bio_vladimirlisin"

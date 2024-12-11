@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://b0uou4p4suxhs"]
+
+[ext_resource type="Texture2D" uid="uid://crokqoh44lv2d" path="res://data/richmen/img/xuyangtian.png" id="1_rgl3f"]
+[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_l8pyk"]
+
+[resource]
+script = ExtResource("2_l8pyk")
+uid = "xuyangtian"
+name = "Xu Yangtian"
+worth = 20
+img = ExtResource("1_rgl3f")
+bio = "bio_xuyangtian"
