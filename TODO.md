@@ -1,7 +1,8 @@
 # Now - Ship requirements
 
-- [ ] particle gather animation flow towards the milestone list (component)
+- [ ] use richmen uids instead of names
 - [ ] limit cannon angles
+- [ ] particle gather animation flow towards the milestone list (component)
 
 ## Deute tècnic
 
