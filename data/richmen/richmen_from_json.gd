@@ -19,7 +19,7 @@ func _run():
         richman_data.worth = celebrity['worth']
         var texture : Texture = load('res://data/richmen/img/%s.png' % celebrity['name'])
         richman_data.img = texture
-        var save_result = ResourceSaver.save(richman_data, 'res://data/richmen/richmen_resources/%s.tres' % richman_data.name)
+        var save_result = ResourceSaver.save(richman_data, 'res://data/richmen/richmen_resources/%s.tres' % richman_data.uid)
         if save_result != OK:
             print(save_result)
     print('%d celebrities processed.' % len(celebrities))

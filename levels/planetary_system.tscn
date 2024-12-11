@@ -658,7 +658,7 @@ theme_override_constants/separation = 20
 
 [node name="RichmenPortrait" parent="UI/VBoxContainer/HBoxContainer" instance=ExtResource("35_u3exb")]
 layout_mode = 2
-tooltip_text = "Abigail Johnson is an American businesswoman who has a net worth of $28 billion. Abigail Johnson is the Chairman, CEO and President of the company started by her father, Fidelity Investments."
+tooltip_text = "bio_abigailjohnson"
 toggle_mode = true
 icon = ExtResource("36_0hri1")
 richman_data = ExtResource("36_43mlr")
