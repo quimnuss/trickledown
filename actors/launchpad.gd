@@ -27,6 +27,7 @@ func _process(delta: float) -> void:
         cannon.rotation += ROTATION_SPEED*delta
     elif Input.is_action_pressed('left'):
         cannon.rotation -= ROTATION_SPEED*delta
+    cannon.rotation = clamp(cannon.rotation, -0.55*PI, 0.55*PI)
 
     if Input.is_action_pressed('up'):
         power += POWER_SPEED

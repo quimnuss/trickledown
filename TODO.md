@@ -1,7 +1,8 @@
 # Now - Ship requirements
 
-- [ ] use richmen uids instead of names
-- [ ] limit cannon angles
+- [ ] message on the town screen
+- [ ] custom mouse
+- [ ] particle effects on town click
 - [ ] particle gather animation flow towards the milestone list (component)
 
 ## Deute tècnic
@@ -48,6 +49,8 @@ If ground flight is implemented:
 
 # Done
 
+- [x] limit cannon angles
+- [x] use richmen uids instead of names
 - [x] review and translate all bios
 - [x] exponential time warp instead of linear
 - [x] Show bio on launchpad click

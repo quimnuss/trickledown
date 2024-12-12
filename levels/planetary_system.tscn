@@ -48,7 +48,6 @@
 [ext_resource type="PackedScene" uid="uid://xjrxhq67hgl7" path="res://Planets/LavaWorld/LavaWorld.tscn" id="35_tc34s"]
 [ext_resource type="PackedScene" uid="uid://cuua7j11qkp8m" path="res://ui/orbit_portrait.tscn" id="35_u3exb"]
 [ext_resource type="Texture2D" uid="uid://6uot5vtch8je" path="res://assets/ui_assets/time_warp/speed_2.png" id="35_xyw7w"]
-[ext_resource type="Texture2D" uid="uid://cdkfxvkddqxi6" path="res://data/richmen/img/Abigail Johnson.png" id="36_0hri1"]
 [ext_resource type="Resource" uid="uid://dlrwrgk3o3wwf" path="res://data/richmen/richmen_resources/abigailjohnson.tres" id="36_43mlr"]
 [ext_resource type="Texture2D" uid="uid://twhx5e18ag3r" path="res://assets/ui_assets/time_warp/speed_4.png" id="36_xs0uj"]
 [ext_resource type="Texture2D" uid="uid://crkuacs0sxgda" path="res://assets/ui_assets/time_warp/speed_5.png" id="37_wcqr2"]
@@ -58,6 +57,7 @@
 [ext_resource type="PackedScene" uid="uid://djsseo0f6th6i" path="res://ui/task.tscn" id="39_x47u0"]
 [ext_resource type="PackedScene" uid="uid://pq2pdpwae0oo" path="res://ui/richmen_bio.tscn" id="44_0uaco"]
 [ext_resource type="Script" path="res://components/shake_component.gd" id="44_7kix8"]
+[ext_resource type="Texture2D" uid="uid://bqyu0u6xog02g" path="res://data/richmen/img/abigailjohnson.png" id="46_j3auo"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_yx0y8"]
 
@@ -658,9 +658,8 @@ theme_override_constants/separation = 20
 
 [node name="RichmenPortrait" parent="UI/VBoxContainer/HBoxContainer" instance=ExtResource("35_u3exb")]
 layout_mode = 2
-tooltip_text = "bio_abigailjohnson"
 toggle_mode = true
-icon = ExtResource("36_0hri1")
+icon = ExtResource("46_j3auo")
 richman_data = ExtResource("36_43mlr")
 
 [node name="Container" type="VBoxContainer" parent="UI"]

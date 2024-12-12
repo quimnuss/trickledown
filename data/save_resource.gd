@@ -56,11 +56,7 @@ func cascade_num_richmen():
                 richmen_grounded.append(richman)
             else:
                 prints('Returned an invalid richman')
-    
-    var pre_richmen_grounded_names : Array[String] = []
-    for richman in richmen_grounded:
-        pre_richmen_grounded_names.append(richman.name)
-        
+            
     if not launchpad_richman:
         launchpad_richman = richmen_grounded.pop_front()
 
