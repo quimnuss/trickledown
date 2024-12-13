@@ -1,9 +1,9 @@
 # Now - Ship requirements
 
-- [ ] message on the town screen
 - [ ] custom mouse
 - [ ] particle effects on town click
 - [ ] particle gather animation flow towards the milestone list (component)
+- [ ] Credits screen (put the first dog image)
 
 ## Deute tècnic
 
@@ -49,6 +49,7 @@ If ground flight is implemented:
 
 # Done
 
+- [x] message on the town screen
 - [x] limit cannon angles
 - [x] use richmen uids instead of names
 - [x] review and translate all bios

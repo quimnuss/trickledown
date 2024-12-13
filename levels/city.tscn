@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://b778f20b5udf0"]
+[gd_scene load_steps=5 format=3 uid="uid://b778f20b5udf0"]
 
 [ext_resource type="Script" path="res://levels/city.gd" id="1_hmln8"]
 [ext_resource type="PackedScene" uid="uid://co44gcb1n2vox" path="res://levels/city_monster.tscn" id="2_7tmjc"]
+[ext_resource type="Script" path="res://ui/town_status_text.gd" id="2_8v40i"]
 [ext_resource type="StyleBox" uid="uid://cstqf7ew55mxr" path="res://ui/styles/margin_style_box_flat.tres" id="3_0fecl"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
@@ -9,6 +10,25 @@ layer = 2
 script = ExtResource("1_hmln8")
 
 [node name="CityMonster" parent="." instance=ExtResource("2_7tmjc")]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 24.0
+grow_horizontal = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 20
+
+[node name="TownStatusText" type="RichTextLabel" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "The town is [color=lightgreen]healthy[/color] and democratic"
+fit_content = true
+script = ExtResource("2_8v40i")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 anchors_preset = 3

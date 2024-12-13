@@ -39,3 +39,5 @@ GO_BEYOND,do whatever you like with them! The rich do not suffer,fes el què vul
 FREED,has been freed!,ha set alliberada!
 CAPITALIZED,has been capitalized!,ha set capitalitzada!
 AI training...,AI training...,Entrenant la IA...
+healthy town,The town is [color=green]healthy[/color] and democratic,El poble és [color=green]sa[/color] i democràtic
+sick town,"[color=tomato]%s richmen[/color] capitalized part of the town\nits [color=lightgreen]cooperatives[/color] stopped gathering.","[color=tomato]%s rics[/color] han capitalitzat part del poble\nllurs cooperatives han deixat de reunir-se."

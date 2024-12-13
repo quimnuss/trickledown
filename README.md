@@ -2,6 +2,15 @@
 
 A game about sending rich people to orbit (so they leave us in peace)
 
+The idea originated in a [mastodon conversation](https://mastodont.cat/@quimnuss/113362840520209841)
+about catapulting the rich into space
+([which exists!](https://cybernews.com/tech/silicon-valley-spinlaunch-catapult-satellites))
+
+Thanks to @RustyBertrand@kolektiva.social and @ulfr@hachyderm.io for spreading
+[first dog's](https://firstdogonthemoon.com.au/) idea and encouragement to develop this game.
+
+It won't solve much but at least we can celebrate E A T T H E R I C H day.
+
 ## Tools
 
 To download the celebrities bio and worth
