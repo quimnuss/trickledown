@@ -10,7 +10,7 @@ func _ready():
     
 func _on_current_save():
     var richmen := current_save.num_richmen
-    if richmen > 4:
+    if richmen > 3:
         self.text = tr('sick town') % current_save.num_richmen
     else:
         self.text = tr('healthy town')

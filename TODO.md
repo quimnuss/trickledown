@@ -1,9 +1,12 @@
 # Now - Ship requirements
 
+- [ ] Credits screen (put the first dog image)
+- [ ] Pop up on number of jokes classified
+- [ ] Pop up on fast skipping jokes
+- [ ] shake and classified counters
 - [ ] custom mouse
 - [ ] particle effects on town click
 - [ ] particle gather animation flow towards the milestone list (component)
-- [ ] Credits screen (put the first dog image)
 
 ## Deute tècnic
 
