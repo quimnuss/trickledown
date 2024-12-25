@@ -1,5 +1,5 @@
 extends Node
-class_name ShakeComponent
+class_name CameraShakeComponent
 
 var current_shake = 0
 
@@ -32,7 +32,6 @@ func _physics_process(delta: float) -> void:
     current_shake -= shake_amount * delta / shake_duration
     if current_shake < 0:
         current_shake = 0
-        get_parent().position = original_position
     else:
         get_parent().position = original_position + Vector2(randf_range(-current_shake, current_shake), randf_range(-current_shake, current_shake))
 

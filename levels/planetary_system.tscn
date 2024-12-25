@@ -1,4 +1,4 @@
-[gd_scene load_steps=72 format=3 uid="uid://bix0vgtkccr8k"]
+[gd_scene load_steps=73 format=3 uid="uid://bix0vgtkccr8k"]
 
 [ext_resource type="Script" path="res://components/visual_orbit.gd" id="1_8xlk2"]
 [ext_resource type="Texture2D" uid="uid://dkclsuxbdnwtn" path="res://assets/sky/dynamic_space_background/Nebula Red.png" id="1_fngs5"]
@@ -25,6 +25,7 @@
 [ext_resource type="Script" path="res://components/orbit_milestone_checker.gd" id="12_m5nv6"]
 [ext_resource type="Texture2D" uid="uid://q6px2c0t84ov" path="res://assets/cannon/fire_effect.png" id="13_1f2mo"]
 [ext_resource type="Script" path="res://components/focus.gd" id="15_5iuv1"]
+[ext_resource type="Script" path="res://components/camera_shake_component.gd" id="17_3u0ud"]
 [ext_resource type="Texture2D" uid="uid://c1p64shib4lr1" path="res://assets/planets/Terran Wet - 218550788.png" id="19_0jg1l"]
 [ext_resource type="PackedScene" uid="uid://crdxh2i35dorc" path="res://Planets/Rivers/Rivers.tscn" id="19_rx3i1"]
 [ext_resource type="Script" path="res://components/save_resource.gd" id="22_hrhws"]
@@ -270,7 +271,7 @@ script = ExtResource("11_xul2k")
 max_zoom = 15.0
 
 [node name="ShakeComponent" type="Node" parent="Star/HomePlanet/ZoomingCamera2D"]
-script = ExtResource("44_7kix8")
+script = ExtResource("17_3u0ud")
 event_bus_connected = true
 
 [node name="VisualOrbit" type="Node2D" parent="Star/HomePlanet"]
