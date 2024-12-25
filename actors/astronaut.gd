@@ -42,7 +42,7 @@ func kill():
 func _on_body_entered(body: Node) -> void:
     for collider in get_colliding_bodies():
         if collider is Astronaut:
-            print("crashed with",collider.name)
+            prints("crashed with",collider.name)
             milestone_completed.emit(Singleton.Milestone.CRASH_ASTRONAUT)
             break
             

@@ -33,7 +33,10 @@ func detach():
     # TODO use the singleton signal to reparent etc.
 
     self.position_smoothing_enabled = false
-    reparent(home_planet)
+    # TODO now working to delay camera movement
+    var current_global_position : Vector2 = global_position
+    reparent(home_planet, true)
+    self.global_position = current_global_position
     await get_tree().create_timer(3).timeout
     self.position = Vector2.ZERO
     await get_tree().create_timer(0.5).timeout

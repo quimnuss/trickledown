@@ -97,6 +97,10 @@ launch={
 ]
 }
 
+[input_devices]
+
+pointing/android/enable_pan_and_scale_gestures=true
+
 [internationalization]
 
 locale/translations=PackedStringArray("res://data/trickledown_translation.ca.translation", "res://data/trickledown_translation.en.translation", "res://data/richmen/celebrities_bio.ca.translation", "res://data/richmen/celebrities_bio.en.translation")
