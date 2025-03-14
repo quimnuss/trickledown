@@ -1,7 +1,7 @@
 [gd_scene load_steps=39 format=3 uid="uid://xkfhvqxww6ys"]
 
-[ext_resource type="Script" path="res://levels/tutorial.gd" id="1_gonbu"]
-[ext_resource type="VideoStream" path="res://assets/tutorial/trickledown_tutorial.ogv" id="1_lmwiy"]
+[ext_resource type="Script" uid="uid://hlh257efd3ll" path="res://levels/tutorial.gd" id="1_gonbu"]
+[ext_resource type="VideoStream" uid="uid://qguu4anijm8g" path="res://assets/tutorial/trickledown_tutorial.ogv" id="1_lmwiy"]
 [ext_resource type="Texture2D" uid="uid://disk2funmk7lp" path="res://assets/ui_assets/nine_patch.png" id="2_7g75a"]
 [ext_resource type="Texture2D" uid="uid://iy1bjjlknh36" path="res://assets/tutorial/A.png" id="2_rw35f"]
 [ext_resource type="Texture2D" uid="uid://c7l3pavpkhg58" path="res://assets/tutorial/D.png" id="3_16fa6"]
@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bfuagkx4rqh74" path="res://assets/tutorial/SPACE.png" id="7_l4qe6"]
 [ext_resource type="Texture2D" uid="uid://qpkkstx0ratr" path="res://assets/tutorial/TAB.png" id="9_ljl85"]
 [ext_resource type="Texture2D" uid="uid://6yklc2mwwiq4" path="res://assets/tutorial/scroll_spritesheet.png" id="10_mr028"]
-[ext_resource type="Script" path="res://scripts/tutorial_button_press_animation.gd" id="10_np5dh"]
+[ext_resource type="Script" uid="uid://bvpdfne7re01i" path="res://scripts/tutorial_button_press_animation.gd" id="10_np5dh"]
 [ext_resource type="Texture2D" uid="uid://el2bhuyokcgm" path="res://assets/tutorial/richmen_ui.png" id="11_vdrhg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kxp4p"]
@@ -177,11 +177,11 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_dex1p"]
 _data = {
-"RESET": SubResource("Animation_vwqed"),
-"cannon_angle": SubResource("Animation_2h54g"),
-"cannon_right": SubResource("Animation_3a0j1"),
-"cannon_thurst": SubResource("Animation_5i8yt"),
-"launch": SubResource("Animation_pdrbo")
+&"RESET": SubResource("Animation_vwqed"),
+&"cannon_angle": SubResource("Animation_2h54g"),
+&"cannon_right": SubResource("Animation_3a0j1"),
+&"cannon_thurst": SubResource("Animation_5i8yt"),
+&"launch": SubResource("Animation_pdrbo")
 }
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mf1mx"]
@@ -376,8 +376,8 @@ tracks/6/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4bwu8"]
 _data = {
-"RESET": SubResource("Animation_mkvyu"),
-"tutorial": SubResource("Animation_tn11f")
+&"RESET": SubResource("Animation_mkvyu"),
+&"tutorial": SubResource("Animation_tn11f")
 }
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cwmyc"]

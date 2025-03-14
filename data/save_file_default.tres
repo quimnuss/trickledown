@@ -1,12 +1,16 @@
-[gd_resource type="Resource" script_class="SaveResource" load_steps=2 format=3 uid="uid://4eyclg25bkoj"]
+[gd_resource type="Resource" script_class="SaveResource" load_steps=3 format=3 uid="uid://4eyclg25bkoj"]
 
-[ext_resource type="Script" path="res://data/save_resource.gd" id="1_xqlxb"]
+[ext_resource type="Script" uid="uid://bk3er57vo580a" path="res://data/richmen/richman_data.gd" id="1_12ahj"]
+[ext_resource type="Script" uid="uid://yjbqvbq2f6ty" path="res://data/save_resource.gd" id="1_xqlxb"]
 
 [resource]
 script = ExtResource("1_xqlxb")
 stonks = 1000
 num_richmen = 10
-richmen_value = {
-"BillGotes": 800000,
-"ElonTusk": 1000000
-}
+richmen_orbit = Array[ExtResource("1_12ahj")]([])
+richmen_deaths = Array[ExtResource("1_12ahj")]([])
+richmen_grounded = Array[ExtResource("1_12ahj")]([])
+milestones = Array[int]([])
+milestones_stats = {}
+save_version = 3
+richmen_paths = null

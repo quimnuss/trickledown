@@ -13,7 +13,7 @@ config_version=5
 config/name="Trickle Down"
 config/description="A game about sending rich people to orbit (so they leave us in peace)"
 run/main_scene="res://levels/welcome.tscn"
-config/features=PackedStringArray("4.3", "GL Compatibility")
+config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://pq2pdpwae0oo"]
 
-[ext_resource type="Script" path="res://ui/richmen_bio.gd" id="1_jbvsi"]
+[ext_resource type="Script" uid="uid://o8unagl2sfue" path="res://ui/richmen_bio.gd" id="1_jbvsi"]
 [ext_resource type="Texture2D" uid="uid://disk2funmk7lp" path="res://assets/ui_assets/nine_patch.png" id="2_binxb"]
 
 [node name="RichmenBio" type="Control"]

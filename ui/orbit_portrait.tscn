@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cuua7j11qkp8m"]
 
 [ext_resource type="Texture2D" uid="uid://k1oorjtpwxcy" path="res://assets/richmen/richmen_5.png" id="1_qt2d1"]
-[ext_resource type="Script" path="res://ui/orbit_portrait.gd" id="2_bc448"]
+[ext_resource type="Script" uid="uid://d1orvolnw4k2s" path="res://ui/orbit_portrait.gd" id="2_bc448"]
 
 [node name="OrbitPortrait" type="Button"]
 custom_minimum_size = Vector2(60, 70)

@@ -1,8 +1,8 @@
 [gd_scene load_steps=9 format=3 uid="uid://djsseo0f6th6i"]
 
 [ext_resource type="Texture2D" uid="uid://cqvnf30quipg3" path="res://assets/ui_assets/target_icon.png" id="1_hlfdb"]
-[ext_resource type="Script" path="res://ui/tasklist.gd" id="1_xmvte"]
-[ext_resource type="Script" path="res://ui/milestones.gd" id="2_vfgwe"]
+[ext_resource type="Script" uid="uid://1qqsq0wri08y" path="res://ui/tasklist.gd" id="1_xmvte"]
+[ext_resource type="Script" uid="uid://0cffuk0462jf" path="res://ui/milestones.gd" id="2_vfgwe"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_157qd"]
 

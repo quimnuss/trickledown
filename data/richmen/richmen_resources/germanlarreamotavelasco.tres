@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://drxf5nqgbokan"]
 
 [ext_resource type="Texture2D" uid="uid://ccrm5s1w244na" path="res://data/richmen/img/germanlarreamotavelasco.png" id="1_lthqw"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_pmod6"]
+[ext_resource type="Script" uid="uid://bk3er57vo580a" path="res://data/richmen/richman_data.gd" id="2_pmod6"]
 
 [resource]
 script = ExtResource("2_pmod6")

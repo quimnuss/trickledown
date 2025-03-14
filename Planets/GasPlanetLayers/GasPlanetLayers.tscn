@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://b47dpsuy2ch3g"]
 
 [ext_resource type="PackedScene" path="res://Planets/Planet.tscn" id="1"]
-[ext_resource type="Script" path="res://Planets/GasPlanetLayers/GasPlanetLayers.gd" id="2"]
-[ext_resource type="Shader" path="res://Planets/GasPlanetLayers/Ring.gdshader" id="3"]
-[ext_resource type="Shader" path="res://Planets/GasPlanetLayers/GasLayers.gdshader" id="4"]
+[ext_resource type="Script" uid="uid://db3eofygkdor0" path="res://Planets/GasPlanetLayers/GasPlanetLayers.gd" id="2"]
+[ext_resource type="Shader" uid="uid://byo2qkq6vtd1a" path="res://Planets/GasPlanetLayers/Ring.gdshader" id="3"]
+[ext_resource type="Shader" uid="uid://csfgg5l0gghtx" path="res://Planets/GasPlanetLayers/GasLayers.gdshader" id="4"]
 
 [sub_resource type="ShaderMaterial" id="5"]
 shader = ExtResource("4")

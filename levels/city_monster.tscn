@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://tutokf7y6g1d" path="res://assets/city/city_monster_bus.png" id="3_1ogaa"]
 [ext_resource type="Texture2D" uid="uid://bagfemokhm4cp" path="res://assets/city/city_monster_eyes.png" id="3_3t11h"]
 [ext_resource type="Texture2D" uid="uid://ccrpvrum3tvko" path="res://assets/city/parallax/clouds_1.png" id="3_jxjik"]
-[ext_resource type="Script" path="res://scripts/sprite2d_looping.gd" id="3_t5ts8"]
+[ext_resource type="Script" uid="uid://e1j161d0b7em" path="res://scripts/sprite2d_looping.gd" id="3_t5ts8"]
 [ext_resource type="Texture2D" uid="uid://cfim4buy0ebki" path="res://assets/city/city_monster_green.png" id="4_2eiei"]
 [ext_resource type="Texture2D" uid="uid://bby8ea8785e8v" path="res://assets/city/parallax/clouds_2.png" id="4_40gck"]
 [ext_resource type="Texture2D" uid="uid://ecogu24jwolf" path="res://assets/city/city_monster_zeppellin_monster.png" id="5_qf5g5"]
@@ -18,20 +18,20 @@
 [ext_resource type="Texture2D" uid="uid://ckpo1h2ov0bws" path="res://assets/city/city_monster_triplered.png" id="7_0i7q6"]
 [ext_resource type="Texture2D" uid="uid://tavkqnndt0dp" path="res://assets/city/city_monster_green_windows.png" id="8_4g5w8"]
 [ext_resource type="Texture2D" uid="uid://b2kmh5iior55p" path="res://assets/city/city_monster_green_back.png" id="8_5uk0f"]
-[ext_resource type="Script" path="res://components/capitalization.gd" id="8_nuh2n"]
+[ext_resource type="Script" uid="uid://sxpkllljsnm6" path="res://components/capitalization.gd" id="8_nuh2n"]
 [ext_resource type="Texture2D" uid="uid://b715m7qty08ak" path="res://assets/city/city_monster_pink.png" id="8_r6dom"]
 [ext_resource type="Texture2D" uid="uid://dyrri3eun3nw4" path="res://assets/city/city_monster_sun_monster.png" id="11_30oy5"]
 [ext_resource type="Texture2D" uid="uid://bxo4vtkra718w" path="res://assets/city/cloud.png" id="13_8fg1a"]
-[ext_resource type="Script" path="res://scripts/bobbing.gd" id="14_mgqpa"]
-[ext_resource type="Script" path="res://scripts/simple_orbit.gd" id="14_x78jw"]
-[ext_resource type="Script" path="res://scripts/move_up.gd" id="17_6s582"]
+[ext_resource type="Script" uid="uid://b0iy2tta7y3rd" path="res://scripts/bobbing.gd" id="14_mgqpa"]
+[ext_resource type="Script" uid="uid://cmnhs2q5pfs4" path="res://scripts/simple_orbit.gd" id="14_x78jw"]
+[ext_resource type="Script" uid="uid://du7ufwfntety7" path="res://scripts/move_up.gd" id="17_6s582"]
 [ext_resource type="Texture2D" uid="uid://b2j3ewri0s3bx" path="res://assets/city/small_eye.png" id="17_a2pvw"]
 [ext_resource type="Texture2D" uid="uid://d3rnqgfanusxa" path="res://assets/city/city_monster_lighthouse.png" id="17_y243g"]
 [ext_resource type="Texture2D" uid="uid://bjnq5r7qaoad8" path="res://assets/city/cliff_water.png" id="19_by2po"]
 [ext_resource type="Texture2D" uid="uid://krfay34awk4s" path="res://assets/city/city_monster_triplered_back.png" id="20_vxxbb"]
 [ext_resource type="Texture2D" uid="uid://bh2b452f1s2ae" path="res://assets/city/city_monster_lighthouse_head.png" id="27_086er"]
 [ext_resource type="Texture2D" uid="uid://hnveln5wq5vc" path="res://assets/city/parallax/smog.png" id="29_n0b74"]
-[ext_resource type="Script" path="res://actors/capitalism.gd" id="30_t103r"]
+[ext_resource type="Script" uid="uid://c74ge5suxcpww" path="res://actors/capitalism.gd" id="30_t103r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a4jql"]
 size = Vector2(44, 170.669)
@@ -90,8 +90,8 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_k0tam"]
 _data = {
-"RESET": SubResource("Animation_df4il"),
-"shrink": SubResource("Animation_fvtwp")
+&"RESET": SubResource("Animation_df4il"),
+&"shrink": SubResource("Animation_fvtwp")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c04gg"]
@@ -138,8 +138,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_bafdk"]
 _data = {
-"RESET": SubResource("Animation_t0ydn"),
-"zeppellin": SubResource("Animation_yk18i")
+&"RESET": SubResource("Animation_t0ydn"),
+&"zeppellin": SubResource("Animation_yk18i")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kk657"]
@@ -210,8 +210,8 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_k5qhu"]
 _data = {
-"RESET": SubResource("Animation_di7t8"),
-"red": SubResource("Animation_xsu7h")
+&"RESET": SubResource("Animation_di7t8"),
+&"red": SubResource("Animation_xsu7h")
 }
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4jppo"]

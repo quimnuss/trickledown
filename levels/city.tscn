@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://b778f20b5udf0"]
 
-[ext_resource type="Script" path="res://levels/city.gd" id="1_hmln8"]
+[ext_resource type="Script" uid="uid://b4n5easgbsibh" path="res://levels/city.gd" id="1_hmln8"]
 [ext_resource type="PackedScene" uid="uid://co44gcb1n2vox" path="res://levels/city_monster.tscn" id="2_7tmjc"]
-[ext_resource type="Script" path="res://ui/town_status_text.gd" id="2_8v40i"]
+[ext_resource type="Script" uid="uid://dfeiu5lffbbu3" path="res://ui/town_status_text.gd" id="2_8v40i"]
 [ext_resource type="StyleBox" uid="uid://cstqf7ew55mxr" path="res://ui/styles/margin_style_box_flat.tres" id="3_0fecl"]
 
 [node name="CanvasLayer" type="CanvasLayer"]

@@ -1,21 +1,21 @@
 [gd_scene load_steps=20 format=3 uid="uid://b3o4iph7vqse1"]
 
-[ext_resource type="Script" path="res://actors/astronaut.gd" id="1_bexqd"]
+[ext_resource type="Script" uid="uid://biq11pkcef0dn" path="res://actors/astronaut.gd" id="1_bexqd"]
 [ext_resource type="Texture2D" uid="uid://don4lic36wxmv" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_1.png" id="2_koiem"]
-[ext_resource type="Script" path="res://components/focus.gd" id="2_oi52y"]
+[ext_resource type="Script" uid="uid://28a30y4c3cfy" path="res://components/focus.gd" id="2_oi52y"]
 [ext_resource type="Texture2D" uid="uid://cuel3odc8mrl2" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_2.png" id="3_1xihc"]
 [ext_resource type="Texture2D" uid="uid://oqfev0djlfgb" path="res://assets/rockets/exhaust_03/exhaust_03_spritesheet.png" id="3_6vyxb"]
 [ext_resource type="Texture2D" uid="uid://dtpexkjdma6u3" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_3.png" id="4_my882"]
-[ext_resource type="Script" path="res://components/engine_plume.gd" id="4_q2hbb"]
+[ext_resource type="Script" uid="uid://byojqkdpa121r" path="res://components/engine_plume.gd" id="4_q2hbb"]
 [ext_resource type="Texture2D" uid="uid://1y3hqay6h3l4" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_4.png" id="5_7atce"]
 [ext_resource type="Texture2D" uid="uid://bfvk4u4ykokwo" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_5.png" id="6_r78ps"]
 [ext_resource type="Texture2D" uid="uid://bwocpuv7srru4" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_6.png" id="7_nxtta"]
 [ext_resource type="Texture2D" uid="uid://dctbtvb20hxm8" path="res://assets/dollar_bill.png" id="8_3yit0"]
-[ext_resource type="Script" path="res://components/astronaut_controller.gd" id="9_kmisj"]
-[ext_resource type="Script" path="res://components/velocity_vector.gd" id="11_4s410"]
+[ext_resource type="Script" uid="uid://b2j8qhnyfd2sl" path="res://components/astronaut_controller.gd" id="9_kmisj"]
+[ext_resource type="Script" uid="uid://che31ladiyrqj" path="res://components/velocity_vector.gd" id="11_4s410"]
 [ext_resource type="AudioStream" uid="uid://cddastfnjlloe" path="res://assets/audio_effects/thrust.ogg" id="14_2xvy1"]
-[ext_resource type="Script" path="res://components/thrust_sound.gd" id="15_8eao7"]
-[ext_resource type="Script" path="res://components/persist_xyv.gd" id="16_rtc06"]
+[ext_resource type="Script" uid="uid://dr1ojrybdaxjk" path="res://components/thrust_sound.gd" id="15_8eao7"]
+[ext_resource type="Script" uid="uid://br6yfl3btq1py" path="res://components/persist_xyv.gd" id="16_rtc06"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kwb5v"]
 radius = 3.0
@@ -114,8 +114,8 @@ script = ExtResource("4_q2hbb")
 direction = Vector2(-1, 0)
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="."]
-randomness = 0.8
 texture = ExtResource("8_3yit0")
+randomness = 0.8
 emission_shape = 1
 emission_sphere_radius = 1.0
 particle_flag_align_y = true

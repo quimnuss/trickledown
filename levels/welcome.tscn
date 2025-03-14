@@ -1,11 +1,11 @@
 [gd_scene load_steps=25 format=3 uid="uid://c75vmbnxjighe"]
 
 [ext_resource type="Texture2D" uid="uid://d38ua4nm6k705" path="res://assets/planets/Terran Wet - 305441705.png" id="1_2e2xp"]
-[ext_resource type="Script" path="res://levels/welcome.gd" id="1_fg01x"]
+[ext_resource type="Script" uid="uid://dd8y13w5ooang" path="res://levels/welcome.gd" id="1_fg01x"]
 [ext_resource type="Texture2D" uid="uid://dkclsuxbdnwtn" path="res://assets/sky/dynamic_space_background/Nebula Red.png" id="1_sekn6"]
 [ext_resource type="Texture2D" uid="uid://dr3qb8prnyaxc" path="res://assets/sky/dynamic_space_background/Stars Small_1.png" id="2_axj16"]
 [ext_resource type="Texture2D" uid="uid://prwtbk4881hm" path="res://assets/sky/dynamic_space_background/Stars-Big_1_1_PC.png" id="3_b1110"]
-[ext_resource type="Script" path="res://actors/visual_planet.gd" id="7_ju3ji"]
+[ext_resource type="Script" uid="uid://rqcdymttcsw6" path="res://actors/visual_planet.gd" id="7_ju3ji"]
 [ext_resource type="Texture2D" uid="uid://dctbtvb20hxm8" path="res://assets/dollar_bill.png" id="8_nc60d"]
 [ext_resource type="PackedScene" uid="uid://crdxh2i35dorc" path="res://Planets/Rivers/Rivers.tscn" id="8_tsiyb"]
 [ext_resource type="Texture2D" uid="uid://don4lic36wxmv" path="res://assets/spaceship_creation_kit/Crew/Orange Crew/crewOrangeA_idle_1.png" id="9_71p17"]
@@ -105,8 +105,8 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_jkbvo"]
 _data = {
-"RESET": SubResource("Animation_3mags"),
-"orbit": SubResource("Animation_ey5ha")
+&"RESET": SubResource("Animation_3mags"),
+&"orbit": SubResource("Animation_ey5ha")
 }
 
 [node name="Welcome" type="Control"]
@@ -170,8 +170,8 @@ offset_bottom = 80.0
 [node name="Astronaut" type="Node2D" parent="Anchor"]
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="Anchor/Astronaut"]
-randomness = 0.8
 texture = ExtResource("8_nc60d")
+randomness = 0.8
 emission_shape = 1
 emission_sphere_radius = 1.0
 particle_flag_align_y = true
@@ -350,7 +350,7 @@ tab_1/title = "ca"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_jkbvo")
+&"": SubResource("AnimationLibrary_jkbvo")
 }
 autoplay = "orbit"
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://d10uodl4gtsu6"]
 
-[ext_resource type="Script" path="res://ui/feed.gd" id="1_s1lck"]
+[ext_resource type="Script" uid="uid://c0ig5i6c5t2ay" path="res://ui/feed.gd" id="1_s1lck"]
 [ext_resource type="PackedScene" uid="uid://bmb5ah3ir7vse" path="res://ui/feed_box.tscn" id="2_sf6op"]
 
 [node name="Feed" type="VBoxContainer"]

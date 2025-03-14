@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://cgo8gl6u8qdkw"]
 
 [ext_resource type="Texture2D" uid="uid://bgysyhg406pdj" path="res://data/richmen/img/larryellison.png" id="1_4vdgu"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_uqh3f"]
+[ext_resource type="Script" uid="uid://bk3er57vo580a" path="res://data/richmen/richman_data.gd" id="2_uqh3f"]
 
 [resource]
 script = ExtResource("2_uqh3f")

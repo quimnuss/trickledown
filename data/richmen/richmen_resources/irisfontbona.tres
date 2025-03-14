@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="RichmanData" load_steps=3 format=3 uid="uid://cwql4l4y3ijyx"]
 
 [ext_resource type="Texture2D" uid="uid://b3d3h10ie233j" path="res://data/richmen/img/irisfontbona.png" id="1_1nftp"]
-[ext_resource type="Script" path="res://data/richmen/richman_data.gd" id="2_rks6x"]
+[ext_resource type="Script" uid="uid://bk3er57vo580a" path="res://data/richmen/richman_data.gd" id="2_rks6x"]
 
 [resource]
 script = ExtResource("2_rks6x")

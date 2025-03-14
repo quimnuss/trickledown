@@ -2,10 +2,10 @@
 
 [ext_resource type="Texture2D" uid="uid://bhno2l6syxd8" path="res://assets/ground/ground.png" id="1_5obci"]
 [ext_resource type="PackedScene" uid="uid://bes1ltm14o6xt" path="res://actors/ship.tscn" id="2_2e4wf"]
-[ext_resource type="Script" path="res://actors/ship_ground.gd" id="2_77ref"]
+[ext_resource type="Script" uid="uid://c77aq3mpd315w" path="res://actors/ship_ground.gd" id="2_77ref"]
 [ext_resource type="Texture2D" uid="uid://dtt0hyxs8hnjp" path="res://assets/sky/clouds.png" id="2_rktc8"]
 [ext_resource type="Texture2D" uid="uid://j23dyy2elxe0" path="res://assets/sky/1.png" id="3_ucql3"]
-[ext_resource type="Script" path="res://scripts/zooming_camera_2d_centered.gd" id="5_na5we"]
+[ext_resource type="Script" uid="uid://casf5u7fynvq5" path="res://scripts/zooming_camera_2d_centered.gd" id="5_na5we"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_d2myx"]
 

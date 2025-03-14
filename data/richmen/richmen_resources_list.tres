@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="RichmenResourcesList" load_steps=2 format=3 uid="uid://cvdbdc3esjvhh"]
 
-[ext_resource type="Script" path="res://data/richmen/richmen_resources_list.gd" id="2_31f56"]
+[ext_resource type="Script" uid="uid://kdbjny7sq2vy" path="res://data/richmen/richmen_resources_list.gd" id="2_31f56"]
 
 [resource]
 script = ExtResource("2_31f56")
